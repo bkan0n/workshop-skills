@@ -1,0 +1,521 @@
+[
+  {
+    "id": 9200,
+    "title": "AI Bot Difficulty Modifiers",
+    "slug": "ai-bot-difficulty-modifiers",
+    "category": "References",
+    "tags": [
+      "Bot",
+      "AI"
+    ],
+    "url": "https://workshop.codes/wiki/articles/9200",
+    "updated_at": "2026-07-09T00:45:31.877Z",
+    "path": "articles/references/9200-ai-bot-difficulty-modifiers.md",
+    "content_sha256": "d75e4470ac5b398f6cf0ec6350a662f4179c9f7e53016ec9cbfecab7f0c1cbbd",
+    "bytes": 646,
+    "repository_path": "archive/articles/references/9200-ai-bot-difficulty-modifiers.md"
+  },
+  {
+    "id": 7978,
+    "title": "Comparisons and truth",
+    "slug": "comparisons-and-truth",
+    "category": "References",
+    "tags": [
+      "truthy",
+      "falsey",
+      "truth",
+      "true",
+      "false",
+      "values",
+      "compare",
+      "comparison",
+      "table",
+      "truth table",
+      "equality",
+      "equal",
+      "operation"
+    ],
+    "url": "https://workshop.codes/wiki/articles/7978",
+    "updated_at": "2026-01-24T15:52:46.209Z",
+    "path": "articles/references/7978-comparisons-and-truth.md",
+    "content_sha256": "80f18a2e40c405d7a10034168cb858310ba697cbb75b93b650efd1595be74d8a",
+    "bytes": 99099,
+    "repository_path": "archive/articles/references/7978-comparisons-and-truth.md"
+  },
+  {
+    "id": 4828,
+    "title": "Control Point Bounds for every map",
+    "slug": "control-point-bounds-for-every-map",
+    "category": "References",
+    "tags": [
+      "Objective",
+      "Boundary",
+      "Shape"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4828",
+    "updated_at": "2024-11-26T13:52:03.056Z",
+    "path": "articles/references/4828-control-point-bounds-for-every-map.md",
+    "content_sha256": "689c74178e07c284459d7909b56d3dfd7bf723de879c3d7c962a44172675e610",
+    "bytes": 15721,
+    "repository_path": "archive/articles/references/4828-control-point-bounds-for-every-map.md"
+  },
+  {
+    "id": 2130,
+    "title": "Default Button Controls",
+    "slug": "default-button-controls",
+    "category": "References",
+    "tags": [
+      "Default Controls",
+      "Default Buttons",
+      "Controls",
+      "Buttons",
+      "Mapping"
+    ],
+    "url": "https://workshop.codes/wiki/articles/2130",
+    "updated_at": "2024-04-13T01:36:58.313Z",
+    "path": "articles/references/2130-default-button-controls.md",
+    "content_sha256": "0462676a75b65bf77a21963e9adac8ff1fee53b71592167e2f3d236333abd2ca",
+    "bytes": 8819,
+    "repository_path": "archive/articles/references/2130-default-button-controls.md"
+  },
+  {
+    "id": 1993,
+    "title": "Effects Reference Sheet",
+    "slug": "effects-reference-sheet",
+    "category": "References",
+    "tags": [],
+    "url": "https://workshop.codes/wiki/articles/1993",
+    "updated_at": "2023-10-01T00:06:39.338Z",
+    "path": "articles/references/1993-effects-reference-sheet.md",
+    "content_sha256": "15969ca56da0fee6f69eb5c97eb6c2673d98f4e4d2e41e651906216f5c40dd98",
+    "bytes": 4885,
+    "repository_path": "archive/articles/references/1993-effects-reference-sheet.md"
+  },
+  {
+    "id": 4857,
+    "title": "Element Count Calculation",
+    "slug": "element-count-calculation",
+    "category": "References",
+    "tags": [],
+    "url": "https://workshop.codes/wiki/articles/4857",
+    "updated_at": "2024-11-26T13:52:04.356Z",
+    "path": "articles/references/4857-element-count-calculation.md",
+    "content_sha256": "535e2e723541ffab7652e994c333d4c51f0f9184df3c6e7b94ad183532ca7986",
+    "bytes": 3955,
+    "repository_path": "archive/articles/references/4857-element-count-calculation.md"
+  },
+  {
+    "id": 1976,
+    "title": "Health packs locations",
+    "slug": "health-packs-locations",
+    "category": "References",
+    "tags": [],
+    "url": "https://workshop.codes/wiki/articles/1976",
+    "updated_at": "2023-09-01T09:17:38.808Z",
+    "path": "articles/references/1976-health-packs-locations.md",
+    "content_sha256": "0c5d02bfa21550a1b3b3b29888f584619bb2b7fc47765f21a4dfaa5de86a5152",
+    "bytes": 32477,
+    "repository_path": "archive/articles/references/1976-health-packs-locations.md"
+  },
+  {
+    "id": 8507,
+    "title": "Hero color reference table",
+    "slug": "hero-color-reference-table",
+    "category": "References",
+    "tags": [
+      "Color",
+      "Hero Color"
+    ],
+    "url": "https://workshop.codes/wiki/articles/8507",
+    "updated_at": "2026-03-17T19:20:21.209Z",
+    "path": "articles/references/8507-hero-color-reference-table.md",
+    "content_sha256": "426a8fc6dba7ae4627b6063207e845cb50c2701f880d7b964c4679a54dd38598",
+    "bytes": 6095,
+    "repository_path": "archive/articles/references/8507-hero-color-reference-table.md"
+  },
+  {
+    "id": 6460,
+    "title": "Icon Reference Sheet",
+    "slug": "icon-reference-sheet",
+    "category": "References",
+    "tags": [
+      "icons",
+      "ability icon"
+    ],
+    "url": "https://workshop.codes/wiki/articles/6460",
+    "updated_at": "2025-07-13T20:02:59.140Z",
+    "path": "articles/references/6460-icon-reference-sheet.md",
+    "content_sha256": "b260a735d7bc05d2a44f0ca7d24cbe6cf0b2e40ac3966dcc7706eb692d0d0386",
+    "bytes": 17571,
+    "repository_path": "archive/articles/references/6460-icon-reference-sheet.md"
+  },
+  {
+    "id": 9463,
+    "title": "OW2 Workshop Changes/Bugs",
+    "slug": "ow2-workshop-changesbugs",
+    "category": "References",
+    "tags": [
+      "Overwatch 2",
+      "Bugs"
+    ],
+    "url": "https://workshop.codes/wiki/articles/9463",
+    "updated_at": "2026-08-13T15:45:04.746Z",
+    "path": "articles/references/9463-ow2-workshop-changesbugs.md",
+    "content_sha256": "77c246a0364eb6720273f2d0f9bb0cc1d95b53f944df52c05ceb9d8a76d96983",
+    "bytes": 15007,
+    "repository_path": "archive/articles/references/9463-ow2-workshop-changesbugs.md"
+  },
+  {
+    "id": 2041,
+    "title": "Projectile Data Table",
+    "slug": "projectile-data-table",
+    "category": "References",
+    "tags": [
+      "arc",
+      "gravity"
+    ],
+    "url": "https://workshop.codes/wiki/articles/2041",
+    "updated_at": "2023-12-28T09:47:58.400Z",
+    "path": "articles/references/2041-projectile-data-table.md",
+    "content_sha256": "d823159c815210ed17a89877bc85b3fdc1b22f6ac1309b3abd034a1cdd06e8ce",
+    "bytes": 7025,
+    "repository_path": "archive/articles/references/2041-projectile-data-table.md"
+  },
+  {
+    "id": 9562,
+    "title": "TX Reference Sheet",
+    "slug": "tx-reference-sheet",
+    "category": "References",
+    "tags": [
+      "TX",
+      "TX Bypass",
+      "Textures"
+    ],
+    "url": "https://workshop.codes/wiki/articles/9562",
+    "updated_at": "2026-08-27T22:50:24.978Z",
+    "path": "articles/references/9562-tx-reference-sheet.md",
+    "content_sha256": "f52f8af0531d262c966cfe421ebc2e3f84891d075ed0e4ccde8828287ed78c52",
+    "bytes": 32553,
+    "repository_path": "archive/articles/references/9562-tx-reference-sheet.md"
+  },
+  {
+    "id": 9331,
+    "title": "Weapon position data for creating effects in 1st person",
+    "slug": "weapon-position-data-for-creating-effects-in-1st-person",
+    "category": "References",
+    "tags": [
+      "gun",
+      "local vector"
+    ],
+    "url": "https://workshop.codes/wiki/articles/9331",
+    "updated_at": "2026-07-18T12:32:32.140Z",
+    "path": "articles/references/9331-weapon-position-data-for-creating-effects-in-1st-person.md",
+    "content_sha256": "4b795b83558161c3825fcf551c48716dd8a5c6c8da27d15f916dcfa76fd22800",
+    "bytes": 10037,
+    "repository_path": "archive/articles/references/9331-weapon-position-data-for-creating-effects-in-1st-person.md"
+  },
+  {
+    "id": 4864,
+    "title": "Workshop Extensions - Debuff Status Effects Reference Sheet",
+    "slug": "workshop-extensions-debuff-status-effects-reference-sheet",
+    "category": "References",
+    "tags": [],
+    "url": "https://workshop.codes/wiki/articles/4864",
+    "updated_at": "2024-11-26T13:52:04.708Z",
+    "path": "articles/references/4864-workshop-extensions-debuff-status-effects-reference-sheet.md",
+    "content_sha256": "c27fa58729ec5d201441f57a951ffbb0b3ce198b69cba55792cab2d567603805",
+    "bytes": 3183,
+    "repository_path": "archive/articles/references/4864-workshop-extensions-debuff-status-effects-reference-sheet.md"
+  },
+  {
+    "id": 1730,
+    "title": "Workshop Extensions - Kinetic Explosion Effects Reference Sheet",
+    "slug": "workshop-extensions-kinetic-explosion-effects-reference-sheet",
+    "category": "References",
+    "tags": [],
+    "url": "https://workshop.codes/wiki/articles/1730",
+    "updated_at": "2022-12-21T04:29:47.768Z",
+    "path": "articles/references/1730-workshop-extensions-kinetic-explosion-effects-reference-sheet.md",
+    "content_sha256": "a346d8dac33ab379e24aaf331eba112428a40e8e3654cf360d0cc6ba4742e344",
+    "bytes": 4303,
+    "repository_path": "archive/articles/references/1730-workshop-extensions-kinetic-explosion-effects-reference-sheet.md"
+  },
+  {
+    "id": 1903,
+    "title": "A Workshopper's Guide to the Vector",
+    "slug": "a-workshoppers-guide-to-the-vector",
+    "category": "Tutorials",
+    "tags": [],
+    "url": "https://workshop.codes/wiki/articles/1903",
+    "updated_at": "2023-06-11T09:48:39.553Z",
+    "path": "articles/tutorials/1903-a-workshoppers-guide-to-the-vector.md",
+    "content_sha256": "9abfe83bd434dbbdb1f94129d5275b3b0731086301387a7361704af294a4a8c3",
+    "bytes": 9562,
+    "repository_path": "archive/articles/tutorials/1903-a-workshoppers-guide-to-the-vector.md"
+  },
+  {
+    "id": 2103,
+    "title": "Camera Controls",
+    "slug": "camera-controls",
+    "category": "Tutorials",
+    "tags": [
+      "Camera",
+      "Controls",
+      "Flying",
+      "Mimic"
+    ],
+    "url": "https://workshop.codes/wiki/articles/2103",
+    "updated_at": "2024-02-19T19:20:50.365Z",
+    "path": "articles/tutorials/2103-camera-controls.md",
+    "content_sha256": "a98e8f509dc9863248d8bb65f78489d5f60111debe44674dbd9e7d58ccd607d8",
+    "bytes": 2834,
+    "repository_path": "archive/articles/tutorials/2103-camera-controls.md"
+  },
+  {
+    "id": 1882,
+    "title": "Detect AI Bots",
+    "slug": "detect-ai-bots",
+    "category": "Tutorials",
+    "tags": [
+      "ai",
+      "dummy",
+      "bot",
+      "detect"
+    ],
+    "url": "https://workshop.codes/wiki/articles/1882",
+    "updated_at": "2023-04-18T23:03:52.769Z",
+    "path": "articles/tutorials/1882-detect-ai-bots.md",
+    "content_sha256": "28ffac14a493500ef4d0f82e96bc8b9d0066567f97ccf7417b155a8b7f7b2a59",
+    "bytes": 1572,
+    "repository_path": "archive/articles/tutorials/1882-detect-ai-bots.md"
+  },
+  {
+    "id": 7418,
+    "title": "Forcing Perks in Non-Supported Modes",
+    "slug": "forcing-perks-in-nonsupported-modes",
+    "category": "Tutorials",
+    "tags": [
+      "Perks"
+    ],
+    "url": "https://workshop.codes/wiki/articles/7418",
+    "updated_at": "2025-10-14T20:07:04.106Z",
+    "path": "articles/tutorials/7418-forcing-perks-in-nonsupported-modes.md",
+    "content_sha256": "24621d4a904823c223eae3b55cb01108141baf8e7ddc1f6248243a95a670e1d6",
+    "bytes": 2358,
+    "repository_path": "archive/articles/tutorials/7418-forcing-perks-in-nonsupported-modes.md"
+  },
+  {
+    "id": 6790,
+    "title": "Health Pool Bug: An Alternative to Set Max Health (PATCHED)",
+    "slug": "health-pool-bug-an-alternative-to-set-max-health-patched",
+    "category": "Tutorials",
+    "tags": [
+      "Custom Health",
+      "HP Bug"
+    ],
+    "url": "https://workshop.codes/wiki/articles/6790",
+    "updated_at": "2025-08-25T19:27:13.704Z",
+    "path": "articles/tutorials/6790-health-pool-bug-an-alternative-to-set-max-health-patched.md",
+    "content_sha256": "c39b9b6407804da53a6ef5ca554d7d2e2b30114800f020e5d0d637ad7349fb36",
+    "bytes": 5367,
+    "repository_path": "archive/articles/tutorials/6790-health-pool-bug-an-alternative-to-set-max-health-patched.md"
+  },
+  {
+    "id": 6064,
+    "title": "Help, my server is crashing! A guide on how to improve server stability for your codes",
+    "slug": "help-my-server-is-crashing-a-guide-on-how-to-improve-server-stability-for-your-codes",
+    "category": "Tutorials",
+    "tags": [
+      "Server crash",
+      "stability",
+      "server load"
+    ],
+    "url": "https://workshop.codes/wiki/articles/6064",
+    "updated_at": "2025-05-25T18:36:36.181Z",
+    "path": "articles/tutorials/6064-help-my-server-is-crashing-a-guide-on-how-to-improve-server-stability-for-your-codes.md",
+    "content_sha256": "4d79b6c21ee141e75035ba0a3cdce1f481261c5bc2efa85ae0e1fd783da05171",
+    "bytes": 21330,
+    "repository_path": "archive/articles/tutorials/6064-help-my-server-is-crashing-a-guide-on-how-to-improve-server-stability-for-your-codes.md"
+  },
+  {
+    "id": 4855,
+    "title": "How to calculate values that change the speed of a projectile without affecting its arc",
+    "slug": "how-to-calculate-values-that-change-the-speed-of-a-projectile-without-affecting-its-arc",
+    "category": "Tutorials",
+    "tags": [
+      "gravity"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4855",
+    "updated_at": "2024-11-26T13:52:04.287Z",
+    "path": "articles/tutorials/4855-how-to-calculate-values-that-change-the-speed-of-a-projectile-without-affecting-its-arc.md",
+    "content_sha256": "4e1219d3e25a0fe98680531819ff22dcc6b854612bc577ef7d39e4297a46bd01",
+    "bytes": 1956,
+    "repository_path": "archive/articles/tutorials/4855-how-to-calculate-values-that-change-the-speed-of-a-projectile-without-affecting-its-arc.md"
+  },
+  {
+    "id": 4823,
+    "title": "Random chance to trigger an action",
+    "slug": "random-chance-to-trigger-an-action",
+    "category": "Tutorials",
+    "tags": [],
+    "url": "https://workshop.codes/wiki/articles/4823",
+    "updated_at": "2024-11-26T13:52:02.932Z",
+    "path": "articles/tutorials/4823-random-chance-to-trigger-an-action.md",
+    "content_sha256": "e128a41c838139b4eb606b5ee4a3ddc2410b0399180f609805371d87f6cc537f",
+    "bytes": 1388,
+    "repository_path": "archive/articles/tutorials/4823-random-chance-to-trigger-an-action.md"
+  },
+  {
+    "id": 9496,
+    "title": "Rendering an In-World Text at a specific onscreen position",
+    "slug": "rendering-an-inworld-text-at-a-specific-onscreen-position",
+    "category": "Tutorials",
+    "tags": [
+      "Text",
+      "HUD",
+      "UI",
+      "In-World",
+      "World",
+      "Onscreen",
+      "In-World text",
+      "Rendering",
+      "Render",
+      "iwt"
+    ],
+    "url": "https://workshop.codes/wiki/articles/9496",
+    "updated_at": "2026-08-20T21:48:33.728Z",
+    "path": "articles/tutorials/9496-rendering-an-inworld-text-at-a-specific-onscreen-position.md",
+    "content_sha256": "ce8e4f39747d0e1f9fd1352d4210cec22c912e879a585ec01eae4a9d1e594043",
+    "bytes": 13001,
+    "repository_path": "archive/articles/tutorials/9496-rendering-an-inworld-text-at-a-specific-onscreen-position.md"
+  },
+  {
+    "id": 4826,
+    "title": "Reverse an array",
+    "slug": "reverse-an-array",
+    "category": "Tutorials",
+    "tags": [
+      "array",
+      "beginner",
+      "list"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4826",
+    "updated_at": "2024-11-26T13:52:03.006Z",
+    "path": "articles/tutorials/4826-reverse-an-array.md",
+    "content_sha256": "092a4c20597bae9d1a675b9181f4a86e4017873a5e0e91b124eb95763b4ada71",
+    "bytes": 2146,
+    "repository_path": "archive/articles/tutorials/4826-reverse-an-array.md"
+  },
+  {
+    "id": 5734,
+    "title": "Strings, IWTs, and HUDs Pro Tips",
+    "slug": "strings-iwts-and-huds-pro-tips",
+    "category": "Tutorials",
+    "tags": [
+      "string",
+      "strings",
+      "hud",
+      "huds",
+      "interface",
+      "gui"
+    ],
+    "url": "https://workshop.codes/wiki/articles/5734",
+    "updated_at": "2025-04-15T14:22:52.138Z",
+    "path": "articles/tutorials/5734-strings-iwts-and-huds-pro-tips.md",
+    "content_sha256": "7b70240e785527f23531bb6d0883e8265901f0d1a66e4829148d43eac5ab20ba",
+    "bytes": 12098,
+    "repository_path": "archive/articles/tutorials/5734-strings-iwts-and-huds-pro-tips.md"
+  },
+  {
+    "id": 2004,
+    "title": "Uploading new content to existing import code",
+    "slug": "uploading-new-content-to-existing-import-code",
+    "category": "Tutorials",
+    "tags": [
+      "import codes",
+      "renew",
+      "update",
+      "export code"
+    ],
+    "url": "https://workshop.codes/wiki/articles/2004",
+    "updated_at": "2023-10-19T07:55:17.690Z",
+    "path": "articles/tutorials/2004-uploading-new-content-to-existing-import-code.md",
+    "content_sha256": "8b653125bb38fb4abdd76d7d79e9ba08f0386006c925dff84ce80ed6189b3a2e",
+    "bytes": 973,
+    "repository_path": "archive/articles/tutorials/2004-uploading-new-content-to-existing-import-code.md"
+  },
+  {
+    "id": 2080,
+    "title": "Variables and how to use them",
+    "slug": "variables-and-how-to-use-them",
+    "category": "Tutorials",
+    "tags": [
+      "Variables"
+    ],
+    "url": "https://workshop.codes/wiki/articles/2080",
+    "updated_at": "2024-01-28T00:17:10.870Z",
+    "path": "articles/tutorials/2080-variables-and-how-to-use-them.md",
+    "content_sha256": "e3ff880487941e13de42f1bc75bd29eca753973b9579c834771a0a3f0c2f6f81",
+    "bytes": 4476,
+    "repository_path": "archive/articles/tutorials/2080-variables-and-how-to-use-them.md"
+  },
+  {
+    "id": 1840,
+    "title": "Workshop Basics",
+    "slug": "workshop-basics",
+    "category": "Tutorials",
+    "tags": [
+      "basic",
+      "guide",
+      "overview"
+    ],
+    "url": "https://workshop.codes/wiki/articles/1840",
+    "updated_at": "2023-04-11T17:59:38.668Z",
+    "path": "articles/tutorials/1840-workshop-basics.md",
+    "content_sha256": "e1974fbf5eaea102d542ca93389f42cd01785ecbfe5ecaf591a1a38fa2f724bb",
+    "bytes": 13539,
+    "repository_path": "archive/articles/tutorials/1840-workshop-basics.md"
+  },
+  {
+    "id": 7385,
+    "title": "Workshopping in Stadium (BROKEN)",
+    "slug": "workshopping-in-stadium-broken",
+    "category": "Tutorials",
+    "tags": [
+      "stadium",
+      "workshop"
+    ],
+    "url": "https://workshop.codes/wiki/articles/7385",
+    "updated_at": "2025-10-08T15:08:34.584Z",
+    "path": "articles/tutorials/7385-workshopping-in-stadium-broken.md",
+    "content_sha256": "dd7a6bb2b4bca2314229935a3c6feffcea376d404ddc985e8b038f9516043007",
+    "bytes": 2676,
+    "repository_path": "archive/articles/tutorials/7385-workshopping-in-stadium-broken.md"
+  },
+  {
+    "id": 4833,
+    "title": "XOR and XNOR",
+    "slug": "xor-and-xnor",
+    "category": "Tutorials",
+    "tags": [],
+    "url": "https://workshop.codes/wiki/articles/4833",
+    "updated_at": "2024-11-26T13:52:03.193Z",
+    "path": "articles/tutorials/4833-xor-and-xnor.md",
+    "content_sha256": "8f3e7fd56bb1a4a58bc0a8d694d1a9e850ab31b6e66fae5ea588e12eeedc0839",
+    "bytes": 354,
+    "repository_path": "archive/articles/tutorials/4833-xor-and-xnor.md"
+  },
+  {
+    "id": 5372,
+    "title": "Markdown on Workshop.codes",
+    "slug": "markdown-on-workshopcodes",
+    "category": "Workshop.codes",
+    "tags": [],
+    "url": "https://workshop.codes/wiki/articles/5372",
+    "updated_at": "2025-03-22T21:28:37.621Z",
+    "path": "articles/workshop-codes/5372-markdown-on-workshopcodes.md",
+    "content_sha256": "6854305d458ef4016706d4a9c1ada68f42ff05e18cdb1eb3c504127d31a04de4",
+    "bytes": 9069,
+    "repository_path": "archive/articles/workshop-codes/5372-markdown-on-workshopcodes.md"
+  }
+]

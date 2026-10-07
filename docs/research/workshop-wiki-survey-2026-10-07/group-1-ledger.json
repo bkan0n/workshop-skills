@@ -1,0 +1,5175 @@
+[
+  {
+    "id": 6068,
+    "title": "Abort",
+    "path": "articles/actions/6068-abort.md",
+    "source_url": "https://workshop.codes/wiki/articles/6068",
+    "review_status": "read",
+    "topics": [
+      "control-flow"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description: Stops execution of the action list."
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 6069,
+    "title": "Abort If",
+    "path": "articles/actions/6069-abort-if.md",
+    "source_url": "https://workshop.codes/wiki/articles/6069",
+    "review_status": "read",
+    "topics": [
+      "control-flow"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Basic explanation"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4324,
+    "title": "Abort If Condition Is False",
+    "path": "articles/actions/4324-abort-if-condition-is-false.md",
+    "source_url": "https://workshop.codes/wiki/articles/4324",
+    "review_status": "read",
+    "topics": [
+      "control-flow",
+      "rule-conditions"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Tests the rule condition list: aborts if at least one condition is false, rather than accepting a separate action-local predicate."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description: at least one condition in the condition list"
+    ]
+  },
+  {
+    "id": 4325,
+    "title": "Abort If Condition Is True",
+    "path": "articles/actions/4325-abort-if-condition-is-true.md",
+    "source_url": "https://workshop.codes/wiki/articles/4325",
+    "review_status": "read",
+    "topics": [
+      "control-flow",
+      "rule-conditions"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Tests the entire rule condition list: aborts only when all conditions are true."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description: all conditions in the condition list"
+    ]
+  },
+  {
+    "id": 6164,
+    "title": "Add Health Pool To Player",
+    "path": "articles/actions/6164-add-health-pool-to-player.md",
+    "source_url": "https://workshop.codes/wiki/articles/6164",
+    "review_status": "read",
+    "topics": [
+      "health-pools",
+      "reevaluation",
+      "limits"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "A player may have at most 16 pools of each health type, counting base and ability-granted pools.",
+      "Save Last Created Health Pool for later reference.",
+      "Nonrecoverable pools shrink and disappear as damaged; Max Health reevaluates every frame only when both Recoverable and Reevaluation are true."
+    ],
+    "uncertainties": [
+      "Player property incorrectly describes movement collision; Health Type prose mentions only armor/shields while description includes Health."
+    ],
+    "evidence": [
+      "Description: Up to 16 health pools",
+      "Recoverable",
+      "Reevaluation"
+    ]
+  },
+  {
+    "id": 4326,
+    "title": "Allow Button",
+    "path": "articles/actions/4326-allow-button.md",
+    "source_url": "https://workshop.codes/wiki/articles/4326",
+    "review_status": "read",
+    "topics": [
+      "input"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description: Undoes the effect of Disallow Button"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4327,
+    "title": "Apply Impulse",
+    "path": "articles/actions/4327-apply-impulse.md",
+    "source_url": "https://workshop.codes/wiki/articles/4327",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "vectors"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Impulse direction is normalized internally; speed is the magnitude of velocity change.",
+      "The default Cancel Contrary Motion first cancels velocity opposite the impulse; world/local coordinates are selected separately."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Direction: normalized internally",
+      "Motion: counter to direction"
+    ]
+  },
+  {
+    "id": 6165,
+    "title": "Attach Players",
+    "path": "articles/actions/6165-attach-players.md",
+    "source_url": "https://workshop.codes/wiki/articles/6165",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "attachment"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "An attached child cannot move freely until detached or teleported away; multiple children can share one parent, not vice versa.",
+      "Offset is relative to parent; example (1,2,0) lies above and left of the parent's head."
+    ],
+    "uncertainties": [
+      "Snippet/default contains duplicated 'Last Created Entity Entity'; avoid copying verbatim."
+    ],
+    "evidence": [
+      "Description",
+      "Offset"
+    ]
+  },
+  {
+    "id": 6037,
+    "title": "Big Message",
+    "path": "articles/actions/6037-big-message.md",
+    "source_url": "https://workshop.codes/wiki/articles/6037",
+    "review_status": "read",
+    "topics": [
+      "messages",
+      "debugging"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Big Message has a fixed, unmodifiable four-second display duration.",
+      "Custom String placeholders can insert variables, icons, and strings; examples use messages for debugging."
+    ],
+    "uncertainties": [
+      "One example omits End for an If; examples should be repaired/validated before reuse."
+    ],
+    "evidence": [
+      "Trivia: Only displayable for 4 seconds",
+      "Examples"
+    ]
+  },
+  {
+    "id": 6001,
+    "title": "Break",
+    "path": "articles/actions/6001-break.md",
+    "source_url": "https://workshop.codes/wiki/articles/6001",
+    "review_status": "read",
+    "topics": [
+      "control-flow"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Break exits the current While or For loop to the first action after its End; it does not abort the whole rule."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 6041,
+    "title": "Call Subroutine",
+    "path": "articles/actions/6041-call-subroutine.md",
+    "source_url": "https://workshop.codes/wiki/articles/6041",
+    "review_status": "read",
+    "topics": [
+      "subroutines",
+      "event-context",
+      "control-flow"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Call Subroutine pauses the caller, resumes it after the subroutine finishes, and gives the callee the caller's event context such as Event Player.",
+      "If no rule declares the requested subroutine, the action is ignored.",
+      "Reusing a subroutine can reduce Workshop element count; nested calls are illustrated."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description",
+      "Subroutine: Otherwise, this action is ignored",
+      "Examples"
+    ]
+  },
+  {
+    "id": 4332,
+    "title": "Cancel Primary Action",
+    "path": "articles/actions/4332-cancel-primary-action.md",
+    "source_url": "https://workshop.codes/wiki/articles/4332",
+    "review_status": "read",
+    "topics": [
+      "abilities",
+      "status"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Cancel Primary Action cancels active abilities and is described as equivalent to a short stun."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 6027,
+    "title": "Chase Global Variable At Rate",
+    "path": "articles/actions/6027-chase-global-variable-at-rate.md",
+    "source_url": "https://workshop.codes/wiki/articles/6027",
+    "review_status": "read",
+    "topics": [
+      "variables",
+      "chasing",
+      "reevaluation"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Chase supports numbers or vectors, but the variable's existing type must match the destination before the chase begins.",
+      "Rate is change per second; selected inputs can be continuously reevaluated. Examples suggest smooth UI counters and animated effect positions."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Destination",
+      "Rate",
+      "Reevaluation",
+      "Example usages"
+    ]
+  },
+  {
+    "id": 4334,
+    "title": "Chase Global Variable Over Time",
+    "path": "articles/actions/4334-chase-global-variable-over-time.md",
+    "source_url": "https://workshop.codes/wiki/articles/4334",
+    "review_status": "read",
+    "topics": [
+      "variables",
+      "chasing",
+      "reevaluation"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Before chasing, initialize the variable to the same number/vector type as its destination; Duration is seconds, and selected inputs may reevaluate continuously."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Destination",
+      "Duration",
+      "Reevaluation"
+    ]
+  },
+  {
+    "id": 4335,
+    "title": "Chase Player Variable At Rate",
+    "path": "articles/actions/4335-chase-player-variable-at-rate.md",
+    "source_url": "https://workshop.codes/wiki/articles/4335",
+    "review_status": "read",
+    "topics": [
+      "variables",
+      "chasing",
+      "reevaluation"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "A player array causes each player's variable to chase independently; each existing variable must match the destination's number/vector type."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Player: change independently",
+      "Destination"
+    ]
+  },
+  {
+    "id": 4336,
+    "title": "Chase Player Variable Over Time",
+    "path": "articles/actions/4336-chase-player-variable-over-time.md",
+    "source_url": "https://workshop.codes/wiki/articles/4336",
+    "review_status": "read",
+    "topics": [
+      "variables",
+      "chasing",
+      "reevaluation"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "A player array causes each player's variable to chase independently; each existing variable must match the destination's number/vector type."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Player: change independently",
+      "Destination"
+    ]
+  },
+  {
+    "id": 4337,
+    "title": "Clear Status",
+    "path": "articles/actions/4337-clear-status.md",
+    "source_url": "https://workshop.codes/wiki/articles/4337",
+    "review_status": "read",
+    "topics": [
+      "status"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Clear Status removes a status applied by Workshop Set Status; the page does not claim to clear natural ability statuses."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description: applied from a Set Status action"
+    ]
+  },
+  {
+    "id": 6032,
+    "title": "Communicate",
+    "path": "articles/actions/6032-communicate.md",
+    "source_url": "https://workshop.codes/wiki/articles/6032",
+    "review_status": "read",
+    "topics": [
+      "communication",
+      "bots"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "The archive says Communicate no longer works on bots."
+    ],
+    "uncertainties": [
+      "Date-sensitive regression claim ('anymore'), updated 2025-05-24; no affected bot subtype, patch or workaround specified."
+    ],
+    "evidence": [
+      "Trivia"
+    ]
+  },
+  {
+    "id": 6002,
+    "title": "Continue",
+    "path": "articles/actions/6002-continue.md",
+    "source_url": "https://workshop.codes/wiki/articles/6002",
+    "review_status": "read",
+    "topics": [
+      "control-flow"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Continue returns to the start of the innermost loop."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4340,
+    "title": "Create Beam Effect",
+    "path": "articles/actions/4340-create-beam-effect.md",
+    "source_url": "https://workshop.codes/wiki/articles/4340",
+    "review_status": "read",
+    "topics": [
+      "entities",
+      "effects",
+      "reevaluation"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Beam effects persist until destroyed, use Last Created Entity handles, and fail when entity capacity is exhausted.",
+      "A player supplied as endpoint follows the player; otherwise the endpoint is a world position.",
+      "Only good/bad beam types accept color; team colors depend on hostility to the viewer and do not apply to sounds."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description",
+      "Start Position; End Position",
+      "Color"
+    ]
+  },
+  {
+    "id": 4341,
+    "title": "Create Dummy Bot",
+    "path": "articles/actions/4341-create-dummy-bot.md",
+    "source_url": "https://workshop.codes/wiki/articles/4341",
+    "review_status": "read",
+    "topics": [
+      "bots",
+      "limits",
+      "teams"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Dummy bots act only through Workshop actions; creation needs an available slot and -1 chooses first available.",
+      "All team works only in free-for-all, explicit team values only in team modes.",
+      "Archive states baseline limits of 6 per team or 12 FFA regardless of lobby settings, with extra-bot extensions available.",
+      "Passing multiple heroes selects one randomly."
+    ],
+    "uncertainties": [
+      "Baseline player/bot slot limits are date-sensitive; page updated 2024-11-26."
+    ],
+    "evidence": [
+      "Description",
+      "Hero",
+      "Team",
+      "Slot"
+    ]
+  },
+  {
+    "id": 4342,
+    "title": "Create Effect",
+    "path": "articles/actions/4342-create-effect.md",
+    "source_url": "https://workshop.codes/wiki/articles/4342",
+    "review_status": "read",
+    "topics": [
+      "entities",
+      "effects",
+      "limits",
+      "reevaluation"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Effects persist until destroyed and expose Last Created Entity; new effects stop appearing at capacity.",
+      "Archive gives 128 active Create Effect effects or 256 with extension.",
+      "Player-valued positions follow players; team colors depend on viewer hostility and do not affect sounds; selected inputs reevaluate."
+    ],
+    "uncertainties": [
+      "Numeric resource limits are archived, not live verified."
+    ],
+    "evidence": [
+      "Description: maximum of 128",
+      "Position",
+      "Color",
+      "Reevaluation"
+    ]
+  },
+  {
+    "id": 4343,
+    "title": "Create HUD Text",
+    "path": "articles/actions/4343-create-hud-text.md",
+    "source_url": "https://workshop.codes/wiki/articles/4343",
+    "review_status": "read",
+    "topics": [
+      "text",
+      "entities",
+      "reevaluation"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "HUD text persists until destroyed, exposes Last Text ID, and creation fails at text capacity.",
+      "Higher sort order appears after lower sort order in the same screen location; reevaluation and spectator visibility are explicit settings."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description",
+      "SORT ORDER",
+      "Reevaluation; Spectators"
+    ]
+  },
+  {
+    "id": 4545,
+    "title": "Create Homing Projectile",
+    "path": "articles/actions/4545-create-homing-projectile.md",
+    "source_url": "https://workshop.codes/wiki/articles/4545",
+    "review_status": "read",
+    "topics": [
+      "projectiles",
+      "damage",
+      "healing",
+      "limits"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Homing projectiles heal/damage players or owned entities, fail at entity capacity, and never affect their owner regardless of selected team.",
+      "Null owner gives nobody credit; null start/direction use owner eye position/facing; relativity affects both position and direction.",
+      "Amount Scalar means critical-hit multiplier when explosion radius is zero, but damage at the explosion edge when radius is positive; explosion visuals/sounds are omitted at radius zero.",
+      "Oversize spans 0–1 with a projectile-specific maximum; speed is meters/second, lifetime seconds, and explosion impulse affects all affected targets.",
+      "Null homing target means straight flight; strength 0 gives no following and 1 follows aggressively without losing target.",
+      "Projectiles extension unlocks more types."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Player; Start Position; Direction; Relative",
+      "Amount Scalar; Explosion Effect; Explosion Sound Effect",
+      "Oversize; Speed; Lifetime; Impulse",
+      "Homing Target; Homing Strength"
+    ]
+  },
+  {
+    "id": 6071,
+    "title": "Create Icon",
+    "path": "articles/actions/6071-create-icon.md",
+    "source_url": "https://workshop.codes/wiki/articles/6071",
+    "review_status": "read",
+    "topics": [
+      "entities",
+      "icons",
+      "reevaluation"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Icons persist until destroyed, use Last Created Entity, and can fail at entity capacity.",
+      "Player-valued positions put icons above the player's head; Show When Offscreen controls visibility even behind the viewer.",
+      "Team icon colors are red/blue according to viewer hostility."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description",
+      "Position",
+      "Icon Color; Show When Offscreen"
+    ]
+  },
+  {
+    "id": 4345,
+    "title": "Create In-World Text",
+    "path": "articles/actions/4345-create-inworld-text.md",
+    "source_url": "https://workshop.codes/wiki/articles/4345",
+    "review_status": "read",
+    "topics": [
+      "text",
+      "entities",
+      "reevaluation"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "In-world text persists until destroyed, exposes Last Text ID, and fails at text capacity.",
+      "Player positions place text above their head; clipping controls visibility through walls, with reevaluation and spectator visibility configured separately."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description",
+      "Position; Clipping; Reevaluation; Spectators"
+    ]
+  },
+  {
+    "id": 4527,
+    "title": "Create Progress Bar HUD Text",
+    "path": "articles/actions/4527-create-progress-bar-hud-text.md",
+    "source_url": "https://workshop.codes/wiki/articles/4527",
+    "review_status": "read",
+    "topics": [
+      "text",
+      "entities",
+      "reevaluation"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Progress HUD text persists until destroyed, uses Last Text ID, and shares text-capacity failure behavior.",
+      "Value is 0–100 percent; higher sort order follows lower; team colors are viewer-relative; non-team spectator visibility is explicit."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description",
+      "Value; Sort Order; Progress Bar Color; Non-Team Spectators"
+    ]
+  },
+  {
+    "id": 4530,
+    "title": "Create Progress Bar In-World Text",
+    "path": "articles/actions/4530-create-progress-bar-inworld-text.md",
+    "source_url": "https://workshop.codes/wiki/articles/4530",
+    "review_status": "read",
+    "topics": [
+      "text",
+      "entities",
+      "reevaluation"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Progress in-world text persists until destroyed, uses Last Text ID, and fails at text capacity.",
+      "Value is 0–100 percent; player positions place it above their head; clipping, reevaluation and non-team spectator visibility are separate choices."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description",
+      "Value; Position; Clipping; Non-Team Spectators"
+    ]
+  },
+  {
+    "id": 5175,
+    "title": "Create Projectile",
+    "path": "articles/actions/5175-create-projectile.md",
+    "source_url": "https://workshop.codes/wiki/articles/5175",
+    "review_status": "read",
+    "topics": [
+      "projectiles",
+      "damage",
+      "healing",
+      "limits"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Projectile entities heal/damage players and owned entities, fail at entity capacity, and never affect the owner regardless of affected team.",
+      "Null owner means no kill credit; null start/direction use the player's eye position/facing. Relativity affects both position and direction.",
+      "Amount Scalar is a critical-hit multiplier at zero explosion radius, but edge-of-explosion damage at positive radius; explosion visual/sound are absent with zero radius.",
+      "Oversize spans 0–1 with type-specific maximum; speed is meters/second, lifetime seconds; explosion impulse affects all explosion targets.",
+      "Ricochet Count counts environment bounces before expiry; negative gravity makes projectiles arc upwards; extension unlocks more projectile types."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Player; Start Position; Direction; Relative",
+      "Amount Scalar; Explosion Radius",
+      "Oversize; Speed; Lifetime; Impulse",
+      "Ricochet Count; Gravity"
+    ]
+  },
+  {
+    "id": 4546,
+    "title": "Create Projectile Effect",
+    "path": "articles/actions/4546-create-projectile-effect.md",
+    "source_url": "https://workshop.codes/wiki/articles/4546",
+    "review_status": "read",
+    "topics": [
+      "projectiles",
+      "effects",
+      "entities",
+      "reevaluation"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Projectile effects are persistent visual entities using Last Created Entity, with entity-capacity failure; the page describes no damage/healing behavior.",
+      "Friendly To selects whose perspective sees friendliness; oversize spans 0–1 with type-specific maximum and selected visual inputs reevaluate."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description",
+      "Friendly To; Oversize; Reevaluation"
+    ]
+  },
+  {
+    "id": 7025,
+    "title": "Damage",
+    "path": "articles/actions/7025-damage.md",
+    "source_url": "https://workshop.codes/wiki/articles/7025",
+    "review_status": "read",
+    "topics": [
+      "damage",
+      "attribution",
+      "examples"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Damage amount is subject to buffs, debuffs, and armor; Null damager means nobody receives credit.",
+      "Checking Is Using Ultimate during a damage event does not identify that damage as ultimate damage; the article explicitly notes this limitation."
+    ],
+    "uncertainties": [
+      "First example supplies a player array where Damager is documented as a single player and claims credit goes to all; not established.",
+      "Mercy example claims its loop stops when healing ends but includes no conditions, so the claimed termination is unsupported by the shown code."
+    ],
+    "evidence": [
+      "Amount; Damager",
+      "Example 1: any damage event during the ultimate",
+      "Examples 2–3"
+    ]
+  },
+  {
+    "id": 4347,
+    "title": "Declare Match Draw",
+    "path": "articles/actions/4347-declare-match-draw.md",
+    "source_url": "https://workshop.codes/wiki/articles/4347",
+    "review_status": "read",
+    "topics": [
+      "match-flow",
+      "game-mode"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Declare Match Draw has no effect in free-for-all modes."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4348,
+    "title": "Declare Player Victory",
+    "path": "articles/actions/4348-declare-player-victory.md",
+    "source_url": "https://workshop.codes/wiki/articles/4348",
+    "review_status": "read",
+    "topics": [
+      "match-flow",
+      "game-mode"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Declare Player Victory works only in free-for-all; omitting the player ends with the text WINS!."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4349,
+    "title": "Declare Round Draw",
+    "path": "articles/actions/4349-declare-round-draw.md",
+    "source_url": "https://workshop.codes/wiki/articles/4349",
+    "review_status": "read",
+    "topics": [
+      "match-flow",
+      "game-mode"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Declare Round Draw works only in elimination."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4350,
+    "title": "Declare Round Victory",
+    "path": "articles/actions/4350-declare-round-victory.md",
+    "source_url": "https://workshop.codes/wiki/articles/4350",
+    "review_status": "read",
+    "topics": [
+      "match-flow",
+      "game-mode"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Declare Round Victory works only in control and elimination."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4351,
+    "title": "Declare Team Victory",
+    "path": "articles/actions/4351-declare-team-victory.md",
+    "source_url": "https://workshop.codes/wiki/articles/4351",
+    "review_status": "read",
+    "topics": [
+      "match-flow",
+      "game-mode"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Declare Team Victory has no effect in free-for-all; unspecified team shows DRAW while playing the victory sound."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4352,
+    "title": "Destroy All Dummy Bots",
+    "path": "articles/actions/4352-destroy-all-dummy-bots.md",
+    "source_url": "https://workshop.codes/wiki/articles/4352",
+    "review_status": "read",
+    "topics": [
+      "bots",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4353,
+    "title": "Destroy All Effects",
+    "path": "articles/actions/4353-destroy-all-effects.md",
+    "source_url": "https://workshop.codes/wiki/articles/4353",
+    "review_status": "read",
+    "topics": [
+      "entities",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4354,
+    "title": "Destroy All HUD Text",
+    "path": "articles/actions/4354-destroy-all-hud-text.md",
+    "source_url": "https://workshop.codes/wiki/articles/4354",
+    "review_status": "read",
+    "topics": [
+      "text",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4355,
+    "title": "Destroy All Icons",
+    "path": "articles/actions/4355-destroy-all-icons.md",
+    "source_url": "https://workshop.codes/wiki/articles/4355",
+    "review_status": "read",
+    "topics": [
+      "entities",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4356,
+    "title": "Destroy All In-World Text",
+    "path": "articles/actions/4356-destroy-all-inworld-text.md",
+    "source_url": "https://workshop.codes/wiki/articles/4356",
+    "review_status": "read",
+    "topics": [
+      "text",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4529,
+    "title": "Destroy All Progress Bar HUD Text",
+    "path": "articles/actions/4529-destroy-all-progress-bar-hud-text.md",
+    "source_url": "https://workshop.codes/wiki/articles/4529",
+    "review_status": "read",
+    "topics": [
+      "text",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4532,
+    "title": "Destroy All Progress Bar In-World Text",
+    "path": "articles/actions/4532-destroy-all-progress-bar-inworld-text.md",
+    "source_url": "https://workshop.codes/wiki/articles/4532",
+    "review_status": "read",
+    "topics": [
+      "text",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4357,
+    "title": "Destroy Dummy Bot",
+    "path": "articles/actions/4357-destroy-dummy-bot.md",
+    "source_url": "https://workshop.codes/wiki/articles/4357",
+    "review_status": "read",
+    "topics": [
+      "bots",
+      "teams",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Destroy Dummy Bot uses team plus slot; All only works in FFA and explicit teams only in team modes."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Team; Slot"
+    ]
+  },
+  {
+    "id": 8473,
+    "title": "Destroy Effect",
+    "path": "articles/actions/8473-destroy-effect.md",
+    "source_url": "https://workshop.codes/wiki/articles/8473",
+    "review_status": "read",
+    "topics": [
+      "entities",
+      "cleanup",
+      "arrays"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Destroy Effect accepts an array of entity IDs and destroys all effect entities in it; the note supplies share code NV3FE6 as a verification example.",
+      "Store Last Created Entity in a variable for later targeted cleanup."
+    ],
+    "uncertainties": [
+      "Array support is an archived March 2026 claim; test code was not run.",
+      "Snippet/default duplicates 'Last Created Entity Entity'."
+    ],
+    "evidence": [
+      "Entity",
+      "Notes"
+    ]
+  },
+  {
+    "id": 4359,
+    "title": "Destroy HUD Text",
+    "path": "articles/actions/4359-destroy-hud-text.md",
+    "source_url": "https://workshop.codes/wiki/articles/4359",
+    "review_status": "read",
+    "topics": [
+      "text",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Store Last Text ID in a variable to destroy a particular HUD text later."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Text ID"
+    ]
+  },
+  {
+    "id": 4360,
+    "title": "Destroy Icon",
+    "path": "articles/actions/4360-destroy-icon.md",
+    "source_url": "https://workshop.codes/wiki/articles/4360",
+    "review_status": "read",
+    "topics": [
+      "entities",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Store Last Created Entity in a variable to destroy a particular icon later."
+    ],
+    "uncertainties": [
+      "Snippet/default duplicates 'Last Created Entity Entity'."
+    ],
+    "evidence": [
+      "Entity"
+    ]
+  },
+  {
+    "id": 4361,
+    "title": "Destroy In-World Text",
+    "path": "articles/actions/4361-destroy-inworld-text.md",
+    "source_url": "https://workshop.codes/wiki/articles/4361",
+    "review_status": "read",
+    "topics": [
+      "text",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Store Last Text ID in a variable to destroy particular in-world text later."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Text ID"
+    ]
+  },
+  {
+    "id": 4528,
+    "title": "Destroy Progress Bar HUD Text",
+    "path": "articles/actions/4528-destroy-progress-bar-hud-text.md",
+    "source_url": "https://workshop.codes/wiki/articles/4528",
+    "review_status": "read",
+    "topics": [
+      "text",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Store Last Text ID in a variable to destroy a particular progress HUD later."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Text ID"
+    ]
+  },
+  {
+    "id": 4531,
+    "title": "Destroy Progress Bar In-World Text",
+    "path": "articles/actions/4531-destroy-progress-bar-inworld-text.md",
+    "source_url": "https://workshop.codes/wiki/articles/4531",
+    "review_status": "read",
+    "topics": [
+      "text",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Store Last Text ID in a variable to destroy a particular in-world progress bar later."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Text ID"
+    ]
+  },
+  {
+    "id": 4362,
+    "title": "Detach Players",
+    "path": "articles/actions/4362-detach-players.md",
+    "source_url": "https://workshop.codes/wiki/articles/4362",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "attachment"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Detaching resumes normal movement at the child's current position."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4363,
+    "title": "Disable Built-In Game Mode Announcer",
+    "path": "articles/actions/4363-disable-builtin-game-mode-announcer.md",
+    "source_url": "https://workshop.codes/wiki/articles/4363",
+    "review_status": "read",
+    "topics": [
+      "match-flow",
+      "audio"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Disabling the built-in announcer lasts until reenabled or the match ends."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4364,
+    "title": "Disable Built-In Game Mode Completion",
+    "path": "articles/actions/4364-disable-builtin-game-mode-completion.md",
+    "source_url": "https://workshop.codes/wiki/articles/4364",
+    "review_status": "read",
+    "topics": [
+      "match-flow"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Disabling built-in completion leaves only scripting commands able to complete the match."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4365,
+    "title": "Disable Built-In Game Mode Music",
+    "path": "articles/actions/4365-disable-builtin-game-mode-music.md",
+    "source_url": "https://workshop.codes/wiki/articles/4365",
+    "review_status": "read",
+    "topics": [
+      "match-flow",
+      "audio"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Disabling built-in music lasts until reenabled or the match ends."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4366,
+    "title": "Disable Built-In Game Mode Respawning",
+    "path": "articles/actions/4366-disable-builtin-game-mode-respawning.md",
+    "source_url": "https://workshop.codes/wiki/articles/4366",
+    "review_status": "read",
+    "topics": [
+      "respawning",
+      "match-flow"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Disabling built-in respawning prevents automatic respawns for selected players but allows scripting commands to respawn them."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4367,
+    "title": "Disable Built-In Game Mode Scoring",
+    "path": "articles/actions/4367-disable-builtin-game-mode-scoring.md",
+    "source_url": "https://workshop.codes/wiki/articles/4367",
+    "review_status": "read",
+    "topics": [
+      "scoring",
+      "match-flow"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Disabling built-in scoring prevents game-mode score changes while permitting scripted changes."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4368,
+    "title": "Disable Death Spectate All Players",
+    "path": "articles/actions/4368-disable-death-spectate-all-players.md",
+    "source_url": "https://workshop.codes/wiki/articles/4368",
+    "review_status": "read",
+    "topics": [
+      "spectators"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Player"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4369,
+    "title": "Disable Death Spectate Target HUD",
+    "path": "articles/actions/4369-disable-death-spectate-target-hud.md",
+    "source_url": "https://workshop.codes/wiki/articles/4369",
+    "review_status": "read",
+    "topics": [
+      "spectators",
+      "hud"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Disabling Death Spectate Target HUD restores seeing one's own HUD while death-spectating."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Player"
+    ]
+  },
+  {
+    "id": 4486,
+    "title": "Disable Game Mode HUD",
+    "path": "articles/actions/4486-disable-game-mode-hud.md",
+    "source_url": "https://workshop.codes/wiki/articles/4486",
+    "review_status": "read",
+    "topics": [
+      "hud"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Player"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4488,
+    "title": "Disable Game Mode In-World UI",
+    "path": "articles/actions/4488-disable-game-mode-inworld-ui.md",
+    "source_url": "https://workshop.codes/wiki/articles/4488",
+    "review_status": "read",
+    "topics": [
+      "hud"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Player"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4490,
+    "title": "Disable Hero HUD",
+    "path": "articles/actions/4490-disable-hero-hud.md",
+    "source_url": "https://workshop.codes/wiki/articles/4490",
+    "review_status": "read",
+    "topics": [
+      "hud"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Player"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4370,
+    "title": "Disable Inspector Recording",
+    "path": "articles/actions/4370-disable-inspector-recording.md",
+    "source_url": "https://workshop.codes/wiki/articles/4370",
+    "review_status": "read",
+    "topics": [
+      "debugging",
+      "performance",
+      "arrays"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Disabling Inspector recording reduces script server load, particularly when modifying arrays."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4492,
+    "title": "Disable Kill Feed",
+    "path": "articles/actions/4492-disable-kill-feed.md",
+    "source_url": "https://workshop.codes/wiki/articles/4492",
+    "review_status": "read",
+    "topics": [
+      "hud"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Player"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4494,
+    "title": "Disable Messages",
+    "path": "articles/actions/4494-disable-messages.md",
+    "source_url": "https://workshop.codes/wiki/articles/4494",
+    "review_status": "read",
+    "topics": [
+      "hud"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Player"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4509,
+    "title": "Disable Movement Collision With Environment",
+    "path": "articles/actions/4509-disable-movement-collision-with-environment.md",
+    "source_url": "https://workshop.codes/wiki/articles/4509",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "collision"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Disabling environment collision leaves floor collision enabled by default; Include Floors must be true to disable it as well."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Include Floors"
+    ]
+  },
+  {
+    "id": 4511,
+    "title": "Disable Movement Collision With Players",
+    "path": "articles/actions/4511-disable-movement-collision-with-players.md",
+    "source_url": "https://workshop.codes/wiki/articles/4511",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "collision"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Player"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4501,
+    "title": "Disable Nameplates",
+    "path": "articles/actions/4501-disable-nameplates.md",
+    "source_url": "https://workshop.codes/wiki/articles/4501",
+    "review_status": "read",
+    "topics": [
+      "hud",
+      "visibility"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Nameplate visibility is directional: configure viewed players separately from viewing players."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Viewed Players; Viewing Players"
+    ]
+  },
+  {
+    "id": 4496,
+    "title": "Disable Scoreboard",
+    "path": "articles/actions/4496-disable-scoreboard.md",
+    "source_url": "https://workshop.codes/wiki/articles/4496",
+    "review_status": "read",
+    "topics": [
+      "hud"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Player"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4534,
+    "title": "Disable Text Chat",
+    "path": "articles/actions/4534-disable-text-chat.md",
+    "source_url": "https://workshop.codes/wiki/articles/4534",
+    "review_status": "read",
+    "topics": [
+      "communication"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Player"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4536,
+    "title": "Disable Voice Chat",
+    "path": "articles/actions/4536-disable-voice-chat.md",
+    "source_url": "https://workshop.codes/wiki/articles/4536",
+    "review_status": "read",
+    "topics": [
+      "communication"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Team, Match and Group voice chat can be disabled independently; all three default to true."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Team Voice Chat; Match Voice Chat; Group Voice Chat"
+    ]
+  },
+  {
+    "id": 4371,
+    "title": "Disallow Button",
+    "path": "articles/actions/4371-disallow-button.md",
+    "source_url": "https://workshop.codes/wiki/articles/4371",
+    "review_status": "read",
+    "topics": [
+      "input"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Button"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4372,
+    "title": "Else",
+    "path": "articles/actions/4372-else.md",
+    "source_url": "https://workshop.codes/wiki/articles/4372",
+    "review_status": "read",
+    "topics": [
+      "control-flow"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4373,
+    "title": "Else If",
+    "path": "articles/actions/4373-else-if.md",
+    "source_url": "https://workshop.codes/wiki/articles/4373",
+    "review_status": "read",
+    "topics": [
+      "control-flow"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Condition"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4374,
+    "title": "Enable Built-In Game Mode Announcer",
+    "path": "articles/actions/4374-enable-builtin-game-mode-announcer.md",
+    "source_url": "https://workshop.codes/wiki/articles/4374",
+    "review_status": "read",
+    "topics": [
+      "match-flow",
+      "audio"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4375,
+    "title": "Enable Built-In Game Mode Completion",
+    "path": "articles/actions/4375-enable-builtin-game-mode-completion.md",
+    "source_url": "https://workshop.codes/wiki/articles/4375",
+    "review_status": "read",
+    "topics": [
+      "match-flow"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4376,
+    "title": "Enable Built-In Game Mode Music",
+    "path": "articles/actions/4376-enable-builtin-game-mode-music.md",
+    "source_url": "https://workshop.codes/wiki/articles/4376",
+    "review_status": "read",
+    "topics": [
+      "match-flow",
+      "audio"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4377,
+    "title": "Enable Built-In Game Mode Respawning",
+    "path": "articles/actions/4377-enable-builtin-game-mode-respawning.md",
+    "source_url": "https://workshop.codes/wiki/articles/4377",
+    "review_status": "read",
+    "topics": [
+      "respawning"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4378,
+    "title": "Enable Built-In Game Mode Scoring",
+    "path": "articles/actions/4378-enable-builtin-game-mode-scoring.md",
+    "source_url": "https://workshop.codes/wiki/articles/4378",
+    "review_status": "read",
+    "topics": [
+      "scoring"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4379,
+    "title": "Enable Death Spectate All Players",
+    "path": "articles/actions/4379-enable-death-spectate-all-players.md",
+    "source_url": "https://workshop.codes/wiki/articles/4379",
+    "review_status": "read",
+    "topics": [
+      "spectators"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Default death spectating allows only allies; this action expands it to all players."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4380,
+    "title": "Enable Death Spectate Target HUD",
+    "path": "articles/actions/4380-enable-death-spectate-target-hud.md",
+    "source_url": "https://workshop.codes/wiki/articles/4380",
+    "review_status": "read",
+    "topics": [
+      "spectators",
+      "hud"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Death-spectate target HUD replaces the spectator's own HUD with the target's HUD."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4487,
+    "title": "Enable Game Mode HUD",
+    "path": "articles/actions/4487-enable-game-mode-hud.md",
+    "source_url": "https://workshop.codes/wiki/articles/4487",
+    "review_status": "read",
+    "topics": [
+      "hud"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4489,
+    "title": "Enable Game Mode In-World UI",
+    "path": "articles/actions/4489-enable-game-mode-inworld-ui.md",
+    "source_url": "https://workshop.codes/wiki/articles/4489",
+    "review_status": "read",
+    "topics": [
+      "hud"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4491,
+    "title": "Enable Hero HUD",
+    "path": "articles/actions/4491-enable-hero-hud.md",
+    "source_url": "https://workshop.codes/wiki/articles/4491",
+    "review_status": "read",
+    "topics": [
+      "hud"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4381,
+    "title": "Enable Inspector Recording",
+    "path": "articles/actions/4381-enable-inspector-recording.md",
+    "source_url": "https://workshop.codes/wiki/articles/4381",
+    "review_status": "read",
+    "topics": [
+      "debugging",
+      "performance"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Inspector recording can be reenabled at specific times to isolate problematic logic while leaving it disabled elsewhere."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4493,
+    "title": "Enable Kill Feed",
+    "path": "articles/actions/4493-enable-kill-feed.md",
+    "source_url": "https://workshop.codes/wiki/articles/4493",
+    "review_status": "read",
+    "topics": [
+      "hud"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4495,
+    "title": "Enable Messages",
+    "path": "articles/actions/4495-enable-messages.md",
+    "source_url": "https://workshop.codes/wiki/articles/4495",
+    "review_status": "read",
+    "topics": [
+      "hud"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4510,
+    "title": "Enable Movement Collision With Environment",
+    "path": "articles/actions/4510-enable-movement-collision-with-environment.md",
+    "source_url": "https://workshop.codes/wiki/articles/4510",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "collision"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4512,
+    "title": "Enable Movement Collision With Players",
+    "path": "articles/actions/4512-enable-movement-collision-with-players.md",
+    "source_url": "https://workshop.codes/wiki/articles/4512",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "collision"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4502,
+    "title": "Enable Nameplates",
+    "path": "articles/actions/4502-enable-nameplates.md",
+    "source_url": "https://workshop.codes/wiki/articles/4502",
+    "review_status": "read",
+    "topics": [
+      "hud",
+      "visibility"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Reenabling nameplates also distinguishes viewed players from viewing players."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Viewed Players; Viewing Players"
+    ]
+  },
+  {
+    "id": 4497,
+    "title": "Enable Scoreboard",
+    "path": "articles/actions/4497-enable-scoreboard.md",
+    "source_url": "https://workshop.codes/wiki/articles/4497",
+    "review_status": "read",
+    "topics": [
+      "hud"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4533,
+    "title": "Enable Text Chat",
+    "path": "articles/actions/4533-enable-text-chat.md",
+    "source_url": "https://workshop.codes/wiki/articles/4533",
+    "review_status": "read",
+    "topics": [
+      "communication"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4535,
+    "title": "Enable Voice Chat",
+    "path": "articles/actions/4535-enable-voice-chat.md",
+    "source_url": "https://workshop.codes/wiki/articles/4535",
+    "review_status": "read",
+    "topics": [
+      "communication"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4382,
+    "title": "End",
+    "path": "articles/actions/4382-end.md",
+    "source_url": "https://workshop.codes/wiki/articles/4382",
+    "review_status": "read",
+    "topics": [
+      "control-flow"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4383,
+    "title": "For Global Variable",
+    "path": "articles/actions/4383-for-global-variable.md",
+    "source_url": "https://workshop.codes/wiki/articles/4383",
+    "review_status": "read",
+    "topics": [
+      "control-flow",
+      "variables"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "For uses an exclusive stop bound: it exits when the control variable reaches or passes Range Stop, including before the first iteration.",
+      "Direction of passing depends on Step sign; Step is added when End executes."
+    ],
+    "uncertainties": [
+      "Snippet/default contains incomplete 'Count OF'; use an actual range expression."
+    ],
+    "evidence": [
+      "Range Stop; Step"
+    ]
+  },
+  {
+    "id": 4384,
+    "title": "For Player Variable",
+    "path": "articles/actions/4384-for-player-variable.md",
+    "source_url": "https://workshop.codes/wiki/articles/4384",
+    "review_status": "read",
+    "topics": [
+      "control-flow",
+      "variables",
+      "player-arrays"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "For Player Variable uses only the first player when multiple players are supplied.",
+      "Stop bound is exclusive and checked before the first iteration; Step sign determines pass direction and is applied at End."
+    ],
+    "uncertainties": [
+      "Snippet/default contains incomplete 'Count OF'."
+    ],
+    "evidence": [
+      "Control Player; Range Stop; Step"
+    ]
+  },
+  {
+    "id": 4385,
+    "title": "Go To Assemble Heroes",
+    "path": "articles/actions/4385-go-to-assemble-heroes.md",
+    "source_url": "https://workshop.codes/wiki/articles/4385",
+    "review_status": "read",
+    "topics": [
+      "match-flow"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Go To Assemble Heroes only works while the game is in progress."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4386,
+    "title": "Heal",
+    "path": "articles/actions/4386-heal.md",
+    "source_url": "https://workshop.codes/wiki/articles/4386",
+    "review_status": "read",
+    "topics": [
+      "healing",
+      "attribution"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Heal does not resurrect dead players; healing is capped by max health and may be modified by buffs/debuffs.",
+      "Null healer gives nobody healing credit."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Healer; Amount"
+    ]
+  },
+  {
+    "id": 6067,
+    "title": "If",
+    "path": "articles/actions/6067-if.md",
+    "source_url": "https://workshop.codes/wiki/articles/6067",
+    "review_status": "read",
+    "topics": [
+      "control-flow",
+      "examples"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [
+      "Examples omit matching End actions and the nested example compares Host Player to True instead of explicitly comparing a player; do not copy these as validated templates."
+    ],
+    "evidence": [
+      "Condition; Examples"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4942,
+    "title": "Kill",
+    "path": "articles/actions/4942-kill.md",
+    "source_url": "https://workshop.codes/wiki/articles/4942",
+    "review_status": "read",
+    "topics": [
+      "damage",
+      "attribution"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Kill can fail when the killer has a damage modification of zero against the target.",
+      "Null killer gives nobody kill credit."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Notes; Killer"
+    ]
+  },
+  {
+    "id": 4519,
+    "title": "Log To Inspector",
+    "path": "articles/actions/4519-log-to-inspector.md",
+    "source_url": "https://workshop.codes/wiki/articles/4519",
+    "review_status": "read",
+    "topics": [
+      "debugging"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Text"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4389,
+    "title": "Loop",
+    "path": "articles/actions/4389-loop.md",
+    "source_url": "https://workshop.codes/wiki/articles/4389",
+    "review_status": "read",
+    "topics": [
+      "control-flow",
+      "wait"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Loop restarts the whole action list and requires a Wait to execute between the start of the list and Loop."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4390,
+    "title": "Loop If",
+    "path": "articles/actions/4390-loop-if.md",
+    "source_url": "https://workshop.codes/wiki/articles/4390",
+    "review_status": "read",
+    "topics": [
+      "control-flow",
+      "wait"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Loop If tests its own predicate, restarts the whole action list when true, and requires an executed Wait since the list began."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4391,
+    "title": "Loop If Condition Is False",
+    "path": "articles/actions/4391-loop-if-condition-is-false.md",
+    "source_url": "https://workshop.codes/wiki/articles/4391",
+    "review_status": "read",
+    "topics": [
+      "control-flow",
+      "wait",
+      "rule-conditions"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Loop If Condition Is False restarts the whole action list if any rule condition is false; it requires an executed Wait since list start."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4392,
+    "title": "Loop If Condition Is True",
+    "path": "articles/actions/4392-loop-if-condition-is-true.md",
+    "source_url": "https://workshop.codes/wiki/articles/4392",
+    "review_status": "read",
+    "topics": [
+      "control-flow",
+      "wait",
+      "rule-conditions"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Loop If Condition Is True restarts the whole action list if all rule conditions are true; it requires an executed Wait since list start."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4393,
+    "title": "Modify Global Variable",
+    "path": "articles/actions/4393-modify-global-variable.md",
+    "source_url": "https://workshop.codes/wiki/articles/4393",
+    "review_status": "read",
+    "topics": [
+      "variables",
+      "arrays"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Operation; Value"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4394,
+    "title": "Modify Global Variable At Index",
+    "path": "articles/actions/4394-modify-global-variable-at-index.md",
+    "source_url": "https://workshop.codes/wiki/articles/4394",
+    "review_status": "read",
+    "topics": [
+      "variables",
+      "arrays"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Modifying an index beyond the array end extends the array and initializes new elements to zero."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Index"
+    ]
+  },
+  {
+    "id": 4395,
+    "title": "Modify Player Score",
+    "path": "articles/actions/4395-modify-player-score.md",
+    "source_url": "https://workshop.codes/wiki/articles/4395",
+    "review_status": "read",
+    "topics": [
+      "scoring",
+      "game-mode"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Modify Player Score affects kill count only in free-for-all; negative amounts decrease score."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Score"
+    ]
+  },
+  {
+    "id": 4396,
+    "title": "Modify Player Variable",
+    "path": "articles/actions/4396-modify-player-variable.md",
+    "source_url": "https://workshop.codes/wiki/articles/4396",
+    "review_status": "read",
+    "topics": [
+      "variables",
+      "player-arrays"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "When multiple players are supplied, Modify Player Variable updates each player's variable."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Player"
+    ]
+  },
+  {
+    "id": 4397,
+    "title": "Modify Player Variable At Index",
+    "path": "articles/actions/4397-modify-player-variable-at-index.md",
+    "source_url": "https://workshop.codes/wiki/articles/4397",
+    "review_status": "read",
+    "topics": [
+      "variables",
+      "arrays"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Modifying beyond array end extends it with zero-valued elements; supplying multiple players updates each player's variable."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Player; Index"
+    ]
+  },
+  {
+    "id": 4398,
+    "title": "Modify Team Score",
+    "path": "articles/actions/4398-modify-team-score.md",
+    "source_url": "https://workshop.codes/wiki/articles/4398",
+    "review_status": "read",
+    "topics": [
+      "scoring",
+      "game-mode"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Modify Team Score has no effect in FFA or modes without team scores; negative amounts decrease score."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Score"
+    ]
+  },
+  {
+    "id": 4540,
+    "title": "Move Player To Team",
+    "path": "articles/actions/4540-move-player-to-team.md",
+    "source_url": "https://workshop.codes/wiki/articles/4540",
+    "review_status": "read",
+    "topics": [
+      "teams",
+      "bots"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Move Player To Team fails if the slot is unavailable and does not work on dummy bots; -1 means first available slot.",
+      "All is for FFA and explicit team values for team modes."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Team; Slot"
+    ]
+  },
+  {
+    "id": 4399,
+    "title": "Pause Match Time",
+    "path": "articles/actions/4399-pause-match-time.md",
+    "source_url": "https://workshop.codes/wiki/articles/4399",
+    "review_status": "read",
+    "topics": [
+      "match-flow",
+      "time",
+      "limits"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Pause Match Time pauses only the match timer: players, objectives and game-mode advancement remain active.",
+      "The archive says game lifetime closure still occurs after 4h30, or 1h30 in Practice Range."
+    ],
+    "uncertainties": [
+      "Hard lifetime durations are archived, date-sensitive limits."
+    ],
+    "evidence": [
+      "Description; Trivia"
+    ]
+  },
+  {
+    "id": 9268,
+    "title": "Play Effect",
+    "path": "articles/actions/9268-play-effect.md",
+    "source_url": "https://workshop.codes/wiki/articles/9268",
+    "review_status": "read",
+    "topics": [
+      "effects",
+      "entities",
+      "limits"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Play Effect effects are short-lived and require no updates or destruction; they do not count against Create Effect's 128 limit.",
+      "Custom Color is not supported; team colors depend on viewer hostility; player-valued position is sampled at playback."
+    ],
+    "uncertainties": [
+      "Article's 'as many ... as you want' is a capacity claim for this action, not proof of unlimited performance or no other engine limits."
+    ],
+    "evidence": [
+      "Description; Color; Position"
+    ]
+  },
+  {
+    "id": 4401,
+    "title": "Preload Hero",
+    "path": "articles/actions/4401-preload-hero.md",
+    "source_url": "https://workshop.codes/wiki/articles/4401",
+    "review_status": "read",
+    "topics": [
+      "heroes",
+      "preloading",
+      "performance",
+      "limits"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Preload uses players' skins and available memory; archive states capacity of 12 hero+skin combinations including those already used by players.",
+      "Only one preload action is active per player: later executions overwrite earlier ones, so repeatedly preloading different heroes does not accumulate them.",
+      "When supplying an array, earlier heroes get priority; slower storage is expected to benefit more."
+    ],
+    "uncertainties": [
+      "12-slot resource capacity and storage-performance guidance are archived and date-sensitive."
+    ],
+    "evidence": [
+      "Description; Player; Hero"
+    ]
+  },
+  {
+    "id": 4402,
+    "title": "Press Button",
+    "path": "articles/actions/4402-press-button.md",
+    "source_url": "https://workshop.codes/wiki/articles/4402",
+    "review_status": "read",
+    "topics": [
+      "input",
+      "time"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Press Button creates virtual input for exactly one frame."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4517,
+    "title": "Remove All Health Pools From Player",
+    "path": "articles/actions/4517-remove-all-health-pools-from-player.md",
+    "source_url": "https://workshop.codes/wiki/articles/4517",
+    "review_status": "read",
+    "topics": [
+      "health-pools",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Remove All Health Pools only removes pools added through Workshop Add Health Pool."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4516,
+    "title": "Remove Health Pool From Player",
+    "path": "articles/actions/4516-remove-health-pool-from-player.md",
+    "source_url": "https://workshop.codes/wiki/articles/4516",
+    "review_status": "read",
+    "topics": [
+      "health-pools",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Targeted health-pool removal takes the ID from Last Created Health Pool."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Health Pool ID"
+    ]
+  },
+  {
+    "id": 4541,
+    "title": "Remove Player",
+    "path": "articles/actions/4541-remove-player.md",
+    "source_url": "https://workshop.codes/wiki/articles/4541",
+    "review_status": "read",
+    "topics": [
+      "players",
+      "bots"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Remove Player does not work on dummy bots."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4403,
+    "title": "Reset Player Hero Availability",
+    "path": "articles/actions/4403-reset-player-hero-availability.md",
+    "source_url": "https://workshop.codes/wiki/articles/4403",
+    "review_status": "read",
+    "topics": [
+      "heroes",
+      "respawning"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Reset Player Hero Availability restores lobby settings; if current hero becomes unavailable, player must choose another and respawn at an appropriate spawn location."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 7550,
+    "title": "Respawn",
+    "path": "articles/actions/7550-respawn.md",
+    "source_url": "https://workshop.codes/wiki/articles/7550",
+    "review_status": "read",
+    "topics": [
+      "respawning"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Respawn moves players to an appropriate spawn location with full health even if already alive."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4539,
+    "title": "Restart Match",
+    "path": "articles/actions/4539-restart-match.md",
+    "source_url": "https://workshop.codes/wiki/articles/4539",
+    "review_status": "read",
+    "topics": [
+      "match-flow",
+      "time"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Restart Match has no effect until the match has existed for 30 seconds."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 7549,
+    "title": "Resurrect",
+    "path": "articles/actions/7549-resurrect.md",
+    "source_url": "https://workshop.codes/wiki/articles/7549",
+    "review_status": "read",
+    "topics": [
+      "respawning"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Resurrect restores players at their death location instantly, with no transition."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4538,
+    "title": "Return To Lobby",
+    "path": "articles/actions/4538-return-to-lobby.md",
+    "source_url": "https://workshop.codes/wiki/articles/4538",
+    "review_status": "read",
+    "topics": [
+      "match-flow"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4406,
+    "title": "Set Ability 1 Enabled",
+    "path": "articles/actions/4406-set-ability-1-enabled.md",
+    "source_url": "https://workshop.codes/wiki/articles/4406",
+    "review_status": "read",
+    "topics": [
+      "abilities"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Enabled"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4407,
+    "title": "Set Ability 2 Enabled",
+    "path": "articles/actions/4407-set-ability-2-enabled.md",
+    "source_url": "https://workshop.codes/wiki/articles/4407",
+    "review_status": "read",
+    "topics": [
+      "abilities"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Enabled"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4498,
+    "title": "Set Ability Charge",
+    "path": "articles/actions/4498-set-ability-charge.md",
+    "source_url": "https://workshop.codes/wiki/articles/4498",
+    "review_status": "read",
+    "topics": [
+      "abilities"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Ability charge count can be set only for abilities that support it."
+    ],
+    "uncertainties": [
+      "Supported ability/button combinations are not enumerated."
+    ],
+    "evidence": [
+      "Description: if supported"
+    ]
+  },
+  {
+    "id": 4408,
+    "title": "Set Ability Cooldown",
+    "path": "articles/actions/4408-set-ability-cooldown.md",
+    "source_url": "https://workshop.codes/wiki/articles/4408",
+    "review_status": "read",
+    "topics": [
+      "abilities",
+      "limits"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Ability cooldown is specified in seconds with a documented maximum of 1000."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "COOLDOWN"
+    ]
+  },
+  {
+    "id": 4499,
+    "title": "Set Ability Resource",
+    "path": "articles/actions/4499-set-ability-resource.md",
+    "source_url": "https://workshop.codes/wiki/articles/4499",
+    "review_status": "read",
+    "topics": [
+      "abilities"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Resource is a percentage of each player's ability capacity and only applies where supported."
+    ],
+    "uncertainties": [
+      "Supported abilities are not enumerated."
+    ],
+    "evidence": [
+      "Description; Resource Percent"
+    ]
+  },
+  {
+    "id": 4409,
+    "title": "Set Aim Speed",
+    "path": "articles/actions/4409-set-aim-speed.md",
+    "source_url": "https://workshop.codes/wiki/articles/4409",
+    "review_status": "read",
+    "topics": [
+      "input",
+      "percentages"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Aim speed is a percentage of each player's normal aim speed."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Turn Speed Percent"
+    ]
+  },
+  {
+    "id": 4482,
+    "title": "Set Ammo",
+    "path": "articles/actions/4482-set-ammo.md",
+    "source_url": "https://workshop.codes/wiki/articles/4482",
+    "review_status": "read",
+    "topics": [
+      "weapons"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Clip 0 is first, clip 1 second; nonexistent clip types cause Set Ammo to do nothing."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Clip"
+    ]
+  },
+  {
+    "id": 4410,
+    "title": "Set Crouch Enabled",
+    "path": "articles/actions/4410-set-crouch-enabled.md",
+    "source_url": "https://workshop.codes/wiki/articles/4410",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "input"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Enabled"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4411,
+    "title": "Set Damage Dealt",
+    "path": "articles/actions/4411-set-damage-dealt.md",
+    "source_url": "https://workshop.codes/wiki/articles/4411",
+    "review_status": "read",
+    "topics": [
+      "damage",
+      "percentages"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Damage Dealt is expressed as a percentage of raw damage dealt."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Damage Dealt Percent"
+    ]
+  },
+  {
+    "id": 4412,
+    "title": "Set Damage Received",
+    "path": "articles/actions/4412-set-damage-received.md",
+    "source_url": "https://workshop.codes/wiki/articles/4412",
+    "review_status": "read",
+    "topics": [
+      "damage",
+      "percentages"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Damage Received is expressed as a percentage of raw damage received."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Damage Received Percent"
+    ]
+  },
+  {
+    "id": 4523,
+    "title": "Set Environment Credit Player",
+    "path": "articles/actions/4523-set-environment-credit-player.md",
+    "source_url": "https://workshop.codes/wiki/articles/4523",
+    "review_status": "read",
+    "topics": [
+      "attribution",
+      "damage",
+      "movement"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Environment credit lasts only if the target dies to the environment before landing on the ground; Null means nobody receives credit."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Environment Credit Player"
+    ]
+  },
+  {
+    "id": 4413,
+    "title": "Set Facing",
+    "path": "articles/actions/4413-set-facing.md",
+    "source_url": "https://workshop.codes/wiki/articles/4413",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "vectors"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Set Facing normalizes direction internally and interprets it in selected world/local coordinates."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Direction; Relative"
+    ]
+  },
+  {
+    "id": 4414,
+    "title": "Set Global Variable",
+    "path": "articles/actions/4414-set-global-variable.md",
+    "source_url": "https://workshop.codes/wiki/articles/4414",
+    "review_status": "read",
+    "topics": [
+      "variables"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Value"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4415,
+    "title": "Set Global Variable At Index",
+    "path": "articles/actions/4415-set-global-variable-at-index.md",
+    "source_url": "https://workshop.codes/wiki/articles/4415",
+    "review_status": "read",
+    "topics": [
+      "variables",
+      "arrays"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Set Global Variable At Index replaces a non-array variable with an empty array, then writes; writing beyond the end extends with zero-filled elements."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Variable; Index"
+    ]
+  },
+  {
+    "id": 4416,
+    "title": "Set Gravity",
+    "path": "articles/actions/4416-set-gravity.md",
+    "source_url": "https://workshop.codes/wiki/articles/4416",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "percentages"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Set Gravity uses a percentage of regular movement gravity."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Gravity Percent"
+    ]
+  },
+  {
+    "id": 4417,
+    "title": "Set Healing Dealt",
+    "path": "articles/actions/4417-set-healing-dealt.md",
+    "source_url": "https://workshop.codes/wiki/articles/4417",
+    "review_status": "read",
+    "topics": [
+      "healing",
+      "percentages"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Healing Dealt is a percentage of raw healing dealt."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4418,
+    "title": "Set Healing Received",
+    "path": "articles/actions/4418-set-healing-received.md",
+    "source_url": "https://workshop.codes/wiki/articles/4418",
+    "review_status": "read",
+    "topics": [
+      "healing",
+      "percentages"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Healing Received is a percentage of raw healing received."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Healing Received Percent"
+    ]
+  },
+  {
+    "id": 9364,
+    "title": "Set Invisible",
+    "path": "articles/actions/9364-set-invisible.md",
+    "source_url": "https://workshop.codes/wiki/articles/9364",
+    "review_status": "read",
+    "topics": [
+      "visibility"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Invisible To"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4420,
+    "title": "Set Jump Enabled",
+    "path": "articles/actions/4420-set-jump-enabled.md",
+    "source_url": "https://workshop.codes/wiki/articles/4420",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "input"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Enabled"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4500,
+    "title": "Set Jump Vertical Speed",
+    "path": "articles/actions/4500-set-jump-vertical-speed.md",
+    "source_url": "https://workshop.codes/wiki/articles/4500",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "percentages"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Jump vertical speed is a percentage of raw jump vertical speed."
+    ],
+    "uncertainties": [
+      "Parameter description wrongly talks about ability resources; use action description rather than copied parameter prose."
+    ],
+    "evidence": [
+      "Description; Jump Vertical Speed Percent"
+    ]
+  },
+  {
+    "id": 4521,
+    "title": "Set Knockback Dealt",
+    "path": "articles/actions/4521-set-knockback-dealt.md",
+    "source_url": "https://workshop.codes/wiki/articles/4521",
+    "review_status": "read",
+    "topics": [
+      "knockback",
+      "percentages"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Knockback dealt is a percentage of raw knockback dealt."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Knockback Dealt Percentage"
+    ]
+  },
+  {
+    "id": 4522,
+    "title": "Set Knockback Received",
+    "path": "articles/actions/4522-set-knockback-received.md",
+    "source_url": "https://workshop.codes/wiki/articles/4522",
+    "review_status": "read",
+    "topics": [
+      "knockback",
+      "percentages"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Knockback received is a percentage of raw knockback received."
+    ],
+    "uncertainties": [
+      "Parameter heading and tail incorrectly say dealt instead of received."
+    ],
+    "evidence": [
+      "Description; Knockback Dealt Percentage"
+    ]
+  },
+  {
+    "id": 4421,
+    "title": "Set Match Time",
+    "path": "articles/actions/4421-set-match-time.md",
+    "source_url": "https://workshop.codes/wiki/articles/4421",
+    "review_status": "read",
+    "topics": [
+      "match-flow",
+      "time"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Set Match Time can change assemble-heroes or setup duration as well as match duration, in seconds."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Time"
+    ]
+  },
+  {
+    "id": 4483,
+    "title": "Set Max Ammo",
+    "path": "articles/actions/4483-set-max-ammo.md",
+    "source_url": "https://workshop.codes/wiki/articles/4483",
+    "review_status": "read",
+    "topics": [
+      "weapons"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Clip 0 is first, clip 1 second; nonexistent clip types cause Set Max Ammo to do nothing."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Clip"
+    ]
+  },
+  {
+    "id": 4422,
+    "title": "Set Max Health",
+    "path": "articles/actions/4422-set-max-health.md",
+    "source_url": "https://workshop.codes/wiki/articles/4422",
+    "review_status": "read",
+    "topics": [
+      "health",
+      "percentages"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Set Max Health uses a percentage of raw max health and clamps current health so it cannot exceed the new maximum."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Health Percent"
+    ]
+  },
+  {
+    "id": 4423,
+    "title": "Set Melee Enabled",
+    "path": "articles/actions/4423-set-melee-enabled.md",
+    "source_url": "https://workshop.codes/wiki/articles/4423",
+    "review_status": "read",
+    "topics": [
+      "abilities",
+      "input"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Enabled"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4424,
+    "title": "Set Move Speed",
+    "path": "articles/actions/4424-set-move-speed.md",
+    "source_url": "https://workshop.codes/wiki/articles/4424",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "percentages"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Move speed is a percentage of raw move speed."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Move Speed Percent"
+    ]
+  },
+  {
+    "id": 4425,
+    "title": "Set Objective Description",
+    "path": "articles/actions/4425-set-objective-description.md",
+    "source_url": "https://workshop.codes/wiki/articles/4425",
+    "review_status": "read",
+    "topics": [
+      "hud",
+      "reevaluation"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Objective description replaces top-center objective text; visibility and string can continuously reevaluate."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Reevaluation"
+    ]
+  },
+  {
+    "id": 4426,
+    "title": "Set Player Allowed Heroes",
+    "path": "articles/actions/4426-set-player-allowed-heroes.md",
+    "source_url": "https://workshop.codes/wiki/articles/4426",
+    "review_status": "read",
+    "topics": [
+      "heroes",
+      "respawning"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Changing allowed heroes forces a player whose current hero is unavailable to select another and respawn.",
+      "Supplying no heroes has no effect, so an empty hero list does not directly disable selection."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Hero"
+    ]
+  },
+  {
+    "id": 4518,
+    "title": "Set Player Health",
+    "path": "articles/actions/4518-set-player-health.md",
+    "source_url": "https://workshop.codes/wiki/articles/4518",
+    "review_status": "read",
+    "topics": [
+      "health",
+      "attribution"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Set Player Health affects living players only, changes no stats, and grants no damage/healing credit."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4427,
+    "title": "Set Player Score",
+    "path": "articles/actions/4427-set-player-score.md",
+    "source_url": "https://workshop.codes/wiki/articles/4427",
+    "review_status": "read",
+    "topics": [
+      "scoring",
+      "game-mode"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Set Player Score affects kill count only in free-for-all."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4428,
+    "title": "Set Player Variable",
+    "path": "articles/actions/4428-set-player-variable.md",
+    "source_url": "https://workshop.codes/wiki/articles/4428",
+    "review_status": "read",
+    "topics": [
+      "variables",
+      "player-arrays"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Supplying multiple players sets each player's variable."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Player"
+    ]
+  },
+  {
+    "id": 4429,
+    "title": "Set Player Variable At Index",
+    "path": "articles/actions/4429-set-player-variable-at-index.md",
+    "source_url": "https://workshop.codes/wiki/articles/4429",
+    "review_status": "read",
+    "topics": [
+      "variables",
+      "arrays"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "A non-array player variable is replaced by an empty array before the indexed write; writing beyond the end extends with zero-valued elements.",
+      "Supplying multiple players modifies each player's variable."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Player; Variable; Index"
+    ]
+  },
+  {
+    "id": 4430,
+    "title": "Set Primary Fire Enabled",
+    "path": "articles/actions/4430-set-primary-fire-enabled.md",
+    "source_url": "https://workshop.codes/wiki/articles/4430",
+    "review_status": "read",
+    "topics": [
+      "weapons",
+      "input"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Enabled"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4431,
+    "title": "Set Projectile Gravity",
+    "path": "articles/actions/4431-set-projectile-gravity.md",
+    "source_url": "https://workshop.codes/wiki/articles/4431",
+    "review_status": "read",
+    "topics": [
+      "projectiles",
+      "percentages"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Set Projectile Gravity uses a percentage of regular projectile gravity."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Projectile Gravity Percent"
+    ]
+  },
+  {
+    "id": 4432,
+    "title": "Set Projectile Speed",
+    "path": "articles/actions/4432-set-projectile-speed.md",
+    "source_url": "https://workshop.codes/wiki/articles/4432",
+    "review_status": "read",
+    "topics": [
+      "projectiles",
+      "percentages"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Set Projectile Speed uses a percentage of regular projectile speed."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Projectile Speed Percent"
+    ]
+  },
+  {
+    "id": 4485,
+    "title": "Set Reload Enabled",
+    "path": "articles/actions/4485-set-reload-enabled.md",
+    "source_url": "https://workshop.codes/wiki/articles/4485",
+    "review_status": "read",
+    "topics": [
+      "weapons",
+      "input"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Enabled"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4433,
+    "title": "Set Respawn Max Time",
+    "path": "articles/actions/4433-set-respawn-max-time.md",
+    "source_url": "https://workshop.codes/wiki/articles/4433",
+    "review_status": "read",
+    "topics": [
+      "respawning",
+      "time"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Changing respawn max time for an already dead player takes effect at their next death, not the current death."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4434,
+    "title": "Set Secondary Fire Enabled",
+    "path": "articles/actions/4434-set-secondary-fire-enabled.md",
+    "source_url": "https://workshop.codes/wiki/articles/4434",
+    "review_status": "read",
+    "topics": [
+      "weapons",
+      "input"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Enabled"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4435,
+    "title": "Set Slow Motion",
+    "path": "articles/actions/4435-set-slow-motion.md",
+    "source_url": "https://workshop.codes/wiki/articles/4435",
+    "review_status": "read",
+    "topics": [
+      "simulation",
+      "time"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Slow Motion changes simulation rate for players, projectiles, effects and game-mode logic; only rates up to 100% are allowed."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Speed Percent"
+    ]
+  },
+  {
+    "id": 4436,
+    "title": "Set Status",
+    "path": "articles/actions/4436-set-status.md",
+    "source_url": "https://workshop.codes/wiki/articles/4436",
+    "review_status": "read",
+    "topics": [
+      "status",
+      "attribution",
+      "time"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Set Status ends on duration expiry or Clear Status; Null assister gives nobody assist credit.",
+      "Archive recommends a long duration such as 9999 seconds for a status intended to last until explicit cleanup."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Assister; Duration"
+    ]
+  },
+  {
+    "id": 4437,
+    "title": "Set Team Score",
+    "path": "articles/actions/4437-set-team-score.md",
+    "source_url": "https://workshop.codes/wiki/articles/4437",
+    "review_status": "read",
+    "topics": [
+      "scoring",
+      "game-mode"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Set Team Score has no effect in FFA or modes without team scores."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4438,
+    "title": "Set Ultimate Ability Enabled",
+    "path": "articles/actions/4438-set-ultimate-ability-enabled.md",
+    "source_url": "https://workshop.codes/wiki/articles/4438",
+    "review_status": "read",
+    "topics": [
+      "abilities"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Enabled"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4439,
+    "title": "Set Ultimate Charge",
+    "path": "articles/actions/4439-set-ultimate-charge.md",
+    "source_url": "https://workshop.codes/wiki/articles/4439",
+    "review_status": "read",
+    "topics": [
+      "abilities",
+      "precision"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Decimal literals passed to Set Ultimate Charge are rounded to nearest integer unless wrapped in a function such as First Of or Absolute Value."
+    ],
+    "uncertainties": [
+      "Parser/precision workaround is archived and not live verified."
+    ],
+    "evidence": [
+      "Description: literal with decimals"
+    ]
+  },
+  {
+    "id": 4484,
+    "title": "Set Weapon",
+    "path": "articles/actions/4484-set-weapon.md",
+    "source_url": "https://workshop.codes/wiki/articles/4484",
+    "review_status": "read",
+    "topics": [
+      "weapons"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Set Weapon cannot select a weapon disabled in settings.",
+      "Weapon numbering is 1 for first, 2 for second; nonexistent weapons select the default weapon."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Weapon"
+    ]
+  },
+  {
+    "id": 4440,
+    "title": "Skip",
+    "path": "articles/actions/4440-skip.md",
+    "source_url": "https://workshop.codes/wiki/articles/4440",
+    "review_status": "read",
+    "topics": [
+      "control-flow"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Skip's count excludes the Skip action itself."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Number OF Actions"
+    ]
+  },
+  {
+    "id": 6031,
+    "title": "Skip If",
+    "path": "articles/actions/6031-skip-if.md",
+    "source_url": "https://workshop.codes/wiki/articles/6031",
+    "review_status": "read",
+    "topics": [
+      "control-flow",
+      "legacy"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Skip If excludes itself from the skip count and has a documented maximum of 99 actions.",
+      "Article considers it obsolete/backward-compatible and recommends If/Else If/Else/End."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Number OF Actions; Trivia"
+    ]
+  },
+  {
+    "id": 9529,
+    "title": "Small Message",
+    "path": "articles/actions/9529-small-message.md",
+    "source_url": "https://workshop.codes/wiki/articles/9529",
+    "review_status": "read",
+    "topics": [
+      "messages",
+      "debugging",
+      "limits"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Small Message has a fixed unmodifiable four-second display time.",
+      "The archive warns that spamming Small Message can remove viewing players from the lobby.",
+      "Messages can show runtime values and execution checkpoints for debugging."
+    ],
+    "uncertainties": [
+      "Newline note says it creates a line without displaying it; exact rendering effect is unclear.",
+      "Spam-disconnection claim updated 2026-08-27 has no threshold or reproduction details."
+    ],
+    "evidence": [
+      "Examples; Trivia"
+    ]
+  },
+  {
+    "id": 6022,
+    "title": "Start Accelerating",
+    "path": "articles/actions/6022-start-accelerating.md",
+    "source_url": "https://workshop.codes/wiki/articles/6022",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "acceleration",
+      "limits"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Acceleration direction is normalized; rate is meters/second squared and may need to overcome gravity or surface friction.",
+      "Actual attainable speed may be below Max Speed; archive says horizontal speed is capped at walking speed (5.5 m/s for most heroes by default).",
+      "Archive gives stopping threshold as Max Speed^2 - Rate/62.5 and says the speed is measured along the acceleration direction."
+    ],
+    "uncertainties": [
+      "Stopping-speed formula is surprising/dimensionally unclear; retain as an unverified archived claim rather than silently correcting or promoting it.",
+      "Default hero speed is date-sensitive."
+    ],
+    "evidence": [
+      "Direction; Rate; Max Speed; Trivia"
+    ]
+  },
+  {
+    "id": 4524,
+    "title": "Start Assist",
+    "path": "articles/actions/4524-start-assist.md",
+    "source_url": "https://workshop.codes/wiki/articles/4524",
+    "review_status": "read",
+    "topics": [
+      "attribution",
+      "assists",
+      "reevaluation",
+      "limits"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Start Assist exposes Last Assist ID and fails when too many assists are active.",
+      "Eliminated targets allied to assister give defensive assists; enemy targets give offensive assists; assisters/targets may reevaluate."
+    ],
+    "uncertainties": [
+      "Description calls assist a damage modification and reevaluation type points to Chase Reevaluation; metadata likely copy errors."
+    ],
+    "evidence": [
+      "Description; Targets; Reevaluation"
+    ]
+  },
+  {
+    "id": 7648,
+    "title": "Start Camera",
+    "path": "articles/actions/7648-start-camera.md",
+    "source_url": "https://workshop.codes/wiki/articles/7648",
+    "review_status": "read",
+    "topics": [
+      "camera",
+      "reevaluation"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Camera eye and look-at positions always reevaluate continuously; blend speed zero changes position instantly without blending."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Eye Position; Look At Position; Blend Speed"
+    ]
+  },
+  {
+    "id": 4445,
+    "title": "Start Damage Modification",
+    "path": "articles/actions/4445-start-damage-modification.md",
+    "source_url": "https://workshop.codes/wiki/articles/4445",
+    "review_status": "read",
+    "topics": [
+      "damage",
+      "modifiers",
+      "limits",
+      "reevaluation"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Damage modifications affect receiver/damager pairs and expose Last Damage Modification ID; maximum 64 can be active.",
+      "Unlike Set Damage Dealt, damage modifications affect players only, not owned objects such as barriers/turrets.",
+      "Selected receivers, damagers and percentage can reevaluate continuously."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Notes; Reevaluation"
+    ]
+  },
+  {
+    "id": 4446,
+    "title": "Start Damage Over Time",
+    "path": "articles/actions/4446-start-damage-over-time.md",
+    "source_url": "https://workshop.codes/wiki/articles/4446",
+    "review_status": "read",
+    "topics": [
+      "damage",
+      "time",
+      "cleanup",
+      "attribution"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "DoT persists until its duration ends or a script stops it, using Last Damage Over Time ID for targeted cleanup.",
+      "Null damager gives no credit; archive suggests a long duration such as 9999 for script-controlled expiry."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Damager; Duration"
+    ]
+  },
+  {
+    "id": 4447,
+    "title": "Start Facing",
+    "path": "articles/actions/4447-start-facing.md",
+    "source_url": "https://workshop.codes/wiki/articles/4447",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "vectors",
+      "reevaluation"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Start Facing normalizes direction, turns at degrees/second in selected world/local coordinates, and can reevaluate direction/rate."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Direction; Turn Rate; Relative; Reevaluation"
+    ]
+  },
+  {
+    "id": 4542,
+    "title": "Start Forcing Dummy Bot Name",
+    "path": "articles/actions/4542-start-forcing-dummy-bot-name.md",
+    "source_url": "https://workshop.codes/wiki/articles/4542",
+    "review_status": "read",
+    "topics": [
+      "bots",
+      "initialization"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Wait until a dummy bot has had time to spawn before forcing its name."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 8803,
+    "title": "Start Forcing Player Outlines",
+    "path": "articles/actions/8803-start-forcing-player-outlines.md",
+    "source_url": "https://workshop.codes/wiki/articles/8803",
+    "review_status": "read",
+    "topics": [
+      "visibility",
+      "outlines"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Outline configuration is directional between viewed and viewing players; team colors depend on viewer hostility.",
+      "Outline changes may not update immediately: archived table says self updates alive/dead, teammates update within melee distance or on line-of-sight/FOV change (dead works), and living enemies do not update (dead works)."
+    ],
+    "uncertainties": [
+      "Table's Alive/Dead/Other terminology is terse and does not establish all transition details; behavior is archived April 2026."
+    ],
+    "evidence": [
+      "Description; Color; Notes table"
+    ]
+  },
+  {
+    "id": 4449,
+    "title": "Start Forcing Player Position",
+    "path": "articles/actions/4449-start-forcing-player-position.md",
+    "source_url": "https://workshop.codes/wiki/articles/4449",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "reevaluation"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Forcing position can reevaluate position every frame, but never reevaluates the Player input; with reevaluation false it samples position once."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Player; REEVALUATE"
+    ]
+  },
+  {
+    "id": 4448,
+    "title": "Start Forcing Player To Be Hero",
+    "path": "articles/actions/4448-start-forcing-player-to-be-hero.md",
+    "source_url": "https://workshop.codes/wiki/articles/4448",
+    "review_status": "read",
+    "topics": [
+      "heroes",
+      "respawning"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Forcing hero may immediately respawn the player at their current location and makes that the only selectable hero until Stop Forcing Player To Be Hero."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4450,
+    "title": "Start Forcing Spawn Room",
+    "path": "articles/actions/4450-start-forcing-spawn-room.md",
+    "source_url": "https://workshop.codes/wiki/articles/4450",
+    "review_status": "read",
+    "topics": [
+      "respawning",
+      "game-mode"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Forcing spawn room works only on assault, hybrid and payload maps.",
+      "Rooms are zero-indexed; nonexistent room falls back to normal spawn room."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Room"
+    ]
+  },
+  {
+    "id": 4451,
+    "title": "Start Forcing Throttle",
+    "path": "articles/actions/4451-start-forcing-throttle.md",
+    "source_url": "https://workshop.codes/wiki/articles/4451",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "throttle",
+      "input"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Forcing throttle sets input bounds, not velocity; minimum 1 forces full directional movement while maximum 0 prevents that direction, and minimum 0 permits stopping."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Min Forward; Max Forward; Min Backward; Max Backward; Min Sideways; Max Sideways"
+    ]
+  },
+  {
+    "id": 4537,
+    "title": "Start Game Mode",
+    "path": "articles/actions/4537-start-game-mode.md",
+    "source_url": "https://workshop.codes/wiki/articles/4537",
+    "review_status": "read",
+    "topics": [
+      "match-flow"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Start Game Mode has no effect when the game is already in progress."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4452,
+    "title": "Start Heal Over Time",
+    "path": "articles/actions/4452-start-heal-over-time.md",
+    "source_url": "https://workshop.codes/wiki/articles/4452",
+    "review_status": "read",
+    "topics": [
+      "healing",
+      "time",
+      "cleanup",
+      "attribution"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "HoT persists until duration expiry or script stop and exposes Last Heal Over Time ID for cleanup.",
+      "Null healer gives no credit; long duration such as 9999 is suggested for script-controlled expiry."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Healer; Duration"
+    ]
+  },
+  {
+    "id": 4453,
+    "title": "Start Healing Modification",
+    "path": "articles/actions/4453-start-healing-modification.md",
+    "source_url": "https://workshop.codes/wiki/articles/4453",
+    "review_status": "read",
+    "topics": [
+      "healing",
+      "modifiers",
+      "limits",
+      "reevaluation"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Healing modifiers affect receiver/healer pairs, expose Last Healing Modification ID, and have a maximum of 64 active instances; selected inputs can reevaluate."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Notes; Reevaluation"
+    ]
+  },
+  {
+    "id": 4454,
+    "title": "Start Holding Button",
+    "path": "articles/actions/4454-start-holding-button.md",
+    "source_url": "https://workshop.codes/wiki/articles/4454",
+    "review_status": "read",
+    "topics": [
+      "input",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Start Holding Button creates persistent virtual input until Stop Holding Button."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4513,
+    "title": "Start Modifying Hero Voice Lines",
+    "path": "articles/actions/4513-start-modifying-hero-voice-lines.md",
+    "source_url": "https://workshop.codes/wiki/articles/4513",
+    "review_status": "read",
+    "topics": [
+      "audio",
+      "reevaluation",
+      "limits"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Hero voice pitch scalar range is documented as 0.5–1.5; reevaluation true updates it every frame, false samples once."
+    ],
+    "uncertainties": [
+      "Default 0 lies outside documented range; Player property mistakenly describes movement collision."
+    ],
+    "evidence": [
+      "Pitch Scalar; Reevaluation"
+    ]
+  },
+  {
+    "id": 4455,
+    "title": "Start Rule",
+    "path": "articles/actions/4455-start-rule.md",
+    "source_url": "https://workshop.codes/wiki/articles/4455",
+    "review_status": "read",
+    "topics": [
+      "subroutines",
+      "event-context",
+      "concurrency"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Start Rule runs a subroutine simultaneously without pausing the caller and inherits the caller's event context.",
+      "If no corresponding subroutine exists it is ignored; Already Executing policy is scoped to the same player/global entity and defaults to Restart Rule."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Subroutine; If ALREADY EXECUTING"
+    ]
+  },
+  {
+    "id": 4507,
+    "title": "Start Scaling Barriers",
+    "path": "articles/actions/4507-start-scaling-barriers.md",
+    "source_url": "https://workshop.codes/wiki/articles/4507",
+    "review_status": "read",
+    "topics": [
+      "scaling",
+      "reevaluation"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Barrier scale is a multiplier (0.5 halves, 2 doubles); enabled reevaluation updates every frame, otherwise scale is sampled once."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Scale; Reevaluation"
+    ]
+  },
+  {
+    "id": 9662,
+    "title": "Start Scaling Player",
+    "path": "articles/actions/9662-start-scaling-player.md",
+    "source_url": "https://workshop.codes/wiki/articles/9662",
+    "review_status": "read",
+    "topics": [
+      "scaling",
+      "performance",
+      "collision"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Player scaling changes movement collision, hit detection and certain abilities as well as appearance.",
+      "Large players in complex environments can severely increase server load; article suggests disabling environment movement collision.",
+      "Scale is a multiplier, sampled every frame only when reevaluation is enabled."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Scale; Reevaluation"
+    ]
+  },
+  {
+    "id": 4456,
+    "title": "Start Throttle In Direction",
+    "path": "articles/actions/4456-start-throttle-in-direction.md",
+    "source_url": "https://workshop.codes/wiki/articles/4456",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "throttle",
+      "reevaluation"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Starting throttle-in-direction cancels any previous instance; it can replace or add to existing input.",
+      "Direction is normalized in selected world/local space; magnitude 1 is full input, with selected direction/magnitude reevaluation."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Direction; Magnitude; Behavior; Reevaluation"
+    ]
+  },
+  {
+    "id": 4457,
+    "title": "Start Transforming Throttle",
+    "path": "articles/actions/4457-start-transforming-throttle.md",
+    "source_url": "https://workshop.codes/wiki/articles/4457",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "throttle",
+      "camera",
+      "reevaluation"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Transforming throttle cancels a previous transform; it scales left/right X and forward/back Y before rotating input.",
+      "Axis scalars and relative direction always reevaluate every frame; relative direction is normalized.",
+      "Supplying camera-facing direction makes movement camera-relative."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; X Axis Scalar; Y Axis Scalar; Relative Direction"
+    ]
+  },
+  {
+    "id": 4458,
+    "title": "Stop Accelerating",
+    "path": "articles/actions/4458-stop-accelerating.md",
+    "source_url": "https://workshop.codes/wiki/articles/4458",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4526,
+    "title": "Stop All Assists",
+    "path": "articles/actions/4526-stop-all-assists.md",
+    "source_url": "https://workshop.codes/wiki/articles/4526",
+    "review_status": "read",
+    "topics": [
+      "assists",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4459,
+    "title": "Stop All Damage Modifications",
+    "path": "articles/actions/4459-stop-all-damage-modifications.md",
+    "source_url": "https://workshop.codes/wiki/articles/4459",
+    "review_status": "read",
+    "topics": [
+      "damage",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4461,
+    "title": "Stop All Damage Over Time",
+    "path": "articles/actions/4461-stop-all-damage-over-time.md",
+    "source_url": "https://workshop.codes/wiki/articles/4461",
+    "review_status": "read",
+    "topics": [
+      "damage",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Stop All Damage Over Time targets scripted DoTs on selected players, rather than all natural damage-over-time effects."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Player"
+    ]
+  },
+  {
+    "id": 4462,
+    "title": "Stop All Heal Over Time",
+    "path": "articles/actions/4462-stop-all-heal-over-time.md",
+    "source_url": "https://workshop.codes/wiki/articles/4462",
+    "review_status": "read",
+    "topics": [
+      "healing",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Stop All Heal Over Time targets scripted HoTs on selected players."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Player"
+    ]
+  },
+  {
+    "id": 4460,
+    "title": "Stop All Healing Modifications",
+    "path": "articles/actions/4460-stop-all-healing-modifications.md",
+    "source_url": "https://workshop.codes/wiki/articles/4460",
+    "review_status": "read",
+    "topics": [
+      "healing",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4525,
+    "title": "Stop Assist",
+    "path": "articles/actions/4525-stop-assist.md",
+    "source_url": "https://workshop.codes/wiki/articles/4525",
+    "review_status": "read",
+    "topics": [
+      "assists",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "An assist ID can be Last Assist ID or its saved variable value for targeted cleanup."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Assist ID"
+    ]
+  },
+  {
+    "id": 4463,
+    "title": "Stop Camera",
+    "path": "articles/actions/4463-stop-camera.md",
+    "source_url": "https://workshop.codes/wiki/articles/4463",
+    "review_status": "read",
+    "topics": [
+      "camera",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4464,
+    "title": "Stop Chasing Global Variable",
+    "path": "articles/actions/4464-stop-chasing-global-variable.md",
+    "source_url": "https://workshop.codes/wiki/articles/4464",
+    "review_status": "read",
+    "topics": [
+      "chasing",
+      "variables"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Stopping a chase leaves the global variable at its current value rather than resetting or finishing it."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4465,
+    "title": "Stop Chasing Player Variable",
+    "path": "articles/actions/4465-stop-chasing-player-variable.md",
+    "source_url": "https://workshop.codes/wiki/articles/4465",
+    "review_status": "read",
+    "topics": [
+      "chasing",
+      "variables"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Stopping a chase leaves each player's variable at its current value; arrays of players stop all specified variables."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Player"
+    ]
+  },
+  {
+    "id": 4466,
+    "title": "Stop Damage Modification",
+    "path": "articles/actions/4466-stop-damage-modification.md",
+    "source_url": "https://workshop.codes/wiki/articles/4466",
+    "review_status": "read",
+    "topics": [
+      "damage",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Stop a particular damage modifier using Last Damage Modification ID or a previously stored handle."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Damage Modification"
+    ]
+  },
+  {
+    "id": 4467,
+    "title": "Stop Damage Over Time",
+    "path": "articles/actions/4467-stop-damage-over-time.md",
+    "source_url": "https://workshop.codes/wiki/articles/4467",
+    "review_status": "read",
+    "topics": [
+      "damage",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Stop a particular DoT using Last Damage Over Time ID or a previously stored handle."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Damage Over Time ID"
+    ]
+  },
+  {
+    "id": 4468,
+    "title": "Stop Facing",
+    "path": "articles/actions/4468-stop-facing.md",
+    "source_url": "https://workshop.codes/wiki/articles/4468",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4543,
+    "title": "Stop Forcing Dummy Bot Name",
+    "path": "articles/actions/4543-stop-forcing-dummy-bot-name.md",
+    "source_url": "https://workshop.codes/wiki/articles/4543",
+    "review_status": "read",
+    "topics": [
+      "bots",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4504,
+    "title": "Stop Forcing Player Outlines",
+    "path": "articles/actions/4504-stop-forcing-player-outlines.md",
+    "source_url": "https://workshop.codes/wiki/articles/4504",
+    "review_status": "read",
+    "topics": [
+      "visibility",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Outline reset is scoped to viewed players from selected viewing players' perspectives."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Viewed Players; Viewing Players"
+    ]
+  },
+  {
+    "id": 4470,
+    "title": "Stop Forcing Player Position",
+    "path": "articles/actions/4470-stop-forcing-player-position.md",
+    "source_url": "https://workshop.codes/wiki/articles/4470",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Stopping forced position resumes regular movement from the last forced position."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4469,
+    "title": "Stop Forcing Player To Be Hero",
+    "path": "articles/actions/4469-stop-forcing-player-to-be-hero.md",
+    "source_url": "https://workshop.codes/wiki/articles/4469",
+    "review_status": "read",
+    "topics": [
+      "heroes",
+      "respawning",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Stopping forced hero does not respawn players; it restores availability next time they enter hero select."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ]
+  },
+  {
+    "id": 4471,
+    "title": "Stop Forcing Spawn Room",
+    "path": "articles/actions/4471-stop-forcing-spawn-room.md",
+    "source_url": "https://workshop.codes/wiki/articles/4471",
+    "review_status": "read",
+    "topics": [
+      "respawning",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4472,
+    "title": "Stop Forcing Throttle",
+    "path": "articles/actions/4472-stop-forcing-throttle.md",
+    "source_url": "https://workshop.codes/wiki/articles/4472",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4473,
+    "title": "Stop Heal Over Time",
+    "path": "articles/actions/4473-stop-heal-over-time.md",
+    "source_url": "https://workshop.codes/wiki/articles/4473",
+    "review_status": "read",
+    "topics": [
+      "healing",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Stop a particular HoT using Last Heal Over Time ID or a previously stored handle."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "HEAL Over Time ID"
+    ]
+  },
+  {
+    "id": 4474,
+    "title": "Stop Healing Modification",
+    "path": "articles/actions/4474-stop-healing-modification.md",
+    "source_url": "https://workshop.codes/wiki/articles/4474",
+    "review_status": "read",
+    "topics": [
+      "healing",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Stop a particular healing modifier using Last Healing Modification ID or a previously stored handle."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Healing Modification ID"
+    ]
+  },
+  {
+    "id": 4475,
+    "title": "Stop Holding Button",
+    "path": "articles/actions/4475-stop-holding-button.md",
+    "source_url": "https://workshop.codes/wiki/articles/4475",
+    "review_status": "read",
+    "topics": [
+      "input",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Button"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4514,
+    "title": "Stop Modifying Hero Voice Lines",
+    "path": "articles/actions/4514-stop-modifying-hero-voice-lines.md",
+    "source_url": "https://workshop.codes/wiki/articles/4514",
+    "review_status": "read",
+    "topics": [
+      "audio",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [
+      "Player property incorrectly describes movement collision."
+    ],
+    "evidence": [
+      "Description; Player"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4829,
+    "title": "Stop Modifying Voice Lines",
+    "path": "articles/actions/4829-stop-modifying-voice-lines.md",
+    "source_url": "https://workshop.codes/wiki/articles/4829",
+    "review_status": "read",
+    "topics": [
+      "audio",
+      "cleanup",
+      "aliases"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [
+      "Likely older/alternate name of Stop Modifying Hero Voice Lines; no explicit alias/deprecation declaration. Player property incorrectly describes movement collision."
+    ],
+    "evidence": [
+      "Description; Arguments"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4508,
+    "title": "Stop Scaling Barriers",
+    "path": "articles/actions/4508-stop-scaling-barriers.md",
+    "source_url": "https://workshop.codes/wiki/articles/4508",
+    "review_status": "read",
+    "topics": [
+      "scaling",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4506,
+    "title": "Stop Scaling Player",
+    "path": "articles/actions/4506-stop-scaling-player.md",
+    "source_url": "https://workshop.codes/wiki/articles/4506",
+    "review_status": "read",
+    "topics": [
+      "scaling",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4476,
+    "title": "Stop Throttle In Direction",
+    "path": "articles/actions/4476-stop-throttle-in-direction.md",
+    "source_url": "https://workshop.codes/wiki/articles/4476",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Player"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4477,
+    "title": "Stop Transforming Throttle",
+    "path": "articles/actions/4477-stop-transforming-throttle.md",
+    "source_url": "https://workshop.codes/wiki/articles/4477",
+    "review_status": "read",
+    "topics": [
+      "movement",
+      "cleanup"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Player"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4478,
+    "title": "Teleport",
+    "path": "articles/actions/4478-teleport.md",
+    "source_url": "https://workshop.codes/wiki/articles/4478",
+    "review_status": "read",
+    "topics": [
+      "movement"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Teleport accepts a player as Position and uses that player's position."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Position"
+    ]
+  },
+  {
+    "id": 4479,
+    "title": "Unpause Match Time",
+    "path": "articles/actions/4479-unpause-match-time.md",
+    "source_url": "https://workshop.codes/wiki/articles/4479",
+    "review_status": "read",
+    "topics": [
+      "time",
+      "match-flow"
+    ],
+    "disposition": "api-reference",
+    "important_information": [],
+    "uncertainties": [],
+    "evidence": [
+      "Description"
+    ],
+    "note": "Full body read; ordinary API description/signature only, with no additional material behavior or pitfall."
+  },
+  {
+    "id": 4480,
+    "title": "Wait",
+    "path": "articles/actions/4480-wait.md",
+    "source_url": "https://workshop.codes/wiki/articles/4480",
+    "review_status": "read",
+    "topics": [
+      "wait",
+      "time",
+      "control-flow"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Wait's documented minimum is 0.016s at 62.5 ticks/s; durations round upward to tick intervals (0.030→0.032, 0.1→0.112).",
+      "Wait Behavior uses the rule condition list to choose ignore, abort or restart behavior."
+    ],
+    "uncertainties": [
+      "Tick timing is archived, not live verified; wording 'divisible by tickrate' should be rewritten as tick interval multiples.",
+      "Brief action reference does not describe all event/condition edge cases."
+    ],
+    "evidence": [
+      "Description; Wait Behavior"
+    ]
+  },
+  {
+    "id": 9298,
+    "title": "Wait Until",
+    "path": "articles/actions/9298-wait-until.md",
+    "source_url": "https://workshop.codes/wiki/articles/9298",
+    "review_status": "read",
+    "topics": [
+      "wait",
+      "time",
+      "control-flow"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Wait Until ends when its continue predicate is true or timeout elapses; it ignores the rule's conditions during the wait.",
+      "It may pass after zero ticks and has no one-tick minimum."
+    ],
+    "uncertainties": [
+      "Action reference omits predicate invalidation/reevaluation pitfalls reported elsewhere; do not treat it as a complete polling model."
+    ],
+    "evidence": [
+      "Description; Notes; Continue Condition; Timeout"
+    ]
+  },
+  {
+    "id": 4481,
+    "title": "While",
+    "path": "articles/actions/4481-while.md",
+    "source_url": "https://workshop.codes/wiki/articles/4481",
+    "review_status": "read",
+    "topics": [
+      "control-flow"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "While tests its condition at loop top and exits to the action after the matching same-level End when false."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Description; Condition"
+    ]
+  },
+  {
+    "id": 2112,
+    "title": "element cost of actions",
+    "path": "articles/actions/2112-element-cost-of-actions.md",
+    "source_url": "https://workshop.codes/wiki/articles/2112",
+    "review_status": "read",
+    "topics": [
+      "element-budget",
+      "catalog"
+    ],
+    "disposition": "data-catalog",
+    "important_information": [
+      "Element table is measured with stock argument values, not a fixed per-action cost independent of expressions; empty rules/events cost one in this table.",
+      "The complete article is a lookup catalog suitable for generated/reference data rather than mandatory prose."
+    ],
+    "uncertainties": [
+      "Dated 2024-03-16; names contain typos and no measurement method/version is supplied; avoid treating counts as current total cost formulas."
+    ],
+    "evidence": [
+      "Opening notes; full syntax/element-count table"
+    ]
+  },
+  {
+    "id": 4824,
+    "title": "Ongoing - Each Player",
+    "path": "articles/events/4824-ongoing-each-player.md",
+    "source_url": "https://workshop.codes/wiki/articles/4824",
+    "review_status": "read",
+    "topics": [
+      "events",
+      "conditions",
+      "initialization",
+      "time"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Ongoing Each Player is rising-edge triggered per player: all conditions must become true; staying true on subsequent ticks does not retrigger, and at least one must become false to rearm.",
+      "Conditions are checked each server tick; with no conditions, it fires immediately whenever a player loads into the game.",
+      "Team and hero/slot filters determine the associated players; Event Player is the triggering player."
+    ],
+    "uncertainties": [
+      "Page does not describe active-rule retriggers or what changing hero/slot filters does to an executing rule."
+    ],
+    "evidence": [
+      "Opening paragraphs; Arguments; Contextual Value"
+    ]
+  },
+  {
+    "id": 4825,
+    "title": "Ongoing - Global",
+    "path": "articles/events/4825-ongoing-global.md",
+    "source_url": "https://workshop.codes/wiki/articles/4825",
+    "review_status": "read",
+    "topics": [
+      "events",
+      "conditions",
+      "initialization",
+      "time"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Ongoing Global is rising-edge triggered: conditions remaining true do not retrigger; at least one must become false to rearm.",
+      "Conditions check every server tick; without conditions it fires immediately at server start."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Full body, first and second paragraphs"
+    ]
+  },
+  {
+    "id": 4820,
+    "title": "Player Dealt Damage",
+    "path": "articles/events/4820-player-dealt-damage.md",
+    "source_url": "https://workshop.codes/wiki/articles/4820",
+    "review_status": "read",
+    "topics": [
+      "events",
+      "damage",
+      "event-context"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Dealt Damage includes self-damage and checks rule conditions when the event occurs.",
+      "Event Player and Attacker are the damage dealer; Victim is receiver (same as attacker for self-damage). Context includes Event Damage, critical hit, Event Ability and incoming Event Direction."
+    ],
+    "uncertainties": [
+      "Page omits concurrency/retrigger handling and does not establish event behavior for barriers/owned objects."
+    ],
+    "evidence": [
+      "Opening paragraph; Contextual Values"
+    ]
+  },
+  {
+    "id": 1736,
+    "title": "Player Dealt Final Blow",
+    "path": "articles/events/1736-player-dealt-final-blow.md",
+    "source_url": "https://workshop.codes/wiki/articles/1736",
+    "review_status": "read",
+    "topics": [
+      "events",
+      "damage",
+      "event-context"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Final Blow includes suicide; Event Player/Attacker is the killer and Victim is the dying player, all equal on suicide.",
+      "Context includes final damage amount, critical hit, Event Ability and incoming Event Direction; this event is distinct from merely earning elimination credit."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Opening paragraph; Contextual Values"
+    ]
+  },
+  {
+    "id": 7450,
+    "title": "Player Dealt Healing",
+    "path": "articles/events/7450-player-dealt-healing.md",
+    "source_url": "https://workshop.codes/wiki/articles/7450",
+    "review_status": "read",
+    "topics": [
+      "events",
+      "healing",
+      "event-context"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Dealt Healing includes self-healing; Event Player equals Healer, Healee is recipient (same for self-heal). Context includes Event Healing, Event Was Health Pack, Event Ability and incoming Event Direction."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Opening paragraph; Contextual Values"
+    ]
+  },
+  {
+    "id": 4816,
+    "title": "Player Dealt Knockback",
+    "path": "articles/events/4816-player-dealt-knockback.md",
+    "source_url": "https://workshop.codes/wiki/articles/4816",
+    "review_status": "read",
+    "topics": [
+      "events",
+      "knockback",
+      "event-context"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Dealt Knockback includes self-knockback; Event Player equals Attacker, Victim is receiver; context also exposes Event Ability and incoming Event Direction."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Opening paragraph; Contextual Values"
+    ]
+  },
+  {
+    "id": 4818,
+    "title": "Player Died",
+    "path": "articles/events/4818-player-died.md",
+    "source_url": "https://workshop.codes/wiki/articles/4818",
+    "review_status": "read",
+    "topics": [
+      "events",
+      "damage",
+      "event-context"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Player Died has Event Player equal Victim; Attacker is final-blow dealer (same on suicide). Context exposes received damage, critical hit, ability and incoming direction."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Opening paragraph; Contextual Values"
+    ]
+  },
+  {
+    "id": 4814,
+    "title": "Player Earned Elimination",
+    "path": "articles/events/4814-player-earned-elimination.md",
+    "source_url": "https://workshop.codes/wiki/articles/4814",
+    "review_status": "read",
+    "topics": [
+      "events",
+      "damage",
+      "attribution",
+      "event-context"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Earned Elimination triggers on elimination credit, with Event Player/Attacker equal the credited player and Victim the credited victim.",
+      "Page lists damage, critical-hit, ability and direction context as available."
+    ],
+    "uncertainties": [
+      "Context details for non-final-blow elimination credit are not further explained; avoid assuming this equals Final Blow."
+    ],
+    "evidence": [
+      "Opening paragraph; Contextual Values"
+    ]
+  },
+  {
+    "id": 4815,
+    "title": "Player Joined Match",
+    "path": "articles/events/4815-player-joined-match.md",
+    "source_url": "https://workshop.codes/wiki/articles/4815",
+    "review_status": "read",
+    "topics": [
+      "events",
+      "players",
+      "initialization"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Joined Match runs at player join only if its conditions are true and exposes Event Player."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Opening paragraph; Contextual Value"
+    ]
+  },
+  {
+    "id": 4821,
+    "title": "Player Left Match",
+    "path": "articles/events/4821-player-left-match.md",
+    "source_url": "https://workshop.codes/wiki/articles/4821",
+    "review_status": "read",
+    "topics": [
+      "events",
+      "players",
+      "cleanup",
+      "lifecycle"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "By Player Left Match, that player's variables and all other information about them are no longer available; Event Player is still listed as the trigger reference."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Note; Contextual Value"
+    ]
+  },
+  {
+    "id": 4813,
+    "title": "Player Received Healing",
+    "path": "articles/events/4813-player-received-healing.md",
+    "source_url": "https://workshop.codes/wiki/articles/4813",
+    "review_status": "read",
+    "topics": [
+      "events",
+      "healing",
+      "event-context"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Received Healing includes self-healing; Event Player equals Healee, while Healer is source (equal for self-heal). Context includes Event Healing, health-pack flag, ability and incoming direction."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Opening paragraph; Contextual Values"
+    ]
+  },
+  {
+    "id": 4817,
+    "title": "Player Received Knockback",
+    "path": "articles/events/4817-player-received-knockback.md",
+    "source_url": "https://workshop.codes/wiki/articles/4817",
+    "review_status": "read",
+    "topics": [
+      "events",
+      "knockback",
+      "event-context"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Received Knockback includes self-knockback; Event Player equals Victim, Attacker is source; context also supplies Event Ability and incoming Event Direction."
+    ],
+    "uncertainties": [],
+    "evidence": [
+      "Opening paragraph; Contextual Values"
+    ]
+  },
+  {
+    "id": 4819,
+    "title": "Player Took Damage",
+    "path": "articles/events/4819-player-took-damage.md",
+    "source_url": "https://workshop.codes/wiki/articles/4819",
+    "review_status": "read",
+    "topics": [
+      "events",
+      "damage",
+      "event-context"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Took Damage includes self-damage and checks rule conditions on event; Event Player equals Victim, Attacker is source (equal for self-damage).",
+      "Context supplies received damage, critical-hit flag, ability and incoming direction."
+    ],
+    "uncertainties": [
+      "Page omits active-rule concurrency/retrigger handling; it does not contradict tutorial-specific rules but does not independently explain them."
+    ],
+    "evidence": [
+      "Opening paragraph; Contextual Values"
+    ]
+  },
+  {
+    "id": 1292,
+    "title": "Subroutine",
+    "path": "articles/events/1292-subroutine.md",
+    "source_url": "https://workshop.codes/wiki/articles/1292",
+    "review_status": "read",
+    "topics": [
+      "subroutines",
+      "event-context",
+      "limits"
+    ],
+    "disposition": "api-reference",
+    "important_information": [
+      "Subroutine events are manually triggered via Call Subroutine/Start Rule, cannot have conditions, and inherit calling rule context.",
+      "Maximum 128 subroutines; a subroutine name can only be selected once in a project."
+    ],
+    "uncertainties": [
+      "Limit/name uniqueness claim comes from an article last updated 2021-03-18."
+    ],
+    "evidence": [
+      "Opening paragraphs; Argument; Contextual Values"
+    ]
+  },
+  {
+    "id": 4852,
+    "title": "C-style Syntax in the Workshop",
+    "path": "articles/references/4852-cstyle-syntax-in-the-workshop.md",
+    "source_url": "https://workshop.codes/wiki/articles/4852",
+    "review_status": "read",
+    "topics": [
+      "syntax",
+      "native-authoring"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Native Workshop has equivalent C-style forms for assignments, arithmetic/logic, ternary and array indexing.",
+      "The exponent operator is ^ (not XOR); += and ^= map to Modify Variable operations."
+    ],
+    "uncertainties": [
+      "Article frames the change as April 2020 PTR history; Or row uses box-drawing vertical glyphs, so do not copy its displayed symbol verbatim as executable syntax."
+    ],
+    "evidence": [
+      "Opening paragraph; complete Actions and Values mapping tables"
+    ]
+  },
+  {
+    "id": 4830,
+    "title": "Get input from a Spectator",
+    "path": "articles/references/4830-get-input-from-a-spectator.md",
+    "source_url": "https://workshop.codes/wiki/articles/4830",
+    "review_status": "read",
+    "topics": [
+      "spectators",
+      "input",
+      "local-player",
+      "client-context"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "A spectator host's input can be read through Host Player and Is Button Held.",
+      "Other spectators' input is read only in visual-element fields using Local Player; Not(Entity Exists(Local Player)) is proposed to identify a spectator.",
+      "Spectator controls map unexpectedly: Move Down→Ability1, Move Up→Interact, Move Fast→Secondary Fire, Move Slow→Primary Fire, Lock On→Ability2, Modify FOV→Jump, Disable Camera Blending→Ultimate."
+    ],
+    "uncertainties": [
+      "Crouch/Reload/Melee mappings are unknown; client visual-field technique does not establish server-side writable input or universal spectator state semantics."
+    ],
+    "evidence": [
+      "Opening paragraphs; Visible To example; complete mapping table"
+    ]
+  },
+  {
+    "id": 4859,
+    "title": "OSTW Pathmaps",
+    "path": "articles/references/4859-ostw-pathmaps.md",
+    "source_url": "https://workshop.codes/wiki/articles/4859",
+    "review_status": "read",
+    "topics": [
+      "pathfinding",
+      "external-tool",
+      "ostw"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "OSTW pathfinding uses preset .pathmap files; article supplies seven external map/gamemode pathmaps.",
+      "Illustrates BakeCompressed with periodic MinWait, Pathfind calls, and skipping a node when line of sight and near-equal height permit smoothing."
+    ],
+    "uncertainties": [
+      "This is OSTW-specific syntax, not OverPy or native Workshop; external files were not fetched/validated. 'Compressed is much faster' is an unmeasured source claim."
+    ],
+    "evidence": [
+      "Other Pathfinding Options; For Smoother Pathfinding Outcomes; Pathmaps"
+    ]
+  },
+  {
+    "id": 1714,
+    "title": "Payload Progress Percentage at Checkpoints",
+    "path": "articles/references/1714-payload-progress-percentage-at-checkpoints.md",
+    "source_url": "https://workshop.codes/wiki/articles/1714",
+    "review_status": "read",
+    "topics": [
+      "maps",
+      "payload",
+      "catalog"
+    ],
+    "disposition": "data-catalog",
+    "important_information": [
+      "Provides archived checkpoint Payload Progress Percentage values for seven Escort and five Hybrid maps.",
+      "Measurements used share code7829N and 50% payload speed; article says payload speed affects the results, so values should not be treated as exact universal constants."
+    ],
+    "uncertainties": [
+      "Last updated 2022-11-12; map list and geometries may have changed, and sampling precision depends on speed."
+    ],
+    "evidence": [
+      "Opening measurement notes; full Escort and Hybrid lists"
+    ]
+  },
+  {
+    "id": 8242,
+    "title": "Projectile size of all weapons and abilities",
+    "path": "articles/references/8242-projectile-size-of-all-weapons-and-abilities.md",
+    "source_url": "https://workshop.codes/wiki/articles/8242",
+    "review_status": "read",
+    "topics": [
+      "projectiles",
+      "collision",
+      "hero-data",
+      "catalog"
+    ],
+    "disposition": "data-catalog",
+    "important_information": [
+      "The complete weapon/ability size table uses radius in meters, unlike its credited source's diameter; share code7QW6W is supplied for verification.",
+      "Data varies by firing mode and target allegiance: Ana ally rifle radius is0.3m scoped/unscoped versus enemy0.15m unscoped/0.07m scoped; Symmetra secondary lists0.11–0.57m.",
+      "Catalog includes weapon/beam/hitscan-style entries as well as projectile abilities, so preserve the source's per-entry type/context rather than assuming every row is a moving projectile."
+    ],
+    "uncertainties": [
+      "Values are patch-sensitive; article updated2026-02-27 mixes current and legacy ability names. Verification code and cited forum post were not run/read; no numeric entry independently verified."
+    ],
+    "evidence": [
+      "Opening radius-versus-diameter note; complete Tank/Damage/Support tables; Ana; Symmetra"
+    ]
+  },
+  {
+    "id": 1862,
+    "title": "Workshop Extensions",
+    "path": "articles/references/1862-workshop-extensions.md",
+    "source_url": "https://workshop.codes/wiki/articles/1862",
+    "review_status": "read",
+    "topics": [
+      "extensions",
+      "limits",
+      "effects",
+      "projectiles",
+      "bots"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Extension points are earned by disabled player slots (4 each) and using only Workshop maps (16).",
+      "Extensions unlock effects/sounds/projectile types; some ignore Radius, coerce non-team colors to a team color, and first-person effects require player-valued Position.",
+      "Archived costs: Beam Effects2, Beam Sounds1, Buff/Debuff Sounds2, Buff Status2, Debuff Status2, Energy Explosion4, Explosion Sounds2, Kinetic Explosion4, Play More Effects1, Projectiles4, Spawn More Dummy Bots2.",
+      "Play More Effects doubles allowed effects; Spawn More Dummy Bots adds12 bots."
+    ],
+    "uncertainties": [
+      "Economy/capacities last updated2023-04-13; embedded calculator not executed. 'Effects allowed to be played' should be reconciled with Create Effect capacity and Play Effect exemption."
+    ],
+    "evidence": [
+      "Opening paragraphs; complete extension table"
+    ]
+  },
+  {
+    "id": 4838,
+    "title": "Workshop Extensions - Beam Sounds Reference Sheet",
+    "path": "articles/references/4838-workshop-extensions-beam-sounds-reference-sheet.md",
+    "source_url": "https://workshop.codes/wiki/articles/4838",
+    "review_status": "read",
+    "topics": [
+      "audio",
+      "extensions",
+      "catalog"
+    ],
+    "disposition": "data-catalog",
+    "important_information": [
+      "Some beam sounds have an initial wind-up that does not repeat with the loop, with exceptions; recording duration is not actual loop duration.",
+      "Full body catalogs14 beam-sound labels with remote sample URLs."
+    ],
+    "uncertainties": [
+      "Remote audio was not played; recording-length warning precludes inferring runtime loop timing from asset duration."
+    ],
+    "evidence": [
+      "Opening bold note; complete audio catalog"
+    ]
+  },
+  {
+    "id": 4840,
+    "title": "Workshop Extensions - Energy Explosion Effects Reference Sheet",
+    "path": "articles/references/4840-workshop-extensions-energy-explosion-effects-reference-sheet.md",
+    "source_url": "https://workshop.codes/wiki/articles/4840",
+    "review_status": "read",
+    "topics": [
+      "effects",
+      "extensions",
+      "catalog"
+    ],
+    "disposition": "data-catalog",
+    "important_information": [
+      "Energy-explosion effects are animations; the provided friendly/enemy still screenshots do not fully represent them.",
+      "Full body contains20 named effect galleries with friendly/enemy image URLs."
+    ],
+    "uncertainties": [
+      "Remote images/animations were not fetched or visually inspected; no behavior beyond the prose warning is verified."
+    ],
+    "evidence": [
+      "Opening italic warning; complete gallery list"
+    ]
+  },
+  {
+    "id": 2765,
+    "title": "Workshop Extensions - Explosion Sounds Reference Sheet",
+    "path": "articles/references/2765-workshop-extensions-explosion-sounds-reference-sheet.md",
+    "source_url": "https://workshop.codes/wiki/articles/2765",
+    "review_status": "read",
+    "topics": [
+      "audio",
+      "effects",
+      "extensions",
+      "catalog"
+    ],
+    "disposition": "data-catalog",
+    "important_information": [
+      "Explosion sound appearance varies with Color(Team1) versus Color(Team2), often volume/bass; White is described as enemy sound and loudest.",
+      "Using Event Player as Position may sound different or produce no sound versus Position Of(Event Player).",
+      "Complete body catalogs40 explosion-sound sample URLs."
+    ],
+    "uncertainties": [
+      "This specific sound-color guidance qualifies generic Create Effect documentation saying color does not apply to sound effects; flag and explain context instead of deleting one claim.",
+      "Remote recordings were not played; archived2024-09-08 behavior is unverified."
+    ],
+    "evidence": [
+      "Opening paragraph; complete audio catalog"
+    ]
+  },
+  {
+    "id": 2168,
+    "title": "Workshop Settings",
+    "path": "articles/references/2168-workshop-settings.md",
+    "source_url": "https://workshop.codes/wiki/articles/2168",
+    "review_status": "read",
+    "topics": [
+      "settings",
+      "native-authoring",
+      "configuration"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Workshop settings/menu are created merely by using Workshop Setting values in rules; every setting name must be unique.",
+      "Categories are case-sensitive and appear in script order; inside each category settings sort by ascending sort order, then alphanumerically.",
+      "Combo evaluates to a zero-based option index; Hero returns a Hero; Integer and Real ranges include endpoints; Toggle returns Boolean."
+    ],
+    "uncertainties": [
+      "Remote screenshots were not inspected; names/categories behavior is archived2024-06-09."
+    ],
+    "evidence": [
+      "General Usage; Combo; Hero; Integer; Real; Toggle; full example"
+    ]
+  },
+  {
+    "id": 4827,
+    "title": "Create Multiple HUD Texts that use Player Data and Refresh when players Leave/Join ",
+    "path": "articles/tutorials/4827-create-multiple-hud-texts-that-use-player-data-and-refresh-when-players-leavejoin.md",
+    "source_url": "https://workshop.codes/wiki/articles/4827",
+    "review_status": "read",
+    "topics": [
+      "hud",
+      "players",
+      "lifecycle",
+      "cleanup"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Example stores every Last Text ID in a global array, detects team-roster changes, destroys tracked texts, clears the array, and recreates per-player HUDs.",
+      "Uses a0.5s wait to let the global cleanup rule run before per-player creation; HUD string reevaluation updates status without recreating the text for each status change."
+    ],
+    "uncertainties": [
+      "Article explicitly calls this an example that could be improved; fixed-delay ordering is fragile under rapid roster changes and was not tested. Preserve the ownership/cleanup pattern rather than presenting the snippet as a canonical robust implementation."
+    ],
+    "evidence": [
+      "Opening disclaimer; creation rule; Auto Cleaner rule"
+    ]
+  },
+  {
+    "id": 5932,
+    "title": "How to Data Compression with Strings",
+    "path": "articles/tutorials/5932-how-to-data-compression-with-strings.md",
+    "source_url": "https://workshop.codes/wiki/articles/5932",
+    "review_status": "read",
+    "topics": [
+      "strings",
+      "compression",
+      "element-budget",
+      "serialization"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Encoding large static vectors/strings into Custom String data can reduce element count, with runtime parsing/decompression cost.",
+      "Example format uses semicolon-separated typed records c/n/s/v, comma-separated vector components, numeric sign/decimal parsing, and subroutines; decoder yields through a Wait for each decoded item."
+    ],
+    "uncertainties": [
+      "Example relies on compact Boolean/Null numeric coercions and unusual Skip/Else dispatch; not validated as a reusable parser.",
+      "No escaping scheme for embedded delimiters, malformed-input handling, locale behavior, benchmarks or concurrency safety is supplied; shared global parser state is visible in code."
+    ],
+    "evidence": [
+      "What is data compression; When to use this; full Example"
+    ]
+  },
+  {
+    "id": 2042,
+    "title": "How to Import a Workshop Code",
+    "path": "articles/tutorials/2042-how-to-import-a-workshop-code.md",
+    "source_url": "https://workshop.codes/wiki/articles/2042",
+    "review_status": "read",
+    "topics": [
+      "import-export",
+      "native-authoring"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Import workflow: create Custom Game, open settings, choose Import Code, enter code and confirm."
+    ],
+    "uncertainties": [
+      "UI instructions last updated2024-01-03; remote screenshots were not inspected."
+    ],
+    "evidence": [
+      "Full four-step tutorial"
+    ]
+  },
+  {
+    "id": 8176,
+    "title": "How to cancel ultimate voice line with a one tick freeze/stun",
+    "path": "articles/tutorials/8176-how-to-cancel-ultimate-voice-line-with-a-one-tick-freezestun.md",
+    "source_url": "https://workshop.codes/wiki/articles/8176",
+    "review_status": "read",
+    "topics": [
+      "abilities",
+      "audio",
+      "time",
+      "workaround"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Tutorial experiments with freezing a hero one tick after ultimate input to cancel voice lines while retaining ultimate behavior.",
+      "It claims useful results for Winston/Bastion/Widowmaker/Reaper/Genji/Symmetra/Tracer/Baptiste, and conditional/tricky results for Sigma/Cassidy/Pharah; point-and-click ultimates may require rapid follow-up input."
+    ],
+    "uncertainties": [
+      "Per-hero result table exists only as a remote image and was not inspected; text list cannot reconstruct cancellation outcomes for every hero.",
+      "Hero-specific interruption behavior is patch-sensitive; old McCree naming despite2026 update suggests underlying test vintage may be older."
+    ],
+    "evidence": [
+      "Experiment description; concluding hero lists"
+    ]
+  },
+  {
+    "id": 1724,
+    "title": "How to create an import code for your project",
+    "path": "articles/tutorials/1724-how-to-create-an-import-code-for-your-project.md",
+    "source_url": "https://workshop.codes/wiki/articles/1724",
+    "review_status": "read",
+    "topics": [
+      "import-export",
+      "release-workflow"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Share/import code snapshots the entire lobby settings state, excluding players/bots/AI; prepare intended settings and remove unwanted debug/datacenter tweaks before sharing.",
+      "Create New Code makes a new snapshot code; Upload to Existing Code overwrites a previously created code's content."
+    ],
+    "uncertainties": [
+      "UI steps and PC-only clipboard note dated2022-12-02; no current share-code retention or permissions policy is established."
+    ],
+    "evidence": [
+      "Step1; Step4; Step5"
+    ]
+  },
+  {
+    "id": 5900,
+    "title": "Impossible Things in Workshop",
+    "path": "articles/tutorials/5900-impossible-things-in-workshop.md",
+    "source_url": "https://workshop.codes/wiki/articles/5900",
+    "review_status": "read",
+    "topics": [
+      "engine-boundaries",
+      "abilities",
+      "player-objects"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Archive lists missing direct capabilities: hiding most abilities, duplicating player-owned objects, directly adding effects to abilities, scaling abilities, and directly modifying weapon attack speed.",
+      "It says player-owned objects such as BOB/turrets do not trigger relevant player events; barriers have invisibility/scaling exceptions."
+    ],
+    "uncertainties": [
+      "Explicitly unfinished beginner article; broad impossibility claims are date-sensitive and need careful scoping.",
+      "Scaling article9662 says certain abilities scale with players, qualifying this article's blanket ability-scaling claim beyond its barrier exception."
+    ],
+    "evidence": [
+      "Abilities bullet list; closing unfinished note"
+    ]
+  },
+  {
+    "id": 4856,
+    "title": "Send a player back to Hero Select",
+    "path": "articles/tutorials/4856-send-a-player-back-to-hero-select.md",
+    "source_url": "https://workshop.codes/wiki/articles/4856",
+    "review_status": "read",
+    "topics": [
+      "heroes",
+      "respawning",
+      "input",
+      "workaround"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "To return a player to hero select, remove their current hero from Allowed Heroes then reset hero availability; useful where no spawn room permits changing hero.",
+      "Example triggers this on Interact using Ongoing Each Player."
+    ],
+    "uncertainties": [
+      "Set Player Allowed Heroes4426 says an empty hero list has no effect, so this workaround may fail when current hero is the only allowed hero; also assess interaction with forced-hero rules."
+    ],
+    "evidence": [
+      "Steps3–4; full rule"
+    ]
+  },
+  {
+    "id": 2082,
+    "title": "Editor control directives: @if, @for, and @each",
+    "path": "articles/workshop-codes/2082-editor-control-directives-if-for-and-each.md",
+    "source_url": "https://workshop.codes/wiki/articles/2082",
+    "review_status": "read",
+    "topics": [
+      "external-editor",
+      "compile-time",
+      "directives"
+    ],
+    "disposition": "site-only",
+    "important_information": [
+      "Workshop.codes @if/@for/@each directives execute before importing into the game; only generated output reaches native Workshop, and game updates require recompilation to affect expanded constants.",
+      "@for supports exclusive 'to' and inclusive 'through'; @each expands constants/custom lists at compile time; these are not native Workshop runtime control actions."
+    ],
+    "uncertainties": [
+      "Page explicitly unfinished; missing supported-operator table and nesting examples; @each example disagrees with its documented syntax (from/in and Button.button/Each.button), and countdown Small Message calls omit audience.",
+      "This is Workshop.codes editor syntax, not OverPy, and should not be blended into either runtime or OverPy language documentation."
+    ],
+    "evidence": [
+      "What are they?; @if; @for; @each; TODO notes"
+    ]
+  },
+  {
+    "id": 1768,
+    "title": "Inline HTML",
+    "path": "articles/workshop-codes/1768-inline-html.md",
+    "source_url": "https://workshop.codes/wiki/articles/1768",
+    "review_status": "read",
+    "topics": [
+      "site-documentation",
+      "html"
+    ],
+    "disposition": "site-only",
+    "important_information": [],
+    "uncertainties": [
+      "Site-specific rendering/embed guidance; no in-game Workshop semantics. Embedded external media was not opened."
+    ],
+    "evidence": [
+      "In general; How to use certain characters; Link to a specific part; Embedded content; workshop.codes colors; complete CSS"
+    ],
+    "note": "Full body read; entirely Workshop.codes page HTML/Markdown/CSS/embed authoring guidance, with no material Workshop engine or OverPy information."
+  }
+]

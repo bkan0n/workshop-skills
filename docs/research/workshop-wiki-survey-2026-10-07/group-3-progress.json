@@ -1,0 +1,52 @@
+{
+  "assigned": 32,
+  "read": 32,
+  "status": "complete",
+  "read_ids": [
+    9200,
+    7978,
+    4828,
+    2130,
+    1993,
+    4857,
+    1976,
+    8507,
+    6460,
+    9463,
+    2041,
+    9562,
+    9331,
+    4864,
+    1730,
+    1903,
+    2103,
+    1882,
+    7418,
+    6790,
+    6064,
+    4855,
+    4823,
+    9496,
+    4826,
+    5734,
+    2004,
+    2080,
+    1840,
+    7385,
+    4833,
+    5372
+  ],
+  "remaining_ids": [],
+  "source_bytes": 366075,
+  "disposition_counts": {
+    "data-catalog": 13,
+    "guide": 16,
+    "historical": 2,
+    "site-only": 1
+  },
+  "verification": "source review only; no game execution, compilation, network, or media fetches",
+  "outputs": [
+    "group-3-ledger.json",
+    "group-3-findings.md"
+  ]
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "group": 1,
+    "manifest": "group-1-manifest.json",
+    "articles": 260,
+    "bytes": 366075,
+    "categories": {
+      "Actions": 227,
+      "Events": 14,
+      "References": 10,
+      "Tutorials": 7,
+      "Workshop.codes": 2
+    }
+  },
+  {
+    "group": 2,
+    "manifest": "group-2-manifest.json",
+    "articles": 338,
+    "bytes": 366054,
+    "categories": {
+      "Constants": 51,
+      "References": 7,
+      "Tutorials": 14,
+      "Values": 264,
+      "Workshop.codes": 2
+    }
+  },
+  {
+    "group": 3,
+    "manifest": "group-3-manifest.json",
+    "articles": 32,
+    "bytes": 366075,
+    "categories": {
+      "References": 15,
+      "Tutorials": 16,
+      "Workshop.codes": 1
+    }
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "article_count": 630,
+  "reviewed_count": 630,
+  "missing_count": 0,
+  "complete": true,
+  "validation_errors": [],
+  "groups": [
+    {
+      "group": 1,
+      "assigned": 260,
+      "reviewed": 260,
+      "remaining": []
+    },
+    {
+      "group": 2,
+      "assigned": 338,
+      "reviewed": 338,
+      "remaining": []
+    },
+    {
+      "group": 3,
+      "assigned": 32,
+      "reviewed": 32,
+      "remaining": []
+    }
+  ],
+  "categories": {
+    "Actions": 227,
+    "Events": 14,
+    "References": 32,
+    "Tutorials": 37,
+    "Workshop.codes": 5,
+    "Constants": 51,
+    "Values": 264
+  },
+  "dispositions": {
+    "api-reference": 496,
+    "data-catalog": 77,
+    "guide": 49,
+    "site-only": 6,
+    "historical": 2
+  },
+  "recorded_findings": 721,
+  "records_with_uncertainties": 145
+}

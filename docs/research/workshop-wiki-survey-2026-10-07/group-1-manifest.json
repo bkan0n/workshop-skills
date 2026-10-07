@@ -1,0 +1,4805 @@
+[
+  {
+    "id": 6068,
+    "title": "Abort",
+    "slug": "abort",
+    "category": "Actions",
+    "tags": [
+      "Abort",
+      "Abortar",
+      "Interrompre",
+      "中止",
+      "Anular",
+      "中止"
+    ],
+    "url": "https://workshop.codes/wiki/articles/6068",
+    "updated_at": "2025-05-25T22:13:45.163Z",
+    "path": "articles/actions/6068-abort.md",
+    "content_sha256": "4fba92550e0f9ae6a5e3c2e0f89490049b8e75786fa8a0ca47bf1598c419be39",
+    "bytes": 475,
+    "repository_path": "archive/articles/actions/6068-abort.md"
+  },
+  {
+    "id": 6069,
+    "title": "Abort If",
+    "slug": "abort-if",
+    "category": "Actions",
+    "tags": [
+      "Abort If",
+      "Abortar si",
+      "Interrompre si",
+      "中止する条件",
+      "Anular se",
+      "根据条件中止"
+    ],
+    "url": "https://workshop.codes/wiki/articles/6069",
+    "updated_at": "2025-05-25T22:18:14.579Z",
+    "path": "articles/actions/6069-abort-if.md",
+    "content_sha256": "abc49e4913370a4d9ee6ca842dada70173300ccb40c1cf785028bebc2f20b871",
+    "bytes": 798,
+    "repository_path": "archive/articles/actions/6069-abort-if.md"
+  },
+  {
+    "id": 4324,
+    "title": "Abort If Condition Is False",
+    "slug": "abort-if-condition-is-false",
+    "category": "Actions",
+    "tags": [
+      "Abort If Condition Is False",
+      "Abortar si la condición es falsa",
+      "Interrompre si la condition est fausse",
+      "条件が「FALSE」の場合中止",
+      "Anular se a Condição for Falsa",
+      "如条件为“假”则中止"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4324",
+    "updated_at": "2024-11-26T13:51:11.755Z",
+    "path": "articles/actions/4324-abort-if-condition-is-false.md",
+    "content_sha256": "a094eb7606f2bdbaf560b013c48fedfa815910cb1f7df5ff0d7bcb208d6f23e1",
+    "bytes": 686,
+    "repository_path": "archive/articles/actions/4324-abort-if-condition-is-false.md"
+  },
+  {
+    "id": 4325,
+    "title": "Abort If Condition Is True",
+    "slug": "abort-if-condition-is-true",
+    "category": "Actions",
+    "tags": [
+      "Abort If Condition Is True",
+      "Abortar si la condición es verdadera",
+      "Interrompre si la condition est vraie",
+      "条件が「TRUE」の場合中止",
+      "Anular se a Condição for Verdadeira",
+      "如条件为”真“则中止"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4325",
+    "updated_at": "2024-11-26T13:51:11.776Z",
+    "path": "articles/actions/4325-abort-if-condition-is-true.md",
+    "content_sha256": "9a89864122d2e7eecf1d64a3a5f9c00cd423f6720105dc04844d1f2f286e2cdc",
+    "bytes": 672,
+    "repository_path": "archive/articles/actions/4325-abort-if-condition-is-true.md"
+  },
+  {
+    "id": 6164,
+    "title": "Add Health Pool To Player",
+    "slug": "add-health-pool-to-player",
+    "category": "Actions",
+    "tags": [
+      "Add Health Pool To Player"
+    ],
+    "url": "https://workshop.codes/wiki/articles/6164",
+    "updated_at": "2025-06-14T22:28:55.066Z",
+    "path": "articles/actions/6164-add-health-pool-to-player.md",
+    "content_sha256": "7781683a6198d9f549c18a6805ece17d8069d1888e109dd9c349a771a0b4a5e4",
+    "bytes": 1789,
+    "repository_path": "archive/articles/actions/6164-add-health-pool-to-player.md"
+  },
+  {
+    "id": 4326,
+    "title": "Allow Button",
+    "slug": "allow-button",
+    "category": "Actions",
+    "tags": [
+      "Allow Button",
+      "Habilitar botón",
+      "Autoriser un bouton",
+      "ボタンを有効化",
+      "Permitir Botão",
+      "可用按钮"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4326",
+    "updated_at": "2024-11-26T13:51:11.816Z",
+    "path": "articles/actions/4326-allow-button.md",
+    "content_sha256": "4ba5f7f4b740981750b38ba617564f06a47479233fe3c544a6f1bb81171b1174",
+    "bytes": 997,
+    "repository_path": "archive/articles/actions/4326-allow-button.md"
+  },
+  {
+    "id": 4327,
+    "title": "Apply Impulse",
+    "slug": "apply-impulse",
+    "category": "Actions",
+    "tags": [
+      "Apply Impulse",
+      "Aplicar impulso",
+      "Appliquer une impulsion",
+      "推進力を適用",
+      "Aplicar Impulso",
+      "施加推力"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4327",
+    "updated_at": "2024-11-26T13:51:11.860Z",
+    "path": "articles/actions/4327-apply-impulse.md",
+    "content_sha256": "25924ac96a8e0f85edabc37b80fb000e70e23317f3fafd5ce880def52493818e",
+    "bytes": 1733,
+    "repository_path": "archive/articles/actions/4327-apply-impulse.md"
+  },
+  {
+    "id": 6165,
+    "title": "Attach Players",
+    "slug": "attach-players",
+    "category": "Actions",
+    "tags": [
+      "Attach Players",
+      "Anexar jugadores",
+      "Attacher les joueurs",
+      "プレイヤーをくっつける",
+      "Unir Jogadores",
+      "绑定玩家"
+    ],
+    "url": "https://workshop.codes/wiki/articles/6165",
+    "updated_at": "2025-06-14T22:38:23.579Z",
+    "path": "articles/actions/6165-attach-players.md",
+    "content_sha256": "a7a913ace99cfd2b1d83758d81ae038e6fef9a762575f0190f82f5e459a2fa36",
+    "bytes": 1506,
+    "repository_path": "archive/articles/actions/6165-attach-players.md"
+  },
+  {
+    "id": 6037,
+    "title": "Big Message",
+    "slug": "big-message",
+    "category": "Actions",
+    "tags": [
+      "Big Message",
+      "Mensaje grande",
+      "Message en grand",
+      "大きなメッセージ",
+      "Mensagem Grande",
+      "大字体信息"
+    ],
+    "url": "https://workshop.codes/wiki/articles/6037",
+    "updated_at": "2025-05-24T16:18:42.674Z",
+    "path": "articles/actions/6037-big-message.md",
+    "content_sha256": "f3d1a5cdf834b8f9b040d7067e0b376fd68368baf5ab57162a2d48ac27168dae",
+    "bytes": 3817,
+    "repository_path": "archive/articles/actions/6037-big-message.md"
+  },
+  {
+    "id": 6001,
+    "title": "Break",
+    "slug": "break",
+    "category": "Actions",
+    "tags": [
+      "Break",
+      "Arrêter",
+      "BREAK",
+      "Interromper",
+      "中断"
+    ],
+    "url": "https://workshop.codes/wiki/articles/6001",
+    "updated_at": "2025-05-23T18:10:19.448Z",
+    "path": "articles/actions/6001-break.md",
+    "content_sha256": "18ad56f29ee51b04e538617754842afb30fe62e90686cc8c6a07a32479ee0a2e",
+    "bytes": 688,
+    "repository_path": "archive/articles/actions/6001-break.md"
+  },
+  {
+    "id": 6041,
+    "title": "Call Subroutine",
+    "slug": "call-subroutine",
+    "category": "Actions",
+    "tags": [
+      "Call Subroutine",
+      "Llamada a subrutina",
+      "Sous-programme à appeler",
+      "サブルーチンの呼び出し",
+      "Chamar sub-rotina",
+      "调用子程序"
+    ],
+    "url": "https://workshop.codes/wiki/articles/6041",
+    "updated_at": "2025-05-24T21:19:01.320Z",
+    "path": "articles/actions/6041-call-subroutine.md",
+    "content_sha256": "1684a0c305ebb9259d059f3b2734497519e3e38e04ad5962cd613d25a9da12c5",
+    "bytes": 4203,
+    "repository_path": "archive/articles/actions/6041-call-subroutine.md"
+  },
+  {
+    "id": 4332,
+    "title": "Cancel Primary Action",
+    "slug": "cancel-primary-action",
+    "category": "Actions",
+    "tags": [
+      "Cancel Primary Action",
+      "Cancelar acción primaria",
+      "Annuler l’action principale",
+      "メインアクションをキャンセル",
+      "Cancelar Ação Primária",
+      "取消主要动作"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4332",
+    "updated_at": "2024-11-26T13:51:12.053Z",
+    "path": "articles/actions/4332-cancel-primary-action.md",
+    "content_sha256": "f65e9ba6753323082174905a1c52683143c3c272ef480e048b88f17d442476b3",
+    "bytes": 825,
+    "repository_path": "archive/articles/actions/4332-cancel-primary-action.md"
+  },
+  {
+    "id": 6027,
+    "title": "Chase Global Variable At Rate",
+    "slug": "chase-global-variable-at-rate",
+    "category": "Actions",
+    "tags": [
+      "Chase Global Variable At Rate",
+      "Seguir variable global según la tasa",
+      "Modifier une variable globale selon une cadence",
+      "グローバル変数を特定のレートで追跡",
+      "Acompanhar Variável Global na Medida",
+      "追踪全局变量频率"
+    ],
+    "url": "https://workshop.codes/wiki/articles/6027",
+    "updated_at": "2025-05-24T02:51:58.460Z",
+    "path": "articles/actions/6027-chase-global-variable-at-rate.md",
+    "content_sha256": "fddd535eddfbff9d19e4ed12b4a4ba775af26ecebd8068d0d4e120b680175c85",
+    "bytes": 2164,
+    "repository_path": "archive/articles/actions/6027-chase-global-variable-at-rate.md"
+  },
+  {
+    "id": 4334,
+    "title": "Chase Global Variable Over Time",
+    "slug": "chase-global-variable-over-time",
+    "category": "Actions",
+    "tags": [
+      "Chase Global Variable Over Time",
+      "Seguir variable global con el tiempo",
+      "Modifier une variable globale sur la durée",
+      "グローバル変数を継続的に追跡",
+      "Acompanhar Variável Global ao Longo do Tempo",
+      "持续追踪全局变量"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4334",
+    "updated_at": "2024-11-26T13:51:12.131Z",
+    "path": "articles/actions/4334-chase-global-variable-over-time.md",
+    "content_sha256": "1a82daeea6929302c2d79d5fccf9dd606c025106a8719be54f14c481e5c41157",
+    "bytes": 1772,
+    "repository_path": "archive/articles/actions/4334-chase-global-variable-over-time.md"
+  },
+  {
+    "id": 4335,
+    "title": "Chase Player Variable At Rate",
+    "slug": "chase-player-variable-at-rate",
+    "category": "Actions",
+    "tags": [
+      "Chase Player Variable At Rate",
+      "Seguir variable de jugador según la tasa",
+      "Modifier une variable de joueur selon une cadence",
+      "プレイヤー変数を特定のレートで追跡",
+      "Acompanhar Variável de Jogador na Medida",
+      "追踪玩家变量频率"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4335",
+    "updated_at": "2024-11-26T13:51:12.193Z",
+    "path": "articles/actions/4335-chase-player-variable-at-rate.md",
+    "content_sha256": "f92659689d54f49b509131130e7f7e4fac2bb10ea519869d839ae6f65a5ae845",
+    "bytes": 2112,
+    "repository_path": "archive/articles/actions/4335-chase-player-variable-at-rate.md"
+  },
+  {
+    "id": 4336,
+    "title": "Chase Player Variable Over Time",
+    "slug": "chase-player-variable-over-time",
+    "category": "Actions",
+    "tags": [
+      "Chase Player Variable Over Time",
+      "Seguir variable del jugador con el tiempo",
+      "Modifier une variable de joueur sur la durée",
+      "プレイヤー変数を継続的に追跡",
+      "Acompanhar Variável de Jogador ao Longo do Tempo",
+      "持续追踪玩家变量"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4336",
+    "updated_at": "2024-11-26T13:51:12.343Z",
+    "path": "articles/actions/4336-chase-player-variable-over-time.md",
+    "content_sha256": "14fa6d7786bfd95fc77b93e5c42dbad9e01f26e97adecd6f76c6f7a3bfe78d49",
+    "bytes": 2150,
+    "repository_path": "archive/articles/actions/4336-chase-player-variable-over-time.md"
+  },
+  {
+    "id": 4337,
+    "title": "Clear Status",
+    "slug": "clear-status",
+    "category": "Actions",
+    "tags": [
+      "Clear Status",
+      "Eliminar estado",
+      "Effacer le statut",
+      "ステータスをクリア",
+      "Apagar Status",
+      "清除状态"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4337",
+    "updated_at": "2024-11-26T13:51:12.387Z",
+    "path": "articles/actions/4337-clear-status.md",
+    "content_sha256": "9b28cf6d8ae5e1b81c69b5f6d3bf510f59cf6d57da7d752ed3d67d1b8908ba6b",
+    "bytes": 975,
+    "repository_path": "archive/articles/actions/4337-clear-status.md"
+  },
+  {
+    "id": 6032,
+    "title": "Communicate",
+    "slug": "communicate",
+    "category": "Actions",
+    "tags": [
+      "Communicate",
+      "Comunicar",
+      "Communiquer",
+      "コミュニケーション",
+      "Comunicar",
+      "交流"
+    ],
+    "url": "https://workshop.codes/wiki/articles/6032",
+    "updated_at": "2025-05-24T03:20:00.102Z",
+    "path": "articles/actions/6032-communicate.md",
+    "content_sha256": "aa58f9ac340b172498f193e69d90382ded7d74eb8d5a2ba6c64c68dbad3bbbab",
+    "bytes": 899,
+    "repository_path": "archive/articles/actions/6032-communicate.md"
+  },
+  {
+    "id": 6002,
+    "title": "Continue",
+    "slug": "continue",
+    "category": "Actions",
+    "tags": [
+      "Continue",
+      "Continuar",
+      "Continuer",
+      "CONTINUE",
+      "Continuar",
+      "继续"
+    ],
+    "url": "https://workshop.codes/wiki/articles/6002",
+    "updated_at": "2025-05-23T18:11:21.405Z",
+    "path": "articles/actions/6002-continue.md",
+    "content_sha256": "afba7b16eaacfa2bcc6ce0de7c28b746eafb6a9968144e1d800c6f67466dfe16",
+    "bytes": 522,
+    "repository_path": "archive/articles/actions/6002-continue.md"
+  },
+  {
+    "id": 4340,
+    "title": "Create Beam Effect",
+    "slug": "create-beam-effect",
+    "category": "Actions",
+    "tags": [
+      "Create Beam Effect",
+      "Crear efecto de rayo",
+      "Créer un effet de rayon",
+      "ビーム・エフェクトを作成",
+      "Criar Efeito de Feixe",
+      "创建光束效果"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4340",
+    "updated_at": "2024-11-26T13:51:12.490Z",
+    "path": "articles/actions/4340-create-beam-effect.md",
+    "content_sha256": "5ed194d6f1401b9e07a6afed9d4fea30099342ab1d31618c24ec3de657020512",
+    "bytes": 2595,
+    "repository_path": "archive/articles/actions/4340-create-beam-effect.md"
+  },
+  {
+    "id": 4341,
+    "title": "Create Dummy Bot",
+    "slug": "create-dummy-bot",
+    "category": "Actions",
+    "tags": [
+      "Create Dummy Bot",
+      "Crear robot de entrenamiento",
+      "Créer une I.A.",
+      "ダミーボットを作成",
+      "Criar Bot",
+      "生成机器人"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4341",
+    "updated_at": "2024-11-26T13:51:12.544Z",
+    "path": "articles/actions/4341-create-dummy-bot.md",
+    "content_sha256": "231f2439cf718af4fc12d5d42aeb2e076844f4c8ed29e44d8ebaf6efc10d20ac",
+    "bytes": 1854,
+    "repository_path": "archive/articles/actions/4341-create-dummy-bot.md"
+  },
+  {
+    "id": 4342,
+    "title": "Create Effect",
+    "slug": "create-effect",
+    "category": "Actions",
+    "tags": [
+      "Create Effect",
+      "Crear efecto",
+      "Créer un effet",
+      "エフェクトを作成",
+      "Criar Efeito",
+      "创建效果"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4342",
+    "updated_at": "2024-11-26T13:51:12.592Z",
+    "path": "articles/actions/4342-create-effect.md",
+    "content_sha256": "dea1c2e5d3cf7f3155bec6641c6ac6b85afe10410833e876e142206b6adbfed1",
+    "bytes": 2538,
+    "repository_path": "archive/articles/actions/4342-create-effect.md"
+  },
+  {
+    "id": 4343,
+    "title": "Create HUD Text",
+    "slug": "create-hud-text",
+    "category": "Actions",
+    "tags": [
+      "Create HUD Text",
+      "Crear texto del HUD",
+      "Créer du texte d’interface",
+      "HUDテキストを作成",
+      "Criar Texto de HUD",
+      "创建HUD文本"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4343",
+    "updated_at": "2024-11-26T13:51:12.745Z",
+    "path": "articles/actions/4343-create-hud-text.md",
+    "content_sha256": "346ac657c30bc284730e33e4bd1a3da3c577358f478c6b02429b7759a5ac6365",
+    "bytes": 3051,
+    "repository_path": "archive/articles/actions/4343-create-hud-text.md"
+  },
+  {
+    "id": 4545,
+    "title": "Create Homing Projectile",
+    "slug": "create-homing-projectile",
+    "category": "Actions",
+    "tags": [
+      "Create Homing Projectile"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4545",
+    "updated_at": "2024-11-26T13:51:23.485Z",
+    "path": "articles/actions/4545-create-homing-projectile.md",
+    "content_sha256": "7f9c537dcd658782859af8dac0379573a67d7b916994b7704e0206f2c4fd84dc",
+    "bytes": 5353,
+    "repository_path": "archive/articles/actions/4545-create-homing-projectile.md"
+  },
+  {
+    "id": 6071,
+    "title": "Create Icon",
+    "slug": "create-icon",
+    "category": "Actions",
+    "tags": [
+      "Create Icon",
+      "Crear ícono",
+      "Créer une icône",
+      "アイコンを作成",
+      "Criar Ícone",
+      "创建图标"
+    ],
+    "url": "https://workshop.codes/wiki/articles/6071",
+    "updated_at": "2025-05-26T00:38:07.706Z",
+    "path": "articles/actions/6071-create-icon.md",
+    "content_sha256": "79f68c5ea67eea3f2ff703c7c84032e9b47088c5efc9377a9be1af09bbbefb8e",
+    "bytes": 2394,
+    "repository_path": "archive/articles/actions/6071-create-icon.md"
+  },
+  {
+    "id": 4345,
+    "title": "Create In-World Text",
+    "slug": "create-inworld-text",
+    "category": "Actions",
+    "tags": [
+      "Create In-World Text",
+      "Crear texto dentro del mundo",
+      "Créer du texte en jeu",
+      "ワールド内テキストを作成",
+      "Criar Texto no Mundo",
+      "创建地图文本",
+      "iwt"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4345",
+    "updated_at": "2024-11-26T13:51:12.840Z",
+    "path": "articles/actions/4345-create-inworld-text.md",
+    "content_sha256": "e3e841c4b6bd620bc038c900c8ce27826a20b6f48bfd55ad13a6950b98a4f742",
+    "bytes": 2666,
+    "repository_path": "archive/articles/actions/4345-create-inworld-text.md"
+  },
+  {
+    "id": 4527,
+    "title": "Create Progress Bar HUD Text",
+    "slug": "create-progress-bar-hud-text",
+    "category": "Actions",
+    "tags": [
+      "Create Progress Bar HUD Text"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4527",
+    "updated_at": "2024-11-26T13:51:22.586Z",
+    "path": "articles/actions/4527-create-progress-bar-hud-text.md",
+    "content_sha256": "0202dbaf764ade1e26a437ebac23d1690cd4951ca8c408229b406a7ed5814c85",
+    "bytes": 2971,
+    "repository_path": "archive/articles/actions/4527-create-progress-bar-hud-text.md"
+  },
+  {
+    "id": 4530,
+    "title": "Create Progress Bar In-World Text",
+    "slug": "create-progress-bar-inworld-text",
+    "category": "Actions",
+    "tags": [
+      "Create Progress Bar In-World Text",
+      "iwt"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4530",
+    "updated_at": "2024-11-26T13:51:22.756Z",
+    "path": "articles/actions/4530-create-progress-bar-inworld-text.md",
+    "content_sha256": "c667ce158ff4550d062565ea12d031f80e59b2977f920d55cc6b22218cdb67f1",
+    "bytes": 3218,
+    "repository_path": "archive/articles/actions/4530-create-progress-bar-inworld-text.md"
+  },
+  {
+    "id": 5175,
+    "title": "Create Projectile",
+    "slug": "create-projectile",
+    "category": "Actions",
+    "tags": [
+      "Create Projectile"
+    ],
+    "url": "https://workshop.codes/wiki/articles/5175",
+    "updated_at": "2025-02-23T06:00:22.864Z",
+    "path": "articles/actions/5175-create-projectile.md",
+    "content_sha256": "dcd02954b849d4cbcc8ca6617786af5b6896a0766de80f0c81b36031b3081879",
+    "bytes": 5101,
+    "repository_path": "archive/articles/actions/5175-create-projectile.md"
+  },
+  {
+    "id": 4546,
+    "title": "Create Projectile Effect",
+    "slug": "create-projectile-effect",
+    "category": "Actions",
+    "tags": [
+      "Create Projectile Effect"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4546",
+    "updated_at": "2024-11-26T13:51:23.540Z",
+    "path": "articles/actions/4546-create-projectile-effect.md",
+    "content_sha256": "c368e8682dee90d7b567c0c10f85b993005013d83c6da98eaed7215486bff927",
+    "bytes": 2491,
+    "repository_path": "archive/articles/actions/4546-create-projectile-effect.md"
+  },
+  {
+    "id": 7025,
+    "title": "Damage",
+    "slug": "damage",
+    "category": "Actions",
+    "tags": [
+      "Damage",
+      "Infligir daño",
+      "Infliger des dégâts",
+      "ダメージ",
+      "Dano",
+      "伤害"
+    ],
+    "url": "https://workshop.codes/wiki/articles/7025",
+    "updated_at": "2025-09-09T17:03:04.187Z",
+    "path": "articles/actions/7025-damage.md",
+    "content_sha256": "d54cdc9440ce3f461423cfd68968365f8b11d233e8cddeed0bb756ffa89e8337",
+    "bytes": 4072,
+    "repository_path": "archive/articles/actions/7025-damage.md"
+  },
+  {
+    "id": 4347,
+    "title": "Declare Match Draw",
+    "slug": "declare-match-draw",
+    "category": "Actions",
+    "tags": [
+      "Declare Match Draw",
+      "Declarar empate de la partida",
+      "Déclarer le match nul",
+      "マッチの引き分けを宣言",
+      "Declarar Empate na Partida",
+      "宣布比赛为平局"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4347",
+    "updated_at": "2024-11-26T13:51:13.626Z",
+    "path": "articles/actions/4347-declare-match-draw.md",
+    "content_sha256": "1c1e6dd266fd286a7fd94241023f1a28fa41a5c840d9760530d560d92f5dedfb",
+    "bytes": 544,
+    "repository_path": "archive/articles/actions/4347-declare-match-draw.md"
+  },
+  {
+    "id": 4348,
+    "title": "Declare Player Victory",
+    "slug": "declare-player-victory",
+    "category": "Actions",
+    "tags": [
+      "Declare Player Victory",
+      "Declarar victoria del jugador",
+      "Déclarer la victoire d’un joueur",
+      "チームの勝利を宣言",
+      "Declarar Vitória do Jogador",
+      "宣告玩家胜利"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4348",
+    "updated_at": "2024-11-26T13:51:13.658Z",
+    "path": "articles/actions/4348-declare-player-victory.md",
+    "content_sha256": "9609c4055f466278a3ae0955baf33e64fe8d470c56cf4434077452e3d9a877df",
+    "bytes": 861,
+    "repository_path": "archive/articles/actions/4348-declare-player-victory.md"
+  },
+  {
+    "id": 4349,
+    "title": "Declare Round Draw",
+    "slug": "declare-round-draw",
+    "category": "Actions",
+    "tags": [
+      "Declare Round Draw",
+      "Declarar ronda empatada",
+      "Déclarer la manche nulle",
+      "ラウンドの引き分けを宣言",
+      "Declarar Empate na Rodada",
+      "宣布回合为平局"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4349",
+    "updated_at": "2024-11-26T13:51:13.699Z",
+    "path": "articles/actions/4349-declare-round-draw.md",
+    "content_sha256": "b6acec166aa1c6c81c4b57677b260fcb576ebca8b0a35403f66e830e2408f1d5",
+    "bytes": 542,
+    "repository_path": "archive/articles/actions/4349-declare-round-draw.md"
+  },
+  {
+    "id": 4350,
+    "title": "Declare Round Victory",
+    "slug": "declare-round-victory",
+    "category": "Actions",
+    "tags": [
+      "Declare Round Victory",
+      "Declarar victoria de la ronda",
+      "Déclarer la victoire de la manche",
+      "ラウンドの勝利を宣言",
+      "Declarar Vitória na Rodada",
+      "宣告回合胜利"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4350",
+    "updated_at": "2024-11-26T13:51:13.782Z",
+    "path": "articles/actions/4350-declare-round-victory.md",
+    "content_sha256": "4afd76b31fbaab269a7665f5a8c85018c013c7d3f4230ec0a93039b5875472ef",
+    "bytes": 744,
+    "repository_path": "archive/articles/actions/4350-declare-round-victory.md"
+  },
+  {
+    "id": 4351,
+    "title": "Declare Team Victory",
+    "slug": "declare-team-victory",
+    "category": "Actions",
+    "tags": [
+      "Declare Team Victory",
+      "Declarar la victoria del equipo",
+      "Déclarer la victoire d’une équipe",
+      "チームの勝利を宣言",
+      "Declarar Vitória da Equipe",
+      "宣告队伍胜利"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4351",
+    "updated_at": "2024-11-26T13:51:13.864Z",
+    "path": "articles/actions/4351-declare-team-victory.md",
+    "content_sha256": "58661a22104ce383131b4a899b531d24ee84036323d33fbea85d42708abe848f",
+    "bytes": 808,
+    "repository_path": "archive/articles/actions/4351-declare-team-victory.md"
+  },
+  {
+    "id": 4352,
+    "title": "Destroy All Dummy Bots",
+    "slug": "destroy-all-dummy-bots",
+    "category": "Actions",
+    "tags": [
+      "Destroy All Dummy Bots",
+      "Destruir todos los robots de entrenamiento",
+      "Détruire toutes les I.A.",
+      "すべてのダミーボットを破棄",
+      "Destruir Todos os Bots",
+      "移除所有机器人"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4352",
+    "updated_at": "2024-11-26T13:51:13.889Z",
+    "path": "articles/actions/4352-destroy-all-dummy-bots.md",
+    "content_sha256": "57158bba2416f40a6e467d624098e2059ea7f0ab64ce636b40046cf457371ee6",
+    "bytes": 528,
+    "repository_path": "archive/articles/actions/4352-destroy-all-dummy-bots.md"
+  },
+  {
+    "id": 4353,
+    "title": "Destroy All Effects",
+    "slug": "destroy-all-effects",
+    "category": "Actions",
+    "tags": [
+      "Destroy All Effects",
+      "Destruir todos los efectos",
+      "Détruire tous les effets",
+      "すべてのエフェクトを破棄",
+      "Destruir Todos os Efeitos",
+      "消除所有效果"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4353",
+    "updated_at": "2024-11-26T13:51:13.915Z",
+    "path": "articles/actions/4353-destroy-all-effects.md",
+    "content_sha256": "b62fe5fa44d73a46c0447d91503de894600605e516e7482bc4f06470030326c3",
+    "bytes": 561,
+    "repository_path": "archive/articles/actions/4353-destroy-all-effects.md"
+  },
+  {
+    "id": 4354,
+    "title": "Destroy All HUD Text",
+    "slug": "destroy-all-hud-text",
+    "category": "Actions",
+    "tags": [
+      "Destroy All HUD Text",
+      "Destruir todo el texto del HUD",
+      "Détruire tous les textes d’interface",
+      "すべてのHUDテキストを破棄",
+      "Destruir Todo o Texto de HUD",
+      "消除所有HUD文本"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4354",
+    "updated_at": "2024-11-26T13:51:13.941Z",
+    "path": "articles/actions/4354-destroy-all-hud-text.md",
+    "content_sha256": "82813842132b62d6052ca1a61ace5a6adacf73f74f8cf8cf3ca8d1da4115250e",
+    "bytes": 607,
+    "repository_path": "archive/articles/actions/4354-destroy-all-hud-text.md"
+  },
+  {
+    "id": 4355,
+    "title": "Destroy All Icons",
+    "slug": "destroy-all-icons",
+    "category": "Actions",
+    "tags": [
+      "Destroy All Icons",
+      "Destruir todos los íconos",
+      "Détruire toutes les icônes",
+      "すべてのアイコンを破棄",
+      "Destruir Todos os Ícones",
+      "消除所有图标"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4355",
+    "updated_at": "2024-11-26T13:51:13.989Z",
+    "path": "articles/actions/4355-destroy-all-icons.md",
+    "content_sha256": "9677d863f060e1646c823746c391925271b4b71cc558674285ebbbfac5f56ee5",
+    "bytes": 549,
+    "repository_path": "archive/articles/actions/4355-destroy-all-icons.md"
+  },
+  {
+    "id": 4356,
+    "title": "Destroy All In-World Text",
+    "slug": "destroy-all-inworld-text",
+    "category": "Actions",
+    "tags": [
+      "Destroy All In-World Text",
+      "Destruir todo el texto dentro del mundo",
+      "Détruire tous les textes en jeu",
+      "すべてのワールド内テキストを破棄",
+      "Destruir Todo o Texto no Mundo",
+      "消除所有地图文本",
+      "iwt"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4356",
+    "updated_at": "2024-11-26T13:51:14.012Z",
+    "path": "articles/actions/4356-destroy-all-inworld-text.md",
+    "content_sha256": "1147e3faa2c63ea4709f639bdd8a84f07ad5c9e45e19e792ca0f30a3a6964abb",
+    "bytes": 641,
+    "repository_path": "archive/articles/actions/4356-destroy-all-inworld-text.md"
+  },
+  {
+    "id": 4529,
+    "title": "Destroy All Progress Bar HUD Text",
+    "slug": "destroy-all-progress-bar-hud-text",
+    "category": "Actions",
+    "tags": [
+      "Destroy All Progress Bar HUD Text"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4529",
+    "updated_at": "2024-11-26T13:51:22.674Z",
+    "path": "articles/actions/4529-destroy-all-progress-bar-hud-text.md",
+    "content_sha256": "7a0edf5beb59adf1bd3987f2f323194a2a4842f0a33565b8fb9d4277b345a950",
+    "bytes": 526,
+    "repository_path": "archive/articles/actions/4529-destroy-all-progress-bar-hud-text.md"
+  },
+  {
+    "id": 4532,
+    "title": "Destroy All Progress Bar In-World Text",
+    "slug": "destroy-all-progress-bar-inworld-text",
+    "category": "Actions",
+    "tags": [
+      "Destroy All Progress Bar In-World Text",
+      "iwt"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4532",
+    "updated_at": "2024-11-26T13:51:22.838Z",
+    "path": "articles/actions/4532-destroy-all-progress-bar-inworld-text.md",
+    "content_sha256": "8cf23732cd917f16578bd9b080e2aaa7d58af884dac8fb9921df1170f8df25e5",
+    "bytes": 561,
+    "repository_path": "archive/articles/actions/4532-destroy-all-progress-bar-inworld-text.md"
+  },
+  {
+    "id": 4357,
+    "title": "Destroy Dummy Bot",
+    "slug": "destroy-dummy-bot",
+    "category": "Actions",
+    "tags": [
+      "Destroy Dummy Bot",
+      "Destruir robot de entrenamiento",
+      "Détruire une I.A.",
+      "ダミーボットを破壊する",
+      "Destruir Bot",
+      "移除机器人"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4357",
+    "updated_at": "2024-11-26T13:51:14.049Z",
+    "path": "articles/actions/4357-destroy-dummy-bot.md",
+    "content_sha256": "24aefc7e60f7013a2970cde6453578fb014667fa37f3eb8a3c0d850fc6373824",
+    "bytes": 919,
+    "repository_path": "archive/articles/actions/4357-destroy-dummy-bot.md"
+  },
+  {
+    "id": 8473,
+    "title": "Destroy Effect",
+    "slug": "destroy-effect",
+    "category": "Actions",
+    "tags": [
+      "Destroy Effect",
+      "Destruir efecto",
+      "Détruire un effet",
+      "エフェクトを破棄",
+      "Destruir Efeito",
+      "消除效果"
+    ],
+    "url": "https://workshop.codes/wiki/articles/8473",
+    "updated_at": "2026-03-17T15:12:39.987Z",
+    "path": "articles/actions/8473-destroy-effect.md",
+    "content_sha256": "cd4f7baa150538dd79a98c5b38dbd86d5f2333658ac30388ce84c6559e4f2a83",
+    "bytes": 997,
+    "repository_path": "archive/articles/actions/8473-destroy-effect.md"
+  },
+  {
+    "id": 4359,
+    "title": "Destroy HUD Text",
+    "slug": "destroy-hud-text",
+    "category": "Actions",
+    "tags": [
+      "Destroy HUD Text",
+      "Destruir texto del HUD",
+      "Détruire du texte d’interface",
+      "HUDテキストを破棄",
+      "Destruir Texto de HUD",
+      "消除HUD文本"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4359",
+    "updated_at": "2024-11-26T13:51:14.098Z",
+    "path": "articles/actions/4359-destroy-hud-text.md",
+    "content_sha256": "1f1329920085ee214788e7bd69e8fd709f46b6d199495b97b7a15822cf2458a7",
+    "bytes": 807,
+    "repository_path": "archive/articles/actions/4359-destroy-hud-text.md"
+  },
+  {
+    "id": 4360,
+    "title": "Destroy Icon",
+    "slug": "destroy-icon",
+    "category": "Actions",
+    "tags": [
+      "Destroy Icon",
+      "Destruir ícono",
+      "Détruire une icône",
+      "アイコンを破棄",
+      "Destruir Ícone",
+      "消除图标"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4360",
+    "updated_at": "2024-11-26T13:51:14.199Z",
+    "path": "articles/actions/4360-destroy-icon.md",
+    "content_sha256": "03748129287bbed9f4a4dcf7289fba1f788e6a28a34e28c14fccba746c7e5d4c",
+    "bytes": 756,
+    "repository_path": "archive/articles/actions/4360-destroy-icon.md"
+  },
+  {
+    "id": 4361,
+    "title": "Destroy In-World Text",
+    "slug": "destroy-inworld-text",
+    "category": "Actions",
+    "tags": [
+      "Destroy In-World Text",
+      "Destruir texto dentro del mundo",
+      "Détruire du texte en jeu",
+      "ワールド内テキストを破棄",
+      "Destruir Texto no Mundo",
+      "消除地图文本",
+      "iwt"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4361",
+    "updated_at": "2024-11-26T13:51:14.299Z",
+    "path": "articles/actions/4361-destroy-inworld-text.md",
+    "content_sha256": "e4b9582b1bd2e86bdf6f1c4b06d4eb0a54d3203cf9fce58c987b66bd015f2e81",
+    "bytes": 866,
+    "repository_path": "archive/articles/actions/4361-destroy-inworld-text.md"
+  },
+  {
+    "id": 4528,
+    "title": "Destroy Progress Bar HUD Text",
+    "slug": "destroy-progress-bar-hud-text",
+    "category": "Actions",
+    "tags": [
+      "Destroy Progress Bar HUD Text"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4528",
+    "updated_at": "2024-11-26T13:51:22.628Z",
+    "path": "articles/actions/4528-destroy-progress-bar-hud-text.md",
+    "content_sha256": "709b79275501979ecb5a659b2b0f5a2b47d5ac7790ddc2755b3903df40dac936",
+    "bytes": 778,
+    "repository_path": "archive/articles/actions/4528-destroy-progress-bar-hud-text.md"
+  },
+  {
+    "id": 4531,
+    "title": "Destroy Progress Bar In-World Text",
+    "slug": "destroy-progress-bar-inworld-text",
+    "category": "Actions",
+    "tags": [
+      "Destroy Progress Bar In-World Text",
+      "iwt"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4531",
+    "updated_at": "2024-11-26T13:51:22.797Z",
+    "path": "articles/actions/4531-destroy-progress-bar-inworld-text.md",
+    "content_sha256": "c286289e15e93d9a567ab3c8aae9f9a8f23e39ab6e3419619702dc860f67b015",
+    "bytes": 818,
+    "repository_path": "archive/articles/actions/4531-destroy-progress-bar-inworld-text.md"
+  },
+  {
+    "id": 4362,
+    "title": "Detach Players",
+    "slug": "detach-players",
+    "category": "Actions",
+    "tags": [
+      "Detach Players",
+      "Separar jugadores",
+      "Détacher les joueurs",
+      "プレイヤーを離れさせる",
+      "Separar Jogadores",
+      "解除绑定"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4362",
+    "updated_at": "2024-11-26T13:51:14.466Z",
+    "path": "articles/actions/4362-detach-players.md",
+    "content_sha256": "d05a8970d74a902f7205f0c6d32ebf35b4643d84668bdf9c8035172621444cc7",
+    "bytes": 900,
+    "repository_path": "archive/articles/actions/4362-detach-players.md"
+  },
+  {
+    "id": 4363,
+    "title": "Disable Built-In Game Mode Announcer",
+    "slug": "disable-builtin-game-mode-announcer",
+    "category": "Actions",
+    "tags": [
+      "Disable Built-In Game Mode Announcer",
+      "Deshabilitar el presentador integrado del modo de juego",
+      "Désactiver l’annonceur prédéfini par le mode de jeu",
+      "ゲーム・モードの通知を無効化",
+      "Desativar Narração Integrada ao Modo de Jogo",
+      "关闭游戏预设通告模式"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4363",
+    "updated_at": "2024-11-26T13:51:14.539Z",
+    "path": "articles/actions/4363-disable-builtin-game-mode-announcer.md",
+    "content_sha256": "d6d0fa5f79dda6e79357cf40c7ba61f22caafafd240c8cf3bb10354f6c815cb0",
+    "bytes": 698,
+    "repository_path": "archive/articles/actions/4363-disable-builtin-game-mode-announcer.md"
+  },
+  {
+    "id": 4364,
+    "title": "Disable Built-In Game Mode Completion",
+    "slug": "disable-builtin-game-mode-completion",
+    "category": "Actions",
+    "tags": [
+      "Disable Built-In Game Mode Completion",
+      "Deshabilitar la finalización integrada del modo de juego",
+      "Désactiver l’accomplissement prédéfini par le mode de jeu",
+      "ゲーム・モードの標準完了を無効化",
+      "Desativar Conclusão Integrada ao Modo de Jogo",
+      "关闭游戏预设完成条件"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4364",
+    "updated_at": "2024-11-26T13:51:14.583Z",
+    "path": "articles/actions/4364-disable-builtin-game-mode-completion.md",
+    "content_sha256": "726622c138cdc702f2bd07618bdbaa2423a53286d874cad0b21077412841c6dc",
+    "bytes": 751,
+    "repository_path": "archive/articles/actions/4364-disable-builtin-game-mode-completion.md"
+  },
+  {
+    "id": 4365,
+    "title": "Disable Built-In Game Mode Music",
+    "slug": "disable-builtin-game-mode-music",
+    "category": "Actions",
+    "tags": [
+      "Disable Built-In Game Mode Music",
+      "Deshabilitar la música integrada del modo de juego",
+      "Désactiver la musique prédéfinie par le mode de jeu",
+      "ゲーム・モードのBGMを無効化",
+      "Desativar Música Integrada ao Modo de Jogo",
+      "关闭游戏预设音乐模式"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4365",
+    "updated_at": "2024-11-26T13:51:14.611Z",
+    "path": "articles/actions/4365-disable-builtin-game-mode-music.md",
+    "content_sha256": "0bedd2792b53a76ae33c058c26e992171d8bc04be8cd958aed8ecaac318d9f6c",
+    "bytes": 651,
+    "repository_path": "archive/articles/actions/4365-disable-builtin-game-mode-music.md"
+  },
+  {
+    "id": 4366,
+    "title": "Disable Built-In Game Mode Respawning",
+    "slug": "disable-builtin-game-mode-respawning",
+    "category": "Actions",
+    "tags": [
+      "Disable Built-In Game Mode Respawning",
+      "Deshabilitar la reaparición integrada del modo de juego",
+      "Désactiver la réapparition prédéfinie par le mode de jeu",
+      "ゲーム・モードの標準リスポーンを無効化",
+      "Desativar Ressurgimento Integrado ao Modo de Jogo",
+      "关闭游戏预设重生模式"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4366",
+    "updated_at": "2024-11-26T13:51:14.644Z",
+    "path": "articles/actions/4366-disable-builtin-game-mode-respawning.md",
+    "content_sha256": "0612e94996ae632ec297ecd45832c91fba3a7afa449eb86dd108a3be15fbab37",
+    "bytes": 1007,
+    "repository_path": "archive/articles/actions/4366-disable-builtin-game-mode-respawning.md"
+  },
+  {
+    "id": 4367,
+    "title": "Disable Built-In Game Mode Scoring",
+    "slug": "disable-builtin-game-mode-scoring",
+    "category": "Actions",
+    "tags": [
+      "Disable Built-In Game Mode Scoring",
+      "Deshabilitar el sistema de puntuación integrado del modo de juego",
+      "Désactiver le calcul des points prédéfini par le mode de jeu",
+      "ゲーム・モードの標準スコアリングを無効化",
+      "Desativar Pontuação Integrada ao Modo de Jogo",
+      "关闭游戏预设计分模式"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4367",
+    "updated_at": "2024-11-26T13:51:14.677Z",
+    "path": "articles/actions/4367-disable-builtin-game-mode-scoring.md",
+    "content_sha256": "189eb236b7861643c59224dc2f30749bcb05fac733c644de1eb6e61ad3b19bc6",
+    "bytes": 770,
+    "repository_path": "archive/articles/actions/4367-disable-builtin-game-mode-scoring.md"
+  },
+  {
+    "id": 4368,
+    "title": "Disable Death Spectate All Players",
+    "slug": "disable-death-spectate-all-players",
+    "category": "Actions",
+    "tags": [
+      "Disable Death Spectate All Players",
+      "Deshabilitar la observación de todos los jugadores como espectador muerto",
+      "Empêcher d’observer n’importe qui après la mort",
+      "観戦時に全プレイヤー選択可能を無効化",
+      "Desativar Visualização de Todos os Jogadores na Morte",
+      "对所有玩家禁用死亡回放"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4368",
+    "updated_at": "2024-11-26T13:51:14.710Z",
+    "path": "articles/actions/4368-disable-death-spectate-all-players.md",
+    "content_sha256": "682339371fbedce1dfff30081c8ffc5d0826b7d34e7e1a29f96ab23a115349fc",
+    "bytes": 1089,
+    "repository_path": "archive/articles/actions/4368-disable-death-spectate-all-players.md"
+  },
+  {
+    "id": 4369,
+    "title": "Disable Death Spectate Target HUD",
+    "slug": "disable-death-spectate-target-hud",
+    "category": "Actions",
+    "tags": [
+      "Disable Death Spectate Target HUD",
+      "Deshabilitar la observación del HUD objetivo como espectador muerto",
+      "Empêcher de voir l’interface de la cible après la mort",
+      "観戦中のターゲットHUD表示を無効化",
+      "Desativar HUD do Alvo de Visualização na Morte",
+      "禁用死亡回放时目标的HUD"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4369",
+    "updated_at": "2024-11-26T13:51:14.756Z",
+    "path": "articles/actions/4369-disable-death-spectate-target-hud.md",
+    "content_sha256": "5a902740b97867efe69476b14f8bbc4709232d7eea8613beb6b5fff57cda35c4",
+    "bytes": 1083,
+    "repository_path": "archive/articles/actions/4369-disable-death-spectate-target-hud.md"
+  },
+  {
+    "id": 4486,
+    "title": "Disable Game Mode HUD",
+    "slug": "disable-game-mode-hud",
+    "category": "Actions",
+    "tags": [
+      "Disable Game Mode HUD"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4486",
+    "updated_at": "2024-11-26T13:51:20.947Z",
+    "path": "articles/actions/4486-disable-game-mode-hud.md",
+    "content_sha256": "85a7c9e90009353f2db5e1e4a5f31f992e75b20043f8817a50b04391b9b02dfa",
+    "bytes": 674,
+    "repository_path": "archive/articles/actions/4486-disable-game-mode-hud.md"
+  },
+  {
+    "id": 4488,
+    "title": "Disable Game Mode In-World UI",
+    "slug": "disable-game-mode-inworld-ui",
+    "category": "Actions",
+    "tags": [
+      "Disable Game Mode In-World UI"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4488",
+    "updated_at": "2024-11-26T13:51:21.010Z",
+    "path": "articles/actions/4488-disable-game-mode-inworld-ui.md",
+    "content_sha256": "ca54d8d1e13d38e6372e2938ebcf34aa02d601877c24676185420e7f3d924b8f",
+    "bytes": 714,
+    "repository_path": "archive/articles/actions/4488-disable-game-mode-inworld-ui.md"
+  },
+  {
+    "id": 4490,
+    "title": "Disable Hero HUD",
+    "slug": "disable-hero-hud",
+    "category": "Actions",
+    "tags": [
+      "Disable Hero HUD"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4490",
+    "updated_at": "2024-11-26T13:51:21.063Z",
+    "path": "articles/actions/4490-disable-hero-hud.md",
+    "content_sha256": "7a9f119f730c73b6252b8a9d0e7ddc7e805c887989ebf4a65b30cf858beeb1ce",
+    "bytes": 649,
+    "repository_path": "archive/articles/actions/4490-disable-hero-hud.md"
+  },
+  {
+    "id": 4370,
+    "title": "Disable Inspector Recording",
+    "slug": "disable-inspector-recording",
+    "category": "Actions",
+    "tags": [
+      "Disable Inspector Recording",
+      "Desactivar registro de Inspector",
+      "Désactiver l’enregistrement du contrôleur",
+      "インスペクターでの記録を無効化",
+      "Desativar gravação do Inspetor",
+      "禁用查看器录制"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4370",
+    "updated_at": "2024-11-26T13:51:14.806Z",
+    "path": "articles/actions/4370-disable-inspector-recording.md",
+    "content_sha256": "2b5fd6f861bc0c4509fe17dfc7cdf16cba572124e87aedb99ed548df5ac4f8ee",
+    "bytes": 687,
+    "repository_path": "archive/articles/actions/4370-disable-inspector-recording.md"
+  },
+  {
+    "id": 4492,
+    "title": "Disable Kill Feed",
+    "slug": "disable-kill-feed",
+    "category": "Actions",
+    "tags": [
+      "Disable Kill Feed"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4492",
+    "updated_at": "2024-11-26T13:51:21.115Z",
+    "path": "articles/actions/4492-disable-kill-feed.md",
+    "content_sha256": "799de610916021a79c91bbf789ea1e891d92a3f7cbc09371cfeb45040981bb48",
+    "bytes": 654,
+    "repository_path": "archive/articles/actions/4492-disable-kill-feed.md"
+  },
+  {
+    "id": 4494,
+    "title": "Disable Messages",
+    "slug": "disable-messages",
+    "category": "Actions",
+    "tags": [
+      "Disable Messages"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4494",
+    "updated_at": "2024-11-26T13:51:21.181Z",
+    "path": "articles/actions/4494-disable-messages.md",
+    "content_sha256": "7481ebad95cedf85a8aae806d8fc19b022523121a9254859e972d60c44d6d868",
+    "bytes": 645,
+    "repository_path": "archive/articles/actions/4494-disable-messages.md"
+  },
+  {
+    "id": 4509,
+    "title": "Disable Movement Collision With Environment",
+    "slug": "disable-movement-collision-with-environment",
+    "category": "Actions",
+    "tags": [
+      "Disable Movement Collision With Enviroment"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4509",
+    "updated_at": "2024-11-26T13:51:21.673Z",
+    "path": "articles/actions/4509-disable-movement-collision-with-environment.md",
+    "content_sha256": "6151863fe17ad67c7f2cd3dec7eff13cf2ef7b5d4658a376ac010c969fabdc02",
+    "bytes": 924,
+    "repository_path": "archive/articles/actions/4509-disable-movement-collision-with-environment.md"
+  },
+  {
+    "id": 4511,
+    "title": "Disable Movement Collision With Players",
+    "slug": "disable-movement-collision-with-players",
+    "category": "Actions",
+    "tags": [
+      "Disable Movement Collision With Players"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4511",
+    "updated_at": "2024-11-26T13:51:21.741Z",
+    "path": "articles/actions/4511-disable-movement-collision-with-players.md",
+    "content_sha256": "8b2b6e222985e0bcf7c8d92aea315fb26f40d123590787f4c349730dce94fa4c",
+    "bytes": 719,
+    "repository_path": "archive/articles/actions/4511-disable-movement-collision-with-players.md"
+  },
+  {
+    "id": 4501,
+    "title": "Disable Nameplates",
+    "slug": "disable-nameplates",
+    "category": "Actions",
+    "tags": [
+      "Disable Nameplates"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4501",
+    "updated_at": "2024-11-26T13:51:21.395Z",
+    "path": "articles/actions/4501-disable-nameplates.md",
+    "content_sha256": "27219ddd708e1f1960bc433016888e2ac1b0ed6268f30cd9a57738b46968e242",
+    "bytes": 1050,
+    "repository_path": "archive/articles/actions/4501-disable-nameplates.md"
+  },
+  {
+    "id": 4496,
+    "title": "Disable Scoreboard",
+    "slug": "disable-scoreboard",
+    "category": "Actions",
+    "tags": [
+      "Disable Scoreboard"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4496",
+    "updated_at": "2024-11-26T13:51:21.234Z",
+    "path": "articles/actions/4496-disable-scoreboard.md",
+    "content_sha256": "551965c7fb53a4649efb05d0bcb48ee437e4f88c67ce5c0c6fe37fdcf4159fb3",
+    "bytes": 659,
+    "repository_path": "archive/articles/actions/4496-disable-scoreboard.md"
+  },
+  {
+    "id": 4534,
+    "title": "Disable Text Chat",
+    "slug": "disable-text-chat",
+    "category": "Actions",
+    "tags": [
+      "Disable Text Chat"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4534",
+    "updated_at": "2024-11-26T13:51:22.912Z",
+    "path": "articles/actions/4534-disable-text-chat.md",
+    "content_sha256": "521f00e909a7fcc00b4da03e4fd5380d80d673462a1aae6ceb4204283ee8c816",
+    "bytes": 625,
+    "repository_path": "archive/articles/actions/4534-disable-text-chat.md"
+  },
+  {
+    "id": 4536,
+    "title": "Disable Voice Chat",
+    "slug": "disable-voice-chat",
+    "category": "Actions",
+    "tags": [
+      "Disable Voice Chat"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4536",
+    "updated_at": "2024-11-26T13:51:22.984Z",
+    "path": "articles/actions/4536-disable-voice-chat.md",
+    "content_sha256": "c9521cdf50e1c5762ac2306e150d7589b55b8f6fe231e5b35c31704f91537710",
+    "bytes": 1080,
+    "repository_path": "archive/articles/actions/4536-disable-voice-chat.md"
+  },
+  {
+    "id": 4371,
+    "title": "Disallow Button",
+    "slug": "disallow-button",
+    "category": "Actions",
+    "tags": [
+      "Disallow Button",
+      "Deshabilitar botón",
+      "Interdire le bouton",
+      "ボタンを無効化",
+      "Proibir Botão",
+      "禁用按钮"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4371",
+    "updated_at": "2024-11-26T13:51:14.862Z",
+    "path": "articles/actions/4371-disallow-button.md",
+    "content_sha256": "9cac34eb744977313f50cb2bb3fa9ad5a28adcd701122fbc4668ad562b5fb001",
+    "bytes": 975,
+    "repository_path": "archive/articles/actions/4371-disallow-button.md"
+  },
+  {
+    "id": 4372,
+    "title": "Else",
+    "slug": "else",
+    "category": "Actions",
+    "tags": [
+      "Else",
+      "Si no",
+      "Sinon",
+      "ELSE"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4372",
+    "updated_at": "2024-11-26T13:51:14.903Z",
+    "path": "articles/actions/4372-else.md",
+    "content_sha256": "aafc27ca0f292aa628a694dc5f4852cdf36a5dabc520a0659c09d215f11a1d9e",
+    "bytes": 506,
+    "repository_path": "archive/articles/actions/4372-else.md"
+  },
+  {
+    "id": 4373,
+    "title": "Else If",
+    "slug": "else-if",
+    "category": "Actions",
+    "tags": [
+      "Else If",
+      "Si no si",
+      "Sinon Si",
+      "ELSE IF"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4373",
+    "updated_at": "2024-11-26T13:51:14.961Z",
+    "path": "articles/actions/4373-else-if.md",
+    "content_sha256": "27228d91a14751e2629dc10d020dfa0d8dc3b8a435a292e06bd24aba50668930",
+    "bytes": 849,
+    "repository_path": "archive/articles/actions/4373-else-if.md"
+  },
+  {
+    "id": 4374,
+    "title": "Enable Built-In Game Mode Announcer",
+    "slug": "enable-builtin-game-mode-announcer",
+    "category": "Actions",
+    "tags": [
+      "Enable Built-In Game Mode Announcer",
+      "Habilitar presentador integrado del modo de juego",
+      "Activer l’annonceur prédéfini par le mode de jeu",
+      "ゲーム・モードの通知を有効化",
+      "Ativar Narração Integrada ao Modo de Jogo",
+      "开启游戏预设通告模式"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4374",
+    "updated_at": "2024-11-26T13:51:15.011Z",
+    "path": "articles/actions/4374-enable-builtin-game-mode-announcer.md",
+    "content_sha256": "4b554b411870a5746b3803ccbd6349a9aff5b553a76aefe7a5797f0966bcb5a3",
+    "bytes": 739,
+    "repository_path": "archive/articles/actions/4374-enable-builtin-game-mode-announcer.md"
+  },
+  {
+    "id": 4375,
+    "title": "Enable Built-In Game Mode Completion",
+    "slug": "enable-builtin-game-mode-completion",
+    "category": "Actions",
+    "tags": [
+      "Enable Built-In Game Mode Completion",
+      "Habilitar la finalización integrada del modo de juego",
+      "Activer l’accomplissement prédéfini par le mode de jeu",
+      "ゲーム・モードの標準完了を有効化",
+      "Ativar Conclusão Integrada ao Modo de Jogo",
+      "开启游戏预设完成条件"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4375",
+    "updated_at": "2024-11-26T13:51:15.057Z",
+    "path": "articles/actions/4375-enable-builtin-game-mode-completion.md",
+    "content_sha256": "08650ff182446bdb2e963f6c7b1a393f90881e51cefae80e5955d795baa1d45f",
+    "bytes": 761,
+    "repository_path": "archive/articles/actions/4375-enable-builtin-game-mode-completion.md"
+  },
+  {
+    "id": 4376,
+    "title": "Enable Built-In Game Mode Music",
+    "slug": "enable-builtin-game-mode-music",
+    "category": "Actions",
+    "tags": [
+      "Enable Built-In Game Mode Music",
+      "Habilitar la música integrada del modo de juego",
+      "Activer la musique prédéfinie par le mode de jeu",
+      "ゲーム・モードのBGMを有効化",
+      "Ativar Música Integrada ao Modo de Jogo",
+      "开启游戏预设音乐模式"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4376",
+    "updated_at": "2024-11-26T13:51:15.083Z",
+    "path": "articles/actions/4376-enable-builtin-game-mode-music.md",
+    "content_sha256": "32e7ad8250c38da8f043d813b363028814fa9f07a9b78e6f063362e2f9f7b0e6",
+    "bytes": 710,
+    "repository_path": "archive/articles/actions/4376-enable-builtin-game-mode-music.md"
+  },
+  {
+    "id": 4377,
+    "title": "Enable Built-In Game Mode Respawning",
+    "slug": "enable-builtin-game-mode-respawning",
+    "category": "Actions",
+    "tags": [
+      "Enable Built-In Game Mode Respawning",
+      "Habilitar la reaparición integrada del modo de juego",
+      "Activer la réapparition prédéfinie par le mode de jeu",
+      "ゲーム・モードの標準リスポーンを有効化",
+      "Ativar Ressurgimento Integrado ao Modo de Jogo",
+      "开启游戏预设重生模式"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4377",
+    "updated_at": "2024-11-26T13:51:15.115Z",
+    "path": "articles/actions/4377-enable-builtin-game-mode-respawning.md",
+    "content_sha256": "c29ea9d44eb12b8b0c3028e210b62e3a0b304c3162869d92492155347b0ddf6b",
+    "bytes": 1061,
+    "repository_path": "archive/articles/actions/4377-enable-builtin-game-mode-respawning.md"
+  },
+  {
+    "id": 4378,
+    "title": "Enable Built-In Game Mode Scoring",
+    "slug": "enable-builtin-game-mode-scoring",
+    "category": "Actions",
+    "tags": [
+      "Enable Built-In Game Mode Scoring",
+      "Habilitar el sistema de puntuación integrado del modo de juego",
+      "Activer le calcul des points prédéfini par le mode de jeu",
+      "ゲーム・モードの標準スコアリングを有効化",
+      "Ativar Pontuação Integrada ao Modo de Jogo",
+      "开启游戏预设计分模式"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4378",
+    "updated_at": "2024-11-26T13:51:15.167Z",
+    "path": "articles/actions/4378-enable-builtin-game-mode-scoring.md",
+    "content_sha256": "da2c47c827ea09e53311d12d91bedd8eaed8c9da828cb98aeef114a694d955a3",
+    "bytes": 769,
+    "repository_path": "archive/articles/actions/4378-enable-builtin-game-mode-scoring.md"
+  },
+  {
+    "id": 4379,
+    "title": "Enable Death Spectate All Players",
+    "slug": "enable-death-spectate-all-players",
+    "category": "Actions",
+    "tags": [
+      "Enable Death Spectate All Players",
+      "Habilitar la observación de todos los jugadores como espectador muerto",
+      "Permettre d’observer n’importe qui après la mort",
+      "観戦時に全プレイヤー選択可能を有効化",
+      "Ativar Visualização de Todos os Jogadores na Morte",
+      "对所有玩家启用死亡回放"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4379",
+    "updated_at": "2024-11-26T13:51:15.203Z",
+    "path": "articles/actions/4379-enable-death-spectate-all-players.md",
+    "content_sha256": "31c3189aa49eb4448c1af2e71264f69ef5e5c55b747e064dbb369976900bd6f2",
+    "bytes": 1005,
+    "repository_path": "archive/articles/actions/4379-enable-death-spectate-all-players.md"
+  },
+  {
+    "id": 4380,
+    "title": "Enable Death Spectate Target HUD",
+    "slug": "enable-death-spectate-target-hud",
+    "category": "Actions",
+    "tags": [
+      "Enable Death Spectate Target HUD",
+      "Habilitar la observación del HUD objetivo como espectador muerto",
+      "Permettre de voir l’interface de la cible après la mort",
+      "観戦中のターゲットHUD表示を有効化",
+      "Ativar HUD do Alvo de Visualização na Morte",
+      "启用死亡回放时目标的HUD"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4380",
+    "updated_at": "2024-11-26T13:51:15.244Z",
+    "path": "articles/actions/4380-enable-death-spectate-target-hud.md",
+    "content_sha256": "b0a58e8663e6b1e5a853a113fd8ae6b9e1204d93ea30d969168d13826830b017",
+    "bytes": 1023,
+    "repository_path": "archive/articles/actions/4380-enable-death-spectate-target-hud.md"
+  },
+  {
+    "id": 4487,
+    "title": "Enable Game Mode HUD",
+    "slug": "enable-game-mode-hud",
+    "category": "Actions",
+    "tags": [
+      "Enable Game Mode HUD"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4487",
+    "updated_at": "2024-11-26T13:51:20.977Z",
+    "path": "articles/actions/4487-enable-game-mode-hud.md",
+    "content_sha256": "65345021a1c18cc63e44e0e116bd264dfab3dd38910851db9e5a4dd1f81b1742",
+    "bytes": 738,
+    "repository_path": "archive/articles/actions/4487-enable-game-mode-hud.md"
+  },
+  {
+    "id": 4489,
+    "title": "Enable Game Mode In-World UI",
+    "slug": "enable-game-mode-inworld-ui",
+    "category": "Actions",
+    "tags": [
+      "Enable Game Mode In-World UI"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4489",
+    "updated_at": "2024-11-26T13:51:21.038Z",
+    "path": "articles/actions/4489-enable-game-mode-inworld-ui.md",
+    "content_sha256": "a009ef1afcc5d75e2fbb2b75a09faf924ea263164e81ea5843349939aa9fef50",
+    "bytes": 788,
+    "repository_path": "archive/articles/actions/4489-enable-game-mode-inworld-ui.md"
+  },
+  {
+    "id": 4491,
+    "title": "Enable Hero HUD",
+    "slug": "enable-hero-hud",
+    "category": "Actions",
+    "tags": [
+      "Enable Hero HUD"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4491",
+    "updated_at": "2024-11-26T13:51:21.088Z",
+    "path": "articles/actions/4491-enable-hero-hud.md",
+    "content_sha256": "daa4ea025fb9c99263f39172a7f17f6b0e14d59203fb858f4a9cb25cda542458",
+    "bytes": 706,
+    "repository_path": "archive/articles/actions/4491-enable-hero-hud.md"
+  },
+  {
+    "id": 4381,
+    "title": "Enable Inspector Recording",
+    "slug": "enable-inspector-recording",
+    "category": "Actions",
+    "tags": [
+      "Enable Inspector Recording",
+      "Activar registro de Inspector",
+      "Activer l’enregistrement du contrôleur",
+      "インスペクターでの記録を有効化",
+      "Ativar gravação do Inspetor",
+      "启用查看器录制"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4381",
+    "updated_at": "2024-11-26T13:51:15.291Z",
+    "path": "articles/actions/4381-enable-inspector-recording.md",
+    "content_sha256": "74fc7d92d85c4350a4244cb591a9b33f359cee5688a5923009bbbc7de6119173",
+    "bytes": 717,
+    "repository_path": "archive/articles/actions/4381-enable-inspector-recording.md"
+  },
+  {
+    "id": 4493,
+    "title": "Enable Kill Feed",
+    "slug": "enable-kill-feed",
+    "category": "Actions",
+    "tags": [
+      "Enable Kill Feed"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4493",
+    "updated_at": "2024-11-26T13:51:21.158Z",
+    "path": "articles/actions/4493-enable-kill-feed.md",
+    "content_sha256": "f361cbcbfe81620d5605e387fca577a30fcd7857a05349daaca904f9631b1bd3",
+    "bytes": 712,
+    "repository_path": "archive/articles/actions/4493-enable-kill-feed.md"
+  },
+  {
+    "id": 4495,
+    "title": "Enable Messages",
+    "slug": "enable-messages",
+    "category": "Actions",
+    "tags": [
+      "Enable Messages"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4495",
+    "updated_at": "2024-11-26T13:51:21.207Z",
+    "path": "articles/actions/4495-enable-messages.md",
+    "content_sha256": "7eff5a1342cd612cae9fa3a7d515f99ee03c0a65cab577b0837e622f1d273d10",
+    "bytes": 704,
+    "repository_path": "archive/articles/actions/4495-enable-messages.md"
+  },
+  {
+    "id": 4510,
+    "title": "Enable Movement Collision With Environment",
+    "slug": "enable-movement-collision-with-environment",
+    "category": "Actions",
+    "tags": [
+      "Enable Movement Collision With Environment"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4510",
+    "updated_at": "2024-11-26T13:51:21.705Z",
+    "path": "articles/actions/4510-enable-movement-collision-with-environment.md",
+    "content_sha256": "e2cee2b6bdb62ab7a8a084d31c2a2422a054376d0d01998b5af6b43e14a8ec2b",
+    "bytes": 843,
+    "repository_path": "archive/articles/actions/4510-enable-movement-collision-with-environment.md"
+  },
+  {
+    "id": 4512,
+    "title": "Enable Movement Collision With Players",
+    "slug": "enable-movement-collision-with-players",
+    "category": "Actions",
+    "tags": [
+      "Enable Movement Collision With Players"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4512",
+    "updated_at": "2024-11-26T13:51:21.775Z",
+    "path": "articles/actions/4512-enable-movement-collision-with-players.md",
+    "content_sha256": "aba6bec777532f934bd96cf495fcb0eb95a785f271dac333e307ae044225720d",
+    "bytes": 825,
+    "repository_path": "archive/articles/actions/4512-enable-movement-collision-with-players.md"
+  },
+  {
+    "id": 4502,
+    "title": "Enable Nameplates",
+    "slug": "enable-nameplates",
+    "category": "Actions",
+    "tags": [
+      "Enable Nameplates"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4502",
+    "updated_at": "2024-11-26T13:51:21.425Z",
+    "path": "articles/actions/4502-enable-nameplates.md",
+    "content_sha256": "d35968303e81867f6af23762fe60b035eb6ec842b3e3cc9c1b60f2c62cdb4364",
+    "bytes": 1113,
+    "repository_path": "archive/articles/actions/4502-enable-nameplates.md"
+  },
+  {
+    "id": 4497,
+    "title": "Enable Scoreboard",
+    "slug": "enable-scoreboard",
+    "category": "Actions",
+    "tags": [
+      "Enable Scoreboard"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4497",
+    "updated_at": "2024-11-26T13:51:21.263Z",
+    "path": "articles/actions/4497-enable-scoreboard.md",
+    "content_sha256": "ad3e53a24f3ace9206700e5478074c160c665ee5a8aeb4549d39b88cb0e796eb",
+    "bytes": 716,
+    "repository_path": "archive/articles/actions/4497-enable-scoreboard.md"
+  },
+  {
+    "id": 4533,
+    "title": "Enable Text Chat",
+    "slug": "enable-text-chat",
+    "category": "Actions",
+    "tags": [
+      "Enable Text Chat"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4533",
+    "updated_at": "2024-11-26T13:51:22.874Z",
+    "path": "articles/actions/4533-enable-text-chat.md",
+    "content_sha256": "6054f1007e8467d58e103bf0f4fc61e2b4f25694aacd6d543ddb0ab8706af5c0",
+    "bytes": 636,
+    "repository_path": "archive/articles/actions/4533-enable-text-chat.md"
+  },
+  {
+    "id": 4535,
+    "title": "Enable Voice Chat",
+    "slug": "enable-voice-chat",
+    "category": "Actions",
+    "tags": [
+      "Enable Voice Chat"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4535",
+    "updated_at": "2024-11-26T13:51:22.946Z",
+    "path": "articles/actions/4535-enable-voice-chat.md",
+    "content_sha256": "7bf185aed9f13b932f7e9b4f711162c30c01da17edcd6bb0484efb4662e70c5a",
+    "bytes": 641,
+    "repository_path": "archive/articles/actions/4535-enable-voice-chat.md"
+  },
+  {
+    "id": 4382,
+    "title": "End",
+    "slug": "end",
+    "category": "Actions",
+    "tags": [
+      "End",
+      "Fin",
+      "Fin",
+      "END",
+      "Término"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4382",
+    "updated_at": "2024-11-26T13:51:15.361Z",
+    "path": "articles/actions/4382-end.md",
+    "content_sha256": "3c88a66bc65c2d99be8f3e520084484226976f0b8faa942c51b9ee65ed0c725b",
+    "bytes": 629,
+    "repository_path": "archive/articles/actions/4382-end.md"
+  },
+  {
+    "id": 4383,
+    "title": "For Global Variable",
+    "slug": "for-global-variable",
+    "category": "Actions",
+    "tags": [
+      "For Global Variable",
+      "Para variable global",
+      "Pour variable globale",
+      "グローバル変数",
+      "For variável global",
+      "For 全局变量"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4383",
+    "updated_at": "2024-11-26T13:51:15.486Z",
+    "path": "articles/actions/4383-for-global-variable.md",
+    "content_sha256": "43de233abc4e651c7c78ff38f54e21621d42b6e702a1a87dcc82396f622e0f32",
+    "bytes": 2112,
+    "repository_path": "archive/articles/actions/4383-for-global-variable.md"
+  },
+  {
+    "id": 4384,
+    "title": "For Player Variable",
+    "slug": "for-player-variable",
+    "category": "Actions",
+    "tags": [
+      "For Player Variable",
+      "Para variable de jugador",
+      "Pour variable de joueur",
+      "プレイヤー変数",
+      "For variável de jogador",
+      "For 玩家变量"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4384",
+    "updated_at": "2024-11-26T13:51:15.580Z",
+    "path": "articles/actions/4384-for-player-variable.md",
+    "content_sha256": "c0e2d94a5b3a5dfb130f8e720e759644aa8ff62baccadf60e7e697590c85bd44",
+    "bytes": 2453,
+    "repository_path": "archive/articles/actions/4384-for-player-variable.md"
+  },
+  {
+    "id": 4385,
+    "title": "Go To Assemble Heroes",
+    "slug": "go-to-assemble-heroes",
+    "category": "Actions",
+    "tags": [
+      "Go To Assemble Heroes",
+      "Ir a Forma tu equipo",
+      "Aller à Choisissez vos héros",
+      "「ヒーローを編成しよう」に移行",
+      "Ir para Escolher Heróis",
+      "前往集结英雄"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4385",
+    "updated_at": "2024-11-26T13:51:15.612Z",
+    "path": "articles/actions/4385-go-to-assemble-heroes.md",
+    "content_sha256": "7584125cfc83cf4d62a62ae4f4f041d10eb443cf55ef76a812f90a0fb042dac3",
+    "bytes": 578,
+    "repository_path": "archive/articles/actions/4385-go-to-assemble-heroes.md"
+  },
+  {
+    "id": 4386,
+    "title": "Heal",
+    "slug": "heal",
+    "category": "Actions",
+    "tags": [
+      "Heal",
+      "Sanar",
+      "Soigner",
+      "回復",
+      "Cura",
+      "治疗"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4386",
+    "updated_at": "2024-11-26T13:51:15.647Z",
+    "path": "articles/actions/4386-heal.md",
+    "content_sha256": "1a617cbd53257e335e55dd9c09877ae415eedfa1b3dfb97927c5d675ea98fa47",
+    "bytes": 1212,
+    "repository_path": "archive/articles/actions/4386-heal.md"
+  },
+  {
+    "id": 6067,
+    "title": "If",
+    "slug": "if",
+    "category": "Actions",
+    "tags": [
+      "If",
+      "Si",
+      "Si",
+      "IF"
+    ],
+    "url": "https://workshop.codes/wiki/articles/6067",
+    "updated_at": "2025-05-25T20:56:16.814Z",
+    "path": "articles/actions/6067-if.md",
+    "content_sha256": "b57015fde70d147682e7ee269cccccd441d1f8485b38cbff8aba6df1585d4482",
+    "bytes": 3498,
+    "repository_path": "archive/articles/actions/6067-if.md"
+  },
+  {
+    "id": 4942,
+    "title": "Kill",
+    "slug": "kill",
+    "category": "Actions",
+    "tags": [
+      "Kill",
+      "Matar",
+      "Tuer",
+      "キル",
+      "Abater",
+      "击杀"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4942",
+    "updated_at": "2024-12-19T14:37:14.882Z",
+    "path": "articles/actions/4942-kill.md",
+    "content_sha256": "8ceb7c0ec40ad1d350315af01fd93839d0a85abb7de469e1eaac0c0a2b1cc85d",
+    "bytes": 1043,
+    "repository_path": "archive/articles/actions/4942-kill.md"
+  },
+  {
+    "id": 4519,
+    "title": "Log To Inspector",
+    "slug": "log-to-inspector",
+    "category": "Actions",
+    "tags": [
+      "Log To Inspector"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4519",
+    "updated_at": "2024-11-26T13:51:22.105Z",
+    "path": "articles/actions/4519-log-to-inspector.md",
+    "content_sha256": "6eccc7a67ae6eaa3b9c8aaf53289ca95ffe46fef77a47b6f3e1ab7760c03d371",
+    "bytes": 529,
+    "repository_path": "archive/articles/actions/4519-log-to-inspector.md"
+  },
+  {
+    "id": 4389,
+    "title": "Loop",
+    "slug": "loop",
+    "category": "Actions",
+    "tags": [
+      "Loop",
+      "Bucle",
+      "Boucle",
+      "ループ",
+      "Gerar Loop",
+      "循环"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4389",
+    "updated_at": "2024-11-26T13:51:15.732Z",
+    "path": "articles/actions/4389-loop.md",
+    "content_sha256": "80ff2f86693316e1b1257bfe717b0c6363ac9322a57a5a655ea79644ba99a901",
+    "bytes": 511,
+    "repository_path": "archive/articles/actions/4389-loop.md"
+  },
+  {
+    "id": 4390,
+    "title": "Loop If",
+    "slug": "loop-if",
+    "category": "Actions",
+    "tags": [
+      "Loop If",
+      "Repetir si",
+      "Boucle si",
+      "ループする条件",
+      "Gerar Loop se",
+      "根据条件循环"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4390",
+    "updated_at": "2024-11-26T13:51:15.774Z",
+    "path": "articles/actions/4390-loop-if.md",
+    "content_sha256": "cf5e9e8b8ad71fea2d99ee87a9e920ec8d36621221ad50dd2f0cf037a1b20d19",
+    "bytes": 827,
+    "repository_path": "archive/articles/actions/4390-loop-if.md"
+  },
+  {
+    "id": 4391,
+    "title": "Loop If Condition Is False",
+    "slug": "loop-if-condition-is-false",
+    "category": "Actions",
+    "tags": [
+      "Loop If Condition Is False",
+      "Repetir si la condición es falsa",
+      "Boucle si la condition est fausse",
+      "条件が「FALSE」の場合ループ",
+      "Gerar Loop se a Condição for Falsa",
+      "如条件为“假”则循环"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4391",
+    "updated_at": "2024-11-26T13:51:15.796Z",
+    "path": "articles/actions/4391-loop-if-condition-is-false.md",
+    "content_sha256": "4e7d91dd3a46e7598989d3f4830559c73c4d762f01a57521e410c024828df956",
+    "bytes": 838,
+    "repository_path": "archive/articles/actions/4391-loop-if-condition-is-false.md"
+  },
+  {
+    "id": 4392,
+    "title": "Loop If Condition Is True",
+    "slug": "loop-if-condition-is-true",
+    "category": "Actions",
+    "tags": [
+      "Loop If Condition Is True",
+      "Repetir si la condición es verdadera",
+      "Boucle si la condition est vraie",
+      "条件が「TRUE」の場合ループ",
+      "Gerar Loop se a Condição for Verdadeira",
+      "如条件为”真“则循环"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4392",
+    "updated_at": "2024-11-26T13:51:15.819Z",
+    "path": "articles/actions/4392-loop-if-condition-is-true.md",
+    "content_sha256": "0e32d5539925a12f8b3f62ecf0451c54de2931fae7a2fece046a7b42840a064e",
+    "bytes": 824,
+    "repository_path": "archive/articles/actions/4392-loop-if-condition-is-true.md"
+  },
+  {
+    "id": 4393,
+    "title": "Modify Global Variable",
+    "slug": "modify-global-variable",
+    "category": "Actions",
+    "tags": [
+      "Modify Global Variable",
+      "Modificar variable global",
+      "Modifier une variable globale",
+      "グローバル変数を変更",
+      "Modificar Variável Global",
+      "修改全局变量"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4393",
+    "updated_at": "2024-11-26T13:51:15.852Z",
+    "path": "articles/actions/4393-modify-global-variable.md",
+    "content_sha256": "49bf8e50b4cee23c82f987b2af61ce255f240c2a02eed2b44b2664d8a5534b16",
+    "bytes": 1382,
+    "repository_path": "archive/articles/actions/4393-modify-global-variable.md"
+  },
+  {
+    "id": 4394,
+    "title": "Modify Global Variable At Index",
+    "slug": "modify-global-variable-at-index",
+    "category": "Actions",
+    "tags": [
+      "Modify Global Variable At Index",
+      "Modificar variable global según el índice",
+      "Modifier une variable globale à l’index",
+      "インデックスのグローバル変数を変更",
+      "Modificar Variável Global no Índice",
+      "在索引处修改全局变量"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4394",
+    "updated_at": "2024-11-26T13:51:16.001Z",
+    "path": "articles/actions/4394-modify-global-variable-at-index.md",
+    "content_sha256": "3e30110977fcd7e4c74e790e0e4d7da773036fcc0557c181e193024e525a5a4c",
+    "bytes": 1763,
+    "repository_path": "archive/articles/actions/4394-modify-global-variable-at-index.md"
+  },
+  {
+    "id": 4395,
+    "title": "Modify Player Score",
+    "slug": "modify-player-score",
+    "category": "Actions",
+    "tags": [
+      "Modify Player Score",
+      "Modificar puntuación del jugador",
+      "Modifier le score d’un joueur",
+      "プレイヤー・スコアを変更",
+      "Modificar Pontuação do Jogador",
+      "修改玩家分数"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4395",
+    "updated_at": "2024-11-26T13:51:16.068Z",
+    "path": "articles/actions/4395-modify-player-score.md",
+    "content_sha256": "81ee194fbc2565db6393c99a0f480f9fdbdaedd382dd43997666a79a084668b3",
+    "bytes": 1100,
+    "repository_path": "archive/articles/actions/4395-modify-player-score.md"
+  },
+  {
+    "id": 4396,
+    "title": "Modify Player Variable",
+    "slug": "modify-player-variable",
+    "category": "Actions",
+    "tags": [
+      "Modify Player Variable",
+      "Modificar variable de jugador",
+      "Modifier une variable de joueur",
+      "プレイヤー変数を変更",
+      "Modificar Variável de Jogador",
+      "修改玩家变量"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4396",
+    "updated_at": "2024-11-26T13:51:16.209Z",
+    "path": "articles/actions/4396-modify-player-variable.md",
+    "content_sha256": "d0226b5fd1c592799d5ae49e744bd2cabd7df5b6187a8ff86a932dd6f0027975",
+    "bytes": 1752,
+    "repository_path": "archive/articles/actions/4396-modify-player-variable.md"
+  },
+  {
+    "id": 4397,
+    "title": "Modify Player Variable At Index",
+    "slug": "modify-player-variable-at-index",
+    "category": "Actions",
+    "tags": [
+      "Modify Player Variable At Index",
+      "Modificar variable de jugador según el índice",
+      "Modifier une variable de joueur à l’index",
+      "インデックスのプレイヤー変数を変更",
+      "Modificar Variável de Jogador no Índice",
+      "在索引处修改玩家变量"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4397",
+    "updated_at": "2024-11-26T13:51:16.358Z",
+    "path": "articles/actions/4397-modify-player-variable-at-index.md",
+    "content_sha256": "2e0749e0887047c95976f4140ff1afb10e6686fc3784ade0a4c0435deca6fceb",
+    "bytes": 2133,
+    "repository_path": "archive/articles/actions/4397-modify-player-variable-at-index.md"
+  },
+  {
+    "id": 4398,
+    "title": "Modify Team Score",
+    "slug": "modify-team-score",
+    "category": "Actions",
+    "tags": [
+      "Modify Team Score",
+      "Modificar puntuación del equipo",
+      "Modifier le score de l’équipe",
+      "チーム・スコアを変更",
+      "Modificar Pontuação da Equipe",
+      "修改队伍分数"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4398",
+    "updated_at": "2024-11-26T13:51:16.425Z",
+    "path": "articles/actions/4398-modify-team-score.md",
+    "content_sha256": "72c3e57b4e8357fbebf3fcb219f8669d0d459613a060e0f0715abb732b754442",
+    "bytes": 1003,
+    "repository_path": "archive/articles/actions/4398-modify-team-score.md"
+  },
+  {
+    "id": 4540,
+    "title": "Move Player To Team",
+    "slug": "move-player-to-team",
+    "category": "Actions",
+    "tags": [
+      "Move Player To Team"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4540",
+    "updated_at": "2024-11-26T13:51:23.094Z",
+    "path": "articles/actions/4540-move-player-to-team.md",
+    "content_sha256": "2c91ac1c2913e9d9911dbf1e7543b7524a4d88bf1c9ed744cfa036c6915c60b1",
+    "bytes": 1120,
+    "repository_path": "archive/articles/actions/4540-move-player-to-team.md"
+  },
+  {
+    "id": 4399,
+    "title": "Pause Match Time",
+    "slug": "pause-match-time",
+    "category": "Actions",
+    "tags": [
+      "Pause Match Time",
+      "Pausar tiempo de la partida",
+      "Mettre en pause le temps de jeu",
+      "マッチ時間をポーズする",
+      "Pausar Tempo da Partida",
+      "比赛时间暂停"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4399",
+    "updated_at": "2024-11-26T13:51:16.473Z",
+    "path": "articles/actions/4399-pause-match-time.md",
+    "content_sha256": "ef2267d54c82d227a669ce381d608069ba505ef1ed48a0b630670799a966a589",
+    "bytes": 679,
+    "repository_path": "archive/articles/actions/4399-pause-match-time.md"
+  },
+  {
+    "id": 9268,
+    "title": "Play Effect",
+    "slug": "play-effect",
+    "category": "Actions",
+    "tags": [
+      "Play Effect",
+      "Reproducir efecto",
+      "Jouer un effet",
+      "エフェクトを再生",
+      "Reproduzir Efeito",
+      "播放效果"
+    ],
+    "url": "https://workshop.codes/wiki/articles/9268",
+    "updated_at": "2026-07-10T18:15:21.022Z",
+    "path": "articles/actions/9268-play-effect.md",
+    "content_sha256": "89dbb946c8ef9ee9e021600eae3e205a88814f89ec530f7bbdd39c5b175f6077",
+    "bytes": 2040,
+    "repository_path": "archive/articles/actions/9268-play-effect.md"
+  },
+  {
+    "id": 4401,
+    "title": "Preload Hero",
+    "slug": "preload-hero",
+    "category": "Actions",
+    "tags": [
+      "Preload Hero",
+      "Precargar héroe",
+      "Précharger un héros",
+      "ヒーローをプリロード",
+      "Pré-carregar Herói",
+      "预加载英雄"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4401",
+    "updated_at": "2024-11-26T13:51:16.620Z",
+    "path": "articles/actions/4401-preload-hero.md",
+    "content_sha256": "8ddeb2f56406638f38c34f3408b393a4426446153d8be409c959ddde42f17c72",
+    "bytes": 2133,
+    "repository_path": "archive/articles/actions/4401-preload-hero.md"
+  },
+  {
+    "id": 4402,
+    "title": "Press Button",
+    "slug": "press-button",
+    "category": "Actions",
+    "tags": [
+      "Press Button",
+      "Presionar botón",
+      "Appuyer sur un bouton",
+      "ボタンを押してください",
+      "Pressionar Botão",
+      "按下按键"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4402",
+    "updated_at": "2024-11-26T13:51:16.673Z",
+    "path": "articles/actions/4402-press-button.md",
+    "content_sha256": "fa1a8e623f85fd35ef0a8404bb9112876111d42a710afec325c9efa549189657",
+    "bytes": 969,
+    "repository_path": "archive/articles/actions/4402-press-button.md"
+  },
+  {
+    "id": 4517,
+    "title": "Remove All Health Pools From Player",
+    "slug": "remove-all-health-pools-from-player",
+    "category": "Actions",
+    "tags": [
+      "Remove All Health Pools From Player"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4517",
+    "updated_at": "2024-11-26T13:51:21.975Z",
+    "path": "articles/actions/4517-remove-all-health-pools-from-player.md",
+    "content_sha256": "c02d901ee81725cc7507e65795c121973997e6cbecc5a11ba29247d58361565c",
+    "bytes": 805,
+    "repository_path": "archive/articles/actions/4517-remove-all-health-pools-from-player.md"
+  },
+  {
+    "id": 4516,
+    "title": "Remove Health Pool From Player",
+    "slug": "remove-health-pool-from-player",
+    "category": "Actions",
+    "tags": [
+      "Remove Health Pool From Player"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4516",
+    "updated_at": "2024-11-26T13:51:21.943Z",
+    "path": "articles/actions/4516-remove-health-pool-from-player.md",
+    "content_sha256": "bca099481dca3493db15e3befdbd3bad326eeb68d02066d25503f2cd85be0489",
+    "bytes": 819,
+    "repository_path": "archive/articles/actions/4516-remove-health-pool-from-player.md"
+  },
+  {
+    "id": 4541,
+    "title": "Remove Player",
+    "slug": "remove-player",
+    "category": "Actions",
+    "tags": [
+      "Remove Player"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4541",
+    "updated_at": "2024-11-26T13:51:23.121Z",
+    "path": "articles/actions/4541-remove-player.md",
+    "content_sha256": "fc8351bf7810f94e70a226535a20a77f5712c2a5a98c625eefc86aa1549ef5a4",
+    "bytes": 614,
+    "repository_path": "archive/articles/actions/4541-remove-player.md"
+  },
+  {
+    "id": 4403,
+    "title": "Reset Player Hero Availability",
+    "slug": "reset-player-hero-availability",
+    "category": "Actions",
+    "tags": [
+      "Reset Player Hero Availability",
+      "Restablecer disponibilidad de héroes de los jugadores",
+      "Réinitialiser la disponibilité du héros pour un joueur",
+      "プレイヤーが使用できるヒーローをリセット",
+      "Redefinir Disponibilidade de Heróis para o Jogador",
+      "重置玩家英雄可选状态"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4403",
+    "updated_at": "2024-11-26T13:51:16.715Z",
+    "path": "articles/actions/4403-reset-player-hero-availability.md",
+    "content_sha256": "b8e301ec205a41be0b671d679edb2376e657ac9c2f42a718421ea0e27da4f10e",
+    "bytes": 1130,
+    "repository_path": "archive/articles/actions/4403-reset-player-hero-availability.md"
+  },
+  {
+    "id": 7550,
+    "title": "Respawn",
+    "slug": "respawn",
+    "category": "Actions",
+    "tags": [
+      "Respawn",
+      "Reaparecer",
+      "Réapparaître",
+      "リスポーン",
+      "Ressurgir",
+      "复生"
+    ],
+    "url": "https://workshop.codes/wiki/articles/7550",
+    "updated_at": "2025-11-15T14:43:30.843Z",
+    "path": "articles/actions/7550-respawn.md",
+    "content_sha256": "8d38ce8b08a13ba124909192d3bf8a61532ebb346f2edeb9771335e71aa13216",
+    "bytes": 709,
+    "repository_path": "archive/articles/actions/7550-respawn.md"
+  },
+  {
+    "id": 4539,
+    "title": "Restart Match",
+    "slug": "restart-match",
+    "category": "Actions",
+    "tags": [
+      "Restart Match"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4539",
+    "updated_at": "2024-11-26T13:51:23.063Z",
+    "path": "articles/actions/4539-restart-match.md",
+    "content_sha256": "dbdc584a7c73e070bfc342ab67a915226b3e5bd012b225bb0b8280a9644acf77",
+    "bytes": 398,
+    "repository_path": "archive/articles/actions/4539-restart-match.md"
+  },
+  {
+    "id": 7549,
+    "title": "Resurrect",
+    "slug": "resurrect",
+    "category": "Actions",
+    "tags": [
+      "Resurrect",
+      "Resucitar",
+      "Ressusciter",
+      "蘇生",
+      "Ressuscitar",
+      "复活"
+    ],
+    "url": "https://workshop.codes/wiki/articles/7549",
+    "updated_at": "2025-11-15T14:42:56.302Z",
+    "path": "articles/actions/7549-resurrect.md",
+    "content_sha256": "8ca86606fe9fd7a7295b60821a0933c807d5f41c78ab46a7636f092fe6f2a354",
+    "bytes": 691,
+    "repository_path": "archive/articles/actions/7549-resurrect.md"
+  },
+  {
+    "id": 4538,
+    "title": "Return To Lobby",
+    "slug": "return-to-lobby",
+    "category": "Actions",
+    "tags": [
+      "Return To Lobby"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4538",
+    "updated_at": "2024-11-26T13:51:23.038Z",
+    "path": "articles/actions/4538-return-to-lobby.md",
+    "content_sha256": "76f8b3c1bc62f632fcfcb014df6c1d1806df8182794001969a74b2c8ec59c27a",
+    "bytes": 362,
+    "repository_path": "archive/articles/actions/4538-return-to-lobby.md"
+  },
+  {
+    "id": 4406,
+    "title": "Set Ability 1 Enabled",
+    "slug": "set-ability-1-enabled",
+    "category": "Actions",
+    "tags": [
+      "Set Ability 1 Enabled",
+      "Establecer habilidad 1 habilitada",
+      "Définir l’activation de la capacité 1",
+      "アビリティ1を有効化",
+      "Definir Habilidade 1 como Ativada",
+      "设置启用技能 1"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4406",
+    "updated_at": "2024-11-26T13:51:16.816Z",
+    "path": "articles/actions/4406-set-ability-1-enabled.md",
+    "content_sha256": "64bb55adf6d78f36b832cdf6497d5df329bed590aa5d780c4bbf25d25eaa5833",
+    "bytes": 1073,
+    "repository_path": "archive/articles/actions/4406-set-ability-1-enabled.md"
+  },
+  {
+    "id": 4407,
+    "title": "Set Ability 2 Enabled",
+    "slug": "set-ability-2-enabled",
+    "category": "Actions",
+    "tags": [
+      "Set Ability 2 Enabled",
+      "Establecer habilidad 2 habilitada",
+      "Définir l’activation de la capacité 2",
+      "アビリティ2を有効化",
+      "Definir Habilidade 2 como Ativada",
+      "设置启用技能 2"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4407",
+    "updated_at": "2024-11-26T13:51:16.851Z",
+    "path": "articles/actions/4407-set-ability-2-enabled.md",
+    "content_sha256": "0b81ab1b58f6322c3091e02b96e3d221d3542feca4e9995608e09118f4593b1a",
+    "bytes": 1073,
+    "repository_path": "archive/articles/actions/4407-set-ability-2-enabled.md"
+  },
+  {
+    "id": 4498,
+    "title": "Set Ability Charge",
+    "slug": "set-ability-charge",
+    "category": "Actions",
+    "tags": [
+      "Set Ability Charge"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4498",
+    "updated_at": "2024-11-26T13:51:21.297Z",
+    "path": "articles/actions/4498-set-ability-charge.md",
+    "content_sha256": "ebd91c09eb23bd1aa1737939b54242dc7eafe69be2059b0add32ba4d550aa76f",
+    "bytes": 1024,
+    "repository_path": "archive/articles/actions/4498-set-ability-charge.md"
+  },
+  {
+    "id": 4408,
+    "title": "Set Ability Cooldown",
+    "slug": "set-ability-cooldown",
+    "category": "Actions",
+    "tags": [
+      "Set Ability Cooldown",
+      "Establecer Reutilización de habilidad",
+      "Définir le temps de recharge de la capacité",
+      "アビリティのクールダウンを設定",
+      "Definir Tempo de Recarga da Habilidade",
+      "设置技能冷却"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4408",
+    "updated_at": "2024-11-26T13:51:16.904Z",
+    "path": "articles/actions/4408-set-ability-cooldown.md",
+    "content_sha256": "67a909d7c70da7f61ea1e6808f0e5c22b4b7d10fa1241034f388afd14575b2b4",
+    "bytes": 1280,
+    "repository_path": "archive/articles/actions/4408-set-ability-cooldown.md"
+  },
+  {
+    "id": 4499,
+    "title": "Set Ability Resource",
+    "slug": "set-ability-resource",
+    "category": "Actions",
+    "tags": [
+      "Set Ability Resource"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4499",
+    "updated_at": "2024-11-26T13:51:21.328Z",
+    "path": "articles/actions/4499-set-ability-resource.md",
+    "content_sha256": "d4e16c78e7dbd750eedacac4c8f6c5f9bbfa17ecfb207091a66f6d7c66b242af",
+    "bytes": 1116,
+    "repository_path": "archive/articles/actions/4499-set-ability-resource.md"
+  },
+  {
+    "id": 4409,
+    "title": "Set Aim Speed",
+    "slug": "set-aim-speed",
+    "category": "Actions",
+    "tags": [
+      "Set Aim Speed",
+      "Establecer velocidad al apuntar",
+      "Définir la vitesse de visée",
+      "照準速度を設定",
+      "Definir Velocidade de Mira",
+      "设置瞄准速度"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4409",
+    "updated_at": "2024-11-26T13:51:16.949Z",
+    "path": "articles/actions/4409-set-aim-speed.md",
+    "content_sha256": "c7c0ee1e83021dd0d543df92a1e4c985be336876fe7a8f7febc441a31cd5fec2",
+    "bytes": 1028,
+    "repository_path": "archive/articles/actions/4409-set-aim-speed.md"
+  },
+  {
+    "id": 4482,
+    "title": "Set Ammo",
+    "slug": "set-ammo",
+    "category": "Actions",
+    "tags": [
+      "Set Ammo"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4482",
+    "updated_at": "2024-11-26T13:51:20.778Z",
+    "path": "articles/actions/4482-set-ammo.md",
+    "content_sha256": "3c95e667e09748676fbc6a53636b302605234ca139813443abc2fc90f701b6cc",
+    "bytes": 901,
+    "repository_path": "archive/articles/actions/4482-set-ammo.md"
+  },
+  {
+    "id": 4410,
+    "title": "Set Crouch Enabled",
+    "slug": "set-crouch-enabled",
+    "category": "Actions",
+    "tags": [
+      "Set Crouch Enabled",
+      "Establecer acción de agacharse activado",
+      "Définir l’activation de S’accroupir",
+      "しゃがみを有効化",
+      "Definir Agachar Ativado",
+      "设置启用蹲下"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4410",
+    "updated_at": "2024-11-26T13:51:16.986Z",
+    "path": "articles/actions/4410-set-crouch-enabled.md",
+    "content_sha256": "170cc16e575a9f0a0a29a22dabcdd47a6277236e43d91e0f13ecc1b2bc88fdb9",
+    "bytes": 1045,
+    "repository_path": "archive/articles/actions/4410-set-crouch-enabled.md"
+  },
+  {
+    "id": 4411,
+    "title": "Set Damage Dealt",
+    "slug": "set-damage-dealt",
+    "category": "Actions",
+    "tags": [
+      "Set Damage Dealt",
+      "Establecer daño infligido",
+      "Définir les dégâts infligés",
+      "与えるダメージを設定",
+      "Definir Dano Causado",
+      "设置造成伤害"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4411",
+    "updated_at": "2024-11-26T13:51:17.043Z",
+    "path": "articles/actions/4411-set-damage-dealt.md",
+    "content_sha256": "4506ad42ba2fe669b3a56034d5c2d1693e3acee429530d06f6d74a1beff5ddc3",
+    "bytes": 1050,
+    "repository_path": "archive/articles/actions/4411-set-damage-dealt.md"
+  },
+  {
+    "id": 4412,
+    "title": "Set Damage Received",
+    "slug": "set-damage-received",
+    "category": "Actions",
+    "tags": [
+      "Set Damage Received",
+      "Establecer daño recibido",
+      "Définir les dégâts subis",
+      "受けるダメージを設定",
+      "Definir Dano Recebido",
+      "设置受到伤害"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4412",
+    "updated_at": "2024-11-26T13:51:17.094Z",
+    "path": "articles/actions/4412-set-damage-received.md",
+    "content_sha256": "7ae0bbe873b2bce37f7672abab5df64139de4015ecbd00fc0b8c4f36ba0d90f9",
+    "bytes": 1076,
+    "repository_path": "archive/articles/actions/4412-set-damage-received.md"
+  },
+  {
+    "id": 4523,
+    "title": "Set Environment Credit Player",
+    "slug": "set-environment-credit-player",
+    "category": "Actions",
+    "tags": [
+      "Set Environment Credit Player"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4523",
+    "updated_at": "2024-11-26T13:51:22.373Z",
+    "path": "articles/actions/4523-set-environment-credit-player.md",
+    "content_sha256": "873360bff8f2d7e55938b68d7ea44503908b6a81421c7966644b0d7267528364",
+    "bytes": 1196,
+    "repository_path": "archive/articles/actions/4523-set-environment-credit-player.md"
+  },
+  {
+    "id": 4413,
+    "title": "Set Facing",
+    "slug": "set-facing",
+    "category": "Actions",
+    "tags": [
+      "Set Facing",
+      "Establecer orientación",
+      "Définir la direction du regard",
+      "向き変更を設定",
+      "Definir Encarar",
+      "设置朝向"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4413",
+    "updated_at": "2024-11-26T13:51:17.165Z",
+    "path": "articles/actions/4413-set-facing.md",
+    "content_sha256": "270977876354290845076df0e7b2375140f9a9605dd306e9f13dfdc30f1082ee",
+    "bytes": 1240,
+    "repository_path": "archive/articles/actions/4413-set-facing.md"
+  },
+  {
+    "id": 4414,
+    "title": "Set Global Variable",
+    "slug": "set-global-variable",
+    "category": "Actions",
+    "tags": [
+      "Set Global Variable",
+      "Establecer variable global",
+      "Définir une variable globale",
+      "グローバル変数を設定",
+      "Definir Variável Global",
+      "设置全局变量"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4414",
+    "updated_at": "2024-11-26T13:51:17.279Z",
+    "path": "articles/actions/4414-set-global-variable.md",
+    "content_sha256": "98f2bc4b23567b2b0c9bbd079261193874ce951dc954c966dbf6fe7ba8ded14a",
+    "bytes": 864,
+    "repository_path": "archive/articles/actions/4414-set-global-variable.md"
+  },
+  {
+    "id": 4415,
+    "title": "Set Global Variable At Index",
+    "slug": "set-global-variable-at-index",
+    "category": "Actions",
+    "tags": [
+      "Set Global Variable At Index",
+      "Establecer variable global según el índice",
+      "Définir une variable globale à l’index",
+      "インデックスのグローバル変数を設定",
+      "Definir Variável Global no Índice",
+      "在索引处设置全局变量"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4415",
+    "updated_at": "2024-11-26T13:51:17.318Z",
+    "path": "articles/actions/4415-set-global-variable-at-index.md",
+    "content_sha256": "de7c3aee00d706c33f469e8807809d3b77d10d8997d97a8849f5931bf9d47304",
+    "bytes": 1401,
+    "repository_path": "archive/articles/actions/4415-set-global-variable-at-index.md"
+  },
+  {
+    "id": 4416,
+    "title": "Set Gravity",
+    "slug": "set-gravity",
+    "category": "Actions",
+    "tags": [
+      "Set Gravity",
+      "Establecer gravedad",
+      "Définir la gravité",
+      "重力を設定",
+      "Definir Gravidade",
+      "设置引力"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4416",
+    "updated_at": "2024-11-26T13:51:17.356Z",
+    "path": "articles/actions/4416-set-gravity.md",
+    "content_sha256": "560eb2d08975f5c345c986929239512ec20aa576f51120287ad38db4c8786bab",
+    "bytes": 1012,
+    "repository_path": "archive/articles/actions/4416-set-gravity.md"
+  },
+  {
+    "id": 4417,
+    "title": "Set Healing Dealt",
+    "slug": "set-healing-dealt",
+    "category": "Actions",
+    "tags": [
+      "Set Healing Dealt",
+      "Establecer sanación realizada",
+      "Définir les soins prodigués",
+      "与える回復を設定",
+      "Definir Cura Realizada",
+      "设置造成治疗"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4417",
+    "updated_at": "2024-11-26T13:51:17.387Z",
+    "path": "articles/actions/4417-set-healing-dealt.md",
+    "content_sha256": "da37bc0c60900eddce738ef2d99ec3be6b01e030b98a2b1c42e6c9210a525fdb",
+    "bytes": 961,
+    "repository_path": "archive/articles/actions/4417-set-healing-dealt.md"
+  },
+  {
+    "id": 4418,
+    "title": "Set Healing Received",
+    "slug": "set-healing-received",
+    "category": "Actions",
+    "tags": [
+      "Set Healing Received",
+      "Establecer sanación recibida",
+      "Définir les soins reçus",
+      "受ける回復量を設定",
+      "Definir Cura Recebida",
+      "设置受到治疗"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4418",
+    "updated_at": "2024-11-26T13:51:17.414Z",
+    "path": "articles/actions/4418-set-healing-received.md",
+    "content_sha256": "1d45e33df0ff61f906c398b6f06f084cb2084a63306a65d77f33010c824f97b0",
+    "bytes": 1085,
+    "repository_path": "archive/articles/actions/4418-set-healing-received.md"
+  },
+  {
+    "id": 9364,
+    "title": "Set Invisible",
+    "slug": "set-invisible",
+    "category": "Actions",
+    "tags": [
+      "Set Invisible",
+      "Establecer invisibilidad",
+      "Définir l’invisibilité",
+      "目視可否を設定",
+      "Definir como Invisível",
+      "设置不可见"
+    ],
+    "url": "https://workshop.codes/wiki/articles/9364",
+    "updated_at": "2026-08-05T10:47:01.285Z",
+    "path": "articles/actions/9364-set-invisible.md",
+    "content_sha256": "96016667635ff191e5ecbcac044273f808544e3bb48bcadcca5ef41abbb4e920",
+    "bytes": 925,
+    "repository_path": "archive/articles/actions/9364-set-invisible.md"
+  },
+  {
+    "id": 4420,
+    "title": "Set Jump Enabled",
+    "slug": "set-jump-enabled",
+    "category": "Actions",
+    "tags": [
+      "Set Jump Enabled",
+      "Establecer salto activado",
+      "Définir l’activation de Sauter",
+      "ジャンプを有効化",
+      "Definir Pular Ativado",
+      "设置启用跳跃"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4420",
+    "updated_at": "2024-11-26T13:51:17.490Z",
+    "path": "articles/actions/4420-set-jump-enabled.md",
+    "content_sha256": "0a85b7614a8afc7591aecd6dff94ab711fe0d2bb8ee36029816414cbb63f1950",
+    "bytes": 1009,
+    "repository_path": "archive/articles/actions/4420-set-jump-enabled.md"
+  },
+  {
+    "id": 4500,
+    "title": "Set Jump Vertical Speed",
+    "slug": "set-jump-vertical-speed",
+    "category": "Actions",
+    "tags": [
+      "Set Jump Vertical Speed"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4500",
+    "updated_at": "2024-11-26T13:51:21.355Z",
+    "path": "articles/actions/4500-set-jump-vertical-speed.md",
+    "content_sha256": "0bbd94851283f2193d1c0111ecccb8849ff4ed98b8cec139c4f8f843a93a5116",
+    "bytes": 929,
+    "repository_path": "archive/articles/actions/4500-set-jump-vertical-speed.md"
+  },
+  {
+    "id": 4521,
+    "title": "Set Knockback Dealt",
+    "slug": "set-knockback-dealt",
+    "category": "Actions",
+    "tags": [
+      "Set Knockback Dealt"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4521",
+    "updated_at": "2024-11-26T13:51:22.300Z",
+    "path": "articles/actions/4521-set-knockback-dealt.md",
+    "content_sha256": "c083fe6c064b1beaaa5a2f27e15ead8e52deea90a0ed6dff1fa3c55864648548",
+    "bytes": 905,
+    "repository_path": "archive/articles/actions/4521-set-knockback-dealt.md"
+  },
+  {
+    "id": 4522,
+    "title": "Set Knockback Received",
+    "slug": "set-knockback-received",
+    "category": "Actions",
+    "tags": [
+      "Set Knockback Received"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4522",
+    "updated_at": "2024-11-26T13:51:22.336Z",
+    "path": "articles/actions/4522-set-knockback-received.md",
+    "content_sha256": "05a495eab5e9b612e87de799a4a31b0d9ddc9257d9d4ae848734b0124a4d0970",
+    "bytes": 926,
+    "repository_path": "archive/articles/actions/4522-set-knockback-received.md"
+  },
+  {
+    "id": 4421,
+    "title": "Set Match Time",
+    "slug": "set-match-time",
+    "category": "Actions",
+    "tags": [
+      "Set Match Time",
+      "Establecer tiempo de la partida",
+      "Définir le temps de jeu",
+      "マッチ時間を設定",
+      "Definir Tempo da Partida",
+      "设置比赛时间"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4421",
+    "updated_at": "2024-11-26T13:51:17.766Z",
+    "path": "articles/actions/4421-set-match-time.md",
+    "content_sha256": "61a7d08d41330d1c53e25c7889d138a4026cfb3dde1ab16348b4d5111bf4dc13",
+    "bytes": 769,
+    "repository_path": "archive/articles/actions/4421-set-match-time.md"
+  },
+  {
+    "id": 4483,
+    "title": "Set Max Ammo",
+    "slug": "set-max-ammo",
+    "category": "Actions",
+    "tags": [
+      "Set Max Ammo"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4483",
+    "updated_at": "2024-11-26T13:51:20.820Z",
+    "path": "articles/actions/4483-set-max-ammo.md",
+    "content_sha256": "6a68f6b3444f4487fa663886c52078233bda02d8e963a6ae2afba3bb42276dc3",
+    "bytes": 925,
+    "repository_path": "archive/articles/actions/4483-set-max-ammo.md"
+  },
+  {
+    "id": 4422,
+    "title": "Set Max Health",
+    "slug": "set-max-health",
+    "category": "Actions",
+    "tags": [
+      "Set Max Health",
+      "Establecer salud máxima",
+      "Définir les points de vie maximum",
+      "最大ライフを設定",
+      "Definir Vida Máxima",
+      "设置最大生命值"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4422",
+    "updated_at": "2024-11-26T13:51:17.794Z",
+    "path": "articles/actions/4422-set-max-health.md",
+    "content_sha256": "2558d5a09c272347230620b9efbec599d6d68322fe2715efc195a39d55f18d60",
+    "bytes": 1107,
+    "repository_path": "archive/articles/actions/4422-set-max-health.md"
+  },
+  {
+    "id": 4423,
+    "title": "Set Melee Enabled",
+    "slug": "set-melee-enabled",
+    "category": "Actions",
+    "tags": [
+      "Set Melee Enabled",
+      "Establecer ataques melé activado",
+      "Définir l’activation de Mêlée",
+      "近接攻撃を有効化",
+      "Definir Corpo a Corpo Ativado",
+      "设置启用近战攻击"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4423",
+    "updated_at": "2024-11-26T13:51:17.825Z",
+    "path": "articles/actions/4423-set-melee-enabled.md",
+    "content_sha256": "7146dac28bc8c9c4dde39675d215d4d641ea931e279ddca6dd252c0799f27639",
+    "bytes": 1038,
+    "repository_path": "archive/articles/actions/4423-set-melee-enabled.md"
+  },
+  {
+    "id": 4424,
+    "title": "Set Move Speed",
+    "slug": "set-move-speed",
+    "category": "Actions",
+    "tags": [
+      "Set Move Speed",
+      "Establecer velocidad de movimiento",
+      "Définir la vitesse de déplacement",
+      "移動速度を設定",
+      "Definir Velocidade de Movimento",
+      "设置移动速度"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4424",
+    "updated_at": "2024-11-26T13:51:17.855Z",
+    "path": "articles/actions/4424-set-move-speed.md",
+    "content_sha256": "b9993a6b145f658c032aa7caaa1d1226cf36aff053cb0855b7cf25c1893a156f",
+    "bytes": 1044,
+    "repository_path": "archive/articles/actions/4424-set-move-speed.md"
+  },
+  {
+    "id": 4425,
+    "title": "Set Objective Description",
+    "slug": "set-objective-description",
+    "category": "Actions",
+    "tags": [
+      "Set Objective Description",
+      "Establecer descripción de objetivo",
+      "Définir la description d’objectif",
+      "目標の説明を設定",
+      "Definir Descrição do Objetivo",
+      "设置目标点描述"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4425",
+    "updated_at": "2024-11-26T13:51:17.884Z",
+    "path": "articles/actions/4425-set-objective-description.md",
+    "content_sha256": "a100e48394d23f915e59412c0b603a5a18d146bf469bc4d7fdd94a3761a6d922",
+    "bytes": 1414,
+    "repository_path": "archive/articles/actions/4425-set-objective-description.md"
+  },
+  {
+    "id": 4426,
+    "title": "Set Player Allowed Heroes",
+    "slug": "set-player-allowed-heroes",
+    "category": "Actions",
+    "tags": [
+      "Set Player Allowed Heroes",
+      "Establecer héroes permitidos para los jugadores",
+      "Définir les héros autorisés pour un joueur",
+      "プレイヤーが使用できるヒーローを設定",
+      "Definir Heróis Permitidos para o Jogador",
+      "设置玩家可选的英雄"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4426",
+    "updated_at": "2024-11-26T13:51:17.913Z",
+    "path": "articles/actions/4426-set-player-allowed-heroes.md",
+    "content_sha256": "49d4eea4377a1f9181f5a5c6a07885887f04547030a5b191eb1c939b261b39b1",
+    "bytes": 1275,
+    "repository_path": "archive/articles/actions/4426-set-player-allowed-heroes.md"
+  },
+  {
+    "id": 4518,
+    "title": "Set Player Health",
+    "slug": "set-player-health",
+    "category": "Actions",
+    "tags": [
+      "Set Player Health"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4518",
+    "updated_at": "2024-11-26T13:51:22.034Z",
+    "path": "articles/actions/4518-set-player-health.md",
+    "content_sha256": "9b1cc515451f8f378ad86b6da32d9a6f1bde8bea6995307eda7877bf13fe1107",
+    "bytes": 907,
+    "repository_path": "archive/articles/actions/4518-set-player-health.md"
+  },
+  {
+    "id": 4427,
+    "title": "Set Player Score",
+    "slug": "set-player-score",
+    "category": "Actions",
+    "tags": [
+      "Set Player Score",
+      "Establecer puntuación del jugador",
+      "Définir le score d’un joueur",
+      "プレイヤー・スコアを設定する",
+      "Definir Pontuação do Jogador",
+      "设置玩家分数"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4427",
+    "updated_at": "2024-11-26T13:51:17.945Z",
+    "path": "articles/actions/4427-set-player-score.md",
+    "content_sha256": "088e4a64e871753a4a6cc511fa12e01ce26e6801dfd4d0655d2590497dbbf8b2",
+    "bytes": 996,
+    "repository_path": "archive/articles/actions/4427-set-player-score.md"
+  },
+  {
+    "id": 4428,
+    "title": "Set Player Variable",
+    "slug": "set-player-variable",
+    "category": "Actions",
+    "tags": [
+      "Set Player Variable",
+      "Establecer variable de jugador",
+      "Définir une variable de joueur",
+      "プレイヤー変数を設定",
+      "Definir Variável de Jogador",
+      "设置玩家变量"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4428",
+    "updated_at": "2024-11-26T13:51:17.977Z",
+    "path": "articles/actions/4428-set-player-variable.md",
+    "content_sha256": "16bfa7fac2b50d6cb6342884ebbb09aa8c2434510dc89c770bdd8cbf6fa61952",
+    "bytes": 1217,
+    "repository_path": "archive/articles/actions/4428-set-player-variable.md"
+  },
+  {
+    "id": 4429,
+    "title": "Set Player Variable At Index",
+    "slug": "set-player-variable-at-index",
+    "category": "Actions",
+    "tags": [
+      "Set Player Variable At Index",
+      "Establecer variable de jugador según el índice",
+      "Définir une variable de joueur à l’index",
+      "インデックスのプレイヤー変数を設定",
+      "Definir Variável de Jogador no Índice",
+      "在索引处设置玩家变量"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4429",
+    "updated_at": "2024-11-26T13:51:18.023Z",
+    "path": "articles/actions/4429-set-player-variable-at-index.md",
+    "content_sha256": "c50439760926788c7368a1863888b4282ad36618114ac96331c2294b281f728d",
+    "bytes": 1749,
+    "repository_path": "archive/articles/actions/4429-set-player-variable-at-index.md"
+  },
+  {
+    "id": 4430,
+    "title": "Set Primary Fire Enabled",
+    "slug": "set-primary-fire-enabled",
+    "category": "Actions",
+    "tags": [
+      "Set Primary Fire Enabled",
+      "Establecer disparo principal habilitado",
+      "Définir l’activation du tir principal",
+      "メイン攻撃を許可",
+      "Definir Disparo Primário Ativado",
+      "设置主要攻击模式启用"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4430",
+    "updated_at": "2024-11-26T13:51:18.076Z",
+    "path": "articles/actions/4430-set-primary-fire-enabled.md",
+    "content_sha256": "b246c63ccb035196ad103f3e3c71bfc06b01adfc4c407ab829860ac0952918d2",
+    "bytes": 1102,
+    "repository_path": "archive/articles/actions/4430-set-primary-fire-enabled.md"
+  },
+  {
+    "id": 4431,
+    "title": "Set Projectile Gravity",
+    "slug": "set-projectile-gravity",
+    "category": "Actions",
+    "tags": [
+      "Set Projectile Gravity",
+      "Establecer gravedad del proyectil",
+      "Définir la gravité des projectiles",
+      "弾の重力を設定",
+      "Definir Gravidade de Projétil",
+      "设置弹道引力"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4431",
+    "updated_at": "2024-11-26T13:51:18.156Z",
+    "path": "articles/actions/4431-set-projectile-gravity.md",
+    "content_sha256": "818e00ecdee56ca138ed6686d7aa7d2d504a8e00bfd02ed6aea1f8b3b6e137ab",
+    "bytes": 1135,
+    "repository_path": "archive/articles/actions/4431-set-projectile-gravity.md"
+  },
+  {
+    "id": 4432,
+    "title": "Set Projectile Speed",
+    "slug": "set-projectile-speed",
+    "category": "Actions",
+    "tags": [
+      "Set Projectile Speed",
+      "Establecer velocidad del proyectil",
+      "Définir la vitesse des projectiles",
+      "弾速を設定",
+      "Definir Velocidade de Projétil",
+      "设置弹道速度"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4432",
+    "updated_at": "2024-11-26T13:51:18.205Z",
+    "path": "articles/actions/4432-set-projectile-speed.md",
+    "content_sha256": "42cdc9e240081d4ebbc25b0ae1be391ffc67c1eb337641710afda67a12399aa5",
+    "bytes": 1102,
+    "repository_path": "archive/articles/actions/4432-set-projectile-speed.md"
+  },
+  {
+    "id": 4485,
+    "title": "Set Reload Enabled",
+    "slug": "set-reload-enabled",
+    "category": "Actions",
+    "tags": [
+      "Set Reload Enabled"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4485",
+    "updated_at": "2024-11-26T13:51:20.903Z",
+    "path": "articles/actions/4485-set-reload-enabled.md",
+    "content_sha256": "1068615b4cf6f4a0c342864c5bc749e9cb687fa9f8d80f31507175f78a4ffba9",
+    "bytes": 845,
+    "repository_path": "archive/articles/actions/4485-set-reload-enabled.md"
+  },
+  {
+    "id": 4433,
+    "title": "Set Respawn Max Time",
+    "slug": "set-respawn-max-time",
+    "category": "Actions",
+    "tags": [
+      "Set Respawn Max Time",
+      "Establecer tiempo máximo de reaparición",
+      "Définir la durée maximum avant réapparition",
+      "最大リスポーン時間を設定",
+      "Definir Tempo Máximo de Ressurgimento",
+      "设置最大重生时间"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4433",
+    "updated_at": "2024-11-26T13:51:18.248Z",
+    "path": "articles/actions/4433-set-respawn-max-time.md",
+    "content_sha256": "2c39021d9e4489cd27b7782a8115b2fad064cf8e56a79fcad58a941ba38f1048",
+    "bytes": 1147,
+    "repository_path": "archive/articles/actions/4433-set-respawn-max-time.md"
+  },
+  {
+    "id": 4434,
+    "title": "Set Secondary Fire Enabled",
+    "slug": "set-secondary-fire-enabled",
+    "category": "Actions",
+    "tags": [
+      "Set Secondary Fire Enabled",
+      "Establecer disparo secundario habilitado",
+      "Définir l’activation du tir secondaire",
+      "サブ攻撃を許可",
+      "Definir Disparo Secundário Ativado",
+      "设置辅助攻击模式启用"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4434",
+    "updated_at": "2024-11-26T13:51:18.400Z",
+    "path": "articles/actions/4434-set-secondary-fire-enabled.md",
+    "content_sha256": "2f4f194f4be2a623cf604b1c832a98c3672f18d9874446c17ef63e77cd5e5524",
+    "bytes": 1115,
+    "repository_path": "archive/articles/actions/4434-set-secondary-fire-enabled.md"
+  },
+  {
+    "id": 4435,
+    "title": "Set Slow Motion",
+    "slug": "set-slow-motion",
+    "category": "Actions",
+    "tags": [
+      "Set Slow Motion",
+      "Establecer cámara lenta",
+      "Définir un ralenti",
+      "スローモーションを設定",
+      "Definir Câmera Lenta",
+      "设置慢动作"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4435",
+    "updated_at": "2024-11-26T13:51:18.460Z",
+    "path": "articles/actions/4435-set-slow-motion.md",
+    "content_sha256": "da36dff923dcd584c23add02b84526cae7b30c76fcb601a78626b788a18f0d4c",
+    "bytes": 762,
+    "repository_path": "archive/articles/actions/4435-set-slow-motion.md"
+  },
+  {
+    "id": 4436,
+    "title": "Set Status",
+    "slug": "set-status",
+    "category": "Actions",
+    "tags": [
+      "Set Status",
+      "Establecer estado",
+      "Définir un statut",
+      "ステータスを設定",
+      "Definir Status",
+      "设置状态"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4436",
+    "updated_at": "2024-11-26T13:51:18.540Z",
+    "path": "articles/actions/4436-set-status.md",
+    "content_sha256": "eaff08fe04cb5bbc8f608eb506073520cd3fef40d36bd731ea35b87c83d713c4",
+    "bytes": 1754,
+    "repository_path": "archive/articles/actions/4436-set-status.md"
+  },
+  {
+    "id": 4437,
+    "title": "Set Team Score",
+    "slug": "set-team-score",
+    "category": "Actions",
+    "tags": [
+      "Set Team Score",
+      "Establecer puntuación del equipo",
+      "Définir le score d’une équipe",
+      "チーム・スコアを設定",
+      "Definir Pontuação da Equipe",
+      "设置队伍分数"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4437",
+    "updated_at": "2024-11-26T13:51:18.585Z",
+    "path": "articles/actions/4437-set-team-score.md",
+    "content_sha256": "4c3436289721bb8884c22ead29afcd7520d5f76152f4d5c86f7f5c358106fa51",
+    "bytes": 891,
+    "repository_path": "archive/articles/actions/4437-set-team-score.md"
+  },
+  {
+    "id": 4438,
+    "title": "Set Ultimate Ability Enabled",
+    "slug": "set-ultimate-ability-enabled",
+    "category": "Actions",
+    "tags": [
+      "Set Ultimate Ability Enabled",
+      "Establecer habilidad máxima habilitada",
+      "Définir l’activation de la capacité ultime",
+      "アルティメット・アビリティを有効化",
+      "Definir Habilidade Suprema como Ativada",
+      "设置启用终极技能"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4438",
+    "updated_at": "2024-11-26T13:51:18.616Z",
+    "path": "articles/actions/4438-set-ultimate-ability-enabled.md",
+    "content_sha256": "ca727eb3fe41d830878a5c7c3ef535a3f9295c9fa95b8de9255763f15670fc3d",
+    "bytes": 1174,
+    "repository_path": "archive/articles/actions/4438-set-ultimate-ability-enabled.md"
+  },
+  {
+    "id": 4439,
+    "title": "Set Ultimate Charge",
+    "slug": "set-ultimate-charge",
+    "category": "Actions",
+    "tags": [
+      "Set Ultimate Charge",
+      "Establecer carga de habilidad máxima",
+      "Définir la charge de la capacité ultime",
+      "アルティメット・チャージを設定",
+      "Definir Carga da Suprema",
+      "设置终极技能充能"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4439",
+    "updated_at": "2024-11-26T13:51:18.643Z",
+    "path": "articles/actions/4439-set-ultimate-charge.md",
+    "content_sha256": "2b594cdf79cbfd921007dfeca140c3a5d16b874bffa90b1a99d21ce4d00b04c5",
+    "bytes": 1248,
+    "repository_path": "archive/articles/actions/4439-set-ultimate-charge.md"
+  },
+  {
+    "id": 4484,
+    "title": "Set Weapon",
+    "slug": "set-weapon",
+    "category": "Actions",
+    "tags": [
+      "Set Weapon",
+      "weapon",
+      "switching",
+      "gun",
+      "hammer",
+      "weapons",
+      "alternate",
+      "alternate form",
+      "is in alternate form"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4484",
+    "updated_at": "2024-11-26T13:51:20.846Z",
+    "path": "articles/actions/4484-set-weapon.md",
+    "content_sha256": "f30193e729680b6af2ad2d3976fd92ec0eb18e1c58982da84487ef867ab7af22",
+    "bytes": 973,
+    "repository_path": "archive/articles/actions/4484-set-weapon.md"
+  },
+  {
+    "id": 4440,
+    "title": "Skip",
+    "slug": "skip",
+    "category": "Actions",
+    "tags": [
+      "Skip",
+      "Omitir",
+      "Passer",
+      "スキップ",
+      "Ignorar",
+      "跳过"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4440",
+    "updated_at": "2024-11-26T13:51:18.666Z",
+    "path": "articles/actions/4440-skip.md",
+    "content_sha256": "f8e84ff43a1289eedfdf2cd80bf2ff4ef8e8bf22d1eaca4f5f99c0060f6ad8a2",
+    "bytes": 589,
+    "repository_path": "archive/articles/actions/4440-skip.md"
+  },
+  {
+    "id": 6031,
+    "title": "Skip If",
+    "slug": "skip-if",
+    "category": "Actions",
+    "tags": [
+      "Skip If",
+      "Omitir si",
+      "Passer si",
+      "スキップする条件",
+      "Ignorar se",
+      "根据条件跳过"
+    ],
+    "url": "https://workshop.codes/wiki/articles/6031",
+    "updated_at": "2025-05-24T03:09:44.843Z",
+    "path": "articles/actions/6031-skip-if.md",
+    "content_sha256": "dd9fbea6ffb580920d18fdb93ac3b853112aa659bc831e9b182fb4fc1a1476f4",
+    "bytes": 2421,
+    "repository_path": "archive/articles/actions/6031-skip-if.md"
+  },
+  {
+    "id": 9529,
+    "title": "Small Message",
+    "slug": "small-message",
+    "category": "Actions",
+    "tags": [
+      "Small Message",
+      "Mensaje pequeño",
+      "Message en petit",
+      "小さなメッセージ",
+      "Mensagem Pequena",
+      "小字体信息"
+    ],
+    "url": "https://workshop.codes/wiki/articles/9529",
+    "updated_at": "2026-08-27T19:18:19.518Z",
+    "path": "articles/actions/9529-small-message.md",
+    "content_sha256": "873df81fdf88b0bd3307df2a1e48e5983652f4132072254c93053268cd297a07",
+    "bytes": 3358,
+    "repository_path": "archive/articles/actions/9529-small-message.md"
+  },
+  {
+    "id": 6022,
+    "title": "Start Accelerating",
+    "slug": "start-accelerating",
+    "category": "Actions",
+    "tags": [
+      "Start Accelerating",
+      "Comenzar la aceleración",
+      "Accélérer",
+      "加速の開始",
+      "Começar a Acelerar",
+      "开始加速"
+    ],
+    "url": "https://workshop.codes/wiki/articles/6022",
+    "updated_at": "2025-05-24T02:15:23.670Z",
+    "path": "articles/actions/6022-start-accelerating.md",
+    "content_sha256": "f2662474a920ba2b422af342f9215e168e0fba48ab08981e98598070d52ea2c0",
+    "bytes": 2574,
+    "repository_path": "archive/articles/actions/6022-start-accelerating.md"
+  },
+  {
+    "id": 4524,
+    "title": "Start Assist",
+    "slug": "start-assist",
+    "category": "Actions",
+    "tags": [
+      "Start Assist"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4524",
+    "updated_at": "2024-11-26T13:51:22.412Z",
+    "path": "articles/actions/4524-start-assist.md",
+    "content_sha256": "fdcf5df74fe07eb21a73bde26dc8d4b1a21e5305107de19eb68747ade13573a7",
+    "bytes": 1674,
+    "repository_path": "archive/articles/actions/4524-start-assist.md"
+  },
+  {
+    "id": 7648,
+    "title": "Start Camera",
+    "slug": "start-camera",
+    "category": "Actions",
+    "tags": [
+      "Start Camera",
+      "Comenzar cámara",
+      "Lancer la caméra",
+      "カメラの始動",
+      "Iniciar Câmera",
+      "开始镜头"
+    ],
+    "url": "https://workshop.codes/wiki/articles/7648",
+    "updated_at": "2025-12-01T00:45:53.362Z",
+    "path": "articles/actions/7648-start-camera.md",
+    "content_sha256": "895206b6ea8c9e4bd79d5d0ee44fce19c170c367a57f21b4ca5100e217e1c72e",
+    "bytes": 1403,
+    "repository_path": "archive/articles/actions/7648-start-camera.md"
+  },
+  {
+    "id": 4445,
+    "title": "Start Damage Modification",
+    "slug": "start-damage-modification",
+    "category": "Actions",
+    "tags": [
+      "Start Damage Modification",
+      "Comenzar modificación de daño",
+      "Lancer la modification des dégâts",
+      "ダメージ変更を開始",
+      "Começar Modificação de Dano",
+      "开始伤害调整"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4445",
+    "updated_at": "2024-11-26T13:51:18.930Z",
+    "path": "articles/actions/4445-start-damage-modification.md",
+    "content_sha256": "7755cc19f97f5aae75ada6e1c539541bbef868097723071cd2e8c89ded22bf2f",
+    "bytes": 2273,
+    "repository_path": "archive/articles/actions/4445-start-damage-modification.md"
+  },
+  {
+    "id": 4446,
+    "title": "Start Damage Over Time",
+    "slug": "start-damage-over-time",
+    "category": "Actions",
+    "tags": [
+      "Start Damage Over Time",
+      "Comenzar daño con el tiempo",
+      "Infliger des dégâts sur la durée",
+      "継続ダメージを開始",
+      "Começar Dano ao Longo do Tempo",
+      "开始持续伤害"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4446",
+    "updated_at": "2024-11-26T13:51:18.973Z",
+    "path": "articles/actions/4446-start-damage-over-time.md",
+    "content_sha256": "1b4d60a9f86c00d24588474b1b4086d8ea1d1a96d68f5bda5ec20f2a28897afb",
+    "bytes": 1763,
+    "repository_path": "archive/articles/actions/4446-start-damage-over-time.md"
+  },
+  {
+    "id": 4447,
+    "title": "Start Facing",
+    "slug": "start-facing",
+    "category": "Actions",
+    "tags": [
+      "Start Facing",
+      "Comenzar orientación",
+      "Regarder vers",
+      "向き変更を開始",
+      "Começar a Encarar",
+      "开始朝向"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4447",
+    "updated_at": "2024-11-26T13:51:19.014Z",
+    "path": "articles/actions/4447-start-facing.md",
+    "content_sha256": "47f59390e54ed5763e64da16063ebc685731030ffb84bc7e45609ec7b5b9d1af",
+    "bytes": 1763,
+    "repository_path": "archive/articles/actions/4447-start-facing.md"
+  },
+  {
+    "id": 4542,
+    "title": "Start Forcing Dummy Bot Name",
+    "slug": "start-forcing-dummy-bot-name",
+    "category": "Actions",
+    "tags": [
+      "Start Forcing Dummy Bot Name"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4542",
+    "updated_at": "2024-11-26T13:51:23.161Z",
+    "path": "articles/actions/4542-start-forcing-dummy-bot-name.md",
+    "content_sha256": "87a30994d9bc4adb0cea63e5191c07d9eb356bdf856c32bbedeae0d925171d06",
+    "bytes": 826,
+    "repository_path": "archive/articles/actions/4542-start-forcing-dummy-bot-name.md"
+  },
+  {
+    "id": 8803,
+    "title": "Start Forcing Player Outlines",
+    "slug": "start-forcing-player-outlines",
+    "category": "Actions",
+    "tags": [
+      "Start Forcing Player Outlines"
+    ],
+    "url": "https://workshop.codes/wiki/articles/8803",
+    "updated_at": "2026-04-24T23:22:45.388Z",
+    "path": "articles/actions/8803-start-forcing-player-outlines.md",
+    "content_sha256": "f916f7f896f83da63033cec46d75663ba552c6f4a6672516e4029db8d07a2cb4",
+    "bytes": 2107,
+    "repository_path": "archive/articles/actions/8803-start-forcing-player-outlines.md"
+  },
+  {
+    "id": 4449,
+    "title": "Start Forcing Player Position",
+    "slug": "start-forcing-player-position",
+    "category": "Actions",
+    "tags": [
+      "Start Forcing Player Position",
+      "Comenzar a forzar la posición del jugador",
+      "Forcer la position du joueur",
+      "プレイヤーの位置強制を開始",
+      "Começar a Forçar Posição do Jogador",
+      "开始强制设置玩家位置"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4449",
+    "updated_at": "2024-11-26T13:51:19.262Z",
+    "path": "articles/actions/4449-start-forcing-player-position.md",
+    "content_sha256": "874122a872e1a9f6bd4c9bc805b92d6d552f3424c35e6a340864e77e3fb792c4",
+    "bytes": 1581,
+    "repository_path": "archive/articles/actions/4449-start-forcing-player-position.md"
+  },
+  {
+    "id": 4448,
+    "title": "Start Forcing Player To Be Hero",
+    "slug": "start-forcing-player-to-be-hero",
+    "category": "Actions",
+    "tags": [
+      "Start Forcing Player To Be Hero",
+      "Comenzar a forzar a un jugador a usar un héroe",
+      "Forcer un héros",
+      "プレイヤーへのヒーロー強制を開始",
+      "Começar a Forçar Jogador a Ser o Herói",
+      "开始强制玩家选择英雄"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4448",
+    "updated_at": "2024-11-26T13:51:19.182Z",
+    "path": "articles/actions/4448-start-forcing-player-to-be-hero.md",
+    "content_sha256": "e8e93df767d0c3537e2051fd99459ccc8a345cdc28981890209fd28759243d89",
+    "bytes": 1333,
+    "repository_path": "archive/articles/actions/4448-start-forcing-player-to-be-hero.md"
+  },
+  {
+    "id": 4450,
+    "title": "Start Forcing Spawn Room",
+    "slug": "start-forcing-spawn-room",
+    "category": "Actions",
+    "tags": [
+      "Start Forcing Spawn Room",
+      "Comenzar a forzar cuarto de reaparición",
+      "Forcer une salle d’apparition",
+      "リスポーンエリアの強制を開始",
+      "Começar a Forçar Sala de Ressurgimento",
+      "开始强制重生室"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4450",
+    "updated_at": "2024-11-26T13:51:19.329Z",
+    "path": "articles/actions/4450-start-forcing-spawn-room.md",
+    "content_sha256": "211610913eef38953148ba03720dfb7e2d2064f5dd613d5bd0abd6fc41689402",
+    "bytes": 1173,
+    "repository_path": "archive/articles/actions/4450-start-forcing-spawn-room.md"
+  },
+  {
+    "id": 4451,
+    "title": "Start Forcing Throttle",
+    "slug": "start-forcing-throttle",
+    "category": "Actions",
+    "tags": [
+      "Start Forcing Throttle",
+      "Comenzar a forzar la aceleración",
+      "Forcer l’accélération",
+      "強制スロットル開始",
+      "Começar a Forçar Aceleração",
+      "开始限制阈值"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4451",
+    "updated_at": "2024-11-26T13:51:19.430Z",
+    "path": "articles/actions/4451-start-forcing-throttle.md",
+    "content_sha256": "f2acd5ed4b5fbae15a8311c1569fedcc1be7aef22b91a951bd6dfc90dfc91138",
+    "bytes": 2421,
+    "repository_path": "archive/articles/actions/4451-start-forcing-throttle.md"
+  },
+  {
+    "id": 4537,
+    "title": "Start Game Mode",
+    "slug": "start-game-mode",
+    "category": "Actions",
+    "tags": [
+      "Start Game Mode"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4537",
+    "updated_at": "2024-11-26T13:51:23.011Z",
+    "path": "articles/actions/4537-start-game-mode.md",
+    "content_sha256": "804ece0d3cbcd4f83a63f436f4e781e93a0ea37d2baf875bb594938d91460a01",
+    "bytes": 402,
+    "repository_path": "archive/articles/actions/4537-start-game-mode.md"
+  },
+  {
+    "id": 4452,
+    "title": "Start Heal Over Time",
+    "slug": "start-heal-over-time",
+    "category": "Actions",
+    "tags": [
+      "Start Heal Over Time",
+      "Comenzar sanación con el tiempo",
+      "Prodiguer des soins sur la durée",
+      "継続回復を開始",
+      "Começar Cura ao Longo do Tempo",
+      "开始持续治疗"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4452",
+    "updated_at": "2024-11-26T13:51:19.489Z",
+    "path": "articles/actions/4452-start-heal-over-time.md",
+    "content_sha256": "4a3e9e4bb3215dc59f4346243a5d45b0382a0e5a4b46c022fbefcc724559fa90",
+    "bytes": 1742,
+    "repository_path": "archive/articles/actions/4452-start-heal-over-time.md"
+  },
+  {
+    "id": 4453,
+    "title": "Start Healing Modification",
+    "slug": "start-healing-modification",
+    "category": "Actions",
+    "tags": [
+      "Start Healing Modification",
+      "Comenzar modificación de daño",
+      "Lancer la modification des dégâts",
+      "ダメージ変更を開始",
+      "Começar Modificação de Dano",
+      "开始伤害调整"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4453",
+    "updated_at": "2024-11-26T13:51:19.526Z",
+    "path": "articles/actions/4453-start-healing-modification.md",
+    "content_sha256": "eaa7a54cb9657ed01c3dd34f948b39fc7b520a58219bb7075575b527e519283a",
+    "bytes": 2082,
+    "repository_path": "archive/articles/actions/4453-start-healing-modification.md"
+  },
+  {
+    "id": 4454,
+    "title": "Start Holding Button",
+    "slug": "start-holding-button",
+    "category": "Actions",
+    "tags": [
+      "Start Holding Button",
+      "Comenzar a mantener el botón presionado",
+      "Maintenir un bouton enfoncé",
+      "ボタン長押し開始",
+      "Começar a Segurar Botão",
+      "开始按下按钮"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4454",
+    "updated_at": "2024-11-26T13:51:19.556Z",
+    "path": "articles/actions/4454-start-holding-button.md",
+    "content_sha256": "0c45d232f0f9de93c06a2860ee0ce8cd2f73877111bc37240ef227df0de17ad3",
+    "bytes": 1066,
+    "repository_path": "archive/articles/actions/4454-start-holding-button.md"
+  },
+  {
+    "id": 4513,
+    "title": "Start Modifying Hero Voice Lines",
+    "slug": "start-modifying-hero-voice-lines",
+    "category": "Actions",
+    "tags": [
+      "Start Modifying Hero Voice Lines",
+      "Start Modifying Voice Lines"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4513",
+    "updated_at": "2024-11-26T13:51:21.819Z",
+    "path": "articles/actions/4513-start-modifying-hero-voice-lines.md",
+    "content_sha256": "90009c7985c8e8d8df6bdf944879c24276eba01722feeb7e3353a4a84b4983d9",
+    "bytes": 1126,
+    "repository_path": "archive/articles/actions/4513-start-modifying-hero-voice-lines.md"
+  },
+  {
+    "id": 4455,
+    "title": "Start Rule",
+    "slug": "start-rule",
+    "category": "Actions",
+    "tags": [
+      "Start Rule",
+      "Comenzar regla",
+      "Lancer la règle",
+      "ルールを開始",
+      "Regra de início",
+      "开始规则",
+      "Subroutine"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4455",
+    "updated_at": "2024-11-26T13:51:19.583Z",
+    "path": "articles/actions/4455-start-rule.md",
+    "content_sha256": "a67203daabf7044a5c151f47d3eda881e456a0471a43b9164fe5f4029830a969",
+    "bytes": 1266,
+    "repository_path": "archive/articles/actions/4455-start-rule.md"
+  },
+  {
+    "id": 4507,
+    "title": "Start Scaling Barriers",
+    "slug": "start-scaling-barriers",
+    "category": "Actions",
+    "tags": [
+      "Start Scaling Barriers",
+      "Size",
+      "Resize"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4507",
+    "updated_at": "2024-11-26T13:51:21.602Z",
+    "path": "articles/actions/4507-start-scaling-barriers.md",
+    "content_sha256": "931c6eb7fb295aef1db4d18ae4405a09bf52275546759f94e0279483823758f2",
+    "bytes": 1146,
+    "repository_path": "archive/articles/actions/4507-start-scaling-barriers.md"
+  },
+  {
+    "id": 9662,
+    "title": "Start Scaling Player",
+    "slug": "start-scaling-player",
+    "category": "Actions",
+    "tags": [
+      "Start Scaling Player",
+      "Size",
+      "Resize"
+    ],
+    "url": "https://workshop.codes/wiki/articles/9662",
+    "updated_at": "2026-09-05T14:00:19.561Z",
+    "path": "articles/actions/9662-start-scaling-player.md",
+    "content_sha256": "187cdab90cf2a49ee9a7a742b65040f8f5f6d2c09d04b1f84cf1afbf8bc2684c",
+    "bytes": 1446,
+    "repository_path": "archive/articles/actions/9662-start-scaling-player.md"
+  },
+  {
+    "id": 4456,
+    "title": "Start Throttle In Direction",
+    "slug": "start-throttle-in-direction",
+    "category": "Actions",
+    "tags": [
+      "Start Throttle In Direction",
+      "Comenzar aceleración en dirección",
+      "Commencer l’accélération directionnelle",
+      "指定方向にスロットル開始",
+      "Iniciar Aceleração na Direção",
+      "开始定向阈值"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4456",
+    "updated_at": "2024-11-26T13:51:19.629Z",
+    "path": "articles/actions/4456-start-throttle-in-direction.md",
+    "content_sha256": "0769e2077ece965b1e95fc0a30194704beb1d8e8d70a1171fd5fbf584cfa093c",
+    "bytes": 2237,
+    "repository_path": "archive/articles/actions/4456-start-throttle-in-direction.md"
+  },
+  {
+    "id": 4457,
+    "title": "Start Transforming Throttle",
+    "slug": "start-transforming-throttle",
+    "category": "Actions",
+    "tags": [
+      "Start Transforming Throttle",
+      "Comenzar a transformar la aceleración",
+      "Début de modification de l’accélération",
+      "スロットルの変化を開始",
+      "Iniciar Transformação de Aceleração",
+      "开始转换阈值"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4457",
+    "updated_at": "2024-11-26T13:51:19.665Z",
+    "path": "articles/actions/4457-start-transforming-throttle.md",
+    "content_sha256": "ead4f3eff8f699c2d1f0406e76f81db48310a95e7dbe23c5f3eee4e8912f2057",
+    "bytes": 2212,
+    "repository_path": "archive/articles/actions/4457-start-transforming-throttle.md"
+  },
+  {
+    "id": 4458,
+    "title": "Stop Accelerating",
+    "slug": "stop-accelerating",
+    "category": "Actions",
+    "tags": [
+      "Stop Accelerating",
+      "Detener la aceleración",
+      "Arrêter l’accélération",
+      "加速の中止",
+      "Parar de Acelerar",
+      "停止加速"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4458",
+    "updated_at": "2024-11-26T13:51:19.693Z",
+    "path": "articles/actions/4458-stop-accelerating.md",
+    "content_sha256": "e2a72d94101154696c05ae4d5f70391322dacfbbbf38d849fc4458b3282f3cf5",
+    "bytes": 821,
+    "repository_path": "archive/articles/actions/4458-stop-accelerating.md"
+  },
+  {
+    "id": 4526,
+    "title": "Stop All Assists",
+    "slug": "stop-all-assists",
+    "category": "Actions",
+    "tags": [
+      "Stop All Assists"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4526",
+    "updated_at": "2024-11-26T13:51:22.494Z",
+    "path": "articles/actions/4526-stop-all-assists.md",
+    "content_sha256": "5c93aa452bcec15fc4eb51b0ef7fe049feea01415b10feeed32b7f8bab356bc8",
+    "bytes": 423,
+    "repository_path": "archive/articles/actions/4526-stop-all-assists.md"
+  },
+  {
+    "id": 4459,
+    "title": "Stop All Damage Modifications",
+    "slug": "stop-all-damage-modifications",
+    "category": "Actions",
+    "tags": [
+      "Stop All Damage Modifications",
+      "Detener todas las modificaciones de daño",
+      "Arrêter toutes les modifications de dégâts",
+      "すべてのダメージ変更を停止",
+      "Parar Todas as Modificações de Dano",
+      "停止所有伤害调整"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4459",
+    "updated_at": "2024-11-26T13:51:19.721Z",
+    "path": "articles/actions/4459-stop-all-damage-modifications.md",
+    "content_sha256": "6ae49e272a4c8d4bf1b718c6698afc3efcdb3122b953b40ac6b76058207cf140",
+    "bytes": 699,
+    "repository_path": "archive/articles/actions/4459-stop-all-damage-modifications.md"
+  },
+  {
+    "id": 4461,
+    "title": "Stop All Damage Over Time",
+    "slug": "stop-all-damage-over-time",
+    "category": "Actions",
+    "tags": [
+      "Stop All Damage Over Time",
+      "Detener todo el daño con el tiempo",
+      "Arrêter tous les dégâts sur la durée",
+      "すべての継続ダメージを停止",
+      "Parar Todo o Dano ao Longo do Tempo",
+      "停止所有持续伤害"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4461",
+    "updated_at": "2024-11-26T13:51:19.767Z",
+    "path": "articles/actions/4461-stop-all-damage-over-time.md",
+    "content_sha256": "7064f8a90f5b97cf85a6610cf72850d125672ffdf57388d316b7d4d6080e4400",
+    "bytes": 944,
+    "repository_path": "archive/articles/actions/4461-stop-all-damage-over-time.md"
+  },
+  {
+    "id": 4462,
+    "title": "Stop All Heal Over Time",
+    "slug": "stop-all-heal-over-time",
+    "category": "Actions",
+    "tags": [
+      "Stop All Heal Over Time",
+      "Detener toda la sanación con el tiempo",
+      "Arrêter tous les soins sur la durée",
+      "すべての継続回復を停止",
+      "Parar Toda a Cura ao Longo do Tempo",
+      "停止所有持续治疗"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4462",
+    "updated_at": "2024-11-26T13:51:19.795Z",
+    "path": "articles/actions/4462-stop-all-heal-over-time.md",
+    "content_sha256": "bc7812d98f2d66c2c0da673cb91dc5bf5f16d27cc49d24a2afaac33e1539070c",
+    "bytes": 925,
+    "repository_path": "archive/articles/actions/4462-stop-all-heal-over-time.md"
+  },
+  {
+    "id": 4460,
+    "title": "Stop All Healing Modifications",
+    "slug": "stop-all-healing-modifications",
+    "category": "Actions",
+    "tags": [
+      "Stop All Healing Modifications",
+      "Detener todas las modificaciones de sanación",
+      "Terminer toutes les modifications de soins",
+      "すべての回復変更を停止",
+      "Parar todas as modificações de cura",
+      "停止所有治疗调整"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4460",
+    "updated_at": "2024-11-26T13:51:19.742Z",
+    "path": "articles/actions/4460-stop-all-healing-modifications.md",
+    "content_sha256": "fa95fee0538e5771b12fe59b15d5e1251a89e19b1e5914460c6280490aa3372c",
+    "bytes": 700,
+    "repository_path": "archive/articles/actions/4460-stop-all-healing-modifications.md"
+  },
+  {
+    "id": 4525,
+    "title": "Stop Assist",
+    "slug": "stop-assist",
+    "category": "Actions",
+    "tags": [
+      "Stop Assist"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4525",
+    "updated_at": "2024-11-26T13:51:22.451Z",
+    "path": "articles/actions/4525-stop-assist.md",
+    "content_sha256": "e2bbd3896675df8b34ca8cc0588ade23e5034ed4290d239aefb952d8c104f81a",
+    "bytes": 688,
+    "repository_path": "archive/articles/actions/4525-stop-assist.md"
+  },
+  {
+    "id": 4463,
+    "title": "Stop Camera",
+    "slug": "stop-camera",
+    "category": "Actions",
+    "tags": [
+      "Stop Camera",
+      "Detener cámara",
+      "Arrêter la caméra",
+      "カメラの停止",
+      "Parar Câmera",
+      "停止镜头"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4463",
+    "updated_at": "2024-11-26T13:51:19.824Z",
+    "path": "articles/actions/4463-stop-camera.md",
+    "content_sha256": "57faf0aff4c4aa9adf7d36de11148fdc4d1260f3f8766beb4407c0ee7e77db63",
+    "bytes": 712,
+    "repository_path": "archive/articles/actions/4463-stop-camera.md"
+  },
+  {
+    "id": 4464,
+    "title": "Stop Chasing Global Variable",
+    "slug": "stop-chasing-global-variable",
+    "category": "Actions",
+    "tags": [
+      "Stop Chasing Global Variable",
+      "Detener seguimiento de variable global",
+      "Arrêter de modifier une variable globale",
+      "グローバル変数の追跡を中止",
+      "Parar de Acompanhar Variável Global",
+      "停止追踪全局变量"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4464",
+    "updated_at": "2024-11-26T13:51:19.869Z",
+    "path": "articles/actions/4464-stop-chasing-global-variable.md",
+    "content_sha256": "7cee1de69dee607fb244216f3693d61ac15a9e23341baa375cc3d36679068062",
+    "bytes": 759,
+    "repository_path": "archive/articles/actions/4464-stop-chasing-global-variable.md"
+  },
+  {
+    "id": 4465,
+    "title": "Stop Chasing Player Variable",
+    "slug": "stop-chasing-player-variable",
+    "category": "Actions",
+    "tags": [
+      "Stop Chasing Player Variable",
+      "Detener seguimiento de variable de jugador",
+      "Arrêter de modifier une variable de joueur",
+      "プレイヤー変数の追跡を中止",
+      "Parar de Acompanhar Variável de Jogador",
+      "停止追踪玩家变量"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4465",
+    "updated_at": "2024-11-26T13:51:19.973Z",
+    "path": "articles/actions/4465-stop-chasing-player-variable.md",
+    "content_sha256": "9b9e15a01acbaa85978867519651f463542f0cfc299f09c7eecb38157c0352ae",
+    "bytes": 1124,
+    "repository_path": "archive/articles/actions/4465-stop-chasing-player-variable.md"
+  },
+  {
+    "id": 4466,
+    "title": "Stop Damage Modification",
+    "slug": "stop-damage-modification",
+    "category": "Actions",
+    "tags": [
+      "Stop Damage Modification",
+      "Detener modificación de daño",
+      "Arrêter la modification des dégâts",
+      "ダメージ変更を停止",
+      "Parar Modificação de Dano",
+      "停止伤害调整"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4466",
+    "updated_at": "2024-11-26T13:51:20.068Z",
+    "path": "articles/actions/4466-stop-damage-modification.md",
+    "content_sha256": "8527ed5002ddadfaa9f3c0949e484b84211335cdd8c8c874d6e7ccbc03893ecc",
+    "bytes": 1026,
+    "repository_path": "archive/articles/actions/4466-stop-damage-modification.md"
+  },
+  {
+    "id": 4467,
+    "title": "Stop Damage Over Time",
+    "slug": "stop-damage-over-time",
+    "category": "Actions",
+    "tags": [
+      "Stop Damage Over Time",
+      "Detener daño con el tiempo",
+      "Arrêter des dégâts sur la durée",
+      "継続ダメージを停止",
+      "Parar Dano ao Longo do Tempo",
+      "停止持续伤害"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4467",
+    "updated_at": "2024-11-26T13:51:20.150Z",
+    "path": "articles/actions/4467-stop-damage-over-time.md",
+    "content_sha256": "ba4f2651b9c4ec296b821bfa4d4bec23b24105dd051040b044de6d51cc5de60d",
+    "bytes": 991,
+    "repository_path": "archive/articles/actions/4467-stop-damage-over-time.md"
+  },
+  {
+    "id": 4468,
+    "title": "Stop Facing",
+    "slug": "stop-facing",
+    "category": "Actions",
+    "tags": [
+      "Stop Facing",
+      "Detener orientación",
+      "Arrêter de regarder vers",
+      "向き変更を停止",
+      "Parar de Encarar",
+      "停止朝向"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4468",
+    "updated_at": "2024-11-26T13:51:20.189Z",
+    "path": "articles/actions/4468-stop-facing.md",
+    "content_sha256": "616c10867b8fb85f514d27ffea97eef7c2d088b6c34c0aa2d01fd79676b9f455",
+    "bytes": 781,
+    "repository_path": "archive/articles/actions/4468-stop-facing.md"
+  },
+  {
+    "id": 4543,
+    "title": "Stop Forcing Dummy Bot Name",
+    "slug": "stop-forcing-dummy-bot-name",
+    "category": "Actions",
+    "tags": [
+      "Stop Forcing Dummy Bot Name"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4543",
+    "updated_at": "2024-11-26T13:51:23.273Z",
+    "path": "articles/actions/4543-stop-forcing-dummy-bot-name.md",
+    "content_sha256": "61b856636086f1921455158508a8299894619fbc70a01b968829c57597736d71",
+    "bytes": 669,
+    "repository_path": "archive/articles/actions/4543-stop-forcing-dummy-bot-name.md"
+  },
+  {
+    "id": 4504,
+    "title": "Stop Forcing Player Outlines",
+    "slug": "stop-forcing-player-outlines",
+    "category": "Actions",
+    "tags": [
+      "Stop Forcing Player Outlines"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4504",
+    "updated_at": "2024-11-26T13:51:21.490Z",
+    "path": "articles/actions/4504-stop-forcing-player-outlines.md",
+    "content_sha256": "bbaeb8527dd68c8d9b01c1ea5d8ad2c093dc9ea10868e011df22f417d025ad64",
+    "bytes": 1180,
+    "repository_path": "archive/articles/actions/4504-stop-forcing-player-outlines.md"
+  },
+  {
+    "id": 4470,
+    "title": "Stop Forcing Player Position",
+    "slug": "stop-forcing-player-position",
+    "category": "Actions",
+    "tags": [
+      "Stop Forcing Player Position",
+      "Dejar de forzar la posición del jugador",
+      "Arrêter de forcer la position du joueur",
+      "プレイヤーの位置強制を停止",
+      "Parar de Forçar Posição do Jogador",
+      "停止强制设置玩家位置"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4470",
+    "updated_at": "2024-11-26T13:51:20.282Z",
+    "path": "articles/actions/4470-stop-forcing-player-position.md",
+    "content_sha256": "722e73a846fa21eae0908691a70a88122703a02e0918c40541a92d16c983fa30",
+    "bytes": 1038,
+    "repository_path": "archive/articles/actions/4470-stop-forcing-player-position.md"
+  },
+  {
+    "id": 4469,
+    "title": "Stop Forcing Player To Be Hero",
+    "slug": "stop-forcing-player-to-be-hero",
+    "category": "Actions",
+    "tags": [
+      "Stop Forcing Player To Be Hero",
+      "Dejar de forzar a un jugador a usar un héroe",
+      "Arrêter de forcer un héros",
+      "プレイヤーへのヒーロー強制を停止",
+      "Parar de Forçar Jogador a Ser o Herói",
+      "停止强制玩家选择英雄"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4469",
+    "updated_at": "2024-11-26T13:51:20.246Z",
+    "path": "articles/actions/4469-stop-forcing-player-to-be-hero.md",
+    "content_sha256": "33fe4b92ae0b15450b1f54833a0fb51531b01522b0cd83b7937303840999ad18",
+    "bytes": 1027,
+    "repository_path": "archive/articles/actions/4469-stop-forcing-player-to-be-hero.md"
+  },
+  {
+    "id": 4471,
+    "title": "Stop Forcing Spawn Room",
+    "slug": "stop-forcing-spawn-room",
+    "category": "Actions",
+    "tags": [
+      "Stop Forcing Spawn Room",
+      "Dejar de forzar cuarto de reaparición",
+      "Arrêter de forcer une salle d’apparition",
+      "リスポーンエリアの強制を停止",
+      "Parar de Forçar Sala de Ressurgimento",
+      "停止强制重生室"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4471",
+    "updated_at": "2024-11-26T13:51:20.329Z",
+    "path": "articles/actions/4471-stop-forcing-spawn-room.md",
+    "content_sha256": "199bc6d98c34f38640dd05ac4ceb9d72531b495ae5ca86c7c697426ef79500db",
+    "bytes": 842,
+    "repository_path": "archive/articles/actions/4471-stop-forcing-spawn-room.md"
+  },
+  {
+    "id": 4472,
+    "title": "Stop Forcing Throttle",
+    "slug": "stop-forcing-throttle",
+    "category": "Actions",
+    "tags": [
+      "Stop Forcing Throttle",
+      "Dejar de forzar la aceleración",
+      "Arrêter de forcer l’accélération",
+      "強制スロットル中止",
+      "Parar de Forçar Aceleração",
+      "停止限制阈值"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4472",
+    "updated_at": "2024-11-26T13:51:20.429Z",
+    "path": "articles/actions/4472-stop-forcing-throttle.md",
+    "content_sha256": "039602a86b6e156e9f92442ccd4c3bd1688eee446ac5931136d1ec95e6664f1a",
+    "bytes": 889,
+    "repository_path": "archive/articles/actions/4472-stop-forcing-throttle.md"
+  },
+  {
+    "id": 4473,
+    "title": "Stop Heal Over Time",
+    "slug": "stop-heal-over-time",
+    "category": "Actions",
+    "tags": [
+      "Stop Heal Over Time",
+      "Detener sanación con el tiempo",
+      "Arrêter des soins sur la durée",
+      "継続回復を停止",
+      "Parar Cura ao Longo do Tempo",
+      "停止持续治疗"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4473",
+    "updated_at": "2024-11-26T13:51:20.482Z",
+    "path": "articles/actions/4473-stop-heal-over-time.md",
+    "content_sha256": "a467401305ac55cb050272ef8bc46490f4feafec19bc94a269092be328642d39",
+    "bytes": 927,
+    "repository_path": "archive/articles/actions/4473-stop-heal-over-time.md"
+  },
+  {
+    "id": 4474,
+    "title": "Stop Healing Modification",
+    "slug": "stop-healing-modification",
+    "category": "Actions",
+    "tags": [
+      "Stop Healing Modification",
+      "Detener modificación de sanación",
+      "Terminer la modification de soins",
+      "回復変更を停止",
+      "Parar modificação de cura",
+      "停止治疗调整"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4474",
+    "updated_at": "2024-11-26T13:51:20.513Z",
+    "path": "articles/actions/4474-stop-healing-modification.md",
+    "content_sha256": "2ea11a8a6914c6edb72cf057ae1399889c00eb595806c51806d98287e076658a",
+    "bytes": 1041,
+    "repository_path": "archive/articles/actions/4474-stop-healing-modification.md"
+  },
+  {
+    "id": 4475,
+    "title": "Stop Holding Button",
+    "slug": "stop-holding-button",
+    "category": "Actions",
+    "tags": [
+      "Stop Holding Button",
+      "Dejar de mantener el botón presionado",
+      "Arrêter de maintenir un bouton enfoncé",
+      "ボタン長押し解除",
+      "Parar de Segurar Botão",
+      "停止按下按钮"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4475",
+    "updated_at": "2024-11-26T13:51:20.545Z",
+    "path": "articles/actions/4475-stop-holding-button.md",
+    "content_sha256": "2ae9305acfa010abb5d8e042a70cc68add026e328752a1fe1ae095b279ffece9",
+    "bytes": 1120,
+    "repository_path": "archive/articles/actions/4475-stop-holding-button.md"
+  },
+  {
+    "id": 4514,
+    "title": "Stop Modifying Hero Voice Lines",
+    "slug": "stop-modifying-hero-voice-lines",
+    "category": "Actions",
+    "tags": [
+      "Stop Modifying Hero Voice Lines"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4514",
+    "updated_at": "2024-11-26T13:51:21.848Z",
+    "path": "articles/actions/4514-stop-modifying-hero-voice-lines.md",
+    "content_sha256": "5ec9a6b50d865503185042c3f2b5b9f2da2fbc28ebbc1542928178f941e758cc",
+    "bytes": 723,
+    "repository_path": "archive/articles/actions/4514-stop-modifying-hero-voice-lines.md"
+  },
+  {
+    "id": 4829,
+    "title": "Stop Modifying Voice Lines",
+    "slug": "stop-modifying-voice-lines",
+    "category": "Actions",
+    "tags": [
+      "Stop Modifying Voice Lines"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4829",
+    "updated_at": "2024-11-26T13:52:03.088Z",
+    "path": "articles/actions/4829-stop-modifying-voice-lines.md",
+    "content_sha256": "e6afd288e3d1fb7af4d2c2733928133225d5f5e78de542596cf874cf427ebc09",
+    "bytes": 542,
+    "repository_path": "archive/articles/actions/4829-stop-modifying-voice-lines.md"
+  },
+  {
+    "id": 4508,
+    "title": "Stop Scaling Barriers",
+    "slug": "stop-scaling-barriers",
+    "category": "Actions",
+    "tags": [
+      "Stop Scaling Barriers",
+      "Size",
+      "Resize"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4508",
+    "updated_at": "2024-11-26T13:51:21.641Z",
+    "path": "articles/actions/4508-stop-scaling-barriers.md",
+    "content_sha256": "cf309fe03502878fd1c9217b73d2904850e6d77c76a481e5c89f475e7e9e57ad",
+    "bytes": 688,
+    "repository_path": "archive/articles/actions/4508-stop-scaling-barriers.md"
+  },
+  {
+    "id": 4506,
+    "title": "Stop Scaling Player",
+    "slug": "stop-scaling-player",
+    "category": "Actions",
+    "tags": [
+      "Stop Scaling Player",
+      "Size",
+      "Resize"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4506",
+    "updated_at": "2024-11-26T13:51:21.566Z",
+    "path": "articles/actions/4506-stop-scaling-player.md",
+    "content_sha256": "f711e1bbcaa6a69ca8aa0ee5a713282405e752344d0b520f4434b9c9b39b1c72",
+    "bytes": 648,
+    "repository_path": "archive/articles/actions/4506-stop-scaling-player.md"
+  },
+  {
+    "id": 4476,
+    "title": "Stop Throttle In Direction",
+    "slug": "stop-throttle-in-direction",
+    "category": "Actions",
+    "tags": [
+      "Stop Throttle In Direction",
+      "Detener aceleración en dirección",
+      "Arrêter l’accélération directionnelle",
+      "指定方向にスロットル終了",
+      "Parar Aceleração na Direção",
+      "停止定向阈值"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4476",
+    "updated_at": "2024-11-26T13:51:20.576Z",
+    "path": "articles/actions/4476-stop-throttle-in-direction.md",
+    "content_sha256": "b40e3647489dff26d383d8b591338c8d42cc9175b8277fa5bf043dcf56e77d9d",
+    "bytes": 920,
+    "repository_path": "archive/articles/actions/4476-stop-throttle-in-direction.md"
+  },
+  {
+    "id": 4477,
+    "title": "Stop Transforming Throttle",
+    "slug": "stop-transforming-throttle",
+    "category": "Actions",
+    "tags": [
+      "Stop Transforming Throttle",
+      "Dejar de transformar la aceleración",
+      "Arrêt de modification de l’accélération",
+      "スロットルの変化を停止",
+      "Parar Transformação de Aceleração",
+      "停止转换阈值"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4477",
+    "updated_at": "2024-11-26T13:51:20.607Z",
+    "path": "articles/actions/4477-stop-transforming-throttle.md",
+    "content_sha256": "c411e6aa8a88e5c0e473ea842612cffa0dc097522b6b8a0c6723616e0dcac8c7",
+    "bytes": 953,
+    "repository_path": "archive/articles/actions/4477-stop-transforming-throttle.md"
+  },
+  {
+    "id": 4478,
+    "title": "Teleport",
+    "slug": "teleport",
+    "category": "Actions",
+    "tags": [
+      "Teleport",
+      "Transportar",
+      "Téléportation",
+      "テレポート",
+      "Teletransportar",
+      "传送"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4478",
+    "updated_at": "2024-11-26T13:51:20.645Z",
+    "path": "articles/actions/4478-teleport.md",
+    "content_sha256": "24f91ed7b56deb4783d065a15684f6b86f6ce287c780307d270f2ad06df01e93",
+    "bytes": 931,
+    "repository_path": "archive/articles/actions/4478-teleport.md"
+  },
+  {
+    "id": 4479,
+    "title": "Unpause Match Time",
+    "slug": "unpause-match-time",
+    "category": "Actions",
+    "tags": [
+      "Unpause Match Time",
+      "Despausar tiempo de la partida",
+      "Reprendre le temps de jeu",
+      "マッチ時間のポーズを解除",
+      "Retomar Tempo da Partida",
+      "比赛时间继续"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4479",
+    "updated_at": "2024-11-26T13:51:20.673Z",
+    "path": "articles/actions/4479-unpause-match-time.md",
+    "content_sha256": "da18191f534918ddfee6d1f3cc813392bb373a741738bb1d0f5c340de7186343",
+    "bytes": 486,
+    "repository_path": "archive/articles/actions/4479-unpause-match-time.md"
+  },
+  {
+    "id": 4480,
+    "title": "Wait",
+    "slug": "wait",
+    "category": "Actions",
+    "tags": [
+      "Wait",
+      "Esperar",
+      "Attente",
+      "待機",
+      "Esperar",
+      "等待"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4480",
+    "updated_at": "2024-11-26T13:51:20.707Z",
+    "path": "articles/actions/4480-wait.md",
+    "content_sha256": "5e630e6c19cf33854c5dbb31a40d8ef4db0bc047f382d42dc692f808fe34634c",
+    "bytes": 1200,
+    "repository_path": "archive/articles/actions/4480-wait.md"
+  },
+  {
+    "id": 9298,
+    "title": "Wait Until",
+    "slug": "wait-until",
+    "category": "Actions",
+    "tags": [
+      "Wait Until"
+    ],
+    "url": "https://workshop.codes/wiki/articles/9298",
+    "updated_at": "2026-07-16T21:01:39.456Z",
+    "path": "articles/actions/9298-wait-until.md",
+    "content_sha256": "587fb9645985cb043bf1b6e447a4daa67497243b724950f4f3f5cb1a80c23ac1",
+    "bytes": 860,
+    "repository_path": "archive/articles/actions/9298-wait-until.md"
+  },
+  {
+    "id": 4481,
+    "title": "While",
+    "slug": "while",
+    "category": "Actions",
+    "tags": [
+      "While",
+      "Mientras",
+      "Tant que",
+      "WHILE"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4481",
+    "updated_at": "2024-11-26T13:51:20.737Z",
+    "path": "articles/actions/4481-while.md",
+    "content_sha256": "80caa76ea38a4aae3f28ae4d66066e81fc4fe286ed78a0295c11b0236f3d6840",
+    "bytes": 957,
+    "repository_path": "archive/articles/actions/4481-while.md"
+  },
+  {
+    "id": 2112,
+    "title": "element cost of actions",
+    "slug": "element-cost-of-actions",
+    "category": "Actions",
+    "tags": [
+      "actions",
+      "elements"
+    ],
+    "url": "https://workshop.codes/wiki/articles/2112",
+    "updated_at": "2024-03-16T02:42:04.835Z",
+    "path": "articles/actions/2112-element-cost-of-actions.md",
+    "content_sha256": "e7c9eb5e94276856b6e31b16bfe7be6e2670b76b82735fbc950b3f174cf0636c",
+    "bytes": 8403,
+    "repository_path": "archive/articles/actions/2112-element-cost-of-actions.md"
+  },
+  {
+    "id": 4824,
+    "title": "Ongoing - Each Player",
+    "slug": "ongoing-each-player",
+    "category": "Events",
+    "tags": [
+      "Ongoing - Each Player",
+      "En curso - Cada jugador",
+      "Toute la partie - Chaque joueur",
+      "進行中 - 各プレイヤー",
+      "Em andamento - Cada Jogador",
+      "持续 - 每名玩家"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4824",
+    "updated_at": "2024-11-26T13:52:02.962Z",
+    "path": "articles/events/4824-ongoing-each-player.md",
+    "content_sha256": "d89e737949e8f336f93179cddcd1dfec296ff300a2d71b9c1b6d3ad8d3019cd6",
+    "bytes": 1304,
+    "repository_path": "archive/articles/events/4824-ongoing-each-player.md"
+  },
+  {
+    "id": 4825,
+    "title": "Ongoing - Global",
+    "slug": "ongoing-global",
+    "category": "Events",
+    "tags": [
+      "Ongoing - Global",
+      "En curso - Global",
+      "Toute la partie - Tout le monde",
+      "進行中 - グローバル",
+      "Em andamento - Global",
+      "持续 - 全局"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4825",
+    "updated_at": "2024-11-26T13:52:02.983Z",
+    "path": "articles/events/4825-ongoing-global.md",
+    "content_sha256": "a0137eea3bb95dfeb6b2868fce010620a3b7c3618917eaba1b885ebc5a851dcb",
+    "bytes": 790,
+    "repository_path": "archive/articles/events/4825-ongoing-global.md"
+  },
+  {
+    "id": 4820,
+    "title": "Player Dealt Damage",
+    "slug": "player-dealt-damage",
+    "category": "Events",
+    "tags": [
+      "Player Dealt Damage",
+      "El jugador infligió daño",
+      "Un joueur inflige des dégâts",
+      "プレイヤーがダメージを与えた",
+      "Jogador Causou Dano",
+      "玩家造成伤害"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4820",
+    "updated_at": "2024-11-26T13:52:02.864Z",
+    "path": "articles/events/4820-player-dealt-damage.md",
+    "content_sha256": "d329c17579064887ef888a447d7cc0f07df039c433d39e99ea9549d31e98b2c0",
+    "bytes": 1643,
+    "repository_path": "archive/articles/events/4820-player-dealt-damage.md"
+  },
+  {
+    "id": 1736,
+    "title": "Player Dealt Final Blow",
+    "slug": "player-dealt-final-blow",
+    "category": "Events",
+    "tags": [
+      "Player Dealt Final Blow",
+      "El jugador asestó un golpe de gracia",
+      "Un joueur inflige un coup de grâce",
+      "ファイナル・ブロウを獲得",
+      "Jogador Desferiu Golpe Final",
+      "玩家造成最后一击"
+    ],
+    "url": "https://workshop.codes/wiki/articles/1736",
+    "updated_at": "2023-01-19T16:14:06.491Z",
+    "path": "articles/events/1736-player-dealt-final-blow.md",
+    "content_sha256": "bf046cc0513056336e2b7d0fd516b3fccb45c6d34936fd3a6e8f25f8408737aa",
+    "bytes": 1681,
+    "repository_path": "archive/articles/events/1736-player-dealt-final-blow.md"
+  },
+  {
+    "id": 7450,
+    "title": "Player Dealt Healing",
+    "slug": "player-dealt-healing",
+    "category": "Events",
+    "tags": [
+      "Player Dealt Healing",
+      "El jugador realizó una sanación",
+      "Un joueur a prodigué des soins",
+      "プレイヤーが回復を与えた",
+      "Jogador Realizou Cura",
+      "玩家造成治疗"
+    ],
+    "url": "https://workshop.codes/wiki/articles/7450",
+    "updated_at": "2025-10-19T05:00:56.013Z",
+    "path": "articles/events/7450-player-dealt-healing.md",
+    "content_sha256": "3d27817f13ab749d1972c5f0413855a21d24910e0f3355e19712f58eb3cd7284",
+    "bytes": 1613,
+    "repository_path": "archive/articles/events/7450-player-dealt-healing.md"
+  },
+  {
+    "id": 4816,
+    "title": "Player Dealt Knockback",
+    "slug": "player-dealt-knockback",
+    "category": "Events",
+    "tags": [
+      "Player Dealt Knockback",
+      "El jugador infligió un derribo",
+      "Un joueur a infligé un recul",
+      "プレイヤーがノックバックを与えた",
+      "Jogador Causou Repulsão",
+      "玩家造成击退"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4816",
+    "updated_at": "2024-11-26T13:52:02.759Z",
+    "path": "articles/events/4816-player-dealt-knockback.md",
+    "content_sha256": "e0a6e51be2bf43da3cc545ac379d6378f975cb0e9921e4adf3468a0e85cac271",
+    "bytes": 1391,
+    "repository_path": "archive/articles/events/4816-player-dealt-knockback.md"
+  },
+  {
+    "id": 4818,
+    "title": "Player Died",
+    "slug": "player-died",
+    "category": "Events",
+    "tags": [
+      "Player Died",
+      "El jugador murió",
+      "Un joueur meurt",
+      "プレイヤーが倒れた",
+      "Jogador morreu",
+      "玩家阵亡"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4818",
+    "updated_at": "2024-11-26T13:52:02.809Z",
+    "path": "articles/events/4818-player-died.md",
+    "content_sha256": "effe7c98e4b2bedefedf013915b6eae2d3a1b13a8d7617021fab2baf188fe96b",
+    "bytes": 1510,
+    "repository_path": "archive/articles/events/4818-player-died.md"
+  },
+  {
+    "id": 4814,
+    "title": "Player Earned Elimination",
+    "slug": "player-earned-elimination",
+    "category": "Events",
+    "tags": [
+      "Player Earned Elimination",
+      "El jugador obtuvo una eliminación",
+      "Un joueur obtient une élimination",
+      "プレイヤーがキルを獲得",
+      "Jogador Conseguiu Eliminação",
+      "玩家参与消灭"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4814",
+    "updated_at": "2024-11-26T13:52:02.715Z",
+    "path": "articles/events/4814-player-earned-elimination.md",
+    "content_sha256": "9705b56bcb496b5e2ef662a3b24f2557c62622999cfd35aaa0af4d9e29517983",
+    "bytes": 1572,
+    "repository_path": "archive/articles/events/4814-player-earned-elimination.md"
+  },
+  {
+    "id": 4815,
+    "title": "Player Joined Match",
+    "slug": "player-joined-match",
+    "category": "Events",
+    "tags": [
+      "Player Joined Match",
+      "El jugador se unió a la partida",
+      "Un joueur a rejoint la partie",
+      "プレイヤーがマッチに参加",
+      "Jogador Entrou na Partida",
+      "玩家加入比赛"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4815",
+    "updated_at": "2024-11-26T13:52:02.738Z",
+    "path": "articles/events/4815-player-joined-match.md",
+    "content_sha256": "9f0dd0d81fe6ed32df792fbf76779f7aa845dfffa94d85e56033641e35aab6d6",
+    "bytes": 772,
+    "repository_path": "archive/articles/events/4815-player-joined-match.md"
+  },
+  {
+    "id": 4821,
+    "title": "Player Left Match",
+    "slug": "player-left-match",
+    "category": "Events",
+    "tags": [
+      "Player Left Match",
+      "El jugador abandonó la partida",
+      "Un joueur a quitté la partie",
+      "プレイヤーがマッチから離脱",
+      "Jogador Saiu da Partida",
+      "玩家离开比赛"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4821",
+    "updated_at": "2024-11-26T13:52:02.886Z",
+    "path": "articles/events/4821-player-left-match.md",
+    "content_sha256": "12646b63d59be35e99e0a4f10c31e7f74266f496e1b74a1ea595dcf7e5370540",
+    "bytes": 879,
+    "repository_path": "archive/articles/events/4821-player-left-match.md"
+  },
+  {
+    "id": 4813,
+    "title": "Player Received Healing",
+    "slug": "player-received-healing",
+    "category": "Events",
+    "tags": [
+      "Player Received Healing",
+      "El jugador recibió una sanación",
+      "Un joueur a reçu des soins",
+      "プレイヤーが回復を受けた",
+      "Jogador Recebeu Cura",
+      "玩家受到治疗"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4813",
+    "updated_at": "2024-11-26T13:52:02.694Z",
+    "path": "articles/events/4813-player-received-healing.md",
+    "content_sha256": "d23984189b3fdfb460ce81c6837f4097bd9d3901627c4fbc8b49af413fbd915e",
+    "bytes": 1632,
+    "repository_path": "archive/articles/events/4813-player-received-healing.md"
+  },
+  {
+    "id": 4817,
+    "title": "Player Received Knockback",
+    "slug": "player-received-knockback",
+    "category": "Events",
+    "tags": [
+      "Player Received Knockback",
+      "El jugador recibió un derribo",
+      "Un joueur a reçu un recul",
+      "プレイヤーがノックバックを受けた",
+      "Jogador Recebeu Repulsão",
+      "玩家受到击退"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4817",
+    "updated_at": "2024-11-26T13:52:02.782Z",
+    "path": "articles/events/4817-player-received-knockback.md",
+    "content_sha256": "937438d1e0d4f47919c490bbb5a81238609b051638f2b596eee14e822c0c486e",
+    "bytes": 1397,
+    "repository_path": "archive/articles/events/4817-player-received-knockback.md"
+  },
+  {
+    "id": 4819,
+    "title": "Player Took Damage",
+    "slug": "player-took-damage",
+    "category": "Events",
+    "tags": [
+      "Player Took Damage",
+      "El jugador recibió daño",
+      "Un joueur subit des dégâts",
+      "プレイヤーがダメージを受けた",
+      "Jogador Recebeu Dano",
+      "玩家受到伤害"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4819",
+    "updated_at": "2024-11-26T13:52:02.834Z",
+    "path": "articles/events/4819-player-took-damage.md",
+    "content_sha256": "589fe7990f027bae7828db86996947bfcec9d929be3f3045de0bf65835dc53f7",
+    "bytes": 1643,
+    "repository_path": "archive/articles/events/4819-player-took-damage.md"
+  },
+  {
+    "id": 1292,
+    "title": "Subroutine",
+    "slug": "subroutine",
+    "category": "Events",
+    "tags": [
+      "Subroutine",
+      "Subrutina",
+      "Sous-programme",
+      "サブルーチン",
+      "Sub-rotina",
+      "子程序"
+    ],
+    "url": "https://workshop.codes/wiki/articles/1292",
+    "updated_at": "2021-03-18T19:55:17.285Z",
+    "path": "articles/events/1292-subroutine.md",
+    "content_sha256": "ea332cb80a1357ab0c0179d6afea56c2cb12338cccf8ff146b038c2cd7f9f9c3",
+    "bytes": 825,
+    "repository_path": "archive/articles/events/1292-subroutine.md"
+  },
+  {
+    "id": 4852,
+    "title": "C-style Syntax in the Workshop",
+    "slug": "cstyle-syntax-in-the-workshop",
+    "category": "References",
+    "tags": [
+      "c-style",
+      "syntax",
+      "preview",
+      "if-then-else"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4852",
+    "updated_at": "2024-11-26T13:52:04.185Z",
+    "path": "articles/references/4852-cstyle-syntax-in-the-workshop.md",
+    "content_sha256": "41d0047c9cedb614ff8c0866cd2f5f728bba2d15a69616d6f6f2903a1ed3ee32",
+    "bytes": 3655,
+    "repository_path": "archive/articles/references/4852-cstyle-syntax-in-the-workshop.md"
+  },
+  {
+    "id": 4830,
+    "title": "Get input from a Spectator",
+    "slug": "get-input-from-a-spectator",
+    "category": "References",
+    "tags": [
+      "host player",
+      "input",
+      "control",
+      "advanced",
+      "undefined",
+      "local player"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4830",
+    "updated_at": "2024-11-26T13:52:03.112Z",
+    "path": "articles/references/4830-get-input-from-a-spectator.md",
+    "content_sha256": "ebf15119aa75a9b11681754f04f1b9258e78c19cd6b24285edac42d041c6e893",
+    "bytes": 1739,
+    "repository_path": "archive/articles/references/4830-get-input-from-a-spectator.md"
+  },
+  {
+    "id": 4859,
+    "title": "OSTW Pathmaps",
+    "slug": "ostw-pathmaps",
+    "category": "References",
+    "tags": [
+      "OSTW",
+      "Pathmap",
+      "Pathfinding",
+      "Overwatch Script To Workshop"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4859",
+    "updated_at": "2024-11-26T13:52:04.406Z",
+    "path": "articles/references/4859-ostw-pathmaps.md",
+    "content_sha256": "3a0d0a01265b282c6297aea3709f7dbf34e9bad898fd4ba66e5f4b0b7b975f37",
+    "bytes": 3020,
+    "repository_path": "archive/articles/references/4859-ostw-pathmaps.md"
+  },
+  {
+    "id": 1714,
+    "title": "Payload Progress Percentage at Checkpoints",
+    "slug": "payload-progress-percentage-at-checkpoints",
+    "category": "References",
+    "tags": [
+      "payload",
+      "escort",
+      "hybrid"
+    ],
+    "url": "https://workshop.codes/wiki/articles/1714",
+    "updated_at": "2022-11-12T07:59:58.737Z",
+    "path": "articles/references/1714-payload-progress-percentage-at-checkpoints.md",
+    "content_sha256": "b8dc6262acc0daab488403cdacd1ed4de175b477eff0077607d15b9a77a7fac8",
+    "bytes": 1214,
+    "repository_path": "archive/articles/references/1714-payload-progress-percentage-at-checkpoints.md"
+  },
+  {
+    "id": 8242,
+    "title": "Projectile size of all weapons and abilities",
+    "slug": "projectile-size-of-all-weapons-and-abilities",
+    "category": "References",
+    "tags": [],
+    "url": "https://workshop.codes/wiki/articles/8242",
+    "updated_at": "2026-02-27T20:21:14.840Z",
+    "path": "articles/references/8242-projectile-size-of-all-weapons-and-abilities.md",
+    "content_sha256": "516f839f411b4e70261fe3ec3ba5412dfc3c485ef8b06f4b834da1416dbec929",
+    "bytes": 8862,
+    "repository_path": "archive/articles/references/8242-projectile-size-of-all-weapons-and-abilities.md"
+  },
+  {
+    "id": 1862,
+    "title": "Workshop Extensions",
+    "slug": "workshop-extensions",
+    "category": "References",
+    "tags": [],
+    "url": "https://workshop.codes/wiki/articles/1862",
+    "updated_at": "2023-04-13T21:46:21.021Z",
+    "path": "articles/references/1862-workshop-extensions.md",
+    "content_sha256": "8e8131de4509201a464a54f4c1cc9e16f3572581c0d9505dee5641e401da95a9",
+    "bytes": 4388,
+    "repository_path": "archive/articles/references/1862-workshop-extensions.md"
+  },
+  {
+    "id": 4838,
+    "title": "Workshop Extensions - Beam Sounds Reference Sheet",
+    "slug": "workshop-extensions-beam-sounds-reference-sheet",
+    "category": "References",
+    "tags": [],
+    "url": "https://workshop.codes/wiki/articles/4838",
+    "updated_at": "2024-11-26T13:52:03.299Z",
+    "path": "articles/references/4838-workshop-extensions-beam-sounds-reference-sheet.md",
+    "content_sha256": "c07b1904e51f51792474c28b26ba2452d1139dd91a3ccc4a7cb0bacb512ac807",
+    "bytes": 2563,
+    "repository_path": "archive/articles/references/4838-workshop-extensions-beam-sounds-reference-sheet.md"
+  },
+  {
+    "id": 4840,
+    "title": "Workshop Extensions - Energy Explosion Effects Reference Sheet",
+    "slug": "workshop-extensions-energy-explosion-effects-reference-sheet",
+    "category": "References",
+    "tags": [],
+    "url": "https://workshop.codes/wiki/articles/4840",
+    "updated_at": "2024-11-26T13:52:03.420Z",
+    "path": "articles/references/4840-workshop-extensions-energy-explosion-effects-reference-sheet.md",
+    "content_sha256": "a332dbe930091c4429338420c98e8b6813391cf68627f9343a1a29685e29fc03",
+    "bytes": 4222,
+    "repository_path": "archive/articles/references/4840-workshop-extensions-energy-explosion-effects-reference-sheet.md"
+  },
+  {
+    "id": 2765,
+    "title": "Workshop Extensions - Explosion Sounds Reference Sheet",
+    "slug": "workshop-extensions-explosion-sounds-reference-sheet",
+    "category": "References",
+    "tags": [],
+    "url": "https://workshop.codes/wiki/articles/2765",
+    "updated_at": "2024-09-08T19:42:19.345Z",
+    "path": "articles/references/2765-workshop-extensions-explosion-sounds-reference-sheet.md",
+    "content_sha256": "d0cebaca25fdaa4293c06ea835a4517364d6f0b0b60b26dc299cfa12bee344ba",
+    "bytes": 7592,
+    "repository_path": "archive/articles/references/2765-workshop-extensions-explosion-sounds-reference-sheet.md"
+  },
+  {
+    "id": 2168,
+    "title": "Workshop Settings",
+    "slug": "workshop-settings",
+    "category": "References",
+    "tags": [
+      "customization"
+    ],
+    "url": "https://workshop.codes/wiki/articles/2168",
+    "updated_at": "2024-06-09T11:56:38.864Z",
+    "path": "articles/references/2168-workshop-settings.md",
+    "content_sha256": "5b638680b65e49f7d41ba3fd1f807a77c1309985e9aaef9b0ad9b6dd66be1358",
+    "bytes": 5067,
+    "repository_path": "archive/articles/references/2168-workshop-settings.md"
+  },
+  {
+    "id": 4827,
+    "title": "Create Multiple HUD Texts that use Player Data and Refresh when players Leave/Join ",
+    "slug": "create-multiple-hud-texts-that-use-player-data-and-refresh-when-players-leavejoin",
+    "category": "Tutorials",
+    "tags": [
+      "text hud leave join match player event tutorial guide example"
+    ],
+    "url": "https://workshop.codes/wiki/articles/4827",
+    "updated_at": "2024-11-26T13:52:03.035Z",
+    "path": "articles/tutorials/4827-create-multiple-hud-texts-that-use-player-data-and-refresh-when-players-leavejoin.md",
+    "content_sha256": "1d83b3b18f7cdd2371593b76c08f2ad12e12f7679226a5bccaa74aa69fe58ba5",
+    "bytes": 2271,
+    "repository_path": "archive/articles/tutorials/4827-create-multiple-hud-texts-that-use-player-data-and-refresh-when-players-leavejoin.md"
+  },
+  {
+    "id": 5932,
+    "title": "How to Data Compression with Strings",
+    "slug": "how-to-data-compression-with-strings",
+    "category": "Tutorials",
+    "tags": [
+      "String compression",
+      "Data compression",
+      "strings",
+      "vectors",
+      "arrays"
+    ],
+    "url": "https://workshop.codes/wiki/articles/5932",
+    "updated_at": "2025-05-11T00:01:05.015Z",
+    "path": "articles/tutorials/5932-how-to-data-compression-with-strings.md",
+    "content_sha256": "1aebcaf9b43d3fd171f3f5c808b3e8dafa67ccd91568183c3104a045d56449bd",
+    "bytes": 4481,
+    "repository_path": "archive/articles/tutorials/5932-how-to-data-compression-with-strings.md"
+  },
+  {
+    "id": 2042,
+    "title": "How to Import a Workshop Code",
+    "slug": "how-to-import-a-workshop-code",
+    "category": "Tutorials",
+    "tags": [],
+    "url": "https://workshop.codes/wiki/articles/2042",
+    "updated_at": "2024-01-03T16:15:55.380Z",
+    "path": "articles/tutorials/2042-how-to-import-a-workshop-code.md",
+    "content_sha256": "86ed60719e1ce8a45691e9ad9fe9c1e59e2f59d156c671e504f0935452eb569f",
+    "bytes": 637,
+    "repository_path": "archive/articles/tutorials/2042-how-to-import-a-workshop-code.md"
+  },
+  {
+    "id": 8176,
+    "title": "How to cancel ultimate voice line with a one tick freeze/stun",
+    "slug": "how-to-cancel-ultimate-voice-line-with-a-one-tick-freezestun",
+    "category": "Tutorials",
+    "tags": [
+      "Ultimate voice line",
+      "stun",
+      "freeze",
+      "cancel",
+      "Ultimate",
+      "voice line"
+    ],
+    "url": "https://workshop.codes/wiki/articles/8176",
+    "updated_at": "2026-02-26T22:11:12.293Z",
+    "path": "articles/tutorials/8176-how-to-cancel-ultimate-voice-line-with-a-one-tick-freezestun.md",
+    "content_sha256": "fd793055d3db59cdba5023c87f2905d733bfbbc96e82aa9751ba1aceda587324",
+    "bytes": 1463,
+    "repository_path": "archive/articles/tutorials/8176-how-to-cancel-ultimate-voice-line-with-a-one-tick-freezestun.md"
+  },
+  {
+    "id": 1724,
+    "title": "How to create an import code for your project",
+    "slug": "how-to-create-an-import-code-for-your-project",
+    "category": "Tutorials",
+    "tags": [
+      "Workshop code",
+      "share code"
+    ],
+    "url": "https://workshop.codes/wiki/articles/1724",
+    "updated_at": "2022-12-02T06:29:18.975Z",
+    "path": "articles/tutorials/1724-how-to-create-an-import-code-for-your-project.md",
+    "content_sha256": "0b75e2ff13d5f778a2d277e920c75b4a804969063853a87e9a4f95a0bb359c6c",
+    "bytes": 2749,
+    "repository_path": "archive/articles/tutorials/1724-how-to-create-an-import-code-for-your-project.md"
+  },
+  {
+    "id": 5900,
+    "title": "Impossible Things in Workshop",
+    "slug": "impossible-things-in-workshop",
+    "category": "Tutorials",
+    "tags": [],
+    "url": "https://workshop.codes/wiki/articles/5900",
+    "updated_at": "2025-05-07T09:11:20.010Z",
+    "path": "articles/tutorials/5900-impossible-things-in-workshop.md",
+    "content_sha256": "bad50ccdffdbba1ac166f9713abed4a5edb8814305b7894715cb6afe738a8752",
+    "bytes": 891,
+    "repository_path": "archive/articles/tutorials/5900-impossible-things-in-workshop.md"
+  },
+  {
+    "id": 4856,
+    "title": "Send a player back to Hero Select",
+    "slug": "send-a-player-back-to-hero-select",
+    "category": "Tutorials",
+    "tags": [],
+    "url": "https://workshop.codes/wiki/articles/4856",
+    "updated_at": "2024-11-26T13:52:04.331Z",
+    "path": "articles/tutorials/4856-send-a-player-back-to-hero-select.md",
+    "content_sha256": "f5ffdac33ca114e38f80716331c14ccb86628bd70a2db5590efc1ccd773f8db5",
+    "bytes": 2069,
+    "repository_path": "archive/articles/tutorials/4856-send-a-player-back-to-hero-select.md"
+  },
+  {
+    "id": 2082,
+    "title": "Editor control directives: @if, @for, and @each",
+    "slug": "editor-control-directives-if-for-and-each",
+    "category": "Workshop.codes",
+    "tags": [
+      "editor",
+      "directive",
+      "if",
+      "for",
+      "each",
+      "loop",
+      "macro",
+      "mixin",
+      "compiler"
+    ],
+    "url": "https://workshop.codes/wiki/articles/2082",
+    "updated_at": "2024-01-28T19:52:41.872Z",
+    "path": "articles/workshop-codes/2082-editor-control-directives-if-for-and-each.md",
+    "content_sha256": "d35bb85d3802add473d9c85a9ff60c9b99f81986f90e8627c446d2c91d5a2dd3",
+    "bytes": 5369,
+    "repository_path": "archive/articles/workshop-codes/2082-editor-control-directives-if-for-and-each.md"
+  },
+  {
+    "id": 1768,
+    "title": "Inline HTML",
+    "slug": "inline-html",
+    "category": "Workshop.codes",
+    "tags": [
+      "character",
+      "link",
+      "embed",
+      "color"
+    ],
+    "url": "https://workshop.codes/wiki/articles/1768",
+    "updated_at": "2023-02-21T21:25:00.596Z",
+    "path": "articles/workshop-codes/1768-inline-html.md",
+    "content_sha256": "f84ef35d794a5df2100159ba33f2d494d1303a44faf588380a3e562ed8549339",
+    "bytes": 7020,
+    "repository_path": "archive/articles/workshop-codes/1768-inline-html.md"
+  }
+]

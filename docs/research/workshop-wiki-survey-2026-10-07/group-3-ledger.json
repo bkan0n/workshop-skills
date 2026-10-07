@@ -1,0 +1,1058 @@
+[
+  {
+    "id": 9200,
+    "topics": [
+      "AI bots",
+      "difficulty",
+      "damage",
+      "healing"
+    ],
+    "disposition": "data-catalog",
+    "important_information": [
+      "Documented lobby-added AI bot difficulty damage/healing multipliers: Beginner 25%, Practice 50%, Casual 75%, Hard 90%, Lethal/Extreme/Ultimate 100%, Aimbot 120%."
+    ],
+    "uncertainties": [
+      "Archived July 2026 values; not independently verified; no patch or measurement procedure supplied."
+    ],
+    "evidence": [
+      "Lines 10-23: scope and modifier table"
+    ],
+    "title": "AI Bot Difficulty Modifiers",
+    "path": "articles/references/9200-ai-bot-difficulty-modifiers.md",
+    "source_url": "https://workshop.codes/wiki/articles/9200",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2026-07-09T00:45:31.877Z"
+  },
+  {
+    "id": 7978,
+    "topics": [
+      "comparisons",
+      "truthiness",
+      "coercion",
+      "type semantics",
+      "verification harness"
+    ],
+    "disposition": "data-catalog",
+    "important_information": [
+      "Documented tables enumerate ordered operand comparisons for ==, >, <, >= and <= across 18 representative values/types; each row is left operand and each column right operand. All cells read through lossless compact normalization.",
+      "Equality with booleans is coercive: True compares equal to positive/negative numbers, nonempty strings, filled arrays and filled vectors; False equals zero, null, empty string/array, zero vector, uninitialized variable, unspawned hero and listed entity values.",
+      "Tables document asymmetric equality: empty custom string and zero vector compare equal to Null Entity, but reversing those operands does not; ordinary symmetry assumptions are unsafe.",
+      "Tables document non-transitive-looking coercion: False equals Null and Empty Array, while Null does not equal Empty Array. Equality and ordering do not form ordinary cross-type algebra: True equals a positive number yet is less than it in the table.",
+      "Non-null Entity is listed as equal to False, Null and zero; entity presence must not be inferred from generic truthiness without verifying entity semantics.",
+      "Hero of unspawned player is equal to Empty Array in both directions, but not Null in equality; out-of-bounds First element of Empty Array behaves like null/zero in several equality comparisons.",
+      "Article proposes testing nonzero vector by A == True or boolean context; this is a narrowly typed shortcut, not a safe generic value test.",
+      "Verification procedure exists: PC-only Inspector log-file option, import C89J3 (editor backup URL present), spawn, wait for completion, extract operation tables from log; reduce comparisons per tick or increase ticks between batches if the harness crashes.",
+      "The archived log location is Documents/Overwatch/Workshop; generated outputs include explicit delimiters and a game-version/date update step."
+    ],
+    "uncertainties": [
+      "Header metadata says January 2026 but behavioral tables explicitly state April 22, 2024, patch 2.10.0.0.124591. Preserve behavioral test date separately.",
+      "Broad labels such as 'Positive number' represent harness test values, not proof every same-type pair is equal.",
+      "Surprising asymmetric/entity results are archived observations, not independently reproduced; retain tables and harness provenance before making core recommendations.",
+      "No != table is supplied; do not silently claim it was empirically covered."
+    ],
+    "evidence": [
+      "Truth-tables intro and five complete generated tables",
+      "Body 'Last updated: April 22th 2024 (Patch 2.10.0.0.124591)'",
+      "How to update the tables above; Uses"
+    ],
+    "title": "Comparisons and truth",
+    "path": "articles/references/7978-comparisons-and-truth.md",
+    "source_url": "https://workshop.codes/wiki/articles/7978",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2026-01-24T15:52:46.209Z"
+  },
+  {
+    "id": 4828,
+    "topics": [
+      "objective geometry",
+      "map bounds",
+      "contesting",
+      "measurement data"
+    ],
+    "disposition": "data-catalog",
+    "important_information": [
+      "Documented capture/contest volumes can differ sharply from painted outlines and have map-specific heights; do not approximate every objective using visible shape or a uniform-height cylinder.",
+      "Gallery legend: blue original outline, white actual shape; missing height preview means volume reaches map ceiling. Source links Patriq's original investigation and verification mode WNSY6.",
+      "Hanamura A can be contested from upstairs window; B from high-ground/stair edges and lantern pillars but not little roof, with reduced height parallel to roof.",
+      "Paris A includes sign edge near water. Anubis A height image explicitly outdated: text gives 9 m to surrounding roofs; Anubis B reaches skybox.",
+      "Volskaya B has exceptions for very-high-ground edge/moving platform and lower height between protruding platforms; ordinary high ground excluded.",
+      "Blizzard World excludes boat top and lowers height near roof. King's Row includes car hood and telephone-box edge. Numbani excludes bushes and area very close to right wall.",
+      "Ilios Well excludes specific wall/stair/indent regions; Ruins includes high-ground edges. Lijiang Garden includes window edges; Control Center includes computer-panel edges/central pillar; Night Market has a corner exclusion.",
+      "Nepal Shrine/Sanctum have contestable windows; Oasis Gardens excludes area near pillars. Remaining entries provide geometry previews for Horizon, Eichenwalde, Hollywood, Busan submaps and other control submaps."
+    ],
+    "uncertainties": [
+      "November 2024 metadata; map reworks unverified and title 'every map' is not complete modern coverage.",
+      "Exact geometry resides in remote images/linked original research, not numeric polygons in archive. Text-only skill cannot reconstruct all bounds.",
+      "Some notes are image-relative ('top right'); preserve source link rather than invent coordinates.",
+      "Volskaya general exclusion/high-edge exception must retain context."
+    ],
+    "evidence": [
+      "Lines 13-28: principle, legend, measurement provenance",
+      "Lines 37-138: Assault notes, outdated Anubis image",
+      "Lines 144-356: Hybrid/Control catalog"
+    ],
+    "title": "Control Point Bounds for every map",
+    "path": "articles/references/4828-control-point-bounds-for-every-map.md",
+    "source_url": "https://workshop.codes/wiki/articles/4828",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2024-11-26T13:52:03.056Z"
+  },
+  {
+    "id": 2130,
+    "topics": [
+      "controls",
+      "platforms",
+      "default bindings"
+    ],
+    "disposition": "data-catalog",
+    "important_information": [
+      "Catalog maps Workshop buttons to default PC/PlayStation/Xbox/Switch controls; PC entries include primary left mouse, secondary right mouse, Ability 1 Shift, Ability 2 E, ultimate Q, jump Space, crouch Ctrl, melee V, reload R.",
+      "Controller table contains trigger/bumper/face-button equivalents and stick-click melee; image alt text carries the usable offline labels."
+    ],
+    "uncertainties": [
+      "April 2024 default mappings are not user remappings or hero-specific controls.",
+      "Interact row repeats generic 'Interact' alt text and cannot determine physical bindings from text alone.",
+      "Xbox alt text incorrectly uses PlayStation R1/R2/L1/L2 labels; Ability 1/2 bumper assignments require checking rather than trusting copied text.",
+      "Images not downloaded or visually verified; complete HTML and alt text read."
+    ],
+    "evidence": [
+      "Lines 12-102: entire platform mapping table"
+    ],
+    "title": "Default Button Controls",
+    "path": "articles/references/2130-default-button-controls.md",
+    "source_url": "https://workshop.codes/wiki/articles/2130",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2024-04-13T01:36:58.313Z"
+  },
+  {
+    "id": 1993,
+    "topics": [
+      "effects",
+      "audio",
+      "asset selection"
+    ],
+    "disposition": "data-catalog",
+    "important_information": [
+      "Catalog separates Create Effect visual/audio choices from Play Effect visual/audio choices, helping avoid confusing persistent and one-shot asset families.",
+      "Create visuals include Sphere/Light Shaft/Orb/Ring/Cloud/Sparkles/Good Aura/Bad Aura; create audio includes Energy/Pick-Up/Good Aura/Bad Aura/Sparkles/Smoke/Decal/Beacon.",
+      "Play visuals include Good/Bad/Ring Explosion and Good/Bad Pickup; play audio includes Debuff/Buff Impact, Ring/Buff Explosion, Explosion. Beam effect/sound catalogs are linked separately."
+    ],
+    "uncertainties": [
+      "October 2023 catalog is a preview index, not complete runtime semantics or a current enum authority.",
+      "Visual appearance and sound require remote images/videos/audio; none fetched, so offline rewrite needs textual descriptions or optional media links."
+    ],
+    "evidence": [
+      "Lines 47-60: scope and links",
+      "Lines 63-196: complete four catalogs"
+    ],
+    "title": "Effects Reference Sheet",
+    "path": "articles/references/1993-effects-reference-sheet.md",
+    "source_url": "https://workshop.codes/wiki/articles/1993",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2023-10-01T00:06:39.338Z"
+  },
+  {
+    "id": 4857,
+    "topics": [
+      "element budget",
+      "optimization",
+      "counting semantics"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Documented base costs: rule/action/condition/default value/default literal 1; Array, Workshop Settings, Evaluate Once, localized string 2; more specific component cost overrides generic cost.",
+      "Comments, custom-game settings and rule event/team/player parameters contribute no elements.",
+      "Disabling rules/actions/conditions does not reduce element count.",
+      "Every top-level action/condition argument receives a one-element discount.",
+      "Hero-literal pairs nested inside top-level action/condition arguments add elements; direct Action(Ana,Zenyatta) is documented as exempt, while nested Array(Ana,Zenyatta) incurs one. The separate nested-argument example also incurs a hero-pair element.",
+      "Article derives its counting model from Zezombye's OverPy element-saving wiki, making this a cross-source reference rather than an independent validation."
+    ],
+    "uncertainties": [
+      "The nested-hero adjustment wording is subtle; retain examples and check actual compiler/game counts before simplifying it.",
+      "Rules are 'at time of writing'; November 2024 metadata is not an explicit patch validation.",
+      "Worked-example source code is only in remote images, although prose describes its costs."
+    ],
+    "evidence": [
+      "Lines 19-49: source, costs and adjustments",
+      "Lines 55-62: worked count totals 12"
+    ],
+    "title": "Element Count Calculation",
+    "path": "articles/references/4857-element-count-calculation.md",
+    "source_url": "https://workshop.codes/wiki/articles/4857",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2024-11-26T13:52:04.356Z"
+  },
+  {
+    "id": 1976,
+    "topics": [
+      "health packs",
+      "map coordinates",
+      "mode variants",
+      "data quality"
+    ],
+    "disposition": "data-catalog",
+    "important_information": [
+      "Catalog stores small/large health-pack world positions as native Vector arrays, generally Global.A and Global.B respectively.",
+      "Positions are organized by gameplay mode and map/submap, including seasonal variants; same map normal/Deathmatch pack sets differ and must not be merged by map name alone.",
+      "Coverage includes practice/Assault-era maps, Control submaps, Hybrid, Escort, Flashpoint (New Junk City/Suravasa), CTF Busan variants and Deathmatch maps. Some sections contain only small or only large packs.",
+      "Original attribution is Teawy's Blizzard-forum vector-data post; this is measurement data rather than an engine query API.",
+      "Practice Range small-pack sample is syntactically malformed: Array lacks final closing parenthesis before semicolon."
+    ],
+    "uncertainties": [
+      "September 2023 archive; map reworks/new-map coverage unverified, without per-map measurement dates/tolerance.",
+      "Practice Range heading encompasses several Assault maps until Control heading; taxonomy needs correction.",
+      "Aliases/typos include Lijang and Kanazenka; normalize with provenance.",
+      "Oasis University Deathmatch has two near-identical large-pack coordinates; potential duplicate needs testing.",
+      "Every source coordinate block was read; data catalog assessed without reproducing every coordinate in ledger."
+    ],
+    "evidence": [
+      "Line 10: attribution",
+      "Lines 12-31: Practice Range syntax defect",
+      "Full mode/map sections through line 1448",
+      "Lines 1360-1361: near-duplicate coordinates"
+    ],
+    "title": "Health packs locations",
+    "path": "articles/references/1976-health-packs-locations.md",
+    "source_url": "https://workshop.codes/wiki/articles/1976",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2023-09-01T09:17:38.808Z"
+  },
+  {
+    "id": 8507,
+    "topics": [
+      "hero colors",
+      "All Heroes ordering",
+      "data consistency"
+    ],
+    "disposition": "data-catalog",
+    "important_information": [
+      "Hero RGB/HEX catalog includes an RGBA array intended to match All Heroes ordering and lookup by Index Of Array Value(All Heroes, Hero Of(player)); array order is an external dependency that must be maintained.",
+      "Table and copyable array disagree: Hanzo green is 179 in array versus 180 in table; Symmetra red 45 versus 145; Mei red 09 versus 109.",
+      "Copyable array stops at Vendetta while table continues with Domina, Emre, Anran, Mizuki and Jetpack Cat; direct positional lookup lacks those entries.",
+      "Catalog source explicitly requests updates when heroes release, so it is maintained empirical presentation data rather than a stable engine constant."
+    ],
+    "uncertainties": [
+      "March 2026 metadata does not guarantee All Heroes order or hero coverage matches current target.",
+      "Discrepancies must be resolved before generating a canonical array; prefer named records until positional ordering is validated.",
+      "Styling's final hero row colors also do not consistently track displayed order; CSS is not an authoritative data source."
+    ],
+    "evidence": [
+      "Lines 10-75: All Heroes dependency and array",
+      "Lines 79-130: table and additional heroes",
+      "Lines 23/84,30/91,40/101: conflicting values"
+    ],
+    "title": "Hero color reference table",
+    "path": "articles/references/8507-hero-color-reference-table.md",
+    "source_url": "https://workshop.codes/wiki/articles/8507",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2026-03-17T19:20:21.209Z"
+  },
+  {
+    "id": 6460,
+    "topics": [
+      "icons",
+      "ability mappings",
+      "hero forms",
+      "visual availability"
+    ],
+    "disposition": "data-catalog",
+    "important_information": [
+      "Catalog spans Create Icon, Icon String, Ability Icon String, Hero Icon String and additional in-game icons unavailable to Workshop; distinguish visual existence from API availability.",
+      "Ability Icon String takes a raw hero value, so icons do not automatically change with player alternate form; examples include Bastion, D.Va and Ramattra.",
+      "Editor marks unavailable icons (*), form-invariant alternatives (**), wrong button placements (??), missing site assets and buttons rendering nothing (omitted entirely).",
+      "Per-hero tables map primary/secondary/ability/ultimate/melee/jump/crouch buttons to icons, including passive icons marked unavailable and nonstandard mappings such as Baptiste Exo Boots/Wrecking Ball Piledriver on Crouch.",
+      "Wrong-placement markers include Pharah Jump and Zenyatta melee/passive; retain annotation rather than treating all rows as valid API requests."
+    ],
+    "uncertainties": [
+      "July 2025 catalog incomplete for current heroes and contains reworked abilities such as Cassidy Magnetic Grenade.",
+      "Malformed extra/missing table columns require careful normalization.",
+      "Site [ability ...]/[hero ...] renderers are not Workshop syntax or evidence that API supports those icons.",
+      "Images not viewed; complete textual catalog read."
+    ],
+    "evidence": [
+      "Opening scope and Editor's notes",
+      "All hero button/icon tables",
+      "Pharah and Zenyatta ?? annotations"
+    ],
+    "title": "Icon Reference Sheet",
+    "path": "articles/references/6460-icon-reference-sheet.md",
+    "source_url": "https://workshop.codes/wiki/articles/6460",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2025-07-13T20:02:59.140Z"
+  },
+  {
+    "id": 9463,
+    "topics": [
+      "compatibility",
+      "patch-sensitive bugs",
+      "hero abilities",
+      "client-server evaluation",
+      "chase",
+      "entity lifecycle",
+      "import-export"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Documented duplicate mode names can represent 5v5/6v6/LTM variants with different supported settings; text import may fail when settings target the wrong variant. Map numeric suffix denotes time/variant; omitting it enables all variants.",
+      "Workshop Setting categories are alphabetic, and nonzero Workshop String Combo default reportedly makes first UI choice unselectable.",
+      "Season 16 export reportedly changes On/Off hero settings to Enabled/Disabled that cannot be reimported without correction; Juno Glide Boost Duration Scalar is omitted by copying settings.",
+      "Ability Cooldown reads reportedly return 0 for Baptiste field, Soldier helix, Tracer recall, Genji dash, D.Va missiles, Lifeweaver dash and charge abilities including Reinhardt, Zarya, Tracer, Sojourn with Dual Thrusters, Symmetra, Junkrat and Brigitte. Reading and setting support must be distinguished.",
+      "Ultimates Used statistic reportedly excludes Reinhardt, Roadhog, Sombra, Torbjorn, Widowmaker and Kiriko; Echo's own duplication is excluded but copied ultimates outside that list count.",
+      "Roadhog Ability 1 cooldown starts on input then restarts at cast-animation end; his Ability 2 is reportedly undetectable by Is Using Ability 2.",
+      "Sojourn secondary-fire disabling uses Railgun alt fire setting; Mercy blaster is clip 0; Hanzo/Zenyatta Ability 1 and 2 reportedly swap on console; Lifeweaver Is Reloading always false.",
+      "Reduced-max-health heroes may resurrect above their max; suggested workaround clamps current health to Max Health. Ramattra alternate-form query reportedly fails; possible substitute uses Is Using Ability 1 or ultimate depending on context.",
+      "Illari secondary resource read/write is inverted (percentage missing rather than filled).",
+      "Ammo matrix (13 Aug 2026) distinguishes writes from reads: most listed heroes can Set Ammo and read ammo/max but cannot Set Max Ammo. Exceptions include Jetpack Cat/Wuyang unable to set either but readable; D.mon pilot and Mauga unable to read/write either; Juno/Kiriko/Lifeweaver/Orisa/Shion can set ammo but neither read value nor set max; Mizuki/Venture can set both but read neither.",
+      "Specific ammo caveats: Anran secondary cannot read/set; Bastion Set Max Ammo only affects unused secondary clip; D.mon Set Ammo disables both forms' primary and Fusion Repeater; Doomfist above default 4 displays overfill/odd animation; Kiriko clip 0 write affects clip 1; Lifeweaver both weapons affected; Orisa hidden ammo acts as heat, regenerates at constant rate.",
+      "Cooldown-setting matrix (27 May 2026): Anran/Freja charge cooldown changes only below 2 charges; Brigitte Repair Pack/D.Va Ability 2/Emre Ability 2/Junkrat Ability 1/Lifeweaver manual-swap Ability 1/Symmetra Ability 1/Soldier Ability 1 are marked unsupported; Brigitte and Junkrat charges can be changed instead.",
+      "Genji dash, Soldier secondary, Ramattra Omnic secondary need existing cooldown for valid changes; off-cooldown Genji/Soldier setting may change display only. Symmetra teleporter cooldown cannot change in use (also hovering barrier). Mercy Flash Heal unsupported. Mizuki Healing Kasa on two charges can enter cooldown without displaying it. Reinhardt Fire Strike/Shield Slam and Zarya barriers setters work despite charges. Zenyatta abilities lack normal cooldowns and cannot be given one.",
+      "Set Ability Resource table lists Doomfist (button uncertain), Orisa primary (use ammo), Sojourn/Hazard/Wuyang secondary as unsupported.",
+      "Event Ability null-read table lists primary for Anran, D.Va mech, Junker Queen, Mauga, Ramattra Omnic, Venture, Wuyang; secondary for Mauga, Kiriko, Lifeweaver. A separate Event Ability Bugs article is linked.",
+      "Is Waiting For Players reportedly always false during client-side visual evaluation; workaround mirrors it to a global variable in a server rule.",
+      "Conditions depending on chased variables reportedly do not update until chase destination is reached, including Wait Until; indefinite chase may never trigger a waiting rule.",
+      "Create Projectile/Create Homing Projectile with non-null owner reportedly leak entity slots if owner leaves or is swapped before projectile expires; projectile vanishes visually but Entity Count does not recover. Suggested alternatives are null ownership or custom logic with Create Projectile Effect.",
+      "Disable Game Mode In-World UI does not remove Push-robot icon. Good Beam is replaced by Nemesis Mercy damage beam and ignores color; outlines may require character reload and may fade after actions.",
+      "Other archived compatibility notes: unavailable seasonal templates; Route 66 FFA/TDM but not Bounty Hunter; Havana TDM unavailable; changed HUD centering/IWT anchoring/fonts, vague Small Message rendering issues.",
+      "Season 3 editor/Inspector issues include search focus, array display overlap, stuck overlapping menus, editing crashes and spurious settings-letter paste error; recreating lobby is suggested for the paste error."
+    ],
+    "uncertainties": [
+      "This is a rolling mixed-era bug registry, not an independently verified current specification. Table-level dates differ from page timestamp and some sections explicitly refer to Season 3/Season 16.",
+      "Event Ability table claims July 2024 update while containing newer-looking entries; preserve uncertainty rather than infer current support.",
+      "Ammo table duplicates Junkerqueen/Junker Queen; malformed cooldown table separator has an extra column.",
+      "'Heroes not in table work fine' claims must not be generalized to future/untested heroes.",
+      "Suggested workarounds are not all guaranteed; Ramattra substitution is explicitly possible, projectile options attempted, and Doomfist resource button unknown."
+    ],
+    "evidence": [
+      "Lines 10-84: general compatibility and evaluation bugs",
+      "Lines 86-185: ammo/cooldown/resource/Event Ability matrices",
+      "Lines 191-218: event, projectile, UI and effects issues"
+    ],
+    "title": "OW2 Workshop Changes/Bugs",
+    "path": "articles/references/9463-ow2-workshop-changesbugs.md",
+    "source_url": "https://workshop.codes/wiki/articles/9463",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2026-08-13T15:45:04.746Z"
+  },
+  {
+    "id": 2041,
+    "topics": [
+      "projectile physics",
+      "measurement data",
+      "launch offset",
+      "historical abilities"
+    ],
+    "disposition": "data-catalog",
+    "important_information": [
+      "Measured projectile catalog was compiled for Improved Nade Tool with linked original spreadsheet; behavioral data explicitly last updated December 27, 2023.",
+      "Columns distinguish gravity g, initial speed v_0, launch-direction upward bias delta, cast time and projectile radius against world geometry; these are different parameters from hero-hitbox projectile radius.",
+      "Delta is the magnitude of an upward vector added to launch direction, not an origin-height offset; article links an interactive geometry demonstration.",
+      "Gravity table includes current-at-the-time and explicitly old/reworked abilities; typical examples include Baptiste launcher/field both g=-20.1,v=60,delta=.007, and Zarya cannon/graviton g=-9.84,v=25,delta=.1.",
+      "Linear-projectile section is explicitly WIP with many blank gravity/speed/delta/cast columns; blanks must remain unknown rather than become zero.",
+      "Rows for old Orisa supercharger/Wrecking Ball minefield contain nonnumeric placeholders ('nope','really?','non-zero') rather than complete physics models."
+    ],
+    "uncertainties": [
+      "Balance-sensitive measurements are archived and not independently remeasured; retired ability names must not be offered as live APIs.",
+      "Units for each column are implicit rather than formally specified; preserve raw provenance.",
+      "The WIP linear list includes an arrows entry despite gravity-bearing Hanzo entries elsewhere; classification needs validation."
+    ],
+    "evidence": [
+      "Lines 10-13: provenance and measurement date",
+      "Lines 20-78: complete tables",
+      "Lines 80-83: delta definition"
+    ],
+    "title": "Projectile Data Table",
+    "path": "articles/references/2041-projectile-data-table.md",
+    "source_url": "https://workshop.codes/wiki/articles/2041",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2023-12-28T09:47:58.400Z"
+  },
+  {
+    "id": 9562,
+    "topics": [
+      "texture codes",
+      "string markup",
+      "asset lookup",
+      "patch-sensitive data"
+    ],
+    "disposition": "data-catalog",
+    "important_information": [
+      "Documented texture/icon identifiers are tx codes, insertable with Custom String after obtaining an unsanitized opening bracket via linked TX/FG technique.",
+      "Example uses Custom String(\"{0}tx CODE>\", Global.bracket); omit literal opening bracket because variable supplies it.",
+      "Catalog groups role, communication, ability/passive, upgrade, Stadium, gallery/currency, mode, lobby, flag, input, progression and miscellaneous assets with names/tags and sometimes TX Browser page numbers.",
+      "Source explicitly says list incomplete, unsorted, and IDs may change on any update; provenance is TX Browser code 8B9H1.",
+      "Catalog contains retired/passive/alternate-form art beyond normal Ability Icon String mappings; texture existence does not imply associated gameplay support."
+    ],
+    "uncertainties": [
+      "August 2026 snapshot not independent validation of current IDs or bracket technique.",
+      "Some code strings have inconsistent widths/prefixes (communication Ultimate, Lobby); preserve raw values and verify before normalization.",
+      "Names/tags contain copy errors (Doomfist portrait tagged Baptiste; yellow circle tagged blue) and unknown assets.",
+      "No remote previews fetched; all 271 lines/table rows read."
+    ],
+    "evidence": [
+      "Lines 22-27: usage/provenance/change warning",
+      "Lines 47-271: complete code catalog"
+    ],
+    "title": "TX Reference Sheet",
+    "path": "articles/references/9562-tx-reference-sheet.md",
+    "source_url": "https://workshop.codes/wiki/articles/9562",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2026-08-27T22:50:24.978Z"
+  },
+  {
+    "id": 9331,
+    "topics": [
+      "first-person effects",
+      "weapon offsets",
+      "camera basis",
+      "FOV",
+      "measurement harness"
+    ],
+    "disposition": "data-catalog",
+    "important_information": [
+      "Weapon offsets measured at FOV 103 while heroes idle; dual wield records right gun. Source explicitly excludes third person and weapon animations.",
+      "Formula is eye position + facing direction + world-right*xoff + normalized cross(facing,world-right)*yoff, wrapped in Update Every Frame.",
+      "Anchor notes specify Hanzo arrow tip, Zenyatta behind interlaced fingers, Roadhog between barrels, Doomfist left hand, Lifeweaver finger/palm and Juno muzzle.",
+      "Calibration mode A87YG and native snippet: Melee switches X/Y axis; primary/secondary adjust negative/positive; Interact changes step .1 to .01; emote toggles fixed third-person camera; death cycles hero.",
+      "Table/JSON disagree: Mercy staff x=.12 vs .08; JSON includes Sojourn missing in table; table includes Illari missing in JSON.",
+      "JSON lacks commas after JUNO/WUYANG/HAZARD; adjustment-rule snippet appears to omit End before closing actions."
+    ],
+    "uncertainties": [
+      "July 2026 metadata lacks per-entry measurement dates; skins/FOV/animation/model changes can invalidate offsets.",
+      "Aliases vary (RAMMATRA, MCCREE, WRECKING_BALL); canonical naming needs normalization.",
+      "Harness uncompiled/not run; data/code cannot be treated as validated copy-ready output."
+    ],
+    "evidence": [
+      "Lines 10-21: conditions/formula",
+      "Lines 26-130: table and JSON",
+      "Lines 133-288: calibration snippet"
+    ],
+    "title": "Weapon position data for creating effects in 1st person",
+    "path": "articles/references/9331-weapon-position-data-for-creating-effects-in-1st-person.md",
+    "source_url": "https://workshop.codes/wiki/articles/9331",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2026-07-18T12:32:32.140Z"
+  },
+  {
+    "id": 4864,
+    "topics": [
+      "debuff effect assets",
+      "viewer context",
+      "first-person effects"
+    ],
+    "disposition": "data-catalog",
+    "important_information": [
+      "Documented preview conventions: missing First Person means no first-person effect; missing Third Person means same as positioned effect or none; missing Friendly likely indicates first-person-only; Friendly without Enemy means shared appearances.",
+      "Catalog covers Ana no-healing/sleep, Ashe burning particle/material, Cassidy stun, Mei freeze, Sigma flux target, Sombra hack start/loop, Widow venom target, Winston Tesla target and Zenyatta discord target.",
+      "Asset applicability can differ by first-person/third-person/friendly/enemy viewing context; same effect label is not guaranteed to produce all visual variants."
+    ],
+    "uncertainties": [
+      "Some absence semantics are explicitly ambiguous ('either','likely'); do not turn missing preview into definite engine capability.",
+      "November 2024 metadata, remote previews not viewed. Effect names may survive retired abilities; asset availability needs current enum confirmation."
+    ],
+    "evidence": [
+      "Lines 10-15: preview conventions",
+      "Lines 17-90: entire effect/context catalog"
+    ],
+    "title": "Workshop Extensions - Debuff Status Effects Reference Sheet",
+    "path": "articles/references/4864-workshop-extensions-debuff-status-effects-reference-sheet.md",
+    "source_url": "https://workshop.codes/wiki/articles/4864",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2024-11-26T13:52:04.708Z"
+  },
+  {
+    "id": 1730,
+    "topics": [
+      "kinetic explosion assets",
+      "animation",
+      "team appearance"
+    ],
+    "disposition": "data-catalog",
+    "important_information": [
+      "Source explicitly warns these are animated effects; static screenshots do not show their full appearance.",
+      "Catalog supplies friendly/enemy previews for 20 kinetic effects spanning grenade/explosion/impact/landing effects (Ana, Ashe, Baptiste, Bastion, Doomfist, Junkrat, Cassidy, Pharah, Reinhardt, Sigma, Widowmaker, Winston, Wrecking Ball)."
+    ],
+    "uncertainties": [
+      "December 2022 catalog includes names from retired abilities such as Rising Uppercut and Tank Cannon; asset names are not proof corresponding hero ability remains available.",
+      "Remote previews not viewed; archive provides names and view variants but little textual visual description."
+    ],
+    "evidence": [
+      "Line 10: animation warning",
+      "Lines 12-130: complete 20-entry friendly/enemy gallery"
+    ],
+    "title": "Workshop Extensions - Kinetic Explosion Effects Reference Sheet",
+    "path": "articles/references/1730-workshop-extensions-kinetic-explosion-effects-reference-sheet.md",
+    "source_url": "https://workshop.codes/wiki/articles/1730",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2022-12-21T04:29:47.768Z"
+  },
+  {
+    "id": 1903,
+    "topics": [
+      "vectors",
+      "coordinate spaces",
+      "camera capture",
+      "geometry"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Documented Workshop axes: Y is height, X/Z horizontal; local player space uses positive X left, positive Y up, positive Z forward, and foot position as the origin.",
+      "Position Of returns world position; Local Vector Of transforms world positions into player-relative coordinates. Position transforms need Rotation and Translation; pure directions should not be treated as locations.",
+      "Live Capture (Camera) records eye position, approximately 1.5 m above the player's feet, rather than foot position.",
+      "B minus A gives displacement from A to B; Normalize obtains unit direction and Magnitude Of(velocity) gives speed.",
+      "Facing Direction's Y varies from -1 looking down to +1 looking up; normalized facing components are world-space."
+    ],
+    "uncertainties": [
+      "June 2023 archive, not independently tested.",
+      "Text overgeneralizes that direction vectors are always unit length and all global vectors are position vectors; later displacement discussion contradicts the first claim.",
+      "Text calls vector-scalar addition undefined mathematically; Workshop runtime coercion must be checked in API references instead of inheriting this as an engine guarantee.",
+      "Pitch treatment for Local Vector Of is not fully specified in this tutorial; it describes horizontal facing."
+    ],
+    "evidence": [
+      "Lines 16-38: axes, capture, transforms and directions",
+      "Lines 88,130: overgeneralized math assertions",
+      "Lines 133-141: magnitude and normalization"
+    ],
+    "title": "A Workshopper's Guide to the Vector",
+    "path": "articles/tutorials/1903-a-workshoppers-guide-to-the-vector.md",
+    "source_url": "https://workshop.codes/wiki/articles/1903",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2023-06-11T09:48:39.553Z"
+  },
+  {
+    "id": 2103,
+    "topics": [
+      "camera",
+      "movement",
+      "chase",
+      "raycast",
+      "collision"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Documented free-camera motion recipe chases a player Camera variable; horizontal throttle is transformed to world rotation, jump/crouch contributes vertical movement, and forward/backward follows full facing direction.",
+      "Jump and crouch together cancel the vertical component; chase rate is 12 times a conditional capped throttle magnitude and reevaluates destination/rate.",
+      "Collision variant raycasts from current camera position toward the intended step and offsets the result backward by 0.250; example includes environment collisions but excludes objects, barriers and other players by its filters.",
+      "Author suggests extending collision by changing raycast object flag and included-player set."
+    ],
+    "uncertainties": [
+      "Example is an actions fragment with no camera initialization or Start Camera call; not a complete drop-in system.",
+      "Author explicitly says they no longer remember the implementation's rationale; behavior is documented, not independently tested.",
+      "Collision behavior at zero movement and the unconditional 0.250 backoff deserve testing; source does not discuss these edge cases."
+    ],
+    "evidence": [
+      "Lines 10-38: motion behavior and first code fragment",
+      "Lines 40-61: collision assumptions and variant"
+    ],
+    "title": "Camera Controls",
+    "path": "articles/tutorials/2103-camera-controls.md",
+    "source_url": "https://workshop.codes/wiki/articles/2103",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2024-02-19T19:20:50.365Z"
+  },
+  {
+    "id": 1882,
+    "topics": [
+      "AI bots",
+      "dummy bots",
+      "player classification",
+      "name forcing"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Documented distinction: dummy bots are Workshop-created and inert by default; lobby AI bots are host-added and run AI.",
+      "AI detection recipe first excludes Is Dummy Bot, temporarily forces a zero-width-character name invalid for real Battle.net users, compares the player's stringified name, records IsAIBot if it changed, then stops forcing the name.",
+      "The recipe relies on name forcing affecting AI bots but not real players and restores names immediately."
+    ],
+    "uncertainties": [
+      "April 2023 behavior relies on a side effect, not a dedicated AI predicate; verify against newer player-classification articles and current game.",
+      "Temporary name mutation can interact with other naming logic; recipe only sets its flag true and does not explicitly initialize/reset it."
+    ],
+    "evidence": [
+      "Lines 10-12: bot distinction",
+      "Lines 18-50: rule and explanation"
+    ],
+    "title": "Detect AI Bots",
+    "path": "articles/tutorials/1882-detect-ai-bots.md",
+    "source_url": "https://workshop.codes/wiki/articles/1882",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2023-04-18T23:03:52.769Z"
+  },
+  {
+    "id": 7418,
+    "topics": [
+      "perks",
+      "unsupported modes",
+      "settings text",
+      "mode compatibility"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Documented workaround manually adds Enable Perks: On under settings > modes > General when a mode lacks a functional Enable Perks setting.",
+      "Enabling the setting does not guarantee working progression. Table documents Stadium partial support with progress lost across rounds, Overwatch: Classic no progression, and full support for Mirrorwatch, Junkenstein's Revenge, Winston's Beach Volleyball and Lucioball.",
+      "Volleyball/Lucioball cannot normally earn perk progress because their gameplay prevents damage/healing; source defines full support as progression through normal or Workshop damage/healing."
+    ],
+    "uncertainties": [
+      "October 2025 compatibility table is patch-sensitive and not independently verified.",
+      "Stadium example must be reconciled with explicitly BROKEN Stadium-workshopping article 7385 before recommending it."
+    ],
+    "evidence": [
+      "Lines 23-43: unsupported-mode definition and settings snippet",
+      "Lines 47-89: functionality matrix and definitions"
+    ],
+    "title": "Forcing Perks in Non-Supported Modes",
+    "path": "articles/tutorials/7418-forcing-perks-in-nonsupported-modes.md",
+    "source_url": "https://workshop.codes/wiki/articles/7418",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2025-10-14T20:07:04.106Z"
+  },
+  {
+    "id": 6790,
+    "topics": [
+      "health pools",
+      "max health",
+      "patched behavior"
+    ],
+    "disposition": "historical",
+    "important_information": [
+      "Explicitly documented as patched May 7, 2025, version 2.16.0-138051; the base-health-removal exploit no longer works.",
+      "Historical exploit required current health below maximum and only the target health type remaining; adding/removing temporary pools could remove base pools. Recipes damaging then removing pools or replacing all base health are historical only.",
+      "Normal Add/Remove Health Pool actions are documented not to modify a hero's default pool.",
+      "Motivation remains useful: Set Max Health adjusts overall health scaling, cannot independently choose health types, and may scale health granted by abilities such as Commanding Shout/Fortify."
+    ],
+    "uncertainties": [
+      "Exact hero numbers and health-gain examples are historical; do not present as current balance.",
+      "Suggested connection to Wrecking Ball/Kitsune Rush bug is explicitly speculative.",
+      "Remote videos were not fetched; text and code read fully."
+    ],
+    "evidence": [
+      "Line 12: explicit patch warning",
+      "Lines 33-45 and 49-110: normal semantics and historical exploit",
+      "Lines 115-130: scaling motivation and speculative trivia"
+    ],
+    "title": "Health Pool Bug: An Alternative to Set Max Health (PATCHED)",
+    "path": "articles/tutorials/6790-health-pool-bug-an-alternative-to-set-max-health-patched.md",
+    "source_url": "https://workshop.codes/wiki/articles/6790",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2025-08-25T19:27:13.704Z"
+  },
+  {
+    "id": 6064,
+    "topics": [
+      "performance",
+      "condition invalidation",
+      "event concurrency",
+      "scheduling",
+      "profiling",
+      "server load",
+      "test environment"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Documented Inspector recording adds runtime cost, particularly for array modifications; disable after debugging for releases.",
+      "Waitless action bursts can exhaust a tick's workload; yield or batch when simultaneous completion is unnecessary, rather than treating all finite loops as equally unsafe.",
+      "Rule conditions are documented as ordered and short-circuiting; put cheap/selective gating before expensive array/spatial calculations. Article recommends less frequently changing conditions early.",
+      "Player hero/slot filters reduce evaluation scope, but changing away from that hero/slot immediately aborts an active rule; optimization changes lifecycle behavior.",
+      "Startup load can be reduced by delaying initialization until spawn, gating expensive conditions, consolidating selected rules, and staggering player initialization with Wait(Slot Of(Event Player)*0.016).",
+      "Sparse evaluation moves expensive conditions into an If inside a waited loop; example polls at 0.2 seconds instead of 0.016, trading reaction precision for cost. It can miss timing-sensitive behavior and is not interchangeable with per-tick event checks.",
+      "Disabled rules/actions/conditions and empty rules reportedly do not consume execution cost, although empty rules still appear in Inspector. This differs from element counting, where disabling does not reclaim elements.",
+      "Mutating any array element reportedly causes every rule condition referencing that variable to be reconsidered, even if they reference a different index; monolithic state arrays can amplify invalidation.",
+      "Damage-event rules cannot rerun for the same active context while waiting; a Wait used as throttling can discard needed triggers. Dealt Damage is per attacker, so simultaneous multi-target damage can process only one victim; Took Damage is per victim and allows one active instance for each victim.",
+      "High-frequency SMG/DOT/beam damage events can dominate load; any wait-based reduction must explicitly consider which event information will be lost.",
+      "Built-in Mapped/Filtered/Sorted Array operations are documented as often cheaper than manual For Global Variable loops; multidimensional array processing is expensive.",
+      "An anti-crash fallback lowers slow-motion speed when Server Load crosses a threshold and restores speed below a second threshold; source explains slower tick rate gives more computation time, at the cost of gameplay slowdown. It is a mitigation rather than guaranteed prevention.",
+      "Article reports periodic load spikes associated with replay/killcam/POTG snapshots, disappearing after about 1h30 when replay/killcam recording stops; reduce players/bots/text/effects to limit impact.",
+      "Practice range is documented at approximately 20.8333 ticks/sec versus normal maps' 62.5; timing/performance validation should occur on target maps.",
+      "Article associates variability by time/day/patch activity and missing hero-select entries with server pressure; aim for headroom rather than a barely passing test."
+    ],
+    "uncertainties": [
+      "Archived 2025 guidance is not independently measured; many numeric thresholds (20 actions, hundreds of rules, server-load 230/200) are examples, not universal limits.",
+      "Batching pseudocode uses Global.batch == 0 for reset and mixes syntax; not copy-ready.",
+      "Claims about server traffic and replay-spike cause are anecdotal/speculative ('most likely'); retain that distinction.",
+      "A second dynamic slow-motion formula and prose '0-15%' range do not obviously match (defaults at Server Load 150 already reduce speed about 20%); verify before recommending.",
+      "Statement that wait placement does not matter concerns workload only; scheduling, side effects and event loss make placement semantically significant.",
+      "Blanket 'avoid shared first conditions' and 'healthy mix of events' are heuristics, not validated generally optimal transformations."
+    ],
+    "evidence": [
+      "Lines 25-205: Inspector, loops, condition ordering, filter-abort",
+      "Lines 209-299: batching/startup/sparse evaluation/staggering",
+      "Lines 303-477: slow motion, disabled/empty rules",
+      "Lines 491-514: array invalidation, damage concurrency, built-ins, speculative spikes and practice tick rate"
+    ],
+    "title": "Help, my server is crashing! A guide on how to improve server stability for your codes",
+    "path": "articles/tutorials/6064-help-my-server-is-crashing-a-guide-on-how-to-improve-server-stability-for-your-codes.md",
+    "source_url": "https://workshop.codes/wiki/articles/6064",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2025-05-25T18:36:36.181Z"
+  },
+  {
+    "id": 4855,
+    "topics": [
+      "projectile motion",
+      "gravity",
+      "speed",
+      "ability modification"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Documented arc-preserving projectile modification multiplies speed by k and gravity by k squared; settings use percentages, so speed=100*k and gravity=100*k*k.",
+      "Example scales Baptiste Immortality Field from documented 60 m/s to 20 m/s, changes settings around the cast, then restores both to 100.",
+      "Motivation: shared projectile arcs between Baptiste field/secondary fire and Zarya graviton/secondary fire can be preserved while changing travel time."
+    ],
+    "uncertainties": [
+      "Exact ability speed is archived and balance-sensitive.",
+      "Example omits cast detection/timing and uses 100 as restoration, which assumes original defaults; do not treat it as a complete ability interceptor."
+    ],
+    "evidence": [
+      "Lines 12-34: motivation, square-law derivation and code",
+      "Line 36: example import code PN5HK"
+    ],
+    "title": "How to calculate values that change the speed of a projectile without affecting its arc",
+    "path": "articles/tutorials/4855-how-to-calculate-values-that-change-the-speed-of-a-projectile-without-affecting-its-arc.md",
+    "source_url": "https://workshop.codes/wiki/articles/4855",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2024-11-26T13:52:04.287Z"
+  },
+  {
+    "id": 4823,
+    "topics": [
+      "randomness",
+      "conditional actions"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Documented 1-in-N action recipe uses If(Random Integer(1,N)==1) around actions and closes with End; any fixed integer in the inclusive range works."
+    ],
+    "uncertainties": [
+      "Source's introductory statement that If compares two values for equality is overspecific; general If takes a condition.",
+      "Archived example is a per-evaluation chance, not a time-based probability; frequency depends on surrounding execution."
+    ],
+    "evidence": [
+      "Lines 12-15: recipe and oversimplified If wording",
+      "Lines 21-30: native snippet"
+    ],
+    "title": "Random chance to trigger an action",
+    "path": "articles/tutorials/4823-random-chance-to-trigger-an-action.md",
+    "source_url": "https://workshop.codes/wiki/articles/4823",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2024-11-26T13:52:02.932Z"
+  },
+  {
+    "id": 9496,
+    "topics": [
+      "screen-space UI",
+      "in-world text",
+      "camera",
+      "Local Player",
+      "spectators",
+      "reevaluation",
+      "world bounds"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Documented screen-anchored IWT techniques offer placement/size control and post-match visibility; tradeoffs include FOV displacement, newline alignment and lower readability than HUD headers.",
+      "Screen coordinates use origin at crosshair, positive X right and positive Y up. Recommended first-person bounds +/-2.5 X and +/-1.25 Y assume minimum FOV and 16:9, not arbitrary displays.",
+      "Four variants cover first-person versus custom-camera projection and per-player Event Player versus one global Local Player text.",
+      "Local Player variants must run in a Global rule and save text entities, but source says spectators cannot see them as of patch 1.59. Per-player camera variant supports spectators.",
+      "Start Camera fixes user-configured FOV at approximately 102.5 degrees, but hero abilities such as Ball roll/Soldier sprint can still alter FOV and displace the text.",
+      "All variants use Update Every Frame on position and require position reevaluation; freeze only selected X/Y subexpressions with Evaluate Once.",
+      "Projection places text on a plane from eye position plus right/up/facing components. Custom-camera right axis comes from a cross product; upward basis derives from facing angles with vertical angle minus 90.",
+      "Do Not Clip prevents map geometry/viewmodel occlusion. Constants 100,3,0.2 are trial-and-error; distant placement reduces camera sway but can exceed world bounds and require retuning scale/offset.",
+      "Progress-bar versions are included; extensions to icons/effects are suggested, with effects kept closer and possible rotation while the player turns."
+    ],
+    "uncertainties": [
+      "Header August 2026 coexists with patch-1.59 spectator claims; behavioral validity needs separate verification.",
+      "Intro says progress-bar/icon technique not properly tested, although progress-bar examples were later included; distinguish examples from validated compatibility.",
+      "Local text code uses Visible Never spectator setting while local progress-bar code uses Default Visibility; reconcile before promising spectator behavior.",
+      "No assessment of arbitrary aspect ratios, edge views, third-person transitions or world-boundary behavior supplied."
+    ],
+    "evidence": [
+      "Lines 10-25: purpose, limits and FOV",
+      "Lines 31-153: four variants and requirements",
+      "Lines 160-206: progress bars, bounds, projection derivation"
+    ],
+    "title": "Rendering an In-World Text at a specific onscreen position",
+    "path": "articles/tutorials/9496-rendering-an-inworld-text-at-a-specific-onscreen-position.md",
+    "source_url": "https://workshop.codes/wiki/articles/9496",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2026-08-20T21:48:33.728Z"
+  },
+  {
+    "id": 4826,
+    "topics": [
+      "arrays",
+      "sorting",
+      "current array index"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Documented array reversal uses Sorted Array(array, Current Array Index * -1); Sorted Array sorts keys ascending.",
+      "Current Array Element and Current Array Index are available in sorted/mapped/filtered array expressions; sorting by a positive current index preserves original order."
+    ],
+    "uncertainties": [
+      "This is a native Workshop recipe, not an OverPy spelling; archived semantics not independently tested."
+    ],
+    "evidence": [
+      "Lines 17-30: array-expression context and reverse recipe"
+    ],
+    "title": "Reverse an array",
+    "path": "articles/tutorials/4826-reverse-an-array.md",
+    "source_url": "https://workshop.codes/wiki/articles/4826",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2024-11-26T13:52:03.006Z"
+  },
+  {
+    "id": 5734,
+    "topics": [
+      "strings",
+      "localization",
+      "fonts",
+      "HUD layout",
+      "in-world text",
+      "data encoding",
+      "OverPy helpers"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Article explicitly uses OverPy syntax and features; it is a mixed runtime/language source that should be split by ownership when rewritten.",
+      "Documented Custom String limit is 128 characters (not bytes) per node; nested concatenation bypasses this and OverPy splits automatically. Former total 511-byte limit is documented removed.",
+      "Documents maximum 4 icons/textures per string and increased join/startup cost from many strings.",
+      "Leading newline can display a square; prepend a space. Strings are UTF-8.",
+      "Language-dependent censorship can corrupt encoded data: host who last edited/loaded the code determines filtering, replacements become stars. Article recommends nonalphanumeric alphabets for data serialization and notes numeric display can also be affected.",
+      "Localized String is called legacy by the author; dynamic translations can instead detect client language, with OverPy documentation and Workshop.codes @translate referenced.",
+      "Font mapping: HUD header Industry Black, Big Message Big Noodle, usual text Config, fallback/progress-bar IWT Blizzard Global. A missing glyph changes the entire string to fallback; a line-separator character can force Blizzard Global.",
+      "Only Blizzard Global is documented consistent across languages; manual alignment with other fonts can break in Asian language clients.",
+      "HUD layer order is left below right below top; left/right share vertical start, top differs. Group centering depends on all HUDs, spaces/newlines can shift alignment and displace objective/killfeed UI.",
+      "Right HUD negative sort order keeps it above killfeed; otherwise killfeed shifts it down. Large trailing-space padding can force grouping/alignment, but other HUDs in that group are affected.",
+      "HUD header direct Null or empty string hides it; Null stored in a variable instead displays 0. Zero-width spaces in text/subheader can preserve layout while header visibility changes.",
+      "IWT/progress-bar IWT documented combined cap 128; size decreases slightly with distance; progress-bar text is 1.25 times ordinary IWT and has a thinner outline with Blizzard Global only.",
+      "For complex IWT overlays, shared anchor plus matched line counts avoids difficult geometric alignment. Block is horizontally centered, individual lines left-aligned; ordinary IWT shifts downward with additional lines, while progress-bar text bottom remains anchored.",
+      "OW2 removes trailing spaces from IWT lines; a terminal zero-width space preserves intended padding. Documented coordinate box is +/-2000 per axis, playable area +/-1000; distant placement reduces sway but must stay within bounds.",
+      "OverPy-specific lowercase/casing/alignment helpers include createCasedProgressBarIwt, spacesForString, spacesForLength and strVisualLength; fullwidth glyphs plus overlapping strings and special spaces simulate case/kerning.",
+      "String-based vector-data encoding can reduce element count; parsing cost and censorship must be considered. Article's separator example is pedagogical and intentionally followed by a safer-alphabet caveat."
+    ],
+    "uncertainties": [
+      "April 2025 archive not independently verified. Absolute 'never use localized strings' is author advice, not a documented engine prohibition.",
+      "Font language variation, aspect-ratio support and exact IWT vertical-offset formula are explicit TODOs.",
+      "The text calls U+00AD a zero-width space, but U+00AD is soft hyphen; verify exact OverPy escape and intended character rather than copying terminology.",
+      "Text cap should be reconciled with 1840's shared HUD/IWT/progress-bar limit, and texture limit with newer TX bypass article.",
+      "Advice to avoid vector positioning is aimed at aligned multiline UI and must be reconciled with 9496's explicit camera-plane method."
+    ],
+    "evidence": [
+      "Lines 10-51: language dialect, strings, fonts, translation and encoding",
+      "Lines 53-78: HUD behavior",
+      "Lines 80-116: IWT constraints and OverPy helpers"
+    ],
+    "title": "Strings, IWTs, and HUDs Pro Tips",
+    "path": "articles/tutorials/5734-strings-iwts-and-huds-pro-tips.md",
+    "source_url": "https://workshop.codes/wiki/articles/5734",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2025-04-15T14:22:52.138Z"
+  },
+  {
+    "id": 2004,
+    "topics": [
+      "release",
+      "import codes",
+      "publishing workflow"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Documented in-game update workflow: lobby Settings > Share > Upload to Existing Code, enter the existing import code, Continue, then wait for update. Reuses a code instead of creating a new one."
+    ],
+    "uncertainties": [
+      "October 2023 UI instructions; no ownership, permissions, expiration, or rollback behavior documented.",
+      "Remote walkthrough/media were not fetched; textual workflow read in full."
+    ],
+    "evidence": [
+      "Lines 13-23: complete text instructions"
+    ],
+    "title": "Uploading new content to existing import code",
+    "path": "articles/tutorials/2004-uploading-new-content-to-existing-import-code.md",
+    "source_url": "https://workshop.codes/wiki/articles/2004",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2023-10-19T07:55:17.690Z"
+  },
+  {
+    "id": 2080,
+    "topics": [
+      "variables",
+      "state ownership",
+      "chase",
+      "cooldowns"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Documented state model has one game-wide instance of each global variable and separate instances of each player variable.",
+      "Chasing at rate/over time supports numbers or vectors only; initial and destination types must match.",
+      "Stop Chasing leaves a variable at its current value; over-time chase is documented to reach its destination within duration unless changed.",
+      "Examples illustrate global shared destinations and per-player ability cooldown state; modify operations use existing value as first arithmetic operand and supplied value as second, or append/remove supplied array values."
+    ],
+    "uncertainties": [
+      "Cooldown example uses comparison == instead of assignment in actions on lines 63 and 65, and lacks initial ready-state setup; do not copy verbatim.",
+      "Global chase links mistakenly point to player chase pages.",
+      "Archived 2024 chase guidance must be combined with condition notification bug in 9463."
+    ],
+    "evidence": [
+      "Lines 11-16 and 40-43: storage scope",
+      "Lines 57-65: flawed cooldown sample",
+      "Lines 75-97: modification/chase semantics"
+    ],
+    "title": "Variables and how to use them",
+    "path": "articles/tutorials/2080-variables-and-how-to-use-them.md",
+    "source_url": "https://workshop.codes/wiki/articles/2080",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2024-01-28T00:17:10.870Z"
+  },
+  {
+    "id": 1840,
+    "topics": [
+      "execution model",
+      "event context",
+      "Local Player",
+      "persistence",
+      "import-export",
+      "limits"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Documented rules combine an event, all-required conditions, and actions in top-to-bottom order; contextual values depend on the triggering event instance.",
+      "Event Player is the trigger's player; healing events expose Healer/Healee and death events Attacker/Victim. Local Player instead refers to the viewer and is restricted to created effects/visuals.",
+      "Custom String comparisons are documented as case-sensitive.",
+      "Full Copy Settings includes lobby settings plus Workshop rules/settings; native rules, conditions and actions can also be copied/pasted separately.",
+      "Presets can be overwritten and are limited; updating an existing share code replaces its old contents. Article recommends keeping source text and identifying existing share code in mode metadata to prevent wrong-code updates.",
+      "Archive claims share codes expire unless imported/uploaded enough and there is no in-game list of all owned codes; PC text backups are the recommended durable source, while console clipboard export is unavailable.",
+      "Documented limits: players+bots 12, extendable to 24 but at most 12 real players; AI bots included, training bots excluded.",
+      "Documented text limit 128 shared by HUDs, in-world texts and both progress-bar variants; no increase. Effects limit 128, extendable to 256, includes normal effects, beams, icons and Workshop-created projectiles.",
+      "Workshop capability limits and runtime server load are distinct constraints; available events/actions/values bound what can be implemented."
+    ],
+    "uncertainties": [
+      "April 2023 source; player/entity/text limits, code expiry and UI/platform details are date-sensitive and require reconciliation with newer source pages.",
+      "Making a basic mode section is an explicit placeholder ('idk lol...'); no worked onboarding project exists here.",
+      "Expiration description gives vague 'enough times'/'6 months' guidance, not a reliable retention contract.",
+      "Image-only examples not fetched; all textual content read."
+    ],
+    "evidence": [
+      "Lines 52-108: rule/context model",
+      "Lines 123-162: saving/exporting",
+      "Lines 166-175: limits",
+      "Line 114: missing tutorial"
+    ],
+    "title": "Workshop Basics",
+    "path": "articles/tutorials/1840-workshop-basics.md",
+    "source_url": "https://workshop.codes/wiki/articles/1840",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2023-04-11T17:59:38.668Z"
+  },
+  {
+    "id": 7385,
+    "topics": [
+      "Stadium",
+      "unsupported modes",
+      "round lifecycle",
+      "broken behavior"
+    ],
+    "disposition": "historical",
+    "important_information": [
+      "Explicit warning: method broken as of October 1, 2025 and soft-locks Stadium, preventing player spawns; do not recommend as an active workflow.",
+      "Historical workaround combined Clash/Control/Payload Race/Push modes and Return To Lobby: Never to expose Workshop settings; non-PC import code JK5440 was offered.",
+      "Historical limitations: Stadium settings needed textual editing; Return To Lobby not Never ended after first round; updating settings midmatch could soft-lock next round; no Stadium-specific values/actions; normal variables/actions did not persist between rounds; only Unranked format; additional non-Stadium modes prevented starting."
+    ],
+    "uncertainties": [
+      "Article updated October 2025, not a current test. June 2025 support introduction and October broken warning must remain visible alongside preserved historical recipe.",
+      "Perks advice says setting per mode, while newer 7418 says General; do not merge them uncritically.",
+      "Battlepass XP claim is patch-sensitive and irrelevant to foundation authoring guidance."
+    ],
+    "evidence": [
+      "Lines 12-18: broken status and release context",
+      "Lines 39-77: historical recipe/constraints"
+    ],
+    "title": "Workshopping in Stadium (BROKEN)",
+    "path": "articles/tutorials/7385-workshopping-in-stadium-broken.md",
+    "source_url": "https://workshop.codes/wiki/articles/7385",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2025-10-08T15:08:34.584Z"
+  },
+  {
+    "id": 4833,
+    "topics": [
+      "boolean logic",
+      "comparisons"
+    ],
+    "disposition": "guide",
+    "important_information": [
+      "Documented boolean XOR shortcut is A != B; boolean XNOR is A == B."
+    ],
+    "uncertainties": [
+      "Source omits that this shortcut assumes boolean-valued operands; Workshop's cross-type comparison behavior in article 7978 makes unrestricted use unsafe."
+    ],
+    "evidence": [
+      "Lines 10-16: comparison shortcuts"
+    ],
+    "title": "XOR and XNOR",
+    "path": "articles/tutorials/4833-xor-and-xnor.md",
+    "source_url": "https://workshop.codes/wiki/articles/4833",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2024-11-26T13:52:03.193Z"
+  },
+  {
+    "id": 5372,
+    "topics": [
+      "site formatting",
+      "source normalization",
+      "publishing docs"
+    ],
+    "disposition": "site-only",
+    "important_information": [
+      "Documents site renderer extensions: ==highlight==, [youtube ID], [hero name] with size, [ability name], and HTML color styling; these are not Workshop/OverPy language constructs.",
+      "Hero/ability macros render images on site; offline references must preserve readable names rather than depend on custom rendering.",
+      "Site syntax highlighting tries Workshop keywords and is explicitly limited; highlighted examples are not validation of executable code."
+    ],
+    "uncertainties": [
+      "Page says only YouTube supported while other archive articles contain [video], showing incomplete/stale site docs.",
+      "General Markdown tutorial need not ship in foundations; relevance is content conversion/optional publishing.",
+      "No network/media fetched; complete text read."
+    ],
+    "evidence": [
+      "Line 29: site scope/provenance",
+      "Lines 150-157: highlighting limits",
+      "Lines 261-325: custom features"
+    ],
+    "title": "Markdown on Workshop.codes",
+    "path": "articles/workshop-codes/5372-markdown-on-workshopcodes.md",
+    "source_url": "https://workshop.codes/wiki/articles/5372",
+    "review_status": "read",
+    "verification_status": "archived-documentation-not-independently-verified",
+    "source_updated_at": "2025-03-22T21:28:37.621Z"
+  }
+]
