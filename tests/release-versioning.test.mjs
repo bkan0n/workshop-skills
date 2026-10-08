@@ -28,8 +28,7 @@ function files() {
 // Exercise the complete first-run manifest path with no GitHub releases or
 // tags. The library must synthesize its baseline from the version manifest.
 // This stub has no API client; unexpected remote operations fail.
-async function prepare(message) {
-  const before = files();
+async function prepare(message, before = files()) {
   const bootstrap = JSON.parse(before.get('release-please-config.json'))['bootstrap-sha'];
   const github = new Proxy({
     repository: {owner: 'test-owner', repo: 'test-repository', defaultBranch: 'main'},
@@ -92,6 +91,16 @@ function outsideVersionBlocks(text) {
   return text.replace(/^[^\n]*x-release-please-start-version[^\n]*\n[\s\S]*?^[^\n]*x-release-please-end[^\n]*$/gm, '');
 }
 
+function assertChangelogHistory(before, after) {
+  // New release entries are inserted below the document heading. Check that
+  // heading separately so the complete prior history must still remain intact.
+  assert.ok(before.startsWith('# Changelog\n'));
+  assert.ok(after.startsWith('# Changelog\n'));
+  const history = before.slice('# Changelog\n'.length).trimStart();
+  assert.ok(history.length > 0, 'the fixture must contain existing history');
+  assert.ok(after.includes(history), 'existing changelog history must be preserved');
+}
+
 test('release config has one matched root component and the pinned updater library', async () => {
   const {before, manifest} = await prepare('docs: clarify rule reactivation');
   assert.equal(require('release-please/package.json').version, '17.6.0');
@@ -152,7 +161,20 @@ test('a documentation-only change updates every release destination and preserve
   for (const path of paths.filter(path => path.startsWith('evals/'))) {
     assert.equal(after.get(path), before.get(path), 'historical evaluation versions are evidence, not release metadata');
   }
-  assert.ok(after.get('CHANGELOG.md').includes(before.get('CHANGELOG.md')), 'existing changelog history must be preserved');
+  assertChangelogHistory(before.get('CHANGELOG.md'), after.get('CHANGELOG.md'));
+});
+
+test('changelog history survives first and successive release entries', async () => {
+  let fixture = files();
+  fixture.set('CHANGELOG.md', '# Changelog\n\nHistorical project notes must survive every release.\n');
+  for (let release = 0; release < 3; release++) {
+    const {before, candidate, version} = await prepare('docs: clarify rule reactivation', fixture);
+    assert.ok(candidate);
+    const {after} = applyCandidate(before, candidate);
+    assert.ok(after.get('CHANGELOG.md').includes(`## [${version}]`));
+    assertChangelogHistory(before.get('CHANGELOG.md'), after.get('CHANGELOG.md'));
+    fixture = after;
+  }
 });
 
 test('features retain minor bumps and pre-1.0 breaking changes bump minor', async () => {
