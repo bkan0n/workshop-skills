@@ -5,8 +5,8 @@ license: GPL-3.0-only
 compatibility: Requires the matched overwatch-workshop skill and a host that can read both skill roots. Markdown guidance works offline; compilation is optional and uses OverPy 9.7.17.
 metadata:
   # x-release-please-start-version
-  workshop-skills-version: '0.1.0'
-  workshop-skills-requires-workshop: '0.1.0'
+  workshop-skills-version: '0.2.0'
+  workshop-skills-requires-workshop: '0.2.0'
   # x-release-please-end
 ---
 
@@ -17,7 +17,7 @@ Use OverPy for the requested source language. It looks like Python but compiles 
 ## Required reading
 
 <!-- x-release-please-start-version -->
-Resolve the `overwatch-workshop` skill from the host's skill listing or the packaged sibling [Workshop entry point](../overwatch-workshop/SKILL.md). Verify its name and `metadata.workshop-skills-version: '0.1.0'`. Read its [foundation](../overwatch-workshop/references/foundation.md) and this skill's [foundation](references/foundation.md), reusing files already read in this task. The sibling links describe the bundle layout; if the host installs roots elsewhere, resolve Workshop links against the verified Workshop root.
+Resolve the `overwatch-workshop` skill from the host's skill listing or the packaged sibling [Workshop entry point](../overwatch-workshop/SKILL.md). Verify its name and `metadata.workshop-skills-version: '0.2.0'`. Read its [foundation](../overwatch-workshop/references/foundation.md) and this skill's [foundation](references/foundation.md), reusing files already read in this task. The sibling links describe the bundle layout; if the host installs roots elsewhere, resolve Workshop links against the verified Workshop root.
 <!-- x-release-please-end -->
 
 If the companion is missing or incompatible, identify the missing version/access requirement and ask for the matched bundle to be exposed. Continue supported language work while stating that shared runtime guidance is unavailable. Do not pretend the companion was read.
