@@ -56,7 +56,7 @@ Release orchestration lives in GitHub Actions. [Release Please](https://github.c
 
 ### Repository setup
 
-Push this repository and its full history to the intended GitHub destination, using `main` as the release branch. Update the clearly labeled `OWNER/REPO` installation examples to that destination. Enable Actions and, in **Settings → Actions → General**, allow GitHub Actions to create pull requests. The workflow declares its required contents, pull-request, and issue permissions.
+The public repository is [bkan0n/workshop-skills](https://github.com/bkan0n/workshop-skills), with `main` as the release branch. Preserve its full history, including the bootstrap commit below. Actions must be enabled and **Settings → Actions → General** must allow GitHub Actions to create pull requests. The workflow declares its required contents, pull-request, and issue permissions.
 
 The default token is the repository's `GITHUB_TOKEN`. Under GitHub's current behavior, checks on a PR created or updated with that token need a writer to select **Approve workflows to run**. For unattended bot-PR checks, optionally provide `RELEASE_PLEASE_TOKEN` with the required repository permissions, using a suitably scoped personal access token. GitHub App authentication can also be configured later. Never place tokens in source files. See [GitHub's event/token rules](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow).
 

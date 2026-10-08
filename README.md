@@ -9,16 +9,16 @@ Each starts with a small required foundation, then routes to focused guides, exa
 
 ## Install
 
-From this checkout's root, use [the Skills CLI](https://github.com/vercel-labs/skills) to discover the local skills and install the matched pair for Codex:
+Use [the Skills CLI](https://github.com/vercel-labs/skills) to discover the skills and install the matched pair for Codex from [bkan0n/workshop-skills](https://github.com/bkan0n/workshop-skills):
 
 ```sh
-npx skills add ./skills --list
-npx skills add ./skills --skill overwatch-workshop --skill overpy --agent codex
+npx skills add bkan0n/workshop-skills --list
+npx skills add bkan0n/workshop-skills --skill overwatch-workshop --skill overpy --agent codex
 ```
 
 For native Workshop only, omit `--skill overpy`. Select **Project** if prompted, or add `--global` for use across projects. Replace `codex` with your agent's identifier. OverPy needs both skills explicitly selected; dependency metadata does not install its companion.
 
-Alternatively, copy the complete skill folders or extract a matched release archive, keeping them as siblings with all references and examples. See [installation instructions](INSTALL.md) for manual setup, other agents, updates, and future GitHub commands using the clearly labeled `OWNER/REPO` placeholder. No public repository address is configured yet.
+Alternatively, copy the complete skill folders or extract a matched release archive, keeping them as siblings with all references and examples. See [installation instructions](INSTALL.md) for manual setup, local checkouts, other agents, and updates. Versioned archives will appear on the [releases page](https://github.com/bkan0n/workshop-skills/releases) as maintainers publish them.
 
 <!-- x-release-please-start-version -->
 Skill release **0.1.0** requires matching versions of both skills for OverPy.

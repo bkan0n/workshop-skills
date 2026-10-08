@@ -4,6 +4,14 @@
   "private": true,
   "description": "Portable Workshop and OverPy skills with curated engine knowledge and pinned API references",
   "license": "GPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkan0n/workshop-skills.git"
+  },
+  "homepage": "https://github.com/bkan0n/workshop-skills#readme",
+  "bugs": {
+    "url": "https://github.com/bkan0n/workshop-skills/issues"
+  },
   "engines": {
     "node": ">=24 <25"
   },

@@ -6,6 +6,8 @@ Status: Approved by the user on 2026-10-07; implementation authorized.
 
 Approved follow-up, 2026-10-07: release orchestration uses GitHub Actions and Release Please with Conventional Commits, replacing the original manual release uploader. Release PRs synchronize the pair, create a draft/tag on merge, and explicitly invoke package validation/upload. Publication remains manual. Installation documentation includes both `npx skills` and manual installation. The current process is documented in [maintenance](../maintaining.md) and [installation](../../INSTALL.md); this supersedes the original release-flow details below.
 
+Approved publication follow-up, 2026-10-07: create the public repository [bkan0n/workshop-skills](https://github.com/bkan0n/workshop-skills), replace repository placeholders, and push the complete history. This supersedes the original restriction on creating a remote below; publishing release drafts remains a separate maintainer action.
+
 ## Purpose and agreed outcome
 
 Create a public, portable pair of skills that help an agent write, understand, and debug Overwatch Workshop programs without overlooking the engine's unusual behavior. The user's primary authoring language is OverPy, but native Workshop must be fully supported independently.

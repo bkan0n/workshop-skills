@@ -39,18 +39,18 @@ Use your agent's CLI identifier with `--agent`. Current mappings include:
 
 These are the Skills CLI's current defaults, verified October 7, 2026; configuration can affect some destinations. Agents sharing `.agents/skills/` may discover the same installation. See the [agent configuration](https://github.com/vercel-labs/skills/blob/main/src/agents.ts) for other hosts and overrides.
 
-## Install from GitHub after publication
+## Install from GitHub
 
-**`OWNER/REPO` is a placeholder.** This checkout has no configured public repository destination. Replace it with the actual published repository before using these commands:
+Run these commands from the project where you want to use the skills. They install from [bkan0n/workshop-skills](https://github.com/bkan0n/workshop-skills):
 
 ```sh
-npx skills add OWNER/REPO --list
+npx skills add bkan0n/workshop-skills --list
 
 # Native Workshop only.
-npx skills add OWNER/REPO --skill overwatch-workshop --agent codex
+npx skills add bkan0n/workshop-skills --skill overwatch-workshop --agent codex
 
 # OverPy with its required Workshop companion.
-npx skills add OWNER/REPO --skill overwatch-workshop --skill overpy --agent codex
+npx skills add bkan0n/workshop-skills --skill overwatch-workshop --skill overpy --agent codex
 ```
 
 The same agent and scope options apply. Use a matched release archive below when you want a specific published version rather than the repository's current contents.
@@ -59,7 +59,7 @@ The same agent and scope options apply. Use a matched release archive below when
 
 From a source checkout, copy the complete `skills/overwatch-workshop/` directory to your host's supported skill location. For OverPy, also copy the complete `skills/overpy/` directory into that **same parent directory**.
 
-For ZIP packages built locally in `dist/` or obtained from a future release, extract the appropriate archive:
+For ZIP packages built locally in `dist/` or downloaded from a published [GitHub release](https://github.com/bkan0n/workshop-skills/releases), extract the appropriate archive. Until the first release is published, use a checkout or the GitHub installation commands above.
 
 <!-- x-release-please-start-version -->
 - Native Workshop: `workshop-skills-0.1.0.zip`.
