@@ -21,7 +21,7 @@ For native Workshop only, omit `--skill overpy`. Select **Project** if prompted,
 Alternatively, copy the complete skill folders or extract a matched release archive, keeping them as siblings with all references and examples. See [installation instructions](INSTALL.md) for manual setup, local checkouts, other agents, and updates. Versioned archives will appear on the [releases page](https://github.com/bkan0n/workshop-skills/releases) as maintainers publish them.
 
 <!-- x-release-please-start-version -->
-Skill release **0.1.0** requires matching versions of both skills for OverPy.
+Skill release **0.2.0** requires matching versions of both skills for OverPy.
 <!-- x-release-please-end -->
 
 The references use **OverPy 9.7.17** and the bundled Workshop.codes wiki snapshot. The host must expose reference and companion files.

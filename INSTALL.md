@@ -3,7 +3,7 @@
 Install `overwatch-workshop` for native Workshop. For OverPy, install **both** `overwatch-workshop` and `overpy` from the same release. The OverPy skill's dependency metadata describes compatibility; it does not automatically install Workshop.
 
 <!-- x-release-please-start-version -->
-This checkout contains skill release **0.1.0**.
+This checkout contains skill release **0.2.0**.
 <!-- x-release-please-end -->
 
 ## Install from this local checkout with `npx skills`
@@ -62,8 +62,8 @@ From a source checkout, copy the complete `skills/overwatch-workshop/` directory
 For ZIP packages built locally in `dist/` or downloaded from a published [GitHub release](https://github.com/bkan0n/workshop-skills/releases), extract the appropriate archive. Until the first release is published, use a checkout or the GitHub installation commands above.
 
 <!-- x-release-please-start-version -->
-- Native Workshop: `workshop-skills-0.1.0.zip`.
-- Matched Workshop and OverPy pair: `workshop-overpy-skills-0.1.0.zip`.
+- Native Workshop: `workshop-skills-0.2.0.zip`.
+- Matched Workshop and OverPy pair: `workshop-overpy-skills-0.2.0.zip`.
 <!-- x-release-please-end -->
 
 Place the extracted skill folders in the host's skill location, preserving all bundled `references/`, `examples/`, and other skill files:
