@@ -1,0 +1,81 @@
+{
+  "condition": "new-pair",
+  "case_id": "overpy-routing",
+  "answer": "No. OverPy changes the source syntax, not these engine semantics: `player.getHealth()` maps to Workshop’s Health value, which includes current armor and shields as well as base health. See the local [OverPy mapping](overpy/references/api/values/member-get-health.md) and [Health reference](overwatch-workshop/references/api/values/health.md). This is documentation-based; your successful compile does not independently verify live game behavior.",
+  "files_read": [
+    {
+      "path": "overpy/SKILL.md",
+      "read_mode": "full",
+      "characters_read_estimate": 3061
+    },
+    {
+      "path": "overwatch-workshop/SKILL.md",
+      "read_mode": "full",
+      "characters_read_estimate": 1715
+    },
+    {
+      "path": "overwatch-workshop/references/foundation.md",
+      "read_mode": "full",
+      "characters_read_estimate": 4772
+    },
+    {
+      "path": "overpy/references/foundation.md",
+      "read_mode": "full",
+      "characters_read_estimate": 3723
+    },
+    {
+      "path": "overwatch-workshop/references/combat-heroes.md",
+      "read_mode": "full",
+      "characters_read_estimate": 7067
+    },
+    {
+      "path": "overpy/references/api/index.md",
+      "read_mode": "full",
+      "characters_read_estimate": 1242
+    },
+    {
+      "path": "overwatch-workshop/references/wiki/articles/643.md",
+      "read_mode": "full",
+      "characters_read_estimate": 469
+    },
+    {
+      "path": "overpy/references/api/values/index.md",
+      "read_mode": "full",
+      "characters_read_estimate": 721
+    },
+    {
+      "path": "overpy/references/api/values/index-g.md",
+      "read_mode": "full",
+      "characters_read_estimate": 2623
+    },
+    {
+      "path": "overpy/references/api/values/member-get-health.md",
+      "read_mode": "full",
+      "characters_read_estimate": 535
+    },
+    {
+      "path": "overwatch-workshop/references/api/values/health.md",
+      "read_mode": "full",
+      "characters_read_estimate": 596
+    },
+    {
+      "path": "overwatch-workshop/references/wiki/health-damage.md",
+      "read_mode": "partial",
+      "characters_read_estimate": 1400
+    },
+    {
+      "path": "overpy/references/api/values/index-r.md",
+      "read_mode": "partial",
+      "characters_read_estimate": 111
+    }
+  ],
+  "validation_performed": "Read the matched skill entry points and foundations, followed the OverPy receiver.getHealth mapping to native Health, and cross-checked the archived Health article (edited 2025-09-20; snapshot 2026-09-29). No compiler or game run; no external sources accessed.",
+  "companion_resolution": {
+    "method": "packaged sibling",
+    "path": "overwatch-workshop/SKILL.md",
+    "name": "overwatch-workshop",
+    "required_version": "0.1.0",
+    "found_version": "0.1.0",
+    "compatible": true
+  }
+}

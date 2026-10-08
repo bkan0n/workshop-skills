@@ -1,0 +1,461 @@
+{
+  "schema_version": 1,
+  "evaluation_date": "2026-10-07",
+  "kind": "exploratory performed-run report",
+  "model": {
+    "relationship": "Same inherited model and settings according to run orchestration.",
+    "exact_model_id": null,
+    "reasoning_effort": null,
+    "sampling_parameters": null,
+    "limitation": "Exact model/runtime settings were not captured; do not infer them from prose or claim exact external reproducibility."
+  },
+  "design": {
+    "wait_repeat": "One answer per condition: no skill, prior search skill, initial new Workshop skill, and a separately recorded revised new Workshop skill. The revised run is an iteration, not an independent repeated sample of the same skill contents.",
+    "health_mapping": "One matched-pair smoke test using a documented prompt variant. No baseline or old-skill health comparison.",
+    "rubric_access": "Run procedure instructed agents to receive prompts and applicable skills, not grader rubrics or intended answers. No independent process transcript audit was performed.",
+    "grading": "Post-hoc manual grading against evals/cases.json, by a project agent rather than an independent blinded panel. Scores are diagnostic, not a statistical ranking.",
+    "compiler": "Orchestrator later checked the four native answers with pinned OverPy 9.7.17; accepted flags, diagnostics and element counts are retained verbatim. This report did not rerun compilation.",
+    "final_content_caveat": "After these runs, the maintainer tightened named-API-first/stop-when-supported routing, no-reread guidance, and an OverPy link to waits.md. Those final edits were not re-evaluated.",
+    "limitations": [
+      "One prompt comparison and one related smoke test do not establish statistical superiority or broad correctness.",
+      "There are no actual tokenizer measurements or game tests.",
+      "Reading-size units are mixed and partly self-reported; byte and character values must not be added as one token count.",
+      "The prior skill reported one additional repeated body read and six search-result outputs; headline file-size sums alone understate that condition.",
+      "Exact evaluated file snapshots/commits were not captured. Raw records preserve the answers and reported reads, not all reference contents."
+    ]
+  },
+  "runs": [
+    {
+      "run_id": "baseline-wait",
+      "condition": "no-skill",
+      "case_id": "wait-repeat",
+      "prompt": "This native rule uses Ongoing - Each Player, condition Is Button Held(Event Player, Button(Interact)) == True, and action Modify Player Variable(Event Player, Ticks, Add, 1). It increments only once while I keep holding the button. Make it increment every 0.1 seconds while held, stop on release, and explain why the original behaves that way. Give a complete small native Workshop example.",
+      "prompt_matches_cases_json": true,
+      "prompt_variant_note": null,
+      "raw_record": "raw/baseline-wait.json",
+      "raw_record_sha256": "e9e57a543314dcc8da7c88f72809ad524863932c6e21ca20af90ac317b8cc34f",
+      "read_path_base": "No domain files read.",
+      "skill_version": null,
+      "content_snapshot_commit": null,
+      "read_metrics": {
+        "full_file_reads_recorded": 0,
+        "full_file_size_sum": 0,
+        "full_file_size_unit": "self-reported character estimates; measurement method not confirmed",
+        "partial_file_reads_recorded": 0,
+        "partial_read_size_sum": 0,
+        "partial_read_size_unit": "self-reported displayed-character estimates; manually estimated for pair-health",
+        "search_calls_recorded": 0,
+        "search_output_size_sum": 0,
+        "search_output_size_unit": "self-reported character estimates",
+        "actual_token_count": null,
+        "measurement_scope": "Reported displayed reference material only. Does not measure prompts, answers, bootstrap instructions, reasoning, tool wrappers or all repeated reads.",
+        "sum_of_reported_character_estimates": 0
+      },
+      "grading": {
+        "dimensions": {
+          "semantics": {
+            "score": 2,
+            "evidence": "Explains ongoing condition activation and uses an abortable paced loop; immediate increment then repetition stops on observed release."
+          },
+          "dialect_api": {
+            "score": 2,
+            "evidence": "Complete native declaration/rule structure uses supported actions. Later pinned-compiler acceptance corroborates syntax."
+          },
+          "retrieval": {
+            "score": null,
+            "evidence": "Not applicable: this condition deliberately prohibits domain reference retrieval. Zero domain reads is not scored as better retrieval."
+          },
+          "uncertainty": {
+            "score": 1,
+            "evidence": "Correctly says no game test ran, but describes increments every 0.1 seconds without the archived tick-quantization caveat. This loses nuance rather than failing the requested control-flow fix."
+          },
+          "validation_honesty": {
+            "score": 2,
+            "evidence": "Does not claim a compiler or game run while answering. Later orchestrator compiler checks are recorded separately."
+          }
+        },
+        "total": 7,
+        "maximum_applicable": 8,
+        "zero_semantics_or_api_failure": false,
+        "outcome": "core rubric satisfied; timing precision caveat"
+      },
+      "compiler_validation": {
+        "condition": "baseline",
+        "accepted": true,
+        "warnings": [],
+        "hiddenWarnings": [],
+        "elements": 10
+      },
+      "game_validation": {
+        "performed": false
+      }
+    },
+    {
+      "run_id": "old-wait",
+      "condition": "prior-search-skill",
+      "case_id": "wait-repeat",
+      "prompt": "This native rule uses Ongoing - Each Player, condition Is Button Held(Event Player, Button(Interact)) == True, and action Modify Player Variable(Event Player, Ticks, Add, 1). It increments only once while I keep holding the button. Make it increment every 0.1 seconds while held, stop on release, and explain why the original behaves that way. Give a complete small native Workshop example.",
+      "prompt_matches_cases_json": true,
+      "prompt_variant_note": null,
+      "raw_record": "raw/old-wait.json",
+      "raw_record_sha256": "71d0840f262cf72d82c608fa7c261f62dac3768f46dc323d2970198722cc53a9",
+      "read_path_base": "Run-local prior skill and archive fixture; its skills/overwatch-workshop path does not identify the new repository skill.",
+      "skill_version": "not recorded",
+      "content_snapshot_commit": null,
+      "read_metrics": {
+        "full_file_reads_recorded": 8,
+        "full_file_size_sum": 12970,
+        "full_file_size_unit": "self-reported character estimates; measurement method not confirmed",
+        "partial_file_reads_recorded": 0,
+        "partial_read_size_sum": 0,
+        "partial_read_size_unit": "self-reported displayed-character estimates; manually estimated for pair-health",
+        "search_calls_recorded": 6,
+        "search_output_size_sum": 12346,
+        "search_output_size_unit": "self-reported character estimates",
+        "actual_token_count": null,
+        "measurement_scope": "Reported displayed reference material only. Does not measure prompts, answers, bootstrap instructions, reasoning, tool wrappers or all repeated reads.",
+        "sum_of_reported_character_estimates": 25316,
+        "known_additional_repeated_read": {
+          "path": "skills/overwatch-workshop/SKILL.md",
+          "size_estimate": 1856,
+          "unit": "characters as reported for its first read",
+          "basis": "Run report explicitly says the skill body was loaded again through use-skill. This repeat is not an additional files_read entry.",
+          "combined_estimate_including_repeat": 27172
+        }
+      },
+      "grading": {
+        "dimensions": {
+          "semantics": {
+            "score": 2,
+            "evidence": "Explains ongoing condition activation and uses an abortable paced loop; immediate increment then repetition stops on observed release."
+          },
+          "dialect_api": {
+            "score": 2,
+            "evidence": "Complete native declaration/rule structure uses supported actions. Later pinned-compiler acceptance corroborates syntax."
+          },
+          "retrieval": {
+            "score": 1,
+            "evidence": "Selected relevant event, variable, action and wait articles, but six search outputs and a repeated skill-body load added substantial reading beyond the selected files."
+          },
+          "uncertainty": {
+            "score": 2,
+            "evidence": "Qualifies the archived 0.100-to-0.112-second wait rounding and separates documentation from current game behavior."
+          },
+          "validation_honesty": {
+            "score": 2,
+            "evidence": "Does not claim a compiler or game run while answering. Later orchestrator compiler checks are recorded separately."
+          }
+        },
+        "total": 9,
+        "maximum_applicable": 10,
+        "zero_semantics_or_api_failure": false,
+        "outcome": "core rubric satisfied; focused-retrieval caveat"
+      },
+      "compiler_validation": {
+        "condition": "old",
+        "accepted": true,
+        "warnings": [],
+        "hiddenWarnings": [],
+        "elements": 10
+      },
+      "game_validation": {
+        "performed": false
+      }
+    },
+    {
+      "run_id": "new-wait",
+      "condition": "new-skill-initial",
+      "case_id": "wait-repeat",
+      "prompt": "This native rule uses Ongoing - Each Player, condition Is Button Held(Event Player, Button(Interact)) == True, and action Modify Player Variable(Event Player, Ticks, Add, 1). It increments only once while I keep holding the button. Make it increment every 0.1 seconds while held, stop on release, and explain why the original behaves that way. Give a complete small native Workshop example.",
+      "prompt_matches_cases_json": true,
+      "prompt_variant_note": null,
+      "raw_record": "raw/new-wait.json",
+      "raw_record_sha256": "3fda97c0a1ca70fe587e2f692f023c95bfc2fbaed1c51560ae1e5ab2a35d2997",
+      "read_path_base": "New Workshop skill directory at the time of this initial run.",
+      "skill_version": "0.1.0 development draft",
+      "content_snapshot_commit": null,
+      "read_metrics": {
+        "full_file_reads_recorded": 11,
+        "full_file_size_sum": 24815,
+        "full_file_size_unit": "self-reported character estimates; measurement method not confirmed",
+        "partial_file_reads_recorded": 3,
+        "partial_read_size_sum": 234,
+        "partial_read_size_unit": "self-reported displayed-character estimates; manually estimated for pair-health",
+        "search_calls_recorded": 0,
+        "search_output_size_sum": 0,
+        "search_output_size_unit": "self-reported character estimates",
+        "actual_token_count": null,
+        "measurement_scope": "Reported displayed reference material only. Does not measure prompts, answers, bootstrap instructions, reasoning, tool wrappers or all repeated reads.",
+        "sum_of_reported_character_estimates": 25049
+      },
+      "grading": {
+        "dimensions": {
+          "semantics": {
+            "score": 2,
+            "evidence": "Explains ongoing condition activation and uses an abortable paced loop; immediate increment then repetition stops on observed release."
+          },
+          "dialect_api": {
+            "score": 2,
+            "evidence": "Complete native declaration/rule structure uses supported actions. Later pinned-compiler acceptance corroborates syntax."
+          },
+          "retrieval": {
+            "score": 1,
+            "evidence": "Used the required foundation, a relevant complete fixture and exact APIs, but loaded the broad execution guide and a second healing example for this small task."
+          },
+          "uncertainty": {
+            "score": 2,
+            "evidence": "Qualifies the archived 0.100-to-0.112-second wait rounding and separates documentation from current game behavior."
+          },
+          "validation_honesty": {
+            "score": 2,
+            "evidence": "Does not claim a compiler or game run while answering. Later orchestrator compiler checks are recorded separately."
+          }
+        },
+        "total": 9,
+        "maximum_applicable": 10,
+        "zero_semantics_or_api_failure": false,
+        "outcome": "core rubric satisfied; focused-retrieval caveat"
+      },
+      "compiler_validation": {
+        "condition": "new",
+        "accepted": true,
+        "warnings": [],
+        "hiddenWarnings": [],
+        "elements": 13
+      },
+      "game_validation": {
+        "performed": false
+      }
+    },
+    {
+      "run_id": "new-revised-wait",
+      "condition": "new-skill-revised-routing",
+      "case_id": "wait-repeat",
+      "prompt": "This native rule uses Ongoing - Each Player, condition Is Button Held(Event Player, Button(Interact)) == True, and action Modify Player Variable(Event Player, Ticks, Add, 1). It increments only once while I keep holding the button. Make it increment every 0.1 seconds while held, stop on release, and explain why the original behaves that way. Give a complete small native Workshop example.",
+      "prompt_matches_cases_json": true,
+      "prompt_variant_note": null,
+      "raw_record": "raw/new-revised-wait.json",
+      "raw_record_sha256": "e76620afbba589f0ea5f5b8bf6ae7e428b9c27912837562773b06cc9e028e9ab",
+      "read_path_base": "New Workshop skill directory after the first routing revision.",
+      "skill_version": "0.1.0 development draft",
+      "content_snapshot_commit": null,
+      "read_metrics": {
+        "full_file_reads_recorded": 18,
+        "full_file_size_sum": 27047,
+        "full_file_size_unit": "bytes",
+        "partial_file_reads_recorded": 2,
+        "partial_read_size_sum": 60,
+        "partial_read_size_unit": "self-reported displayed-character estimates; manually estimated for pair-health",
+        "search_calls_recorded": 0,
+        "search_output_size_sum": 0,
+        "search_output_size_unit": "self-reported character estimates",
+        "actual_token_count": null,
+        "measurement_scope": "Reported displayed reference material only. Does not measure prompts, answers, bootstrap instructions, reasoning, tool wrappers or all repeated reads.",
+        "sum_of_reported_character_estimates": null
+      },
+      "grading": {
+        "dimensions": {
+          "semantics": {
+            "score": 2,
+            "evidence": "Explains ongoing condition activation and uses an abortable paced loop; immediate increment then repetition stops on observed release."
+          },
+          "dialect_api": {
+            "score": 2,
+            "evidence": "Complete native declaration/rule structure uses supported actions. Later pinned-compiler acceptance corroborates syntax."
+          },
+          "retrieval": {
+            "score": 1,
+            "evidence": "Used the narrower waits guide and exact button/action entries; still loaded two examples plus the complete examples index and multiple catalog indexes. The record does not demonstrate a lower total reading cost."
+          },
+          "uncertainty": {
+            "score": 2,
+            "evidence": "Qualifies the archived 0.100-to-0.112-second wait rounding and separates documentation from current game behavior."
+          },
+          "validation_honesty": {
+            "score": 2,
+            "evidence": "Does not claim a compiler or game run while answering. Later orchestrator compiler checks are recorded separately."
+          }
+        },
+        "total": 9,
+        "maximum_applicable": 10,
+        "zero_semantics_or_api_failure": false,
+        "outcome": "core rubric satisfied; focused-retrieval caveat"
+      },
+      "compiler_validation": {
+        "condition": "new-revised",
+        "accepted": true,
+        "warnings": [],
+        "hiddenWarnings": [],
+        "elements": 13
+      },
+      "game_validation": {
+        "performed": false
+      }
+    },
+    {
+      "run_id": "pair-health",
+      "condition": "new-matched-pair",
+      "case_id": "overpy-routing",
+      "prompt": "My OverPy player.getHealth() call compiles. Does using OverPy change what armor and shields count toward? Explain briefly and cite the relevant local reference.",
+      "prompt_matches_cases_json": false,
+      "prompt_variant_note": "Adds the premise that the call compiles; this is a related smoke test, not the exact cases.json prompt.",
+      "raw_record": "raw/pair-health.json",
+      "raw_record_sha256": "01e84fabfbdf9bc428e65f641c97a357ba0e52805e88a04bf183da06b62693f3",
+      "read_path_base": "Parent directory containing the matched overpy and overwatch-workshop skill folders.",
+      "skill_version": "0.1.0 development draft",
+      "content_snapshot_commit": null,
+      "read_metrics": {
+        "full_file_reads_recorded": 11,
+        "full_file_size_sum": 26524,
+        "full_file_size_unit": "bytes",
+        "partial_file_reads_recorded": 2,
+        "partial_read_size_sum": 1511,
+        "partial_read_size_unit": "self-reported displayed-character estimates; manually estimated for pair-health",
+        "search_calls_recorded": 0,
+        "search_output_size_sum": 0,
+        "search_output_size_unit": "self-reported character estimates",
+        "actual_token_count": null,
+        "measurement_scope": "Reported displayed reference material only. Does not measure prompts, answers, bootstrap instructions, reasoning, tool wrappers or all repeated reads.",
+        "sum_of_reported_character_estimates": null
+      },
+      "grading": {
+        "dimensions": {
+          "semantics": {
+            "score": 2,
+            "evidence": "Correctly says getHealth maps to native Health and includes current armor and shields as well as base health."
+          },
+          "dialect_api": {
+            "score": 2,
+            "evidence": "Names receiver.getHealth and cites the exact OverPy member entry plus native Health entry."
+          },
+          "retrieval": {
+            "score": 1,
+            "evidence": "Resolved the matching Workshop companion, read both foundations once, avoided native-authoring, and reused shared semantics. The 7,067-byte combat guide and 2,623-byte g-index made retrieval broader than needed for a named-API fact."
+          },
+          "uncertainty": {
+            "score": 2,
+            "evidence": "Labels the answer documentation-based and explicitly distinguishes successful compilation from live game verification."
+          },
+          "validation_honesty": {
+            "score": 2,
+            "evidence": "No compiler or game run claimed. The reference to successful compilation comes from the actual prompt premise, not an independently performed check."
+          }
+        },
+        "total": 9,
+        "maximum_applicable": 10,
+        "zero_semantics_or_api_failure": false,
+        "outcome": "core rubric satisfied; focused-retrieval caveat"
+      },
+      "compiler_validation": {
+        "performed": false,
+        "reason": "Explanatory mapping smoke test; prompt supplied compilation as a premise."
+      },
+      "game_validation": {
+        "performed": false
+      },
+      "companion_resolution": {
+        "method": "packaged sibling",
+        "path": "overwatch-workshop/SKILL.md",
+        "name": "overwatch-workshop",
+        "required_version": "0.1.0",
+        "found_version": "0.1.0",
+        "compatible": true
+      }
+    }
+  ],
+  "case_coverage": [
+    {
+      "case_id": "wait-repeat",
+      "status": "performed",
+      "run_ids": [
+        "baseline-wait",
+        "old-wait",
+        "new-wait",
+        "new-revised-wait"
+      ]
+    },
+    {
+      "case_id": "wait-overuse",
+      "status": "unrun",
+      "run_ids": []
+    },
+    {
+      "case_id": "event-context",
+      "status": "unrun",
+      "run_ids": []
+    },
+    {
+      "case_id": "array-copy",
+      "status": "unrun",
+      "run_ids": []
+    },
+    {
+      "case_id": "reevaluation",
+      "status": "unrun",
+      "run_ids": []
+    },
+    {
+      "case_id": "owner-leaves",
+      "status": "unrun",
+      "run_ids": []
+    },
+    {
+      "case_id": "raycast-miss",
+      "status": "unrun",
+      "run_ids": []
+    },
+    {
+      "case_id": "hero-exception",
+      "status": "unrun",
+      "run_ids": []
+    },
+    {
+      "case_id": "invented-api",
+      "status": "unrun",
+      "run_ids": []
+    },
+    {
+      "case_id": "python-confusion",
+      "status": "unrun",
+      "run_ids": []
+    },
+    {
+      "case_id": "missing-companion",
+      "status": "unrun",
+      "run_ids": []
+    },
+    {
+      "case_id": "missing-compiler",
+      "status": "unrun",
+      "run_ids": []
+    },
+    {
+      "case_id": "conflicting-source",
+      "status": "unrun",
+      "run_ids": []
+    },
+    {
+      "case_id": "simple-native-routing",
+      "status": "unrun",
+      "run_ids": []
+    },
+    {
+      "case_id": "overpy-routing",
+      "status": "performed-prompt-variant-only",
+      "run_ids": [
+        "pair-health"
+      ]
+    }
+  ],
+  "summary": {
+    "performed_runs": 5,
+    "exact_case_prompts_performed": 1,
+    "additional_case_prompt_variants_performed": 1,
+    "unrun_cases": 13,
+    "native_answers_accepted_by_pinned_compiler": 4,
+    "native_compiler_warnings": 0,
+    "game_tests": 0,
+    "statistical_superiority_claimed": false,
+    "token_savings_demonstrated": false
+  }
+}

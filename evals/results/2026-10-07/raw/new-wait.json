@@ -1,0 +1,84 @@
+{
+  "condition": "new-skill",
+  "case_id": "wait-repeat",
+  "answer": "`Ongoing - Each Player` triggers when its conditions become true. It does not continuously rerun its actions while they stay true. Your original rule increments once on the press; releasing Interact makes the condition false and rearms it for the next press.\n\nThis complete native Workshop example keeps a separate counter for each player, initializes it on player load, increments immediately on pressing Interact, and then repeats with a requested 0.1-second pause:\n\n```text\nvariables\n{\n    player:\n        0: Ticks\n}\n\nrule(\"Initialize Ticks\")\n{\n    event\n    {\n        Ongoing - Each Player;\n        All;\n        All;\n    }\n    actions\n    {\n        Event Player.Ticks = 0;\n    }\n}\n\nrule(\"Count while Interact is held\")\n{\n    event\n    {\n        Ongoing - Each Player;\n        All;\n        All;\n    }\n    conditions\n    {\n        Is Button Held(Event Player, Button(Interact)) == True;\n    }\n    actions\n    {\n        Modify Player Variable(Event Player, Ticks, Add, 1);\n        Wait(0.1, Abort When False);\n        Loop If Condition Is True;\n    }\n}\n```\n\n`Wait` paces the repetition. `Abort When False` ends the running action list when Interact is released during the wait. `Loop If Condition Is True` restarts the actions only while the rule's condition still holds. Releasing stops increments; pressing again resumes from the existing total.\n\nTiming caveat: the bundled archived documentation reports that ordinary-map waits round upward to 0.016-second steps, so `Wait(0.1, ...)` takes approximately 0.112 seconds, not exactly 0.100. Practice Range timing is also reported to differ.\n\nValidation: checked the native structure, variable declaration, action signatures, and loop/cancellation behavior against the skill's bundled references (archive snapshot 2026-09-29). This example is uncompiled and has not been tested in game. Paste the variable declaration and rules into the appropriate Workshop editor context, then watch each player's `Ticks` in the Inspector while holding, releasing, and pressing Interact again. Test on the intended map/mode; after release, the total should remain steady until the next press.",
+  "files_read": [
+    {
+      "path": "SKILL.md",
+      "read_mode": "full",
+      "characters_read_estimate": 1715
+    },
+    {
+      "path": "references/foundation.md",
+      "read_mode": "full",
+      "characters_read_estimate": 4680
+    },
+    {
+      "path": "references/native-authoring.md",
+      "read_mode": "full",
+      "characters_read_estimate": 4482
+    },
+    {
+      "path": "references/execution.md",
+      "read_mode": "full",
+      "characters_read_estimate": 8468
+    },
+    {
+      "path": "references/api/index.md",
+      "read_mode": "full",
+      "characters_read_estimate": 903
+    },
+    {
+      "path": "examples/native-interact-counter.workshop",
+      "read_mode": "full",
+      "characters_read_estimate": 604
+    },
+    {
+      "path": "examples/native-held-healing.workshop",
+      "read_mode": "full",
+      "characters_read_estimate": 408
+    },
+    {
+      "path": "references/api/actions/index.md",
+      "read_mode": "full",
+      "characters_read_estimate": 741
+    },
+    {
+      "path": "references/api/actions/modify-player-variable.md",
+      "read_mode": "full",
+      "characters_read_estimate": 1312
+    },
+    {
+      "path": "references/api/actions/wait.md",
+      "read_mode": "full",
+      "characters_read_estimate": 904
+    },
+    {
+      "path": "references/api/actions/loop-if-condition-is-true.md",
+      "read_mode": "full",
+      "characters_read_estimate": 598
+    },
+    {
+      "path": "references/api/actions/index-m.md",
+      "read_mode": "partial",
+      "characters_read_estimate": 126
+    },
+    {
+      "path": "references/api/actions/index-l.md",
+      "read_mode": "partial",
+      "characters_read_estimate": 60
+    },
+    {
+      "path": "references/api/actions/index-w.md",
+      "read_mode": "partial",
+      "characters_read_estimate": 48
+    }
+  ],
+  "validation_performed": {
+    "static_review": "Checked complete native rule structure, per-player declaration and initialization, semicolons, event filters, Modify Player Variable and Wait argument order, Loop If Condition Is True spelling, edge-trigger explanation, cancellation on release, and documented Wait rounding against the listed bundled files.",
+    "compiler": "Not performed; no compiler available for this case.",
+    "game": "Not performed; no game access for this case.",
+    "browsing": "Not performed.",
+    "evidence_scope": "Only the new Workshop skill and its bundled references were used for the answer."
+  }
+}

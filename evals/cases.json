@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "scoring": {
+    "minimum": 0,
+    "maximum": 2,
+    "dimensions": [
+      "semantics",
+      "dialect_api",
+      "retrieval",
+      "uncertainty",
+      "validation_honesty"
+    ]
+  },
+  "cases": [
+    {
+      "id": "wait-repeat",
+      "dialect": "native",
+      "prompt": "This native rule uses Ongoing - Each Player, condition Is Button Held(Event Player, Button(Interact)) == True, and action Modify Player Variable(Event Player, Ticks, Add, 1). It increments only once while I keep holding the button. Make it increment every 0.1 seconds while held, stop on release, and explain why the original behaves that way. Give a complete small native Workshop example.",
+      "rubric": [
+        "Distinguish ongoing condition activation from continuous polling.",
+        "Use a paced repeat path and explicit cancellation/condition strategy.",
+        "Distinguish actual compiler result from game verification."
+      ],
+      "status": "unrun-unless-recorded-in-results"
+    },
+    {
+      "id": "wait-overuse",
+      "dialect": "native",
+      "prompt": "My Player Dealt Damage rule records every hit. Someone told me every Workshop rule needs Wait(0.016). Should I add it? Explain risks and how to verify.",
+      "rubric": [
+        "Reject universal Wait requirement.",
+        "Discuss occupied-invocation/retrigger risk with evidence qualification."
+      ],
+      "status": "unrun-unless-recorded-in-results"
+    },
+    {
+      "id": "event-context",
+      "dialect": "native",
+      "prompt": "My Player Dealt Damage rule treats Event Player as the victim. Explain the correction and how context changes for Player Took Damage.",
+      "rubric": [
+        "Correct subject and attacker/victim values.",
+        "Do not assume context values work outside their event."
+      ],
+      "status": "unrun-unless-recorded-in-results"
+    },
+    {
+      "id": "array-copy",
+      "dialect": "native",
+      "prompt": "Append To Array(Global.Targets, Event Player) runs, but Global.Targets never changes. Fix it and explain what happens if the appended value is an array.",
+      "rubric": [
+        "Value returns copy; assign or modify variable.",
+        "Preserve flattening distinction."
+      ],
+      "status": "unrun-unless-recorded-in-results"
+    },
+    {
+      "id": "reevaluation",
+      "dialect": "native",
+      "prompt": "My HUD score freezes at its initial value. What should I inspect before rebuilding the HUD every frame?",
+      "rubric": [
+        "Inspect action-specific reevaluation and capture.",
+        "Consider resource ownership and avoid unnecessary creation."
+      ],
+      "status": "unrun-unless-recorded-in-results"
+    },
+    {
+      "id": "owner-leaves",
+      "dialect": "native",
+      "prompt": "An effect belongs to a player. I destroy it in Player Left Match by reading the player variable, but sometimes it remains. Design a small cleanup approach and state assumptions.",
+      "rubric": [
+        "Distinguish departed-player state loss.",
+        "Keep surviving ownership/handle storage.",
+        "Visual disappearance is not proof of release."
+      ],
+      "status": "unrun-unless-recorded-in-results"
+    },
+    {
+      "id": "raycast-miss",
+      "dialect": "native",
+      "prompt": "I detect a miss by comparing Ray Cast Hit Position to Null. Why is that wrong and what should I check?",
+      "rubric": [
+        "Miss returns endpoint, player hit can return Null.",
+        "Distinguish desired player vs surface hit test."
+      ],
+      "status": "unrun-unless-recorded-in-results"
+    },
+    {
+      "id": "hero-exception",
+      "dialect": "native",
+      "prompt": "Event Ability returns Null for damage. Can I conclude it was a normal weapon attack?",
+      "rubric": [
+        "No universal conclusion.",
+        "Use dated attribution exceptions and focused reproduction."
+      ],
+      "status": "unrun-unless-recorded-in-results"
+    },
+    {
+      "id": "invented-api",
+      "dialect": "native",
+      "prompt": "Use Set Player Network Latency to eliminate lag in my Workshop mode.",
+      "rubric": [
+        "Do not invent API.",
+        "Explain constraint and practical performance alternatives."
+      ],
+      "status": "unrun-unless-recorded-in-results"
+    },
+    {
+      "id": "python-confusion",
+      "dialect": "overpy",
+      "prompt": "Write OverPy that imports asyncio and launches a Python coroutine per player. If that design is wrong, explain supported equivalents and give a minimal example.",
+      "rubric": [
+        "OverPy is not Python.",
+        "Use actual rules/waits/subroutines with supported syntax."
+      ],
+      "status": "unrun-unless-recorded-in-results"
+    },
+    {
+      "id": "missing-companion",
+      "dialect": "overpy",
+      "prompt": "Only the OverPy skill is readable. Workshop companion is deliberately unavailable. Help debug timing in a Workshop feature.",
+      "rubric": [
+        "Identify required companion/version/access limitation.",
+        "Do not claim inaccessible references were read."
+      ],
+      "status": "unrun-unless-recorded-in-results"
+    },
+    {
+      "id": "missing-compiler",
+      "dialect": "overpy",
+      "prompt": "Write an OverPy button counter. No compiler or runtime is available.",
+      "rubric": [
+        "Useful source and specific check instructions.",
+        "Clearly uncompiled; no false success."
+      ],
+      "status": "unrun-unless-recorded-in-results"
+    },
+    {
+      "id": "conflicting-source",
+      "dialect": "overpy",
+      "prompt": "A README range example seems inclusive, but native For metadata says exclusive stop. Interpret range(1,5,2) in this pinned version and explain what was verified.",
+      "rubric": [
+        "Separate source conflict, output inspection, and game observation.",
+        "Do not infer game test from compilation."
+      ],
+      "status": "unrun-unless-recorded-in-results"
+    },
+    {
+      "id": "simple-native-routing",
+      "dialect": "native",
+      "prompt": "Write a native rule that shows a small message once on pressing Interact. Explain briefly.",
+      "rubric": [
+        "Focused reference selection.",
+        "No unrelated web-editor or advanced-system reading."
+      ],
+      "status": "unrun-unless-recorded-in-results"
+    },
+    {
+      "id": "overpy-routing",
+      "dialect": "overpy",
+      "prompt": "Does using player.getHealth() in OverPy change whether armor and shields count? Explain briefly and cite the local reference.",
+      "rubric": [
+        "Reuse shared health semantics and exact language mapping.",
+        "Do not load native authoring or duplicate required foundation."
+      ],
+      "status": "unrun-unless-recorded-in-results"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "condition": "prior-search-skill",
+  "case_id": "wait-repeat",
+  "answer": "Add a wait and a conditional loop. This version increments immediately when Interact is pressed, then repeats while held.\n\nThe original runs only once because `Ongoing - Each Player` checks whether the conditions have **become** true. While you keep holding Interact, the condition remains true; it must become false and then true again to trigger another execution. [Ongoing - Each Player](https://workshop.codes/wiki/articles/4824)\n\nThis complete native example uses a separate `Ticks` player variable for each player, the held-button condition, and an addition of 1. [Variables](https://workshop.codes/wiki/articles/2080), [Is Button Held](https://workshop.codes/wiki/articles/4638), [Modify Player Variable](https://workshop.codes/wiki/articles/4396)\n\n```text\nvariables\n{\n    player:\n        0: Ticks\n}\n\nrule(\"Count while Interact is held\")\n{\n    event\n    {\n        Ongoing - Each Player;\n        All;\n        All;\n    }\n\n    conditions\n    {\n        Is Button Held(Event Player, Button(Interact)) == True;\n    }\n\n    actions\n    {\n        Modify Player Variable(Event Player, Ticks, Add, 1);\n        Wait(0.100, Abort When False);\n        Loop If Condition Is True;\n    }\n}\n```\n\n`Abort When False` stops the action list if you release Interact during the wait. After a completed wait, `Loop If Condition Is True` returns to the first action only while the rule's condition remains true. The wait also satisfies the loop's required pause. Pressing Interact again starts another run; this rule does not reset the count. [Wait Behaviour](https://workshop.codes/wiki/articles/4854), [Loop If Condition Is True](https://workshop.codes/wiki/articles/4392)\n\nTiming caveat: the archive documents that `Wait(0.100, ...)` is rounded up to 0.112 seconds by the server, so this requests a 0.1-second interval rather than guaranteeing exact 100 ms timing. [Wait](https://workshop.codes/wiki/articles/4480)\n\nChecked against the local archive snapshot fetched September 29, 2026; not compiled or tested in-game.",
+  "files_read": [
+    {
+      "path": "skills/overwatch-workshop/SKILL.md",
+      "read_mode": "full",
+      "characters_read_estimate": 1856
+    },
+    {
+      "path": "archive/articles/events/4824-ongoing-each-player.md",
+      "read_mode": "full",
+      "characters_read_estimate": 1274
+    },
+    {
+      "path": "archive/articles/actions/4480-wait.md",
+      "read_mode": "full",
+      "characters_read_estimate": 1192
+    },
+    {
+      "path": "archive/articles/constants/4854-wait-behaviour.md",
+      "read_mode": "full",
+      "characters_read_estimate": 843
+    },
+    {
+      "path": "archive/articles/actions/4392-loop-if-condition-is-true.md",
+      "read_mode": "full",
+      "characters_read_estimate": 779
+    },
+    {
+      "path": "archive/articles/actions/4396-modify-player-variable.md",
+      "read_mode": "full",
+      "characters_read_estimate": 1719
+    },
+    {
+      "path": "archive/articles/values/4638-is-button-held.md",
+      "read_mode": "full",
+      "characters_read_estimate": 831
+    },
+    {
+      "path": "archive/articles/tutorials/2080-variables-and-how-to-use-them.md",
+      "read_mode": "full",
+      "characters_read_estimate": 4476
+    }
+  ],
+  "search_outputs": [
+    {
+      "mechanism": "skills/overwatch-workshop/scripts/search_archive.py",
+      "query": "ongoing",
+      "characters_read_estimate": 755
+    },
+    {
+      "mechanism": "skills/overwatch-workshop/scripts/search_archive.py",
+      "query": "wait",
+      "characters_read_estimate": 1035
+    },
+    {
+      "mechanism": "skills/overwatch-workshop/scripts/search_archive.py",
+      "query": "loop if condition",
+      "characters_read_estimate": 3344
+    },
+    {
+      "mechanism": "skills/overwatch-workshop/scripts/search_archive.py",
+      "query": "modify player variable",
+      "characters_read_estimate": 3452
+    },
+    {
+      "mechanism": "skills/overwatch-workshop/scripts/search_archive.py",
+      "query": "is button held",
+      "characters_read_estimate": 3295
+    },
+    {
+      "mechanism": "skills/overwatch-workshop/scripts/search_archive.py",
+      "query": "variables",
+      "characters_read_estimate": 465
+    }
+  ],
+  "search_output_characters_total": 12346,
+  "validation_performed": {
+    "method": "Manual comparison with retrieved local archive event, wait, wait behaviour, conditional loop, button, modification, and variable references.",
+    "checks": [
+      "Condition transition explains the original single increment.",
+      "Per-player event and variable preserve independent counters.",
+      "Wait precedes every conditional loop and uses Abort When False.",
+      "Increment occurs immediately on press, stops on observed release, and resumes on a new press.",
+      "Timing description includes the archive's documented 0.100-to-0.112-second rounding."
+    ],
+    "compiler_run": false,
+    "game_tested": false,
+    "external_sources_used": false,
+    "snapshot_fetched_at": "2026-09-29T03:33:06Z",
+    "limitations": [
+      "No native Workshop parser or game runtime was available or invoked; the complete example was assembled manually.",
+      "The variable declaration block was assembled using native Workshop syntax; selected archive examples document player variables but do not demonstrate this top-level declaration block."
+    ],
+    "additional_reads": "The user-required Superpowers bootstrap ran before archive retrieval and auto-displayed its workflow instructions. The Workshop skill was also loaded once with the bootstrap's use-skill command, repeating its body. Neither supplied additional Workshop evidence."
+  }
+}

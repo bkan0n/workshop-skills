@@ -1,0 +1,108 @@
+{
+  "condition": "new-skill-revised-routing",
+  "case_id": "wait-repeat",
+  "answer": "Add an abortable wait and loop back while the rule’s condition remains true. This complete small native rule set gives each player a counter, increments immediately when Interact is pressed, and then repeats with a requested 0.1-second delay while held. Releasing stops it; pressing again resumes counting.\n\n```workshop\nvariables\n{\n    player:\n        0: Ticks\n}\n\nrule(\"Initialize each player's counter\")\n{\n    event\n    {\n        Ongoing - Each Player;\n        All;\n        All;\n    }\n    actions\n    {\n        Event Player.Ticks = 0;\n    }\n}\n\nrule(\"Count while Interact is held\")\n{\n    event\n    {\n        Ongoing - Each Player;\n        All;\n        All;\n    }\n    conditions\n    {\n        Is Button Held(Event Player, Button(Interact)) == True;\n    }\n    actions\n    {\n        Modify Player Variable(Event Player, Ticks, Add, 1);\n        Wait(0.1, Abort When False);\n        Loop If Condition Is True;\n    }\n}\n```\n\n`Ongoing - Each Player` is edge-triggered: the actions start when all conditions become true. Keeping Interact held leaves the condition true, so your original one-action rule finishes and does not trigger again until release and another press. `Loop If Condition Is True` explicitly repeats the actions; `Wait` paces those repetitions. `Abort When False` ends the running action list when you release during the wait.\n\nTiming caveat: the bundled documentation’s 2026-09-29 snapshot reports ordinary-map waits rounded up to 16 ms multiples, so `Wait(0.1, ...)` takes approximately 0.112 seconds rather than an exact 0.100 seconds. Check cadence on your intended map; Practice Range is documented as having different timing.\n\nValidation: checked the structure, declarations, action signatures, and control flow against the bundled native fixtures and API references. This new example is uncompiled and has not been imported or game-tested. Paste it into the Workshop rule editor of a custom game, then watch `Ticks` in the Inspector while holding, releasing, and pressing again; another player should have an independent counter.",
+  "files_read": [
+    {
+      "path": "SKILL.md",
+      "read_mode": "full",
+      "characters_read_estimate": 1715
+    },
+    {
+      "path": "references/foundation.md",
+      "read_mode": "full",
+      "characters_read_estimate": 4772
+    },
+    {
+      "path": "references/native-authoring.md",
+      "read_mode": "full",
+      "characters_read_estimate": 4622
+    },
+    {
+      "path": "references/api/index.md",
+      "read_mode": "full",
+      "characters_read_estimate": 903
+    },
+    {
+      "path": "references/waits.md",
+      "read_mode": "full",
+      "characters_read_estimate": 4456
+    },
+    {
+      "path": "examples/native-interact-counter.workshop",
+      "read_mode": "full",
+      "characters_read_estimate": 604
+    },
+    {
+      "path": "examples/native-held-healing.workshop",
+      "read_mode": "full",
+      "characters_read_estimate": 408
+    },
+    {
+      "path": "examples/index.md",
+      "read_mode": "full",
+      "characters_read_estimate": 3088
+    },
+    {
+      "path": "references/api/actions/index.md",
+      "read_mode": "full",
+      "characters_read_estimate": 777
+    },
+    {
+      "path": "references/api/values/index.md",
+      "read_mode": "full",
+      "characters_read_estimate": 943
+    },
+    {
+      "path": "references/api/actions/index-w.md",
+      "read_mode": "full",
+      "characters_read_estimate": 98
+    },
+    {
+      "path": "references/api/actions/index-l.md",
+      "read_mode": "full",
+      "characters_read_estimate": 236
+    },
+    {
+      "path": "references/api/actions/index-m.md",
+      "read_mode": "full",
+      "characters_read_estimate": 422
+    },
+    {
+      "path": "references/api/actions/wait.md",
+      "read_mode": "full",
+      "characters_read_estimate": 908
+    },
+    {
+      "path": "references/api/actions/loop-if-condition-is-true.md",
+      "read_mode": "full",
+      "characters_read_estimate": 598
+    },
+    {
+      "path": "references/api/actions/modify-player-variable.md",
+      "read_mode": "full",
+      "characters_read_estimate": 1320
+    },
+    {
+      "path": "references/api/values/is-button-held.md",
+      "read_mode": "full",
+      "characters_read_estimate": 641
+    },
+    {
+      "path": "references/api/values/button.md",
+      "read_mode": "full",
+      "characters_read_estimate": 536
+    },
+    {
+      "path": "references/api/values/index-i.md",
+      "read_mode": "partial",
+      "characters_read_estimate": 38
+    },
+    {
+      "path": "references/api/values/index-b.md",
+      "read_mode": "partial",
+      "characters_read_estimate": 22
+    }
+  ],
+  "validation_performed": "Read the local skill entrypoint, foundation, waits and native-authoring routes; adapted the complete interact-counter and held-healing fixtures. Manually checked variable declarations, native event structure, braces/semicolons, Modify Player Variable argument order, Wait argument order and abort semantics, and Loop If Condition Is True against bundled API entries. No browser, compiler, game, expected answer, previous evaluation or project research/spec/evals was used. The mandated generic bootstrap was executed; no global Workshop skill was loaded. Character estimates use byte sizes for full displayed files and matching displayed-line lengths for the two partial indexes."
+}

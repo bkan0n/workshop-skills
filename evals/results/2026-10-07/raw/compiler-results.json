@@ -1,0 +1,23 @@
+[
+  {
+    "condition": "baseline",
+    "accepted": true,
+    "warnings": [],
+    "hiddenWarnings": [],
+    "elements": 10
+  },
+  {
+    "condition": "old",
+    "accepted": true,
+    "warnings": [],
+    "hiddenWarnings": [],
+    "elements": 10
+  },
+  {
+    "condition": "new",
+    "accepted": true,
+    "warnings": [],
+    "hiddenWarnings": [],
+    "elements": 13
+  }
+]
