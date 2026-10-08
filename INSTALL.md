@@ -80,7 +80,7 @@ Place the extracted skill folders in the host's skill location, preserving all b
     examples/...
 ```
 
-Copying only `SKILL.md` breaks the reference links. Keep the package's license and source notices with your retained distribution. `RELEASE.json` identifies versions, source locks, and file hashes; `SHA256SUMS` accompanies built packages. Build tools, dependency caches, and the raw research archive do not belong in the installed skill directories.
+Copying only `SKILL.md` breaks the reference links. The Workshop skill's `references/wiki/archive/` contains all 630 full article bodies and must be copied with it. These are optional references read one article at a time. Keep the package's license and source notices with your retained distribution. `RELEASE.json` identifies versions, source locks, and file hashes; `SHA256SUMS` accompanies built packages. Build tools, dependency caches, and raw API page caches do not belong in the installed skill directories.
 
 ## Confirm setup and update the pair
 
@@ -90,4 +90,4 @@ A host that isolates skill directories must expose both roots and allow the Over
 
 Before updating, preserve personal modifications and check for older copies of either skill in other project/global locations. Update both from the same source release and confirm their version metadata agrees. Reinstall from the updated local checkout or chosen published source, or replace the complete manually installed folders with the matched archive; avoid merging new files into an old folder and leaving obsolete references behind. An unrelated Workshop skill with the same name is not an interchangeable companion.
 
-Normal use needs only Markdown/file access. Node, Python, the OverPy compiler, and network access are not required to read the installed skills. Compilation is an optional project tool; the agent should state when code has not been compiled. No game behavior in this initial release is claimed to have been independently tested in-game.
+Normal use needs only Markdown/file access. Node, Python, the OverPy compiler, and network access are not required to read the installed skills. Compilation is an optional project tool; the agent should state when code has not been compiled. The installed wiki is the source of truth for runtime behavior; use its local articles directly.

@@ -6697,5 +6697,54 @@
     "key": "timeToString",
     "name": "timeToString(time)",
     "path": "skills/overpy/references/api/macros/time-to-string.md"
+  },
+  {
+    "dialect": "overpy",
+    "kind": "modules",
+    "key": "random.choice",
+    "name": "random.choice(ARRAY)",
+    "path": "skills/overpy/references/api/modules/random-choice.md"
+  },
+  {
+    "dialect": "overpy",
+    "kind": "modules",
+    "key": "random.randint",
+    "name": "random.randint(MIN, MAX)",
+    "path": "skills/overpy/references/api/modules/random-randint.md"
+  },
+  {
+    "dialect": "overpy",
+    "kind": "modules",
+    "key": "random.shuffle",
+    "name": "random.shuffle(ARRAY)",
+    "path": "skills/overpy/references/api/modules/random-shuffle.md"
+  },
+  {
+    "dialect": "overpy",
+    "kind": "modules",
+    "key": "random.uniform",
+    "name": "random.uniform(MIN, MAX)",
+    "path": "skills/overpy/references/api/modules/random-uniform.md"
+  },
+  {
+    "dialect": "overpy",
+    "kind": "members",
+    "key": "x",
+    "name": "Vector.x",
+    "path": "skills/overpy/references/api/members/x.md"
+  },
+  {
+    "dialect": "overpy",
+    "kind": "members",
+    "key": "y",
+    "name": "Vector.y",
+    "path": "skills/overpy/references/api/members/y.md"
+  },
+  {
+    "dialect": "overpy",
+    "kind": "members",
+    "key": "z",
+    "name": "Vector.z",
+    "path": "skills/overpy/references/api/members/z.md"
   }
 ]

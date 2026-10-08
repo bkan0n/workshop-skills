@@ -7,7 +7,7 @@
   "context": [
     "Rows are left operands; columns are right operands. Each category names a representative harness value, not every possible same-type value.",
     "Five operators were measured: ==, >, <, >=, <=. There is no != measurement table.",
-    "Archived measurements: 2024-04-22, patch 2.10.0.0.124591; page edited later. C89J3 is the source-reported verification code. These results were not independently reproduced."
+    "Archived measurements: 2024-04-22, patch 2.10.0.0.124591; page edited later. C89J3 is the source-reported verification code."
   ],
   "tables": [
     {

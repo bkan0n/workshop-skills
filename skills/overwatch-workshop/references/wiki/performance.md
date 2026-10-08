@@ -4,7 +4,7 @@
 
 Read for server load, condition invalidation, burst limits, profiling and element-count rules.
 
-Select the relevant entry. Each entry preserves its archived source, edit date and uncertainty; these are not independent current-game verification.
+Select the relevant entry. Each entry links to its trusted local wiki source.
 
 ## Entries
 

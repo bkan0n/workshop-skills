@@ -33,4 +33,4 @@ Offline source details: [authoring](wiki/authoring.md).
 
 ## Evidence
 
-Archived documentation, snapshot **2026-09-29**: [Workshop Basics](https://workshop.codes/wiki/articles/1840) (edited 2023-04-11), [C-style syntax](https://workshop.codes/wiki/articles/4852) (2024-11-26), [Subroutine](https://workshop.codes/wiki/articles/1292) (2021-03-18), [Boolean XOR/XNOR](https://workshop.codes/wiki/articles/4833), [import codes](https://workshop.codes/wiki/articles/2042) (2024-01-03), [If examples](https://workshop.codes/wiki/articles/6067) (2025-05-25), [variable tutorial](https://workshop.codes/wiki/articles/2080) (2024-01-28). No game test is implied by these dates.
+Wiki sources: [Workshop Basics](wiki/articles/1840.md#wiki-1840) (edited 2023-04-11), [C-style syntax](wiki/articles/4852.md#wiki-4852) (2024-11-26), [Subroutine](wiki/articles/1292.md#wiki-1292) (2021-03-18), [Boolean XOR/XNOR](wiki/articles/4833.md#wiki-4833), [import codes](wiki/articles/2042.md#wiki-2042) (2024-01-03), [If examples](api/actions/if.md) (2025-05-25), [variable tutorial](wiki/articles/2080.md#wiki-2080) (2024-01-28).

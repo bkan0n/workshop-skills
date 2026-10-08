@@ -1,6 +1,6 @@
 # Texture
 
-Custom textures. See #!setupTx and https://workshop.codes/wiki/articles/tx-reference-sheet for more information.
+Custom textures. See #!setupTx and [TX Reference Sheet](../../../../overwatch-workshop/references/wiki/archive/9562.md) for more information.
 
 
 | OverPy symbol | Note |
@@ -99,4 +99,4 @@ Custom textures. See #!setupTx and https://workshop.codes/wiki/articles/tx-refer
 | `Texture.WORKSHOP` | `<txc0000000001f70d>` |
 | `Texture.Y_BUTTON` | `<txc000000000044b2>` |
 
-Source: [OverPy 9.7.17](https://github.com/Zezombye/overpy/tree/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src). Generated from pinned initialized exports. Engine behavior is not independently game-tested.
+Source: [OverPy 9.7.17](https://github.com/Zezombye/overpy/tree/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src). Generated from pinned initialized exports.

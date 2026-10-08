@@ -4,7 +4,9 @@
 
 Open only the topic that matches the current task. These supplements retain wiki-specific exceptions and measured data; ordinary API signatures live in the pinned API catalog.
 
-All claims here come from archived documentation. None is independently verified in the current game. Patched and contradictory reports are retained with their context, not promoted to current guarantees.
+Workshop.codes wiki articles are the trusted source of truth. Maintenance automatically updates these local references from the wiki.
+
+For original wording or a source omitted from the guides, use the [full local article archive](archive/index.md). All 630 source articles are installed; open only the relevant article and do not fetch website links.
 
 ## Select a topic
 
@@ -74,6 +76,6 @@ These files are optional lookup data. Read the linked behavior notes for units, 
 
 - [First-person weapon attachment offsets](tables/9331.md) — source 9331, edited 2026-07-18.
 
-- [Hero API compatibility matrices](tables/9463.md) — source 9463, edited 2026-08-13.
+- [Hero API compatibility matrices](tables/9463.md) — source 9463, edited 2026-10-07.
 
 - [Texture code lookup](tables/9562.md) — source 9562, edited 2026-08-27.

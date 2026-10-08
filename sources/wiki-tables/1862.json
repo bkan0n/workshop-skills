@@ -5,7 +5,7 @@
   "evidence_status": "archived-documentation",
   "behavioral_test_date": null,
   "context": [
-    "Source economy dated 2023-04-13: each disabled player slot earns4points; enabling only Workshop maps earns16points. Exact availability and capacity require current-build verification.",
+    "Source economy dated 2023-04-13: each disabled player slot earns4points; enabling only Workshop maps earns16points.",
     "The effect-count description is broad. Play Effect one-shot visuals and persistent Create Effect handles have different lifecycle/capacity behavior; do not use this table to infer unlimited execution cost."
   ],
   "tables": [

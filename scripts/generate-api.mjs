@@ -12,6 +12,7 @@ const COMMIT = '5a7d0e294b8cad73b9701987bb584d0551d7fa4d';
 const SOURCE = `https://github.com/Zezombye/overpy/tree/${COMMIT}/src`;
 const WORKSHOP = 'skills/overwatch-workshop/references/api';
 const OVERPY = 'skills/overpy/references/api';
+const USAGE = 'sources/api-usage.json';
 const GROUPS = ['actionKw', 'valueFuncKw', 'constantValues', 'annotations', 'eventKw', 'eventTeamKw', 'eventSlotKw', 'eventPlayerKw', 'heroKw', 'mapKw', 'opyFuncs', 'opyMemberFuncs', 'opyKeywords', 'opyConstants', 'opyModules', 'opyMacros', 'preprocessingDirectives', 'customGameSettingsSchema'];
 const compare = (a, b) => a < b ? -1 : a > b ? 1 : 0;
 export const slug = value => value.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'symbol';
@@ -45,7 +46,7 @@ export function defaultValue(arg, data) {
   return JSON.stringify(arg.default);
 }
 function sourceFooter(sourceFile = '') {
-  return `\nSource: [OverPy 9.7.17](${SOURCE}${sourceFile ? '/' + sourceFile : ''}). Generated from pinned initialized exports. Engine behavior is not independently game-tested.\n`;
+  return `\nSource: [OverPy 9.7.17](${SOURCE}${sourceFile ? '/' + sourceFile : ''}). Generated from pinned initialized exports.\n`;
 }
 export function callableSignature(key, value, dialect, data) {
   if (dialect === 'overpy' && key === 'sorted') return 'sorted(array, key=lambda item: item)';
@@ -71,12 +72,33 @@ function parameterTable(args, dialect, data, includeMeaning = true) {
   if (!args?.length) return '';
   return '\n| Argument | Type | ' + (includeMeaning ? 'Meaning' : 'OverPy') + (dialect === 'overpy' ? ' / default' : '') + ' |\n| --- | --- | --- |\n' + args.map(arg => `| \`${arg.name}\` | \`${safe(typeName(arg.type))}\` | ${includeMeaning ? safe(description(arg.description)) : ''}${dialect === 'overpy' ? defaultNote(arg,data) : ''} |`).join('\n') + '\n';
 }
-export function buildOutputs(snapshot) {
+export function buildOutputs(snapshot, {usageGroups, articleLinks} = {}) {
   const data = snapshot.data;
   const output = new Map();
   const mappings = [];
+  const usageEntries = [];
+  usageGroups ??= JSON.parse(fs.readFileSync(path.join(ROOT,USAGE),'utf8')).groups;
+  articleLinks ??= JSON.parse(fs.readFileSync(path.join(ROOT,'sources/wiki-articles.json'),'utf8')).articles;
+  const articlesBySlug = new Map(articleLinks.flatMap(article=>[[String(article.id),article],[article.slug,article]]));
+  const corpusPath=path.join(ROOT,'sources/wiki-content.json');
+  if(fs.existsSync(corpusPath))for(const record of JSON.parse(fs.readFileSync(corpusPath,'utf8')).articles){
+    const target=articlesBySlug.get(String(record.source_revision_id ?? record.id)) ?? {id:record.id,title:record.title};
+    for(const alias of [...(record.source_slugs ?? []),...(record.revision_ids ?? []).map(String)]){
+      if(!articlesBySlug.has(alias))articlesBySlug.set(alias,target);
+    }
+  }
+  const addMapping = (sourceGroup, record) => {
+    mappings.push(record);
+    usageEntries.push({...record, sourceGroup});
+  };
   const set = (file, content) => {
     if (output.has(file)) throw new Error(`Catalog path collision: ${file}`);
+    content = content.replace(/https:\/\/workshop\.codes\/wiki\/articles\/([a-zA-Z0-9_-]+)/g,(_,slug)=>{
+      const article=articlesBySlug.get(slug);
+      if(!article)throw new Error(`No bundled article for Workshop reading link: ${slug}`);
+      const target=path.posix.relative(path.posix.dirname(file),`skills/overwatch-workshop/references/wiki/archive/${article.id}.md`);
+      return `[${article.title.replaceAll('[','\\[').replaceAll(']','\\]')}](${target})`;
+    });
     output.set(file, content.split('\n').map(line => line.trimEnd()).join('\n').trimEnd() + '\n');
   };
   function index(base, title, entries, intro = '') {
@@ -109,7 +131,7 @@ export function buildOutputs(snapshot) {
       const text = `# ${value['en-US']}\n\nNative Workshop ${folder === 'actions' ? 'action' : 'value'}. Signature labels below describe argument order; replace them with expressions.\n\n\`${signature}\`\n\n${description(value.description)}\n${parameterTable(value.args,'workshop',data)}\n${value.return ? `Returns: \`${typeName(value.return)}\`. Types are OverPy's model of native inputs.\n` : ''}${value.extension ? `Requires the \`${value.extension}\` extension.\n` : ''}${sourceFooter(`data/${folder}.ts`)}`;
       set(`${WORKSHOP}/${folder}/${file}`,text);
       entries.push({label:value['en-US'],file});
-      mappings.push({dialect:'workshop',kind:folder,key,name:value['en-US'],path:`${WORKSHOP}/${folder}/${file}`});
+      addMapping(group,{dialect:'workshop',kind:folder,key,name:value['en-US'],path:`${WORKSHOP}/${folder}/${file}`});
     }
     index(`${WORKSHOP}/${folder}`,`Native Workshop ${folder}`,entries,'English names from pinned compiler data; dated semantic exceptions are in the topic guides and wiki supplements.');
   }
@@ -125,23 +147,26 @@ export function buildOutputs(snapshot) {
       const native=value['en-US'] ? `Native operation: [${value['en-US']}](../../../../overwatch-workshop/references/api/${folder}/${slug(value['en-US'])}.md).\n` : '';
       set(`${OVERPY}/${folder}/${file}`,`# ${key.startsWith('.') ? 'receiver' : ''}${key}\n\n\`${signature}\`\n\n${receiver}\n${native ? 'Runtime meaning and argument semantics are documented in the native operation linked below.' : description(value.description)}\n${parameterTable(args,'overpy',data,!native)}\n${value.return ? `Returns: \`${typeName(value.return)}\`.\n` : ''}${native}${value.macro ? '\nMacro expansion (compiler implementation; not a second runtime function):\n\n```opy\n' + value.macro.trim() + '\n```\n' : ''}${sourceFooter()}`);
       entries.push({label:key.startsWith('.') ? `receiver${key}` : key,file});
-      mappings.push({dialect:'overpy',kind:folder,key,name:signature,path:`${OVERPY}/${folder}/${file}`});
+      addMapping(group,{dialect:'overpy',kind:folder,key,name:signature,path:`${OVERPY}/${folder}/${file}`});
     }
     index(`${OVERPY}/${folder}`,`OverPy ${folder}`,entries,'Optional defaults belong to OverPy. Check the Workshop topic guide when runtime semantics matter.');
   }
   const moduleEntries=[];
   for(const [moduleName,module] of Object.entries(data.opyModules)) for(const [key,value] of Object.entries(module)) {
-    if(key==='description'||!value||typeof value!=='object') continue;
+    if(key==='description'||!value||typeof value!=='object'||!publicCallable(key,value)) continue;
     const name=`${moduleName}.${key}`,file=`${slug(name)}.md`;
     set(`${OVERPY}/modules/${file}`,`# ${name}\n\n\`${callableSignature(name,value,'overpy',data)}\`\n\n${description(value.description)}\n${parameterTable(value.args,'overpy',data)}\nReturns: \`${typeName(value.return)}\`.${sourceFooter('data/opy/modules.ts')}`);
     moduleEntries.push({label:name,file});
+    addMapping('opyModules',{dialect:'overpy',kind:'modules',key:name,name:callableSignature(name,value,'overpy',data),path:`${OVERPY}/modules/${file}`});
   }
   index(`${OVERPY}/modules`,'OverPy modules',moduleEntries);
   const memberEntries=[];
   for(const [key,value] of Object.entries(data.opyMemberFuncs)) {
+    if(!publicCallable(key,value))continue;
     const file=`${slug(key)}.md`;
     set(`${OVERPY}/members/${file}`,`# ${value.class}.${key}\n\n\`<${value.class}>.${key}${Array.isArray(value.args) ? '('+value.args.map(a=>a.name).join(', ')+')' : ''}\`\n\n${description(value.description)}\n${parameterTable(value.args,'overpy',data)}\nReturns: \`${typeName(value.return)}\`.${sourceFooter('data/opy/memberFunctions.ts')}`);
     memberEntries.push({label:`${value.class}.${key}`,file});
+    addMapping('opyMemberFuncs',{dialect:'overpy',kind:'members',key,name:`${value.class}.${key}`,path:`${OVERPY}/members/${file}`});
   }
   index(`${OVERPY}/members`,'Additional member properties',memberEntries,'Player member functions are listed with actions/values/macros.');
   for(const [group,folder,prefix] of [['annotations','annotations',''],['preprocessingDirectives','directives','#!'],['opyKeywords','keywords','']]) {
@@ -190,7 +215,7 @@ export function buildOutputs(snapshot) {
       set(`${WORKSHOP}/${folder}/${file}`,`# ${value['en-US']||key}\n\nCompiler key: \`${key}\`; native English label: \`${value['en-US']||'not specified'}\`.\n\n${Object.keys(detail).length?'Pinned metadata (data, not source code):\n\n```json\n'+JSON.stringify(detail,null,2)+'\n```\n':''}${sourceFooter()}`);
       entries.push({label:value['en-US']||key,file});
     }
-    index(`${WORKSHOP}/${folder}`,title,entries,'Snapshot data from OverPy; inclusion is not a current-game compatibility guarantee.');
+    index(`${WORKSHOP}/${folder}`,title,entries,'Pinned OverPy names; consult the bundled wiki for hero and map behavior.');
   }
   const settingsEntries=[];
   for(const [category,schema]of Object.entries(data.customGameSettingsSchema)) {
@@ -202,9 +227,39 @@ export function buildOutputs(snapshot) {
       settingsEntries.push({label:key,file});
     }
   }
-  index(`${WORKSHOP}/settings`,'Custom-game settings schema',settingsEntries,'Read only the relevant mode, hero, or lobby section. Schema acceptance and current-game behavior are separate.');
-  set(`${WORKSHOP}/index.md`, `# Exact Workshop reference\n\nPinned to OverPy 9.7.17, English output. Use the [foundation router](../foundation.md) for behavior, then select an exact name here. Argument types are compiler metadata, not proof of game behavior.\n\n- [Actions](actions/index.md)\n- [Values](values/index.md)\n- [Events](events/index.md)\n- [Constants and choices](constants/index.md)\n- [Custom-game settings](settings/index.md)\n- [Event team filters](event-team-kw/index.md)\n- [Event player/hero filters](event-player-kw/index.md)\n- [Heroes](hero-kw/index.md)\n- [Maps](map-kw/index.md)\n\nFor source-reported exceptions and absent APIs, consult [wiki supplements](../wiki/index.md). The catalogs do not replace those notes.\n${sourceFooter()}`);
-  set(`${OVERPY}/index.md`, `# Exact OverPy reference\n\nPinned to OverPy 9.7.17. Names and defaults follow the public completion surface; internal compiler identifiers are excluded. Read only the matching entry. Angle-bracket receivers and parameter names are explanatory placeholders.\n\n- [Actions / player methods](actions/index.md)\n- [Values / player methods](values/index.md)\n- [Language functions](functions/index.md)\n- [Macros](macros/index.md)\n- [Modules](modules/index.md)\n- [Vector member properties](members/index.md)\n- [Keywords](keywords/index.md)\n- [Rule annotations](annotations/index.md)\n- [Preprocessing directives](directives/index.md)\n- [Helper constants](constants/index.md)\n- [Shared native constants and OverPy spellings](../../../overwatch-workshop/references/api/constants/index.md)\n- [Events](../../../overwatch-workshop/references/api/events/index.md)\n- [Settings schema](../../../overwatch-workshop/references/api/settings/index.md)\n\nOperators and syntax forms use the [language guide](../language.md), not internal names from compiler maps.\n${sourceFooter()}`);
+  index(`${WORKSHOP}/settings`,'Custom-game settings schema',settingsEntries,'Read only the relevant mode, hero, or lobby section. The schema describes compiler inputs; consult the bundled wiki for settings behavior.');
+  const callableIds = new Set(usageEntries.map(entry=>`${entry.sourceGroup}.${entry.key}`));
+  const assignments = new Map();
+  const groupIds = new Set();
+  for(const group of usageGroups) {
+    if(!/^[a-z][a-z0-9-]*$/.test(group.id)||groupIds.has(group.id))throw new Error(`Invalid or duplicate usage group: ${group.id}`);
+    groupIds.add(group.id);
+    for(const [sourceGroup,keys] of Object.entries(group.entries)) for(const key of keys) {
+      const id=`${sourceGroup}.${key}`;
+      if(assignments.has(id))throw new Error(`Callable assigned more than once: ${id}`);
+      if(!callableIds.has(id))throw new Error(`Stale usage assignment: ${id}`);
+      assignments.set(id,group.id);
+    }
+  }
+  for(const id of callableIds)if(!assignments.has(id))throw new Error(`Unclassified callable: ${id}; review ${USAGE} before publishing the new snapshot`);
+  for(const [dialect,base] of [['workshop',WORKSHOP],['overpy',OVERPY]]) {
+    const links=[];
+    for(const group of usageGroups) {
+      const entries=usageEntries.filter(entry=>entry.dialect===dialect&&assignments.get(`${entry.sourceGroup}.${entry.key}`)===group.id);
+      if(!entries.length)continue;
+      const label=entry=>dialect==='workshop'?entry.name:entry.kind==='members'?entry.name:entry.key.startsWith('.')?`receiver${entry.key}`:entry.key;
+      const sections=[];
+      for(const kind of ['actions','values','functions','macros','modules','members']) {
+        const items=entries.filter(entry=>entry.kind===kind).sort((a,b)=>compare(label(a),label(b)));
+        if(items.length)sections.push(`## ${kind.charAt(0).toUpperCase()+kind.slice(1)}\n\n${items.map(entry=>`- [${label(entry)}](${path.posix.relative(`${base}/usage`,entry.path)})`).join('\n')}`);
+      }
+      set(`${base}/usage/${group.id}.md`,`# ${group.title}\n\n${group.description}\n\nChoose the matching name, then read that entry only. [Browse tasks](index.md).\n\n${sections.join('\n\n')}`);
+      links.push(`- [${group.title}](${group.id}.md) — ${group.description}`);
+    }
+    set(`${base}/usage/index.md`,`# ${dialect==='workshop'?'Workshop':'OverPy'} functions by task\n\nChoose the task you are implementing, read its group, then open only the relevant exact entries. Do not load every group or the whole catalog. For an already-known name, use the [alphabetical indexes](../index.md).\n\n${links.join('\n')}`);
+  }
+  set(`${WORKSHOP}/index.md`, `# Exact Workshop reference\n\nPinned to OverPy 9.7.17, English output. Use the [foundation router](../foundation.md) for behavior and [functions by task](usage/index.md) to find relevant operations. Use the alphabetical indexes below for an already-known name. Argument types describe compiler syntax; runtime behavior follows the bundled wiki articles.\n\n- [Actions](actions/index.md)\n- [Values](values/index.md)\n- [Events](events/index.md)\n- [Constants and choices](constants/index.md)\n- [Custom-game settings](settings/index.md)\n- [Event team filters](event-team-kw/index.md)\n- [Event player/hero filters](event-player-kw/index.md)\n- [Heroes](hero-kw/index.md)\n- [Maps](map-kw/index.md)\n\nFor source-reported exceptions and absent APIs, consult [wiki supplements](../wiki/index.md). The catalogs do not replace those notes.\n${sourceFooter()}`);
+  set(`${OVERPY}/index.md`, `# Exact OverPy reference\n\nPinned to OverPy 9.7.17. Names and defaults follow the public completion surface; internal compiler identifiers are excluded. Use [functions by task](usage/index.md) to find relevant operations, or the alphabetical indexes below for an already-known name. Read only the matching entry. Angle-bracket receivers and parameter names are explanatory placeholders.\n\n- [Actions / player methods](actions/index.md)\n- [Values / player methods](values/index.md)\n- [Language functions](functions/index.md)\n- [Macros](macros/index.md)\n- [Modules](modules/index.md)\n- [Vector member properties](members/index.md)\n- [Keywords](keywords/index.md)\n- [Rule annotations](annotations/index.md)\n- [Preprocessing directives](directives/index.md)\n- [Helper constants](constants/index.md)\n- [Shared native constants and OverPy spellings](../../../overwatch-workshop/references/api/constants/index.md)\n- [Events](../../../overwatch-workshop/references/api/events/index.md)\n- [Settings schema](../../../overwatch-workshop/references/api/settings/index.md)\n\nOperators and syntax forms use the [language guide](../language.md), not internal names from compiler maps.\n${sourceFooter()}`);
   output.set('sources/api-map.json',json(mappings));
   const ledgerPath=path.join(ROOT,'docs/research/workshop-wiki-survey-2026-10-07/article-ledger.json');
   if(fs.existsSync(ledgerPath)) {

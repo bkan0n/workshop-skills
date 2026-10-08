@@ -5,7 +5,7 @@
   "evidence_status": "source-reported-test",
   "behavioral_test_date": null,
   "context": [
-    "Source edited 2024-08-31; verification code YFPB7. These are patch-sensitive observations, not a complete current hero contract.",
+    "Source edited 2024-08-31; verification code YFPB7.",
     "Spawn areas count as Phased Out. Accretion/Earthshatter can set both Knocked Down and Stunned. Artillery/Rip-Tire are not Rooted merely because movement is immobilized."
   ],
   "tables": [

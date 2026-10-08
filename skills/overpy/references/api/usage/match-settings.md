@@ -1,0 +1,78 @@
+# Match and settings
+
+Set scores, objectives and match flow; query modes, maps and statistics; expose Workshop settings.
+
+Choose the matching name, then read that entry only. [Browse tasks](index.md).
+
+## Actions
+
+- [addToTeamScore](../actions/add-to-team-score.md)
+- [declareDraw](../actions/declare-draw.md)
+- [declarePlayerVictory](../actions/declare-player-victory.md)
+- [declareRoundDraw](../actions/declare-round-draw.md)
+- [declareRoundVictory](../actions/declare-round-victory.md)
+- [declareTeamVictory](../actions/declare-team-victory.md)
+- [disableGamemodeCompletion](../actions/disable-gamemode-completion.md)
+- [disableScoring](../actions/disable-scoring.md)
+- [enableGamemodeCompletion](../actions/enable-gamemode-completion.md)
+- [enableScoring](../actions/enable-scoring.md)
+- [goToAssembleHeroes](../actions/go-to-assemble-heroes.md)
+- [pauseMatchTime](../actions/pause-match-time.md)
+- [receiver.addToScore](../actions/member-add-to-score.md)
+- [receiver.setScore](../actions/member-set-score.md)
+- [restartMatch](../actions/restart-match.md)
+- [returnToLobby](../actions/return-to-lobby.md)
+- [setMatchTime](../actions/set-match-time.md)
+- [setObjectiveDescription](../actions/set-objective-description.md)
+- [setSlowMotion](../actions/set-slow-motion.md)
+- [setTeamScore](../actions/set-team-score.md)
+- [startGamemode](../actions/start-gamemode.md)
+- [unpauseMatchTime](../actions/unpause-match-time.md)
+
+## Values
+
+- [createWorkshopSettingBool](../values/create-workshop-setting-bool.md)
+- [createWorkshopSettingEnum](../values/create-workshop-setting-enum.md)
+- [createWorkshopSettingFloat](../values/create-workshop-setting-float.md)
+- [createWorkshopSettingHero](../values/create-workshop-setting-hero.md)
+- [createWorkshopSettingInt](../values/create-workshop-setting-int.md)
+- [getCapturePercentage](../values/get-capture-percentage.md)
+- [getControlScorePercentage](../values/get-control-score-percentage.md)
+- [getControlScoringTeam](../values/get-control-scoring-team.md)
+- [getCurrentGamemode](../values/get-current-gamemode.md)
+- [getCurrentObjective](../values/get-current-objective.md)
+- [getFlagCarrier](../values/get-flag-carrier.md)
+- [getFlagPosition](../values/get-flag-position.md)
+- [getMatchRound](../values/get-match-round.md)
+- [getMatchTime](../values/get-match-time.md)
+- [getNumberOfPlayersOnObjective](../values/get-number-of-players-on-objective.md)
+- [getObjectivePosition](../values/get-objective-position.md)
+- [getPayloadPosition](../values/get-payload-position.md)
+- [getPayloadProgressPercentage](../values/get-payload-progress-percentage.md)
+- [getPlayersNotOnObjective](../values/get-players-not-on-objective.md)
+- [getPlayersOnObjective](../values/get-players-on-objective.md)
+- [isAssemblingHeroes](../values/is-assembling-heroes.md)
+- [isControlPointLocked](../values/is-control-point-locked.md)
+- [isFlagAtBase](../values/is-flag-at-base.md)
+- [isFlagBeingCarried](../values/is-flag-being-carried.md)
+- [isGameInProgress](../values/is-game-in-progress.md)
+- [isInSetup](../values/is-in-setup.md)
+- [isInSuddenDeath](../values/is-in-sudden-death.md)
+- [isMatchBetweenRounds](../values/is-match-between-rounds.md)
+- [isMatchComplete](../values/is-match-complete.md)
+- [isObjectiveComplete](../values/is-objective-complete.md)
+- [isTeamOnDefense](../values/is-team-on-defense.md)
+- [isTeamOnOffense](../values/is-team-on-offense.md)
+- [isWaitingForPlayers](../values/is-waiting-for-players.md)
+- [receiver.getHeroStatistic](../values/member-get-hero-statistic.md)
+- [receiver.getNumberOfDeaths](../values/member-get-number-of-deaths.md)
+- [receiver.getNumberOfElims](../values/member-get-number-of-elims.md)
+- [receiver.getNumberOfFinalBlows](../values/member-get-number-of-final-blows.md)
+- [receiver.getScore](../values/member-get-score.md)
+- [receiver.getStatistic](../values/member-get-statistic.md)
+- [receiver.isOnObjective](../values/member-is-on-objective.md)
+- [teamScore](../values/team-score.md)
+
+## Functions
+
+- [getCurrentMap](../functions/get-current-map.md)

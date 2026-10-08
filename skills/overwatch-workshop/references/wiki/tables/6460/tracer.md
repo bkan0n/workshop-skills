@@ -2,7 +2,7 @@
 
 # Ability icon mappings: Tracer
 
-Archived factual data from [6460](https://workshop.codes/wiki/articles/6460); page edited 2025-07-13. Not independently game-verified.
+Wiki data from [article 6460](../../archive/6460.md); page edited 2025-07-13.
 
 Read [units, scope and source limitations](../6460.md) before using these values.
 

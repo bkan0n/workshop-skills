@@ -15,24 +15,43 @@ Workflow regression tests also use Bash, `jq`, `cmp`, and `sha256sum` (or `shasu
 | `npm run check` | All checks above |
 | `npm run catalog` | Regenerate references from reviewed normalized inputs |
 | `npm run build` | Reject stale generated content, validate, and build both archives without fetching sources |
+| `npm run release:update-wiki` | Download the wiki through its JSON API, compare hashes, and automatically update the bundled references |
+| `npm run release:check-wiki` | Optional check-only comparison; report differences without applying them |
 
 ZIP entries use fixed ordering, dates, modes, platform attributes, and stored compression, avoiding compression-library differences. Workshop content matches across both archives. `RELEASE.json` records source locks, commit, dirty status, and member hashes; the external checksum includes that manifest. Local previews can identify dirty checkouts; public release builds require a clean selected tag.
 
 ## Wiki rewriting and updates
 
-`sources/wiki-content.json` holds rewritten claims and metadata. `sources/wiki-tables/` preserves normalized factual data and its limitations. `scripts/generate-wiki.py` creates selective references and `coverage/wiki-coverage.json` without the raw cache.
+`sources/wiki-content.json` holds rewritten claims and metadata. `sources/wiki-tables/` preserves normalized factual data and its limitations. `sources/wiki-articles.json` holds every original API article record, including the full content, slug and any supplied attribution. `scripts/generate-wiki.py` creates selective references, all full article references under `skills/overwatch-workshop/references/wiki/archive/`, and `coverage/wiki-coverage.json` without a raw page cache or network access.
 
-Keep the research ledger as the initial 630-article/721-note baseline. Every note needs a retained destination or explicit consolidation, historical, deferred, or exclusion decision. A signature does not cover a prose exception. Keep source edit dates, documented tests, compiler checks, and game observations distinct. The API did not supply per-article authors; do not invent them. Preserve attribution available within source material and the general notices.
+The generator verifies the full snapshot's ID set and each original content SHA-256 against `sources/wiki-index.json`. `sources/lock.json` pins both the index and full source snapshot. The original Markdown is quoted verbatim apart from CRLF display normalization. A fence longer than any source fence keeps HTML/media and remote URLs inert; local article navigation and curated-reference links sit above the quoted text. Do not remove article bodies merely because their curated disposition is excluded or deferred. Linked media are outside the archive's scope.
+
+Workshop.codes wiki articles are trusted as the source of truth. Do not add blanket “unverified” or “not game tested” disclaimers to wiki references. Preserve qualifications actually stated by the source, including historical fixes, dates, units and conditions. The API did not supply per-article authors; preserve available attribution without inventing it.
 
 ```sh
+# Update the wiki references when preparing a release:
+npm run release:update-wiki
+# The same automatic update outside release preparation:
 npm run refresh:wiki
-# Offline comparison of an already completed API snapshot:
+# Apply an already completed local API snapshot without fetching:
 python3 scripts/refresh-wiki.py --compare-existing
+# Optional check-only comparison, without applying changes:
+npm run release:check-wiki
 ```
 
-The downloader uses only the paginated JSON API with three-second pacing. It validates all pages and a terminal empty page before replacing the archive. Failed/incomplete fetches preserve the prior snapshot. The comparison writes `.cache/wiki-review-queue.json`, never curated prose. Missing items in a completed snapshot are review candidates, not automatic knowledge deletions.
+The downloader uses only the paginated JSON API with three-second pacing. It validates all pages and a terminal empty page before replacing `.cache/wiki-candidate/`, then verifies raw-page and article hashes. Failed or incomplete fetches preserve the prior candidate and installed files. No HTML scraping occurs. Ordinary skill use, `npm run check`, and packaging remain offline.
 
-Inspect each affected claim/reference, reconcile evidence, edit the normalized rewrite, and regenerate. Review added articles explicitly. Expanding the corpus requires updating the baseline accounting and tests in that reviewed change; new sources must not silently count as covered. Update source locks/hashes only after review. Raw responses and linked media stay out of distribution. Never scrape the website.
+Maintenance writes `.cache/wiki-update-report.json` and `.cache/wiki-articles.candidate.json`. The report records added, changed and removed articles, previous/current hashes, metadata changes, affected references and whether the update was applied. The API assigns new numeric IDs to revisions; stable `group_id` values identify the same article across revisions.
+
+The default command automatically replaces changed sources, updates their hashes and regenerates references. Changed article notes use the latest wiki text directly, replacing older summaries. Their table references use the full current article, preserving all conditions and footnotes; older map/hero table parts become short local routes to it. This avoids carrying forward copied values from an older revision. Local paths and existing claim anchors remain valid; old numeric archive paths lead to the current revision. New articles appear in the local archive and the new-article topic. Removed articles get a notice at their existing paths instead of continuing to display obsolete source text.
+
+Handwritten guides provide patterns and navigation; the current linked wiki article takes precedence. Maintenance regenerates article and table references and inserts current-source routes in affected guides. Readers must open the relevant updated source before using facts or values copied in those guides. It does not attempt to rewrite arbitrary instructional prose. Keep guides focused on reusable patterns and link to the current source for changing lists and values.
+
+Updates are generated in a temporary copy and checked for valid metadata, content hashes, complete source coverage and working local links before replacing installed directories. A generation or validation failure leaves the installed source and skills unchanged. These are integrity checks, not a factual approval gate. The initial research ledger stays as a historical record; stable local article and note IDs remain accounted for while current source revisions and hashes advance automatically.
+
+Successful automatic maintenance exits **0**, including when updates were applied; failures exit **2**. Optional `--check` mode exits **0** for no changes, **1** for differences and **2** for failure, and never applies changes. There is no pending-review queue. Commit the refreshed sources, generated references and coverage with the release preparation changes. Raw page caches and linked media stay out of distribution; full article references are distributed.
+
+Function usage groups are curated in `sources/api-usage.json`. Every native action/value and public OverPy callable/member must be assigned once; generation rejects missing, duplicate and stale assignments. Add new functions to the appropriate task group when updating compiler data. Keep task routers short and link to individual entries instead of repeating signatures or loading every group.
 
 ## OverPy updates
 
@@ -63,7 +82,7 @@ The default token is the repository's `GITHUB_TOKEN`. Under GitHub's current beh
 ### Normal release flow
 
 1. Merge changes using [Conventional Commits](../CONTRIBUTING.md). Prefer squash merges with a conventional PR title. `fix:` and visible `docs:` changes produce patches; `feat:` produces a minor release. Breaking changes produce a minor bump before 1.0 and a major bump after it. CI-only changes wait for a releasable change.
-2. **Prepare release PR** runs on pushes to `main` and can be dispatched manually on `main`. It maintains one root release PR with the changelog and synchronized version updates. Approve its checks if GitHub requests it, then review and merge the PR.
+2. **Prepare release PR** runs on pushes to `main` and can be dispatched manually on `main`. It maintains one root release PR with the changelog and synchronized version updates. During release preparation, run `npm run release:update-wiki` and include the automatically refreshed sources and references in the release changes. This maintenance download is separate from the offline build. Approve the PR's checks if GitHub requests it, then review and merge the PR.
 3. Release Please creates the tag and a draft release. The workflow explicitly calls **Package draft release** with that tag and commit SHA. This avoids relying on a bot-created tag to start another workflow.
 4. The packaging workflow verifies the tag, clean checkout, package/source-lock versions, and existing draft's target commit. It runs the complete checks, builds both ZIPs, uploads them with `SHA256SUMS` and the context report, downloads the assets again, and compares their bytes. It never publishes a release.
 5. Review the successful run and release notes, then publish the draft. Releases currently default to prereleases; choose release status deliberately when the project reaches its intended stable milestone.

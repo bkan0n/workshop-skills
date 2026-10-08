@@ -2,7 +2,7 @@
 
 # Health pack coordinates: Escort / Dorado
 
-Archived factual data from [1976](https://workshop.codes/wiki/articles/1976); page edited 2023-09-01. Not independently game-verified.
+Wiki data from [article 1976](../../archive/1976.md); page edited 2023-09-01.
 
 Read [units, scope and source limitations](../1976.md) before using these values.
 

@@ -1,6 +1,6 @@
 # Team filters
 
-Snapshot data from OverPy; inclusion is not a current-game compatibility guarantee.
+Pinned OverPy names; consult the bundled wiki for hero and map behavior.
 
 - [All](all.md)
 - [Team 1](1.md)

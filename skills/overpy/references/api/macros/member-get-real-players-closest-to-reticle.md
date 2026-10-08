@@ -18,4 +18,4 @@ Macro expansion (compiler implementation; not a second runtime function):
 sorted([p for p in getLivingPlayers($team) if p.hasSpawned() and p != $self], key=lambda x: angleBetweenVectors($self.getFacingDirection(), x - $self.getEyePosition()))
 ```
 
-Source: [OverPy 9.7.17](https://github.com/Zezombye/overpy/tree/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src). Generated from pinned initialized exports. Engine behavior is not independently game-tested.
+Source: [OverPy 9.7.17](https://github.com/Zezombye/overpy/tree/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src). Generated from pinned initialized exports.

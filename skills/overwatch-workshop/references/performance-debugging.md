@@ -1,6 +1,6 @@
 # Performance and debugging
 
-Separate four questions: does the text parse, does the logic express the intended behavior, does the game implement that behavior in the target patch, and does the full mode fit its runtime/resource budget? A compiler acceptance result answers only part of the first question. A small successful game test does not establish performance under the intended player count.
+Separate syntax errors, mode logic errors and runtime/resource budgets. Use the bundled wiki for engine semantics, compiler diagnostics for syntax, and measurements of the actual mode for its load and capacity.
 
 ## Diagnose the failure before optimizing
 
@@ -11,7 +11,7 @@ Separate four questions: does the text parse, does the logic express the intende
 | Damage totals miss targets while a rule waits | Event-instance occupation and per-attacker/per-victim scope; [execution](execution.md) |
 | Delayed action uses wrong person or state | Event context, changed shared inputs and post-Wait validity; [state/lifecycle](state-lifecycle.md) |
 | Following effect freezes or collapses to last loop offset | Reevaluation flags and placement of Evaluate Once; [reevaluation](reevaluation.md) |
-| Chased value crosses threshold without triggering | Archived chase notification bug; use a minimal reproduction before changing scheduling |
+| Chased value crosses threshold without triggering | Documented chase notification behavior; use action-side observation as described in [reevaluation](reevaluation.md) |
 | Objects stop appearing or count grows after departures | Capacity, stale Last Created handle, ownership/cleanup, reported projectile leak; [resources](resources.md) |
 | Hero query always returns zero/Null | Read versus write support and exact hero/form/button; [combat](combat-heroes.md) |
 | Server fails with many players | Simultaneous startup, high-frequency events, object counts, workload bursts, persistent leaks |
@@ -42,12 +42,12 @@ Do not optimize by converting every repeated rule into many subroutine restarts:
 
 Exercise one player, the intended maximum population, late join, death/respawn, hero/team changes, departure during active work, and repeated start/stop cycles. Check resource baselines after cleanup. Test bursts such as multi-target damage and simultaneous initialization. Repeat timing tests on the target map type: the archive reports Practice Range at approximately 20.8333 ticks/s versus 62.5 elsewhere, so a range result is not a timing contract for a normal lobby.
 
-An archived guide proposes lowering slow motion under load as a fallback. This changes gameplay and is not guaranteed crash prevention. Its numeric thresholds and alternate formula are not validated universal settings. Reports attributing periodic spikes to replay snapshots or time-of-day traffic are hypotheses/anecdotes, not proven causes; measure your reproduction before adopting them.
+The stability guide describes lowering slow motion under load as a fallback. This changes gameplay; select thresholds for the mode’s workload. Preserve the guide’s distinction between its measurements and suggested explanations for periodic spikes.
 
-When reporting results, distinguish: reviewed structure, parser/compiler acceptance with pinned version, native round-trip acceptance, and actual in-game tests with patch and observations. List unavailable checks plainly. Keep a regression case for every reproduced bug instead of upgrading an old wiki report to verified behavior because it sounds plausible.
+When reporting results, distinguish: reviewed structure, parser/compiler acceptance with pinned version, native round-trip acceptance, and actual in-game tests with patch and observations. List unavailable checks plainly. Keep a regression case for every reproduced bug in the mode.
 
 Offline source details: [performance evidence](wiki/performance.md).
 
 ## Evidence
 
-Snapshot **2026-09-29**, archived documentation: [server stability tutorial](https://workshop.codes/wiki/articles/6064), edited 2025-05-25; [element count](https://workshop.codes/wiki/articles/4857), 2024-11-26; [stock action costs](https://workshop.codes/wiki/articles/2112), 2024-03-16; [Server Load](https://workshop.codes/wiki/articles/4735), [Average](https://workshop.codes/wiki/articles/4736), [Peak](https://workshop.codes/wiki/articles/4737), [Disable Inspector Recording](https://workshop.codes/wiki/articles/4370), [Enable Inspector Recording](https://workshop.codes/wiki/articles/4381), [Entity Count](https://workshop.codes/wiki/articles/4806) (2024-11-26); [Small Message](https://workshop.codes/wiki/articles/9529), 2026-08-27. Performance recommendations derived from these reports remain workload- and patch-sensitive; no live-game measurements are claimed by this package.
+Wiki sources: [server stability tutorial](wiki/articles/6064.md#wiki-6064), edited 2025-05-25; [element count](wiki/articles/4857.md#wiki-4857), 2024-11-26; [stock action costs](wiki/articles/2112.md#wiki-2112), 2024-03-16; [Server Load](wiki/articles/4735.md#wiki-4735), [Average](wiki/articles/4736.md#wiki-4736), [Peak](wiki/articles/4737.md#wiki-4737), [Disable Inspector Recording](wiki/articles/4370.md#wiki-4370), [Enable Inspector Recording](wiki/articles/4381.md#wiki-4381), [Entity Count](wiki/articles/4806.md#wiki-4806) (2024-11-26); [Small Message](wiki/articles/9529.md#wiki-9529), 2026-08-27.

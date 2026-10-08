@@ -108,4 +108,4 @@ Extension costs and activation: [settings schema](../settings/extensions.md).
 | `Zarya Particle Cannon Explosion Effect` | `DynamicEffect.ZARYA_PARTICLE_CANNON_EXPLOSION` | Requires extension `energyExplosionEffects`. |
 | `Zarya Particle Cannon Explosion Sound` | `DynamicEffect.ZARYA_PARTICLE_CANNON_EXPLOSION_SOUND` | Requires extension `explosionSounds`. |
 
-Source: [OverPy 9.7.17](https://github.com/Zezombye/overpy/tree/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src). Generated from pinned initialized exports. Engine behavior is not independently game-tested.
+Source: [OverPy 9.7.17](https://github.com/Zezombye/overpy/tree/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src). Generated from pinned initialized exports.

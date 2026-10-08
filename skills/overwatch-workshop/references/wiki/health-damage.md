@@ -4,7 +4,7 @@
 
 Read for damage attribution, health pools, status, assists and resource cleanup.
 
-Select the relevant entry. Each entry preserves its archived source, edit date and uncertainty; these are not independent current-game verification.
+Select the relevant entry. Each entry links to its trusted local wiki source.
 
 ## Entries
 

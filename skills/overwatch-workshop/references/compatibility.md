@@ -1,70 +1,55 @@
-# Compatibility, conflicts and verification
+# Compatibility and source priority
 
-This package rewrites an archived Workshop.codes snapshot captured **2026-09-29** and uses pinned OverPy metadata/documentation where identified. Article edit time is not necessarily the date a behavior was tested. None of the archived engine claims becomes independently game-verified merely because multiple articles agree. The package build/authoring date is also not a game compatibility claim.
+<!-- wiki-source-updates:start -->
 
-Offline evidence: [compatibility reports](wiki/compatibility.md), [historical techniques](wiki/historical.md), and [source index](wiki/index.md).
+## Current wiki sources
 
-## Read evidence by what it establishes
+Before using facts or values covered by these sources, read the corresponding current article. Its text takes precedence over copied details below; use this guide for the overall pattern.
 
-| Evidence label | What it supports | What it does not establish |
-| --- | --- | --- |
-| Structured API metadata | Names, argument order/types/defaults, supported translation data at the pinned revision | Every game behavior, hero exception or current patch result |
-| Archived documentation | What a named source reported, with its date and context | A fresh game test or a guarantee across environments |
-| Source-reported bug/workaround | A concrete failure or proposed mitigation worth testing | That it still happens, or that the workaround covers all cases |
-| Historical/patched/broken | An explicit source warning makes a preserved technique unsuitable as current advice | That all neighboring API features are broken |
-| Compiler/decompiler acceptance | The pinned tool accepts that fixture in the tested direction | Native game import, runtime correctness, capacity or performance |
-| Game-verified | A recorded patch, environment, steps and observed result | General compatibility outside the recorded case |
+- [OW2 Workshop Changes/Bugs](wiki/archive/9694.md)
 
-Prefer the [API catalog](api/index.md) for exact native signatures and the [wiki supplements](wiki/index.md) for behavioral evidence and measured data. When a source uses OverPy syntax, translate concepts deliberately; do not paste it as native Workshop. Workshop.codes web-editor directives are a separate preprocessing system, not part of this skill's native authoring workflow.
+<!-- wiki-source-updates:end -->
 
-## Known source conflicts
+The installed Workshop.codes wiki is the trusted source of truth for Workshop runtime behavior. Its full article bodies, source dates and hash records are bundled in the [local archive](wiki/archive/index.md). Read the relevant local article; ordinary skill use needs no website access.
 
-| Subject | Sources and disagreement | Guidance |
-| --- | --- | --- |
-| Total Custom String size | [4590](https://workshop.codes/wiki/articles/4590), 2024-11-26, says 511 runtime bytes; [5734](https://workshop.codes/wiki/articles/5734), 2025-04-15, says that total limit was removed | Keep the documented 128-character per-node distinction; do not enforce 511 as a current universal total. |
-| Text capacity scope | [1840](https://workshop.codes/wiki/articles/1840), 2023-04-11, groups HUD/IWT/progress bars into 128; [5734](https://workshop.codes/wiki/articles/5734) explicitly groups IWT/progress-bar IWT | Scope remains unresolved. Budget conservatively and measure the families used. |
-| Settings category order | [2168](https://workshop.codes/wiki/articles/2168), 2024-06-09, says script order; [9463](https://workshop.codes/wiki/articles/9463), edited 2026-08-13, says alphabetic | Do not promise custom category order. Verify import/UI behavior. |
-| Sound color and player position | [4342](https://workshop.codes/wiki/articles/4342), 2024-11-26, says color does not apply to sounds; [2765](https://workshop.codes/wiki/articles/2765), 2024-09-08, reports explosion-sound differences by color and player versus vector | Retain the sound-specific exception and audition the intended effect. |
-| Cross product worked example | [1963](https://workshop.codes/wiki/articles/1963) has a Forward/Right result inconsistent with the documented axes | Use the mathematical operation and explicit vectors; see [geometry](geometry-movement.md). Do not repeat the erroneous example. |
-| Direction/angle convention | [7747](https://workshop.codes/wiki/articles/7747) and direction-value examples do not fully agree | State the chosen axes and test cardinal directions; do not silently blend formulas. |
-| For/range endpoint | Workshop For documentation uses exclusive stop; pinned OverPy README's range example includes its stop | The compiler emits the bounds unchanged. Use exclusive bounds in native fixtures; the README example is conflicting evidence, not a different native loop contract. |
-| Screen text spectators | [9496](https://workshop.codes/wiki/articles/9496), edited 2026-08-20, retains patch-1.59 caveats and differing visibility settings | Test each local/per-player/camera variant before claiming spectator support. |
+## Use the source appropriate to the question
 
-For the range conflict, the pinned upstream example is [README lines 404–411](https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/README.md#L404); native For evidence is [4383](https://workshop.codes/wiki/articles/4383). A conflict is preserved here instead of treating later edit time alone as proof of correctness.
+1. **Runtime behavior, limits and exceptions:** follow the current bundled wiki article, including its explicit conditions, units, hero/form/button distinctions, and patched or historical labels. The article takes precedence over a derivative guide or summary in this skill.
+2. **Names and syntax:** use the pinned [API catalog](api/index.md) for argument order, compiler types and OverPy spellings. Compiler metadata does not override the wiki’s runtime facts.
+3. **Compiler behavior:** use the OverPy guides for the pinned compiler’s warnings, transformations, preprocessing and accepted syntax.
 
-## Reported failures that change implementation choices
+Use wiki claims directly when answering a question; routine use does not require asking the user to retest them. When reporting checks on newly written code, state only the checks actually performed. A compiler check should be described as a compiler check.
 
-| Report | Source status | Consequence |
-| --- | --- | --- |
-| Chased values may not notify conditions/Wait Until until destination | [9463](https://workshop.codes/wiki/articles/9463), rolling mixed-era registry, edited 2026-08-13 | Test explicit action-side observation when crossing a threshold matters; [reevaluation](reevaluation.md). |
-| A variable referenced by Chase can break a For counter, even with chase rule disabled | [pinned upstream warning](https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/README.md#L1138), source-reported, not locally game-tested | Reserve dedicated non-chased counters; [reevaluation](reevaluation.md). |
-| Repeated Start Rule/Restart Rule while a subroutine still waits accumulates a crash | [pinned upstream warning](https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/README.md#L1155), source-reported | Do not use endless restarts as a timer update mechanism; [execution](execution.md#concurrent-restart-hazard). |
-| Numeric Wait Until expression differs from explicit Boolean comparison | [pinned upstream warning](https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/README.md#L1167), source-reported | Express the intended numeric threshold/comparison; do not rely on numeric truthiness. |
-| Projectile owner departure/hero swap leaves occupied entity slots | [9463](https://workshop.codes/wiki/articles/9463) | Consider ownership/attribution tradeoffs and test count recovery; [resources](resources.md#projectile-leak-report). |
-| Is Waiting For Players is false in client visual evaluation | [9463](https://workshop.codes/wiki/articles/9463) | Mirror server state if the UI needs it; [reevaluation](reevaluation.md). |
-| Hero cooldown/ammo/resource/event queries differ by hero, form and button | [9463](https://workshop.codes/wiki/articles/9463); ammo matrix dated 2026-08-13, cooldown matrix 2026-05-27; [9595](https://workshop.codes/wiki/articles/9595) Event Ability report | Separate reading from writing support; [combat](combat-heroes.md). A missing row does not prove support. |
-| Filter change aborts active rule; waiting damage rule misses retriggers | [6064](https://workshop.codes/wiki/articles/6064), 2025-05-25 | Review lifecycle and loss policy before adding filters or Waits; [execution](execution.md). |
-| Nonzero Combo default prevents selecting first UI choice | [9463](https://workshop.codes/wiki/articles/9463) | Verify generated settings UI; zero-based stored value and selectable choice are different concerns. |
-| Season 16 settings export changes On/Off to non-importable Enabled/Disabled; some settings omitted | [9463](https://workshop.codes/wiki/articles/9463), section-specific old report | Preserve source and compare actual export/import. Do not rewrite every setting blindly. |
+## Find the relevant exception
 
-The upstream revision above is **5a7d0e294b8cad73b9701987bb584d0551d7fa4d** (package 9.7.17), inspected during the 2026-10-07 build. Its warnings are documentation evidence, not new engine measurements. The approximate restart count reported upstream is deliberately not a supported operating budget.
+The [compatibility catalog](wiki/compatibility.md) collects focused articles. The [OW2 changes and bugs article](wiki/articles/9463.md) and its [full source](wiki/archive/9463.md) contain the current bundled registry, including conditions attached to each entry. Follow these entries when they differ from an older summary.
 
-## Techniques explicitly marked historical
+- For chased-variable notification and reevaluation, start with [reevaluation](reevaluation.md), then the linked wiki entry.
+- For projectile ownership and resource lifetime, start with [resources](resources.md#projectile-leak-report).
+- For health, ammo, cooldowns and event attribution, read [combat and heroes](combat-heroes.md) and the exact hero/API entry. Preserve read-versus-write and weapon/form distinctions.
+- For category ordering, Combo defaults and import/export issues, use [match and settings](match-settings.md) with the current registry.
+- For string limits, local-player visuals and screen projection, use [visuals and strings](visuals-strings.md) with the dedicated article.
 
-- **Base-health pool removal exploit:** [6790](https://workshop.codes/wiki/articles/6790) explicitly says patched on **2025-05-07**, version 2.16.0-138051. Preserve it for diagnosis of old modes, not as a current replacement for Set Max Health. Normal added-pool ownership remains useful.
-- **Stadium Workshop workaround:** [7385](https://workshop.codes/wiki/articles/7385) explicitly says broken as of **2025-10-01**, with a spawn-preventing soft lock. Do not import its recipe as an active supported workflow. [7418](https://workshop.codes/wiki/articles/7418)'s perks table (2025-10-14) also distinguishes enabling a setting from usable progression; it does not repair the broken Stadium technique.
-- **Texture sanitization bypasses:** [6560](https://workshop.codes/wiki/articles/6560) distinguishes a Season 17 issue patched **2025-08-05** from a different bypass it claims unpatched through **2025-08-08**. Do not mark both fixed or both current. The latter is an unverified workaround, with destructive setup steps to redesign before reuse.
+If two wiki passages differ, consult the complete articles for their scope and explicit corrections. Identify the specific discrepancy rather than attaching a generic uncertainty disclaimer to unrelated facts. For example, the [string guide](wiki/archive/5734.md) explicitly removes the older total 511-byte limit while preserving the per-node distinction; native [For documentation](wiki/archive/4383.md) supplies the exclusive-stop contract even where a compiler README example differs.
 
-Old aliases or sparse documentation are not sufficient evidence of deprecation. For example, Stop Modifying Voice Lines is retained with naming/alias uncertainty rather than labeled patched simply because its naming differs.
+## Keep explicit historical status
 
-## Measurements are scoped data
+The [historical catalog](wiki/historical.md) retains techniques the wiki marks patched or broken. Preserve the scope and dates of those labels:
 
-Use the [wiki catalog](wiki/index.md) for the full tables; retain their keys, units and test conditions:
+- [Base-health pool removal](wiki/archive/6790.md) is marked patched on **2025-05-07**, version 2.16.0-138051. Use normal health-pool ownership and Set Max Health for new work.
+- [The Stadium workaround](wiki/archive/7385.md) is marked broken as of **2025-10-01**, with a spawn-preventing soft lock.
+- [Texture sanitization](wiki/archive/6560.md) distinguishes the Season 17 issue patched **2025-08-05** from a separate bypass described through **2025-08-08**. Keep those histories separate and preserve the setup’s dummy-bot side effects.
 
-- Projectile speed/gravity/radius/cast data in [2041](https://workshop.codes/wiki/articles/2041) explicitly describes **December 2023** measurements. Missing cells are not zero. [8242](https://workshop.codes/wiki/articles/8242) lists projectile **radii**, not diameters; its external test code was not run for this package.
-- Weapon offsets in [9331](https://workshop.codes/wiki/articles/9331) depend on idle animation, FOV 103 and the selected weapon/hand; do not reuse them as animation-aware third-person coordinates. Table/JSON disagreements remain unresolved.
-- Health-pack positions in [1976](https://workshop.codes/wiki/articles/1976) are keyed by mode/map/submap/size. Objective bounds in [4828](https://workshop.codes/wiki/articles/4828) do not reduce to the visible ground outline. Old payload timings in [1714](https://workshop.codes/wiki/articles/1714) depend on speed settings.
-- Hero colors in [8507](https://workshop.codes/wiki/articles/8507) have table/array disagreements and order-sensitive arrays. Prefer explicit hero keys. Website ability icon catalogs such as [6460](https://workshop.codes/wiki/articles/6460) do not prove an equivalent in-game API asset exists.
-- Comparison tables in [7978](https://workshop.codes/wiki/articles/7978) were tested **2024-04-22**, patch 2.10.0.0.124591; the 2026 edit timestamp does not refresh that test.
+Do not infer deprecation merely from an old edit date, an alias, or a sparse description.
 
-Remote videos/images, external share codes and links are provenance, not automatically bundled or reproduced tests. Normal use of this skill requires no network. If current behavior is essential and no game test is available, give a source-qualified answer and a minimal test procedure rather than inventing a current result.
+## Preserve measurement context
+
+Measured wiki data remains useful with its supplied units and conditions:
+
+- [Projectile measurements](wiki/archive/2041.md) describe **December 2023** data; absent cells are not zero. [Projectile size](wiki/archive/8242.md) is expressed as radius, not diameter.
+- [Weapon offsets](wiki/archive/9331.md) use idle animation, FOV 103 and the selected weapon/hand.
+- [Health-pack positions](wiki/archive/1976.md) are keyed by mode, map, submap and size. [Payload timing](wiki/archive/1714.md) depends on speed settings.
+- [Comparison tables](wiki/archive/7978.md) identify measurements from **2024-04-22**, patch 2.10.0.0.124591; preserve the listed harness values.
+- [Hero colors](wiki/archive/8507.md) include ordered arrays and explicit hero keys; retain the stated ordering when using an array.
+
+Linked media and external share codes remain source references rather than installed assets. The bundled article text and extracted tables are available locally.

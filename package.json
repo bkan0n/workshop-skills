@@ -24,7 +24,9 @@
     "test": "python3 -m unittest discover -s scripts -p 'test_*.py' && python3 -m unittest discover -s tests -p 'test_*.py' && node --test tests/*.test.mjs",
     "check": "npm run catalog:check && npm run validate && npm run examples && npm test",
     "build": "python3 scripts/package.py",
-    "refresh:wiki": "python3 scripts/refresh-wiki.py"
+    "refresh:wiki": "python3 scripts/refresh-wiki.py",
+    "release:update-wiki": "python3 scripts/refresh-wiki.py",
+    "release:check-wiki": "python3 scripts/refresh-wiki.py --check"
   },
   "devDependencies": {
     "overpy": "9.7.17",

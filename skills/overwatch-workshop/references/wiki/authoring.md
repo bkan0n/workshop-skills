@@ -4,7 +4,7 @@
 
 Read for native source editing, settings text, import/export and release code behavior.
 
-Select the relevant entry. Each entry preserves its archived source, edit date and uncertainty; these are not independent current-game verification.
+Select the relevant entry. Each entry links to its trusted local wiki source.
 
 ## Entries
 

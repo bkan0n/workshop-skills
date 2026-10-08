@@ -1,6 +1,6 @@
 # Heroes
 
-Snapshot data from OverPy; inclusion is not a current-game compatibility guarantee.
+Pinned OverPy names; consult the bundled wiki for hero and map behavior.
 
 - [Ana](ana.md)
 - [Anran](anran.md)

@@ -14,7 +14,7 @@ Report the actual command/API, version, token language, diagnostics, and the bou
 
 ## Compiler warnings with engine implications
 
-These warning names and explanations come from the pinned upstream source; the engine reports have not been independently retested by this skill project.
+These warning names and explanations come from the pinned upstream source. Use the bundled Workshop wiki for runtime behavior.
 
 | Warning | Why to investigate | Focused response |
 | --- | --- | --- |
@@ -27,7 +27,7 @@ These warning names and explanations come from the pinned upstream source; the e
 
 Use `@SuppressWarnings warning_name` on the specific reviewed rule if justified. `#!suppressWarnings` affects the project more broadly. Record the reason and a reproduction that supports the exception; do not suppress warnings solely to make validation pass. The checked examples include a deliberate warning case to prove warnings are examined.
 
-## Optimizations are transformations, not runtime tests
+## Compiler transformations
 
 By default the compiler folds constant calculations, removes no-op/empty output, and substitutes recognized function patterns. Inspect the emitted text rather than assuming one source line always corresponds to one native action.
 

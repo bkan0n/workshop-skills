@@ -11,7 +11,7 @@ for i in range(1, 5, 2):
     values.append(i)
 ```
 
-The loop variable must be declared Workshop storage (`globalvar i` or a player variable). The structured native metadata defines an exclusive stop, checked before the body: this range therefore targets 1 and 3. The pinned README contradicts that metadata by claiming 1, 3, 5; the compiler emits native For bounds unchanged. This project follows the explicit For argument contract and flags the README example as conflicting, without claiming a game test. `range(stop)` means start 0, step 1; it is a loop-specific construct, not a Python range object. Do not use a chased variable as the loop counter: [diagnostics](diagnostics.md) explains the compiler's warning.
+The loop variable must be declared Workshop storage (`globalvar i` or a player variable). The structured native metadata defines an exclusive stop, checked before the body: this range therefore targets 1 and 3. The pinned README contradicts that metadata by claiming 1, 3, 5; the compiler emits native For bounds unchanged. This project follows the explicit For argument contract and flags the README example as conflicting. `range(stop)` means start 0, step 1; it is a loop-specific construct, not a Python range object. Do not use a chased variable as the loop counter: [diagnostics](diagnostics.md) explains the compiler's warning.
 
 `loop()` restarts the rule's action list; it is not a synonym for `continue` in any arbitrary nested construct. `return` aborts the action list. Forward labels and `goto` lower to Skip instructions, are restricted to the same rule, and cannot jump backward. Prefer structured control unless the jump itself solves the task. Inspect generated Skip counts when using dynamic `goto loc + expression`.
 
