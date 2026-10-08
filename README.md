@@ -9,9 +9,22 @@ Each starts with a small required foundation, then routes to focused guides, exa
 
 ## Install
 
-Copy the directories under `skills/` into your agent's supported skill location, keeping both as siblings for OverPy. See [installation instructions](INSTALL.md) for package layout and hosts that isolate skill files.
+From this checkout's root, use [the Skills CLI](https://github.com/vercel-labs/skills) to discover the local skills and install the matched pair for Codex:
 
-Version **0.1.0** uses **OverPy 9.7.17** and the **September 29, 2026** wiki snapshot. Both skills must be version 0.1.0. The host must expose reference and companion files; SKILL.md metadata does not install dependencies.
+```sh
+npx skills add ./skills --list
+npx skills add ./skills --skill overwatch-workshop --skill overpy --agent codex
+```
+
+For native Workshop only, omit `--skill overpy`. Select **Project** if prompted, or add `--global` for use across projects. Replace `codex` with your agent's identifier. OverPy needs both skills explicitly selected; dependency metadata does not install its companion.
+
+Alternatively, copy the complete skill folders or extract a matched release archive, keeping them as siblings with all references and examples. See [installation instructions](INSTALL.md) for manual setup, other agents, updates, and future GitHub commands using the clearly labeled `OWNER/REPO` placeholder. No public repository address is configured yet.
+
+<!-- x-release-please-start-version -->
+Skill release **0.1.0** requires matching versions of both skills for OverPy.
+<!-- x-release-please-end -->
+
+The references use **OverPy 9.7.17** and the **September 29, 2026** wiki snapshot. The host must expose reference and companion files.
 
 ## Evidence and scope
 
@@ -25,6 +38,8 @@ Workshop.codes web-editor authoring and complex-system companions remain in the 
 
 Maintainers use Node **24.14.0**, npm **11.9.0**, and Python **3.14.3** (standard library only). Normal skill use needs none of these tools.
 
+Local workflow tests also require the shell utilities listed in [maintenance](docs/maintaining.md); GitHub's selected Ubuntu runner supplies them.
+
 ```sh
 npm ci --ignore-scripts --no-audit --no-fund
 npm run check
@@ -33,7 +48,7 @@ npm run build
 
 `dist/` receives Workshop-only and matched-pair ZIP archives, SHA-256 checksums, and a context report. Packaging never fetches the wiki. Reviewed Markdown and normalized source data are checked in.
 
-[Maintenance instructions](docs/maintaining.md) explain source updates and GitHub releases. GitHub validates changes; the manual release workflow builds an existing tag and creates a **draft** for review. No remote repository or release is created by a local build.
+[Maintenance instructions](docs/maintaining.md) explain source updates and GitHub releases. Release Please uses [Conventional Commits](CONTRIBUTING.md) to prepare a version PR and changelog. Merging that PR creates a **draft** release; GitHub Actions validates its tag, builds both packages, and verifies the uploaded assets. Publishing remains a maintainer action. No remote repository or release is created by a local build.
 
 The existing `archive/` is a local raw cache, excluded from tracking and packages. Retrieval uses the Workshop.codes JSON API with conservative pacing, never website scraping.
 

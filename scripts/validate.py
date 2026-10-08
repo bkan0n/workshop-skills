@@ -202,7 +202,10 @@ def validate(root=ROOT):
         errors.append('Release version and source lock disagree')
     if sha256(root / 'sources/wiki-index.json') != lock['wiki']['index_sha256']:
         errors.append('Wiki source index hash mismatch')
-    npm = read_json(root / 'package-lock.json')['packages']['node_modules/overpy']
+    package_lock = read_json(root / 'package-lock.json')
+    if package_lock.get('version') != expected or package_lock['packages'][''].get('version') != expected:
+        errors.append('Root package-lock versions disagree with package version')
+    npm = package_lock['packages']['node_modules/overpy']
     snapshot = read_json(root / 'sources/overpy-api.json')
     if npm['version'] != lock['overpy']['version'] or npm['integrity'] != lock['overpy']['package_integrity']:
         errors.append('OverPy dependency lock disagrees with source lock')

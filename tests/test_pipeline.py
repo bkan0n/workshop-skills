@@ -11,8 +11,7 @@ from pathlib import Path
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from validate import metadata, validate_links, validate_coverage
-from package import archive_bytes, package_files, verify_freshness, build
-from release import verify_artifacts
+from package import archive_bytes, package_files, verify_freshness, verify_archives, build
 
 spec=importlib.util.spec_from_file_location('refresh_wiki',Path(__file__).resolve().parents[1]/'scripts/refresh-wiki.py')
 refresh=importlib.util.module_from_spec(spec)
@@ -97,7 +96,7 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(q['changes'][0]['changed_fields'],['title'])
         self.assertEqual(q['changes'][0]['references_to_review'],['claim.md','data.md','data/map.md','helper.md'])
 
-    def test_release_checks_files_against_checkout_not_self_asserted_manifest(self):
+    def test_package_checks_files_against_checkout_not_self_asserted_manifest(self):
         with tempfile.TemporaryDirectory() as folder:
             root=Path(folder).resolve()
             for name in ('overwatch-workshop','overpy'):
@@ -113,14 +112,14 @@ class PipelineTests(unittest.TestCase):
                 file.write_bytes(archive_bytes(package_files(root,skills,{'commit':'abc','dirty':False},'0.1.0',{'release':'0.1.0'})))
                 checks.append(f'{hashlib.sha256(file.read_bytes()).hexdigest()}  {file.name}\n')
             (root/'dist/SHA256SUMS').write_text(''.join(checks))
-            self.assertEqual(len(verify_artifacts('v0.1.0','abc',root)),2)
+            self.assertEqual(len(verify_archives(root,'0.1.0',{'commit':'abc','dirty':False})),2)
             file=root/'dist/workshop-skills-0.1.0.zip'
             fake={'version':'0.1.0','repository':{'commit':'abc','dirty':False},'source_locks':{'release':'0.1.0'},'files':{}}
             file.write_bytes(archive_bytes({'RELEASE.json':json.dumps(fake).encode()}))
             checks[0]=f'{hashlib.sha256(file.read_bytes()).hexdigest()}  {file.name}\n'
             (root/'dist/SHA256SUMS').write_text(''.join(checks))
             with self.assertRaisesRegex(ValueError,'differs from the files'):
-                verify_artifacts('v0.1.0','abc',root)
+                verify_archives(root,'0.1.0',{'commit':'abc','dirty':False})
 
     def test_build_rejects_changed_generated_prose_without_raw_archive(self):
         source=Path(__file__).resolve().parents[1]

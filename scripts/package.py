@@ -76,6 +76,23 @@ def verify_freshness(root):
             raise ValueError('Generated content is stale: ' + (result.stdout + result.stderr).strip())
 
 
+def verify_archives(root, version, identity, destination=None):
+    """Bind on-disk packages to actual checkout contents, not their own manifests."""
+    destination = Path(destination or root / 'dist')
+    checksums = (destination / 'SHA256SUMS').read_text()
+    files = []
+    for kind, skills in [('workshop', SKILLS[:1]), ('workshop-overpy', SKILLS)]:
+        file = destination / f'{kind}-skills-{version}.zip'
+        content = file.read_bytes()
+        if f'{hashlib.sha256(content).hexdigest()}  {file.name}\n' not in checksums:
+            raise ValueError(f'Checksum mismatch for {file.name}')
+        expected = archive_bytes(package_files(root, skills, identity, version, read_json(root / 'sources/lock.json')))
+        if content != expected:
+            raise ValueError(f'{file.name} differs from the files and metadata in the selected checkout')
+        files.append(file)
+    return files
+
+
 def build(root=ROOT, destination=None, release=False):
     root = Path(root).resolve()
     destination = Path(destination or root / 'dist').resolve()
@@ -112,6 +129,7 @@ def build(root=ROOT, destination=None, release=False):
                     raise ValueError(f'Package member mismatch: {name}')
     (destination / 'SHA256SUMS').write_text(''.join(f'{digest}  {name}\n' for name,digest in sorted(checksums.items())))
     (destination / 'context-report.json').write_bytes(json_bytes(report['context']))
+    verify_archives(root, version, identity, destination)
     return {'version':version, 'repository':identity, 'packages':checksums, 'same_workshop_content':True, 'reproducible':True}
 
 

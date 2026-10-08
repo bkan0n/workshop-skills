@@ -4,7 +4,9 @@
   "private": true,
   "description": "Portable Workshop and OverPy skills with curated engine knowledge and pinned API references",
   "license": "GPL-3.0-only",
-  "engines": { "node": ">=24 <25" },
+  "engines": {
+    "node": ">=24 <25"
+  },
   "packageManager": "npm@11.9.0",
   "scripts": {
     "catalog": "node scripts/generate-api.mjs && python3 scripts/generate-wiki.py",
@@ -14,10 +16,11 @@
     "test": "python3 -m unittest discover -s scripts -p 'test_*.py' && python3 -m unittest discover -s tests -p 'test_*.py' && node --test tests/*.test.mjs",
     "check": "npm run catalog:check && npm run validate && npm run examples && npm test",
     "build": "python3 scripts/package.py",
-    "release:check": "python3 scripts/release.py check",
     "refresh:wiki": "python3 scripts/refresh-wiki.py"
   },
   "devDependencies": {
-    "overpy": "9.7.17"
+    "overpy": "9.7.17",
+    "release-please": "17.6.0",
+    "yaml": "2.9.1"
   }
 }

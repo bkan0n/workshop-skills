@@ -4,7 +4,9 @@ description: Use when writing, explaining, or debugging native Overwatch Worksho
 license: GPL-3.0-only
 compatibility: Requires a host that can read bundled Markdown references. No compiler, network, script runner, or OverPy skill is required for ordinary use.
 metadata:
+  # x-release-please-start-version
   workshop-skills-version: '0.1.0'
+  # x-release-please-end
 ---
 
 # Overwatch Workshop

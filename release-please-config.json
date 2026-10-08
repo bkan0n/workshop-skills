@@ -1,0 +1,36 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/v17.6.0/schemas/config.json",
+  "bootstrap-sha": "aed867aa85a8b17a8797af301e973c4372c31bf8",
+  "packages": {
+    ".": {
+      "release-type": "node",
+      "include-component-in-tag": false,
+      "include-v-in-tag": true,
+      "draft": true,
+      "force-tag-creation": true,
+      "prerelease": true,
+      "bump-minor-pre-major": true,
+      "bump-patch-for-minor-pre-major": false,
+      "changelog-sections": [
+        { "type": "feat", "section": "Features", "hidden": false },
+        { "type": "fix", "section": "Corrections", "hidden": false },
+        { "type": "docs", "section": "Skill knowledge and guidance", "hidden": false },
+        { "type": "perf", "section": "Performance", "hidden": false },
+        { "type": "revert", "section": "Reverts", "hidden": false },
+        { "type": "chore", "section": "Maintenance", "hidden": true },
+        { "type": "refactor", "section": "Refactoring", "hidden": true },
+        { "type": "test", "section": "Tests", "hidden": true },
+        { "type": "build", "section": "Build system", "hidden": true },
+        { "type": "ci", "section": "Continuous integration", "hidden": true },
+        { "type": "style", "section": "Formatting", "hidden": true }
+      ],
+      "extra-files": [
+        { "type": "generic", "path": "skills/overwatch-workshop/SKILL.md" },
+        { "type": "generic", "path": "skills/overpy/SKILL.md" },
+        { "type": "generic", "path": "README.md" },
+        { "type": "generic", "path": "INSTALL.md" },
+        { "type": "json", "path": "sources/lock.json", "jsonpath": "$.release" }
+      ]
+    }
+  }
+}

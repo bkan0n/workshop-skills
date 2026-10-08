@@ -1,28 +1,66 @@
-name: Prepare draft release
+name: Package draft release
 on:
+  workflow_call:
+    inputs:
+      tag:
+        required: true
+        type: string
+      expected-sha:
+        required: true
+        type: string
   workflow_dispatch:
     inputs:
       tag:
-        description: Existing version tag to build, such as v0.1.0
+        description: Existing Release Please draft tag to rebuild, such as v0.1.1
         required: true
         type: string
+      expected-sha:
+        description: Optional expected full commit SHA for recovery
+        required: false
+        type: string
+
 permissions:
   contents: write
 concurrency:
-  group: skills-release
+  group: draft-release-${{ inputs.tag }}
   cancel-in-progress: false
+defaults:
+  run:
+    shell: bash
+
 jobs:
-  release:
+  package:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     env:
       RELEASE_TAG: ${{ inputs.tag }}
+      EXPECTED_SHA: ${{ inputs.expected-sha }}
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
     steps:
+      - name: Validate release inputs
+        id: inputs
+        run: |
+          [[ "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo 'Expected a vN.N.N tag'; exit 1; }
+          [[ -z "$EXPECTED_SHA" || "$EXPECTED_SHA" =~ ^[0-9a-f]{40}$ ]] || { echo 'Expected a full commit SHA'; exit 1; }
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: refs/tags/${{ inputs.tag }}
           fetch-depth: 0
           persist-credentials: false
+      - name: Verify tag, version, and existing draft
+        id: identity
+        run: |
+          commit="$(git rev-parse HEAD)"
+          [[ "$commit" == "$(git rev-parse --verify "refs/tags/${RELEASE_TAG}^{commit}")" ]] || { echo 'Checkout does not match the selected tag'; exit 1; }
+          [[ -z "$EXPECTED_SHA" || "$commit" == "$EXPECTED_SHA" ]] || { echo 'Tag does not match the expected commit'; exit 1; }
+          [[ -z "$(git status --porcelain --untracked-files=normal)" ]] || { echo 'Release checkout must be clean'; exit 1; }
+          [[ "$(jq -r .version package.json)" == "${RELEASE_TAG#v}" ]] || { echo 'Package version does not match tag'; exit 1; }
+          [[ "$(jq -r .release sources/lock.json)" == "${RELEASE_TAG#v}" ]] || { echo 'Source lock version does not match tag'; exit 1; }
+          gh release view "$RELEASE_TAG" --json tagName,isDraft,targetCommitish,url > "$RUNNER_TEMP/release.json"
+          jq -e --arg tag "$RELEASE_TAG" --arg sha "$commit" \
+            '.isDraft == true and .tagName == $tag and .targetCommitish == $sha' "$RUNNER_TEMP/release.json"
+          printf 'commit=%s\n' "$commit" >> "$GITHUB_OUTPUT"
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version-file: .node-version
@@ -32,10 +70,31 @@ jobs:
           python-version: '3.14.3'
       - run: npm install --global npm@11.9.0 --ignore-scripts
       - run: npm ci --ignore-scripts --no-audit --no-fund
-      - run: python3 scripts/release.py check
       - run: npm run check
-      - run: python3 scripts/package.py --release
-      - name: Create draft and attach reviewed artifacts
-        run: python3 scripts/release.py draft
+      - run: npm run build -- --release
+      - name: Upload and verify draft assets
+        id: upload
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          RELEASE_COMMIT: ${{ steps.identity.outputs.commit }}
+        run: |
+          # Recheck immediately before replacing assets, including recovery runs.
+          remote_tag="$(gh api "repos/$GH_REPO/git/ref/tags/$RELEASE_TAG" --jq '.object.sha')"
+          [[ "$remote_tag" == "$(git rev-parse "refs/tags/$RELEASE_TAG")" ]] || { echo 'Remote tag moved during the build'; exit 1; }
+          gh release view "$RELEASE_TAG" --json tagName,isDraft,targetCommitish,url > "$RUNNER_TEMP/release.json"
+          jq -e --arg tag "$RELEASE_TAG" --arg sha "$RELEASE_COMMIT" \
+            '.isDraft == true and .tagName == $tag and .targetCommitish == $sha' "$RUNNER_TEMP/release.json"
+          version="${RELEASE_TAG#v}"
+          assets=("workshop-skills-$version.zip" "workshop-overpy-skills-$version.zip" SHA256SUMS context-report.json)
+          (cd dist && sha256sum --check SHA256SUMS)
+          for asset in "${assets[@]}"; do
+            gh release upload "$RELEASE_TAG" "dist/$asset" --clobber
+          done
+          verified="$(mktemp -d "$RUNNER_TEMP/release-download.XXXXXX")"
+          gh release download "$RELEASE_TAG" --dir "$verified" \
+            --pattern '*.zip' --pattern SHA256SUMS --pattern context-report.json
+          for asset in "${assets[@]}"; do
+            cmp "dist/$asset" "$verified/$asset"
+          done
+          (cd "$verified" && sha256sum --check SHA256SUMS)
+          printf 'Draft assets verified for %s (%s). Publish after reviewing the release notes.\n' \
+            "$RELEASE_TAG" "$RELEASE_COMMIT" >> "$GITHUB_STEP_SUMMARY"
