@@ -1,0 +1,1370 @@
+{
+  "schema_version": 1,
+  "source_article_id": 9562,
+  "title": "Texture code lookup",
+  "evidence_status": "archived-documentation",
+  "behavioral_test_date": null,
+  "context": [
+    "Payload follows tx inside engine texture markup. Literal Custom String input is normally sanitized; see the separate dated TX/FG behavior notes before assuming markup works.",
+    "The source is explicitly incomplete and patch-sensitive; TX Browser code 8B9H1 supplied its observations.",
+    "Non-16-digit source identifiers are preserved and flagged, not silently padded. Remote screenshots are omitted; no image recognition/visual matching is promised."
+  ],
+  "tables": [
+    {
+      "id": "wiki-9562-table-1",
+      "title": "Roles",
+      "columns": [
+        "Name",
+        "TX payload",
+        "Search tags",
+        "Format check"
+      ],
+      "rows": [
+        [
+          "Tank",
+          "0C00000000004120",
+          "Role, Tank, Protection",
+          "16 hex digits"
+        ],
+        [
+          "Defensive",
+          "0C00000000004121",
+          "Role, Defensive",
+          "16 hex digits"
+        ],
+        [
+          "Offensive",
+          "0C00000000004122",
+          "Role, Offensive, Damage, DPS",
+          "16 hex digits"
+        ],
+        [
+          "Support",
+          "0C00000000004123",
+          "Role, Support, Sup, Healer",
+          "16 hex digits"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/9562/roles.md"
+    },
+    {
+      "id": "wiki-9562-table-2",
+      "title": "Communication",
+      "columns": [
+        "Name",
+        "TX payload",
+        "Search tags",
+        "Format check"
+      ],
+      "rows": [
+        [
+          "Group Up",
+          "0C000000000039DA",
+          "Circle, Arrows, Group, Point",
+          "16 hex digits"
+        ],
+        [
+          "Ultimate",
+          "0000000000039DB",
+          "Ultimate Ready, Checkmark, Circle",
+          "Source has 15 digits; unresolved"
+        ],
+        [
+          "Need Healing",
+          "0000000000039DD",
+          "Plus, Healing, Heal",
+          "Source has 15 digits; unresolved"
+        ],
+        [
+          "Attacking",
+          "0C000000000039D7",
+          "Attacking, Swords",
+          "16 hex digits"
+        ],
+        [
+          "Emote",
+          "000000000005A0A",
+          "Emote, Smile, Wink",
+          "Source has 15 digits; unresolved"
+        ],
+        [
+          "Hello / Goodbye",
+          "0C00000000005A0B",
+          "Hello, Wave, Hand, Greeting",
+          "16 hex digits"
+        ],
+        [
+          "Need Help",
+          "0C00000000005A0C",
+          "Help, Exclamation, Triangle, Warning",
+          "16 hex digits"
+        ],
+        [
+          "Thanks",
+          "0C00000000005A0D",
+          "Thanks, Hand, Thumb",
+          "16 hex digits"
+        ],
+        [
+          "Defending",
+          "0C0000000002A9ED",
+          "Shield, Chess, Rook, Defense, Defence",
+          "16 hex digits"
+        ],
+        [
+          "Fall Back",
+          "0C0000000002A9EF",
+          "Falling Back, Arrows, Left, Backwards",
+          "16 hex digits"
+        ],
+        [
+          "Go",
+          "0C0000000002A9F1",
+          "Go In, Arrows, Right, Forward",
+          "16 hex digits"
+        ],
+        [
+          "Going In",
+          "0C0000000002A9F2",
+          "Go, Arrows, Right, Forward",
+          "16 hex digits"
+        ],
+        [
+          "Incoming",
+          "0C0000000002A9F5",
+          "Exclamation, Circle, Zone",
+          "16 hex digits"
+        ],
+        [
+          "No",
+          "0C0000000002A9F9",
+          "X, Mark",
+          "16 hex digits"
+        ],
+        [
+          "On My Way",
+          "0C0000000002A9FA",
+          "Boot, Running, Foot, Go, Speed",
+          "16 hex digits"
+        ],
+        [
+          "Press The Attack",
+          "0C0000000002A9FB",
+          "Swords, Attacking",
+          "16 hex digits"
+        ],
+        [
+          "Push Forward",
+          "0C0000000002A9FC",
+          "Arrows, Right, Forward",
+          "16 hex digits"
+        ],
+        [
+          "Sorry",
+          "0C0000000002A9FE",
+          "Face, Shy",
+          "16 hex digits"
+        ],
+        [
+          "With You",
+          "0C0000000002AA00",
+          "Arrow, Right, Person, Forward",
+          "16 hex digits"
+        ],
+        [
+          "Saved",
+          "0C0000000003A2C8",
+          "Health, Heart",
+          "16 hex digits"
+        ],
+        [
+          "Praise",
+          "0C0000000006D1B4",
+          "Hand clapping, Complete",
+          "16 hex digits"
+        ],
+        [
+          "Ultimate Ready",
+          "0C000000000468D1",
+          "Complete, Tick, Checkmark",
+          "16 hex digits"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/9562/communication.md"
+    },
+    {
+      "id": "wiki-9562-table-3",
+      "title": "Abilities",
+      "columns": [
+        "Name",
+        "TX payload",
+        "Search tags",
+        "Format check"
+      ],
+      "rows": [
+        [
+          "Mercy's Angelic Descent",
+          "0C000000000012F6",
+          "Mercy, Hero, Angelic Descent, Feather, Ability 1",
+          "16 hex digits"
+        ],
+        [
+          "Brigitte's Shield Bash",
+          "0C00000000003339",
+          "Brigitte, Hero, Shield, Dash",
+          "16 hex digits"
+        ],
+        [
+          "Lucio's Healing Crossfade",
+          "0C00000000003C5D",
+          "Lucio, Lúcio, Crossfade, Healing, Hero, Ability 1",
+          "16 hex digits"
+        ],
+        [
+          "Reaper's Passive, The Reaping",
+          "0C00000000003FCF",
+          "Reaper, Passive, Hero, Skull",
+          "16 hex digits"
+        ],
+        [
+          "Torbjorn's Scrap Collector",
+          "0C00000000003FD0",
+          "Torbjorn, Torbjörn, Hero, Gear, Ability 2, Scrap, Armor Pack",
+          "16 hex digits"
+        ],
+        [
+          "Junkrat's Passive, Total Mayhem",
+          "0C00000000004E54",
+          "Junkrat, Passive, Hero, Face, Bomb, Circle",
+          "16 hex digits"
+        ],
+        [
+          "D.Va's Light Gun",
+          "0C00000000004EA9",
+          "D.va, Mini-D.Va. Baby D.Va, DVa, Gun, Primary Weapon, Hero, Alternate Form",
+          "16 hex digits"
+        ],
+        [
+          "D.Va's Alternate Ultimate, Call Mech",
+          "0C00000000004EAB",
+          "D.va, Mini-D.Va. Baby D.Va, DVa, Ultimate Ability, Hero, Alternate Form, Call Mech. Remech, Re-Mech",
+          "16 hex digits"
+        ],
+        [
+          "D.Va's Passive, Eject!",
+          "0C00000000005405",
+          "D.va, Mini-D.Va. Baby D.Va, DVa, Hero, Passive Ability, Mech",
+          "16 hex digits"
+        ],
+        [
+          "Sombra's Stealth",
+          "0C0000000000A6B6",
+          "Sombra, Ability, Passive, Hero",
+          "16 hex digits"
+        ],
+        [
+          "Sombra's Passive, Opportunist",
+          "0C0000000000AFBF",
+          "Sombra, Ability, Passive, Hero, Hack, Skull",
+          "16 hex digits"
+        ],
+        [
+          "Doomfist's Passive, The Best Defense...",
+          "0C0000000000F4C2",
+          "Doomfist, Hero, Ability, Passive, Fist, Circle, Shield",
+          "16 hex digits"
+        ],
+        [
+          "Brigitte's Passive, Inspire",
+          "0C000000000144A8",
+          "Brigitte, Passive, Hero, Ability, Heal, Healing, Explosive, Explosion",
+          "16 hex digits"
+        ],
+        [
+          "Hanzo Lunge",
+          "0C00000000014F0C",
+          "Hanzo, Hero, Jump, Leap, Ability, Dash, Arrow",
+          "16 hex digits"
+        ],
+        [
+          "Junker Queen's Passive, Adrenaline Rush",
+          "0C0000000002BE58",
+          "Hero, Ability, Passive, Blood drop, Healing, Plus",
+          "16 hex digits"
+        ],
+        [
+          "Mercy's Ressurect Ultimate (Old)",
+          "0C000000000012F4",
+          "Hero, Ability, Ultimate, Ressurect, Healing, OW1",
+          "16 hex digits"
+        ],
+        [
+          "Zarya's Energy Passive",
+          "0C00000000003FD1",
+          "Hero, Ability, Passive, Bubble, Bullet",
+          "16 hex digits"
+        ],
+        [
+          "Lifeweaver's Life Cicle Perk",
+          "0C0000000005E4B4",
+          "Hero, Perk, Heal, Healthpack",
+          "16 hex digits"
+        ],
+        [
+          "Lifeweaver's Parting Gift Passive",
+          "0C0000000003C65C",
+          "Hero, Perk, Heal, Healthpack",
+          "16 hex digits"
+        ],
+        [
+          "Bastion's Ironclad Passive",
+          "0C0000000004E11A",
+          "Hero, Passive",
+          "16 hex digits"
+        ],
+        [
+          "Ramattra's Block",
+          "0C0000000002E842",
+          "Hero, Ability, Block",
+          "16 hex digits"
+        ],
+        [
+          "Venture's Explorer's Resolve Passive",
+          "0C0000000004A03B",
+          "Hero, Passive",
+          "16 hex digits"
+        ],
+        [
+          "Freja's Bounty Hunting Passive",
+          "0C0000000005F9BC",
+          "Hero, Passive",
+          "16 hex digits"
+        ],
+        [
+          "Mauga's Lifesteal Passive",
+          "0C00000000041526",
+          "Hero, Passive, Life, Critical",
+          "16 hex digits"
+        ],
+        [
+          "Echo's Gliding Passive",
+          "0C0000000002ABE2",
+          "Hero, Passive, Flight",
+          "16 hex digits"
+        ],
+        [
+          "Prop Hunt Ability",
+          "0C00000000042F9C",
+          "Hero, Prop",
+          "16 hex digits"
+        ],
+        [
+          "Lucio Green Amp it up",
+          "0C00000000008036",
+          "Timer, Clock",
+          "16 hex digits"
+        ],
+        [
+          "Vendetta Passive Onslaught",
+          "0C0000000006AC3D",
+          "Wolf",
+          "16 hex digits"
+        ],
+        [
+          "Roadhog Pig pen",
+          "0C000000000462A7",
+          "Trap",
+          "16 hex digits"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/9562/abilities.md"
+    },
+    {
+      "id": "wiki-9562-table-4",
+      "title": "Upgrades",
+      "columns": [
+        "Name",
+        "TX payload",
+        "Search tags",
+        "Format check"
+      ],
+      "rows": [
+        [
+          "Ammo with Triangle",
+          "0C0000000004F73A",
+          "Upgrade, Ammo, Buff, Bullet",
+          "16 hex digits"
+        ],
+        [
+          "Cross with Speedboost",
+          "0C0000000004F73B",
+          "Upgrade, Heal, Speed, Buff, Boost",
+          "16 hex digits"
+        ],
+        [
+          "Cooldown Acceleration",
+          "0C0000000004F73C",
+          "Upgrade, Cooldown, Acceleration, Buff, Boost",
+          "16 hex digits"
+        ],
+        [
+          "Cross with another Cross",
+          "0C0000000004F73D",
+          "Upgrade, Health, Healing",
+          "16 hex digits"
+        ],
+        [
+          "Shield Icon",
+          "0C0000000004F73E",
+          "Upgrade, Health, Protection, Shield, Armor",
+          "16 hex digits"
+        ],
+        [
+          "Regeneration Cooldown",
+          "0C0000000004F73F",
+          "Upgrade, Healing, Regeneration, Cooldown",
+          "16 hex digits"
+        ],
+        [
+          "Cooldown with Arrow Down",
+          "0C0000000004F740",
+          "Upgrade, Reduction, Cooldown, Buff",
+          "16 hex digits"
+        ],
+        [
+          "Speed Boost with Elimination",
+          "0C0000000004F741",
+          "Upgrade, Speed, Movement, Buff. Elimination, Skull",
+          "16 hex digits"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/9562/upgrades.md"
+    },
+    {
+      "id": "wiki-9562-table-5",
+      "title": "Stadium",
+      "columns": [
+        "Name",
+        "TX payload",
+        "Search tags",
+        "Format check"
+      ],
+      "rows": [
+        [
+          "Weapon Power",
+          "0C00000000061B0B",
+          "Upgrade, Item, Weapon, Damage, Power, Buff",
+          "16 hex digits"
+        ],
+        [
+          "Ability Power",
+          "0C00000000061B04",
+          "Upgrade, Item, Ability, Damage, Power, Buff",
+          "16 hex digits"
+        ],
+        [
+          "Attack Speed",
+          "0C00000000061B06",
+          "Upgrade, Item, Weapon, Damage, Power, Buff, Attack, Speed",
+          "16 hex digits"
+        ],
+        [
+          "Health",
+          "0C00000000061B05",
+          "Upgrade, Item, Health, Buff",
+          "16 hex digits"
+        ],
+        [
+          "Heartbeat Sensor",
+          "0C0000000004EB55",
+          "Upgrade, Item, Buff",
+          "16 hex digits"
+        ],
+        [
+          "Stadium Cash",
+          "0C0000000005FA7F",
+          "Currency",
+          "16 hex digits"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/9562/stadium.md"
+    },
+    {
+      "id": "wiki-9562-table-6",
+      "title": "Hero Gallery",
+      "columns": [
+        "Name",
+        "TX payload",
+        "Search tags",
+        "Format check"
+      ],
+      "rows": [
+        [
+          "Halloween Terror",
+          "0C0000000000ABAB",
+          "Halloween, Pumpkin, Event, Logo",
+          "16 hex digits"
+        ],
+        [
+          "Blizzard Special",
+          "0C0000000000ABAC",
+          "Blizzard, B, Letter, Stamp, Logo",
+          "16 hex digits"
+        ],
+        [
+          "Summer Games",
+          "0C0000000000ABAD",
+          "Summer, Event, Logo",
+          "16 hex digits"
+        ],
+        [
+          "Lunar New Year",
+          "0C0000000000B93B",
+          "Year, Event, Logo, Lunar",
+          "16 hex digits"
+        ],
+        [
+          "Winter Wonderland",
+          "0C0000000000B93A",
+          "Snow, Snowflake, Event, Christmas, Logo",
+          "16 hex digits"
+        ],
+        [
+          "Archives",
+          "0C0000000000E04A",
+          "Archives, PvE, Event, Logo, OW1",
+          "16 hex digits"
+        ],
+        [
+          "Anniversary",
+          "0C0000000000EE0C",
+          "Anniversary, Event, Shiny, Sparkles, Logo",
+          "16 hex digits"
+        ],
+        [
+          "Overwatch League Tokens",
+          "0C00000000013DCC",
+          "Overwatch League, Competitive, Currency, Coins, Shop, Token, Tracer",
+          "16 hex digits"
+        ],
+        [
+          "Pink Mercy Heart",
+          "0C00000000017112",
+          "Shop, Love, Heart, Mercy, Cupid, Pink",
+          "16 hex digits"
+        ],
+        [
+          "Lock",
+          "0C00000000001509",
+          "Icon, Locked, Block",
+          "16 hex digits"
+        ],
+        [
+          "Overwatch Coins",
+          "0C00000000008E02",
+          "Currency, Credits, Coins, Shop",
+          "16 hex digits"
+        ],
+        [
+          "Competitive Points",
+          "0C0000000000906E",
+          "Currency, Credits, Coins, Shop, Purple",
+          "16 hex digits"
+        ],
+        [
+          "Mythic Prisms",
+          "0C0000000004C5D2",
+          "Currency, Credits, Coins, Shop, Cyan",
+          "16 hex digits"
+        ],
+        [
+          "Loot Box",
+          "0C00000000017C2A",
+          "Loot, Lootbox, Coins, Shop, Box, Cosmetic",
+          "16 hex digits"
+        ],
+        [
+          "Shop",
+          "0C0000000003A3B2",
+          "Coins, Shop",
+          "16 hex digits"
+        ],
+        [
+          "Battle Pass",
+          "0C000000000386E3",
+          "Coins",
+          "16 hex digits"
+        ],
+        [
+          "Snowflake",
+          "0C0000000002D8D9",
+          "Coins, Currency, Winter",
+          "16 hex digits"
+        ],
+        [
+          "Overwatch League",
+          "0C00000000014328",
+          "Esports",
+          "16 hex digits"
+        ],
+        [
+          "Overwatch League",
+          "0C00000000038C81",
+          "Esports",
+          "16 hex digits"
+        ],
+        [
+          "OWCS",
+          "0C0000000004AFA4",
+          "Overwatch Logo, Esports",
+          "16 hex digits"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/9562/hero-gallery.md"
+    },
+    {
+      "id": "wiki-9562-table-7",
+      "title": "Game Modes",
+      "columns": [
+        "Name",
+        "TX payload",
+        "Search tags",
+        "Format check"
+      ],
+      "rows": [
+        [
+          "Escort",
+          "0C00000000020AF3",
+          "Escort, Payload, Car, Vehicle, Truck",
+          "16 hex digits"
+        ],
+        [
+          "Elimination",
+          "0C00000000020AF4",
+          "Skull, Elimination, Kill",
+          "16 hex digits"
+        ],
+        [
+          "Deathmatch",
+          "0C00000000020AF5",
+          "Skull, Skulls, Elimination, Crown, King",
+          "16 hex digits"
+        ],
+        [
+          "Capture the Flag",
+          "0C00000000020AF6",
+          "Flag",
+          "16 hex digits"
+        ],
+        [
+          "Control",
+          "0C00000000020AF7",
+          "King of the Hill, KOTH, Diamond, Arrows, Point",
+          "16 hex digits"
+        ],
+        [
+          "Assault",
+          "0C00000000020AF8",
+          "2CP, Capture, Point, Square, Diamond, Marker",
+          "16 hex digits"
+        ],
+        [
+          "Flashpoint",
+          "0C000000000320D2",
+          "5CP, Diamond, Arrows, Point",
+          "16 hex digits"
+        ],
+        [
+          "Clash",
+          "0C0000000004B96C",
+          "5CP, Diamond, Arrows, Point",
+          "16 hex digits"
+        ],
+        [
+          "Stadium",
+          "0C0000000006295C",
+          "Stadium, Trophy",
+          "16 hex digits"
+        ],
+        [
+          "Team Deathmatch",
+          "0C00000000020AF9",
+          "Skull, Elimination, Team, Kill",
+          "16 hex digits"
+        ],
+        [
+          "Skirmish",
+          "0C00000000020AFA",
+          "Gloves, Boxing, Fight",
+          "16 hex digits"
+        ],
+        [
+          "Hybrid",
+          "0C00000000020AFB",
+          "Push, Payload, Escort",
+          "16 hex digits"
+        ],
+        [
+          "Push",
+          "0C000000000215B4",
+          "Robot, Omnic, TS-1, TS1, Barricade, HUD, UI",
+          "16 hex digits"
+        ],
+        [
+          "TS1 Standing",
+          "0C000000000221AC",
+          "Robot, Omnic, TS-1, TS1, Barricade, HUD, UI",
+          "16 hex digits"
+        ],
+        [
+          "TS1 Walking",
+          "0C000000000221AD",
+          "Robot, Omnic, TS-1, TS1, Barricade, HUD, UI",
+          "16 hex digits"
+        ],
+        [
+          "TS1 Pushing",
+          "0C000000000221AE",
+          "Robot, Omnic, TS-1, TS1, Barricade, HUD, UI",
+          "16 hex digits"
+        ],
+        [
+          "Practice Range",
+          "0C000000000280C0",
+          "Training Bot, Crosshair, Omnic",
+          "16 hex digits"
+        ],
+        [
+          "Practice Range Console",
+          "0C0000000002A917",
+          "Person, Select Hero",
+          "16 hex digits"
+        ],
+        [
+          "Unknown Gamemode",
+          "0C00000000043EFE",
+          "Gamemode, Crosshair, Reticle",
+          "16 hex digits"
+        ],
+        [
+          "Catch-A-Mari",
+          "0C0000000003F48D",
+          "Gamemode, Patchamari",
+          "16 hex digits"
+        ],
+        [
+          "Battle For Olympus",
+          "0C0000000003C4C9",
+          "Gamemode, Deathmatch",
+          "16 hex digits"
+        ],
+        [
+          "Experimental Mode (Dark)",
+          "0C0000000002A057",
+          "Gamemode, Poison, Lab, Experiment, Science, Dark",
+          "16 hex digits"
+        ],
+        [
+          "TS=1",
+          "0C0000000004447E",
+          "Robot, Omnic, TS-1, TS1",
+          "16 hex digits"
+        ],
+        [
+          "Story mission Icon",
+          "0C000000000420A4",
+          "Icon, Logo, Shop",
+          "16 hex digits"
+        ],
+        [
+          "Concert Clash Light Stick",
+          "0C000000000468CD",
+          "Item",
+          "16 hex digits"
+        ],
+        [
+          "Yeti Hunter Mei",
+          "0C0000000001346F",
+          "Mei",
+          "16 hex digits"
+        ],
+        [
+          "Yeti Hunter Winston",
+          "0C00000000013502",
+          "Winston",
+          "16 hex digits"
+        ],
+        [
+          "Lucioball",
+          "0C0000000000F76A",
+          "Lucioball",
+          "16 hex digits"
+        ],
+        [
+          "Zomnics",
+          "0C0000000001233C",
+          "Junkenstein's Revenge",
+          "16 hex digits"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/9562/game-modes.md"
+    },
+    {
+      "id": "wiki-9562-table-8",
+      "title": "Lobby Settings",
+      "columns": [
+        "Name",
+        "TX payload",
+        "Search tags",
+        "Format check"
+      ],
+      "rows": [
+        [
+          "Heroes",
+          "0C0000000000D073",
+          "Heroes, Lobby, Widowmaker",
+          "16 hex digits"
+        ],
+        [
+          "Lobby",
+          "C0000000000D074",
+          "Lobby, Duel",
+          "Source has 15 digits; unresolved"
+        ],
+        [
+          "Maps",
+          "0C0000000000D075",
+          "Maps, Lobby, Ping, Diamond",
+          "16 hex digits"
+        ],
+        [
+          "Modes",
+          "0C0000000000D076",
+          "Modes, Lobby, Target, Crosshair",
+          "16 hex digits"
+        ],
+        [
+          "Presets",
+          "0C0000000000D077",
+          "Presets, Lobby, Chip",
+          "16 hex digits"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/9562/lobby-settings.md"
+    },
+    {
+      "id": "wiki-9562-table-9",
+      "title": "Inputs",
+      "columns": [
+        "Name",
+        "TX payload",
+        "Search tags",
+        "Format check"
+      ],
+      "rows": [
+        [
+          "Right Click",
+          "0C00000000004080",
+          "Right Click, Control, UI",
+          "16 hex digits"
+        ],
+        [
+          "Scroll Up",
+          "0C00000000005DA0",
+          "Scroll Up, Control, UI",
+          "16 hex digits"
+        ],
+        [
+          "Scroll Down",
+          "0C00000000005DA1",
+          "Scroll Down, Control, UI",
+          "16 hex digits"
+        ],
+        [
+          "Scroll",
+          "0C00000000005DAD",
+          "Scroll , Control, UI",
+          "16 hex digits"
+        ],
+        [
+          "Mouse side button",
+          "0C00000000005DAB",
+          "Mouse, Control, UI",
+          "16 hex digits"
+        ],
+        [
+          "Up Arrow",
+          "0C000000000044A6",
+          "Up Arrow, Control, UI",
+          "16 hex digits"
+        ],
+        [
+          "Down Arrow",
+          "0C000000000044B3",
+          "Down Arrow, Control, UI",
+          "16 hex digits"
+        ],
+        [
+          "Left Arrow",
+          "0C000000000044B4",
+          "Left Arrow, Control, UI",
+          "16 hex digits"
+        ],
+        [
+          "Right Arrow",
+          "0C000000000044A5",
+          "Right Arrow, Control, UI",
+          "16 hex digits"
+        ],
+        [
+          "Y button",
+          "0C000000000044B2",
+          "Y Button, Control, UI",
+          "16 hex digits"
+        ],
+        [
+          "B button",
+          "0C000000000044B1",
+          "B Button, Control, UI",
+          "16 hex digits"
+        ],
+        [
+          "A button",
+          "0C000000000044AF",
+          "A Button, Control, UI",
+          "16 hex digits"
+        ],
+        [
+          "L button",
+          "0C000000000090D7",
+          "L Button, Control, UI",
+          "16 hex digits"
+        ],
+        [
+          "R button",
+          "0C000000000090D6",
+          "R Button, Control, UI",
+          "16 hex digits"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/9562/inputs.md"
+    },
+    {
+      "id": "wiki-9562-table-10",
+      "title": "Progression",
+      "columns": [
+        "Name",
+        "TX payload",
+        "Search tags",
+        "Format check"
+      ],
+      "rows": [
+        [
+          "Silver Border (OW1)",
+          "0C00000000007E84",
+          "Border, Level, OW1",
+          "16 hex digits"
+        ],
+        [
+          "Silver Star",
+          "0C00000000007E85",
+          "Star, Level, OW1, Silver",
+          "16 hex digits"
+        ],
+        [
+          "Player Level",
+          "0C0000000004300D",
+          "Star, Level",
+          "16 hex digits"
+        ],
+        [
+          "Crystal Rank",
+          "0C0000000004732E",
+          "Rank, Level",
+          "16 hex digits"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/9562/progression.md"
+    },
+    {
+      "id": "wiki-9562-table-11",
+      "title": "Uncategorized",
+      "columns": [
+        "Name",
+        "TX payload",
+        "Search tags",
+        "Format check"
+      ],
+      "rows": [
+        [
+          "Cursor",
+          "0C0000000002DD21",
+          "Mouse, Cursor, UI",
+          "16 hex digits"
+        ],
+        [
+          "Microphone",
+          "0C00000000007114",
+          "Microphone, Communication, UI, Voice, Icon",
+          "16 hex digits"
+        ],
+        [
+          "Workshop",
+          "0C0000000001F70D",
+          "Workshop, Hammer, Logo, UI, Icon",
+          "16 hex digits"
+        ],
+        [
+          "Gradient",
+          "0C00000000021CC9",
+          "Gradient, HUD, Dark",
+          "16 hex digits"
+        ],
+        [
+          "Border",
+          "0C0000000003EC4B",
+          "Border, Hero, HUD",
+          "16 hex digits"
+        ],
+        [
+          "Bronze Border",
+          "0C00000000007EA3",
+          "Border, Hero, HUD",
+          "16 hex digits"
+        ],
+        [
+          "Packet Loss",
+          "0C0000000000894E",
+          "Connection, Lag",
+          "16 hex digits"
+        ],
+        [
+          "Connectivity Issue",
+          "0C0000000000894F",
+          "Connection, Lag",
+          "16 hex digits"
+        ],
+        [
+          "Explosion (Dark)",
+          "0C0000000000A824",
+          "Explosion, Dark, Explosive",
+          "16 hex digits"
+        ],
+        [
+          "Target with Checkmark (Dark)",
+          "0C0000000000A825",
+          "Target, Checkmark, Dark, Crosshair",
+          "16 hex digits"
+        ],
+        [
+          "Fire (Dark)",
+          "0C0000000000A826",
+          "Fire, Dark, Flame",
+          "16 hex digits"
+        ],
+        [
+          "Healing Plus (Dark)",
+          "0C0000000000A827",
+          "Heal, Healing, Plus, Dark",
+          "16 hex digits"
+        ],
+        [
+          "Target with Person (Dark)",
+          "0C0000000000A82A",
+          "Bot, Dummy, Dark, Crosshair, Target, Player, Person",
+          "16 hex digits"
+        ],
+        [
+          "Tracer Icon (Dark)",
+          "0C0000000000B273",
+          "Tracer, Icon, Simple",
+          "16 hex digits"
+        ],
+        [
+          "Competitive Icon",
+          "0C0000000000B274",
+          "Rank, Ranked, T500, Top 500, Competitive",
+          "16 hex digits"
+        ],
+        [
+          "Game Browser Icon (Dark)",
+          "0C0000000000B275",
+          "Search, Magnifying Glass, Game Browser, Workshop, Dark",
+          "16 hex digits"
+        ],
+        [
+          "Unranked Icon (Dark)",
+          "0C0000000000B277",
+          "Lightning Bolt, Dark",
+          "16 hex digits"
+        ],
+        [
+          "Custom Games Icon (Yellow Background)",
+          "0C00000000017C9A",
+          "Custom Games, Chip, Yellow",
+          "16 hex digits"
+        ],
+        [
+          "Tracer Icon (Green Background)",
+          "0C00000000017C9B",
+          "Tracer, Green",
+          "16 hex digits"
+        ],
+        [
+          "Competitive Icon (Purple Background)",
+          "0C00000000017C9C",
+          "Competitive, Purple",
+          "16 hex digits"
+        ],
+        [
+          "Tracer Icon (Purple Background)",
+          "0C00000000017C9D",
+          "Tracer, Purple",
+          "16 hex digits"
+        ],
+        [
+          "Bolt Icon (Blue Background)",
+          "0C00000000017C9E",
+          "Lightning Bolt, Quick Play, Blue",
+          "16 hex digits"
+        ],
+        [
+          "Unknown Hero",
+          "0C000000000220A2",
+          "Hero, Unknown, Mystery",
+          "16 hex digits"
+        ],
+        [
+          "Versus",
+          "0C00000000008243",
+          "VS, Versus",
+          "16 hex digits"
+        ],
+        [
+          "X",
+          "0C0000000000839C",
+          "X",
+          "16 hex digits"
+        ],
+        [
+          "Clock Icon",
+          "0C0000000001935F",
+          "Clock, Timer, Time",
+          "16 hex digits"
+        ],
+        [
+          "Skull (Red Background)",
+          "0C00000000038DF4",
+          "Skull, Kill, Red",
+          "16 hex digits"
+        ],
+        [
+          "Skull (Yellow Background)",
+          "0C00000000038DF5",
+          "Skull, Kill, Yellow",
+          "16 hex digits"
+        ],
+        [
+          "Skull (White Background)",
+          "0C00000000032B11",
+          "Skull, Kill, White",
+          "16 hex digits"
+        ],
+        [
+          "Half Skull",
+          "0C000000000207B6",
+          "Skull, Kill, Half",
+          "16 hex digits"
+        ],
+        [
+          "Faded Blue Circle",
+          "0C0000000002915D",
+          "Cicle, Blue",
+          "16 hex digits"
+        ],
+        [
+          "Faded Yellow Circle",
+          "0C00000000001411",
+          "Cicle, Blue",
+          "16 hex digits"
+        ],
+        [
+          "Thin Segmented Circle",
+          "0C00000000037156",
+          "Cicle",
+          "16 hex digits"
+        ],
+        [
+          "Thin Dual Circle",
+          "0C000000000371AC",
+          "Cicle",
+          "16 hex digits"
+        ],
+        [
+          "Red Bounty",
+          "0C0000000002E11D",
+          "Bounty, Target, Red",
+          "16 hex digits"
+        ],
+        [
+          "Yellow Bounty",
+          "0C0000000002E0C7",
+          "Bounty, Target, Yellow",
+          "16 hex digits"
+        ],
+        [
+          "Hero Mastery Coin",
+          "0C0000000004478C",
+          "Hero Mastery, Coin, Currency, Points",
+          "16 hex digits"
+        ],
+        [
+          "Jetpack",
+          "0C000000000721CB",
+          "Jetpack",
+          "16 hex digits"
+        ],
+        [
+          "Ticket",
+          "0C000000000468CB",
+          "Ticket, Coin, Currency, Points",
+          "16 hex digits"
+        ],
+        [
+          "Chernobog Eye",
+          "0C000000000680CD",
+          "Conspiracy, Eye, Emre",
+          "16 hex digits"
+        ],
+        [
+          "Sea of Thieves Icon",
+          "0C00000000063CE8",
+          "Pirate, Game",
+          "16 hex digits"
+        ],
+        [
+          "Doom The Dark Ages Icon",
+          "0C00000000063CC4",
+          "Doom, Game",
+          "16 hex digits"
+        ],
+        [
+          "The Outer Worlds Icon",
+          "0C0000000006CB18",
+          "Moon, World, Worlds, Game",
+          "16 hex digits"
+        ],
+        [
+          "Overwatch Logo",
+          "0C000000000190DE",
+          "Overwatch, Logo, Game",
+          "16 hex digits"
+        ],
+        [
+          "Critical Hit",
+          "0C00000000021569",
+          "Critical, Hit, Elimination",
+          "16 hex digits"
+        ],
+        [
+          "Lion Shield",
+          "0C00000000020F3E",
+          "Shield, Lion, Reinhardt",
+          "16 hex digits"
+        ],
+        [
+          "Doomfist Starwatch Portrait",
+          "0C00000000040CE0",
+          "Baptiste, Portrait, Hero, Star, Space",
+          "16 hex digits"
+        ],
+        [
+          "Sigma Starwatch Portrait",
+          "0C00000000040CE1",
+          "Sigma, Portrait, Hero, Star, Space",
+          "16 hex digits"
+        ],
+        [
+          "Unknown Icon",
+          "0C00000000047DD2",
+          "Explosion, Ability",
+          "16 hex digits"
+        ],
+        [
+          "3/4 Star Icon",
+          "0C00000000046D12",
+          "Icon, Star, Space",
+          "16 hex digits"
+        ],
+        [
+          "Starwatch Logo",
+          "0C00000000041205",
+          "Icon, Star, Space",
+          "16 hex digits"
+        ],
+        [
+          "BOB Portrait",
+          "0C0000000001BDC2",
+          "BOB, Portrait, Hero",
+          "16 hex digits"
+        ],
+        [
+          "Maximilien Portrait",
+          "0C0000000001EF19",
+          "Max, Portrait",
+          "16 hex digits"
+        ],
+        [
+          "Black Star",
+          "0C0000000003AF44",
+          "Star",
+          "16 hex digits"
+        ],
+        [
+          "Yellow Star",
+          "0C0000000003AE1E",
+          "Star",
+          "16 hex digits"
+        ],
+        [
+          "Pink Star",
+          "0C0000000005E264",
+          "Star",
+          "16 hex digits"
+        ],
+        [
+          "Globe",
+          "0C0000000000D297",
+          "Internet",
+          "16 hex digits"
+        ],
+        [
+          "Green Shield with +",
+          "0C0000000004D80B",
+          "Shield",
+          "16 hex digits"
+        ],
+        [
+          "Stop sign",
+          "0C0000000000D504",
+          "Stop",
+          "16 hex digits"
+        ],
+        [
+          "No sign",
+          "0C00000000000D62",
+          "No, cancel, stop",
+          "16 hex digits"
+        ],
+        [
+          "Play button",
+          "0C000000000371FE",
+          "Play, right arrow",
+          "16 hex digits"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/9562/uncategorized.md"
+    }
+  ],
+  "destination": "skills/overwatch-workshop/references/wiki/tables/9562.md"
+}

@@ -1,0 +1,38 @@
+variables
+{
+    player:
+        0: PressCount
+}
+
+rule("Initialize each player's counter")
+{
+    event
+    {
+        Ongoing - Each Player;
+        All;
+        All;
+    }
+    actions
+    {
+        Event Player.PressCount = 0;
+    }
+}
+
+rule("Count Interact presses")
+{
+    event
+    {
+        Ongoing - Each Player;
+        All;
+        All;
+    }
+    conditions
+    {
+        Is Button Held(Event Player, Button(Interact)) == True;
+    }
+    actions
+    {
+        Event Player.PressCount += 1;
+        Small Message(Event Player, Custom String("Interact presses: {0}", Event Player.PressCount));
+    }
+}

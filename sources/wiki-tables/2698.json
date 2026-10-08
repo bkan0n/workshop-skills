@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "source_article_id": 2698,
+  "title": "Has Status ability detections",
+  "evidence_status": "source-reported-test",
+  "behavioral_test_date": null,
+  "context": [
+    "Source edited 2024-08-31; verification code YFPB7. These are patch-sensitive observations, not a complete current hero contract.",
+    "Spawn areas count as Phased Out. Accretion/Earthshatter can set both Knocked Down and Stunned. Artillery/Rip-Tire are not Rooted merely because movement is immobilized."
+  ],
+  "tables": [
+    {
+      "title": "Archived ability-status associations",
+      "columns": [
+        "Status",
+        "Ability"
+      ],
+      "rows": [
+        [
+          "Asleep",
+          "Ana's Sleep Dart"
+        ],
+        [
+          "Burning",
+          "Ashe's Dynamite"
+        ],
+        [
+          "Burning",
+          "Mauga's Incendiary Chain Gun"
+        ],
+        [
+          "Burning",
+          "Torbjörn's Molten Core"
+        ],
+        [
+          "Frozen",
+          "Mei's Blizzard"
+        ],
+        [
+          "Hacked",
+          "Sombra's EMP"
+        ],
+        [
+          "Hacked",
+          "Sombra's Hack"
+        ],
+        [
+          "Invincible",
+          "Doomfist's Meteor Strike"
+        ],
+        [
+          "Invincible",
+          "D.Va's Call Mech"
+        ],
+        [
+          "Invincible",
+          "D.Va's Eject!"
+        ],
+        [
+          "Invincible",
+          "Echo's Duplicate"
+        ],
+        [
+          "Invincible",
+          "Lifeweaver's Life Grip"
+        ],
+        [
+          "Invincible",
+          "Zarya's Particle Barrier"
+        ],
+        [
+          "Invincible",
+          "Zarya's Projected Barrier"
+        ],
+        [
+          "Invincible",
+          "Zenyatta's Transcendence"
+        ],
+        [
+          "Knocked Down",
+          "Reinhardt's Earthshatter"
+        ],
+        [
+          "Knocked Down",
+          "Sigma's Accretion"
+        ],
+        [
+          "Phased Out",
+          "D.Va's Call Mech"
+        ],
+        [
+          "Phased Out",
+          "D.Va's Eject!"
+        ],
+        [
+          "Phased Out",
+          "D.Va's Self-Destruct"
+        ],
+        [
+          "Phased Out",
+          "Doomfist's Meteor Strike"
+        ],
+        [
+          "Phased Out",
+          "Echo's Duplicate"
+        ],
+        [
+          "Phased Out",
+          "Kiriko's Protection Suzu"
+        ],
+        [
+          "Phased Out",
+          "Kiriko's Swift Step"
+        ],
+        [
+          "Phased Out",
+          "Mei's Cryo-Freeze"
+        ],
+        [
+          "Phased Out",
+          "Moira's Fade"
+        ],
+        [
+          "Phased Out",
+          "Reaper's Shadow Step"
+        ],
+        [
+          "Phased Out",
+          "Reaper's Wraith Form"
+        ],
+        [
+          "Phased Out",
+          "Sombra's Translocator"
+        ],
+        [
+          "Phased Out",
+          "Tracer's Recall"
+        ],
+        [
+          "Phased Out",
+          "Venture's Burrow"
+        ],
+        [
+          "Rooted",
+          "Junkrat's Steel Trap"
+        ],
+        [
+          "Rooted",
+          "Lifeweaver's Life Grip"
+        ],
+        [
+          "Rooted",
+          "Mauga's Cage Fight"
+        ],
+        [
+          "Rooted",
+          "Orisa's Terra Surge"
+        ],
+        [
+          "Rooted",
+          "Sigma's Gravitic Flux"
+        ],
+        [
+          "Rooted",
+          "Zarya's Graviton Surge"
+        ],
+        [
+          "Stunned",
+          "Brigitte's Shield Bash"
+        ],
+        [
+          "Stunned",
+          "Doomfist's Rocket Punch"
+        ],
+        [
+          "Stunned",
+          "D.Va's Call Mech"
+        ],
+        [
+          "Stunned",
+          "D.Va's Eject!"
+        ],
+        [
+          "Stunned",
+          "D.Va's Self-Destruct"
+        ],
+        [
+          "Stunned",
+          "Mei's Blizzard"
+        ],
+        [
+          "Stunned",
+          "Reinhardt's Charge"
+        ],
+        [
+          "Stunned",
+          "Reinhardt's Earthshatter"
+        ],
+        [
+          "Stunned",
+          "Roadhog's Chain Hook"
+        ],
+        [
+          "Stunned",
+          "Sigma's Accretion"
+        ],
+        [
+          "Unkillable",
+          "Baptiste's Immortality Field"
+        ]
+      ],
+      "id": "wiki-2698-table-1"
+    }
+  ],
+  "destination": "skills/overwatch-workshop/references/wiki/tables/2698.md"
+}

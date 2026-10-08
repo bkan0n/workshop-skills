@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "release": "0.1.0",
+  "workshop_reference_contract": "1",
+  "wiki": {
+    "snapshot": "2026-09-29T03:33:06Z",
+    "article_count": 630,
+    "information_note_count": 721,
+    "api_url": "https://workshop.codes/wiki/articles/page/{page}.json",
+    "snapshot_complete": true,
+    "first_empty_page": 28,
+    "index_sha256": "26cfbce4d568467210e2c47b7dc73da672a4853d65ac05644eb8c2567a203015",
+    "permission": "Maintainer confirms written consent to rewrite for this public project; original archive is not distributed."
+  },
+  "overpy": {
+    "version": "9.7.17",
+    "tag": "v9.7.17",
+    "tag_object": "bce4ef757d9c0de0153eaeebc65af472b997f9c6",
+    "commit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d",
+    "package_url": "https://registry.npmjs.org/overpy/-/overpy-9.7.17.tgz",
+    "package_integrity": "sha512-C5F6btT5yn19BvHuE0bjMuSd/2esebBabmpL4SYLQFuJ4IdouVOKEoMLLuJFAyNc0Phwrolblj5GDkDGYR0ofg==",
+    "snapshot_sha256": "05a9c5d9a2b076a4f1b309ed8f577fba6c6baf587e8813d292d952a51560977f",
+    "retrieved_at": "2026-10-07",
+    "inspected_sources": [
+      "src/overpy_standalone.ts",
+      "src/globalVars.ts",
+      "src/autocomplete.ts",
+      "src/compiler/compiler.ts",
+      "src/decompiler/decompiler.ts",
+      "src/quickjs.ts",
+      "src/data",
+      "README.md",
+      "publish.js",
+      "LICENSE"
+    ],
+    "runtime_components": [
+      "overpy.js",
+      "quickjs-ng.wasm"
+    ],
+    "license": "GPL-3.0"
+  },
+  "tooling": {
+    "node": "24.14.0",
+    "npm": "11.9.0",
+    "python": "3.14.3",
+    "package_format": "zip stored; fixed 1980-01-01 UTC entries, regular 0644, UTF-8 names"
+  }
+}

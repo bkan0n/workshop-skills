@@ -2,7 +2,7 @@
 
 Date: 2026-10-07
 
-Status: Written for user review; the conversational design sections are approved. Implementation begins after approval of this document.
+Status: Approved by the user on 2026-10-07; implementation authorized.
 
 ## Purpose and agreed outcome
 

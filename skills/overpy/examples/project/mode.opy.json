@@ -1,0 +1,8 @@
+{
+  "main": {
+    "modeName": "Skill compiler example"
+  },
+  "gamemodes": {
+    "skirmish": {}
+  }
+}

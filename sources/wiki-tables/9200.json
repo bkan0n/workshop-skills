@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "source_article_id": 9200,
+  "title": "Lobby AI damage and healing multipliers",
+  "evidence_status": "archived-documentation",
+  "behavioral_test_date": null,
+  "context": [
+    "Applies to bots added in lobby; do not infer these multipliers for Workshop dummy bots."
+  ],
+  "tables": [
+    {
+      "title": "AI Bot Difficulty Modifiers",
+      "columns": [
+        "Difficulty",
+        "Multiplier"
+      ],
+      "rows": [
+        [
+          "Beginner",
+          "25%"
+        ],
+        [
+          "Practice",
+          "50%"
+        ],
+        [
+          "Casual",
+          "75%"
+        ],
+        [
+          "Hard",
+          "90%"
+        ],
+        [
+          "Lethal",
+          "100%"
+        ],
+        [
+          "Extreme",
+          "100%"
+        ],
+        [
+          "Ultimate",
+          "100%"
+        ],
+        [
+          "Aimbot",
+          "120%"
+        ]
+      ],
+      "id": "wiki-9200-table-1"
+    }
+  ],
+  "destination": "skills/overwatch-workshop/references/wiki/tables/9200.md"
+}

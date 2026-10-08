@@ -1,0 +1,1543 @@
+{
+  "schema_version": 1,
+  "source_article_id": 6460,
+  "title": "Ability icon mappings",
+  "evidence_status": "archived-documentation",
+  "behavioral_test_date": null,
+  "context": [
+    "* means present in game but unavailable to Workshop; ** means alternate-form icon does not switch with target form; ?? marks a source-reported wrong button.",
+    "Ability Icon String accepts a Hero value, not a player form. Source omits buttons that display no icon.",
+    "Remote gallery previews are not bundled. Image-only cells retain source alt labels; an absent label does not provide an exact asset name.",
+    "Archived 2025-07-13; older ability names remain source labels, not verified current mappings.",
+    "Baptiste has an extra source cell 0 with no column header. It is retained as an unlabeled source cell; do not infer a button mapping from it."
+  ],
+  "tables": [
+    {
+      "id": "wiki-6460-table-1",
+      "title": "Ana",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "Biotic Rifle"
+        ],
+        [
+          "Melee",
+          "Quick Melee"
+        ],
+        [
+          "Ability 1",
+          "Sleep Dart"
+        ],
+        [
+          "Ability 2",
+          "Biotic Grenade"
+        ],
+        [
+          "Ultimate",
+          "Nano Boost"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/ana.md"
+    },
+    {
+      "id": "wiki-6460-table-2",
+      "title": "Ashe",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "The Viper"
+        ],
+        [
+          "Melee",
+          "Quick Melee"
+        ],
+        [
+          "Ability 1",
+          "Coach Gun"
+        ],
+        [
+          "Ability 2",
+          "Dynamite"
+        ],
+        [
+          "Ultimate",
+          "BOB"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/ashe.md"
+    },
+    {
+      "id": "wiki-6460-table-3",
+      "title": "Baptiste",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "Biotic Launcher"
+        ],
+        [
+          "Secondary",
+          "Biotic Launcher alt fire"
+        ],
+        [
+          "Melee",
+          "Quick Melee"
+        ],
+        [
+          "Unlabeled source column",
+          "0"
+        ],
+        [
+          "Ability 1",
+          "Regenerative Burst"
+        ],
+        [
+          "Ability 2",
+          "Immortality Field"
+        ],
+        [
+          "Ultimate",
+          "Amplification Matrix"
+        ],
+        [
+          "Crouch",
+          "Exo Boots"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/baptiste.md"
+    },
+    {
+      "id": "wiki-6460-table-4",
+      "title": "Bastion",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary (Recon)",
+          "Configuration: Recon"
+        ],
+        [
+          "Primary (Assault)**",
+          "Configuration: Assault"
+        ],
+        [
+          "Melee",
+          "Quick Melee"
+        ],
+        [
+          "Passive*",
+          "Ironclad"
+        ],
+        [
+          "Secondary",
+          "A-36 Tactical Grenade"
+        ],
+        [
+          "Ability 1",
+          "Reconfigure"
+        ],
+        [
+          "Ultimate",
+          "Configuration: Artillery"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/bastion.md"
+    },
+    {
+      "id": "wiki-6460-table-5",
+      "title": "Brigitte",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "Rocket Flail"
+        ],
+        [
+          "Secondary",
+          "Barrier Shield"
+        ],
+        [
+          "Shield Bash*",
+          "Shield Bash"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Passive*",
+          "Inspire"
+        ],
+        [
+          "Ability 1",
+          "Whip Shot"
+        ],
+        [
+          "Ability 2",
+          "Repair Pack"
+        ],
+        [
+          "Ultimate",
+          "Rally"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/brigitte.md"
+    },
+    {
+      "id": "wiki-6460-table-6",
+      "title": "Cassidy",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary & Secondary",
+          "Peacekeeper"
+        ],
+        [
+          "Melee",
+          "Quick Melee"
+        ],
+        [
+          "Ability 1",
+          "Combat Roll"
+        ],
+        [
+          "Ability 2",
+          "Magnetic Grenade"
+        ],
+        [
+          "Ultimate",
+          "Deadeye"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/cassidy.md"
+    },
+    {
+      "id": "wiki-6460-table-7",
+      "title": "D.Va",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "Fusion Cannons"
+        ],
+        [
+          "Secondary",
+          "Defense Matrix"
+        ],
+        [
+          "Primary (Baby)**",
+          "Light Gun"
+        ],
+        [
+          "Melee",
+          "Quick Melee"
+        ],
+        [
+          "Passive*",
+          "Eject"
+        ],
+        [
+          "Ability 1",
+          "Boosters"
+        ],
+        [
+          "Ability 2",
+          "Micro Missiles"
+        ],
+        [
+          "Ultimate",
+          "Self Destruct"
+        ],
+        [
+          "Ultimate (Baby)**",
+          "Call Mech"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/d-va.md"
+    },
+    {
+      "id": "wiki-6460-table-8",
+      "title": "Doomfist",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "Hand Cannon"
+        ],
+        [
+          "Secondary",
+          "Rocket Punch"
+        ],
+        [
+          "Melee",
+          "Quick Melee"
+        ],
+        [
+          "Passive*",
+          "The Best Defense"
+        ],
+        [
+          "Ability 1",
+          "Seismic Slam"
+        ],
+        [
+          "Ability 2",
+          "Power Block"
+        ],
+        [
+          "Ultimate",
+          "Meteor Strike"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/doomfist.md"
+    },
+    {
+      "id": "wiki-6460-table-9",
+      "title": "Echo",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "Tri Shot"
+        ],
+        [
+          "Secondary",
+          "Sticky Bombs"
+        ],
+        [
+          "Melee",
+          "Quick Melee"
+        ],
+        [
+          "Ability 1",
+          "flight"
+        ],
+        [
+          "Ability 2",
+          "focusing beam"
+        ],
+        [
+          "Ultimate",
+          "duplicate"
+        ],
+        [
+          "Jump",
+          "glide"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/echo.md"
+    },
+    {
+      "id": "wiki-6460-table-10",
+      "title": "Genji",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary & Secondary",
+          "shuriken"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "swift strike"
+        ],
+        [
+          "Ability 2",
+          "deflect"
+        ],
+        [
+          "Ultimate",
+          "dragonblade"
+        ],
+        [
+          "Jump",
+          "cyber agility"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/genji.md"
+    },
+    {
+      "id": "wiki-6460-table-11",
+      "title": "Hanzo",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "storm bow"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "sonic arrow"
+        ],
+        [
+          "Ability 2",
+          "storm arrows"
+        ],
+        [
+          "Ultimate",
+          "dragonstrike"
+        ],
+        [
+          "Jump",
+          "wall climb"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/hanzo.md"
+    },
+    {
+      "id": "wiki-6460-table-12",
+      "title": "Hazard",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "bonespur"
+        ],
+        [
+          "Secondary",
+          "spike guard"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "jagged wall"
+        ],
+        [
+          "Ability 2",
+          "violent leap"
+        ],
+        [
+          "Ultimate",
+          "downpour"
+        ],
+        [
+          "Jump",
+          "vault"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/hazard.md"
+    },
+    {
+      "id": "wiki-6460-table-13",
+      "title": "Illari",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "solar rifle"
+        ],
+        [
+          "Secondary",
+          "solar rifle alt"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "outburst"
+        ],
+        [
+          "Ability 2",
+          "healing pylon"
+        ],
+        [
+          "Ultimate",
+          "captive sun"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/illari.md"
+    },
+    {
+      "id": "wiki-6460-table-14",
+      "title": "Juno",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "mediblaster"
+        ],
+        [
+          "Secondary",
+          "pulsar torpedoes"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Jump",
+          "martian overboots"
+        ],
+        [
+          "Ability 1",
+          "glide boost"
+        ],
+        [
+          "Ability 2",
+          "hyper ring"
+        ],
+        [
+          "Ultimate",
+          "orbital ray"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/juno.md"
+    },
+    {
+      "id": "wiki-6460-table-15",
+      "title": "Junker Queen",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "scattergun"
+        ],
+        [
+          "Secondary",
+          "jagged blade"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Passive*",
+          "Adrenaline Rush"
+        ],
+        [
+          "Ability 1",
+          "commanding shout"
+        ],
+        [
+          "Ability 2",
+          "carnage"
+        ],
+        [
+          "Ultimate",
+          "rampage"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/junker-queen.md"
+    },
+    {
+      "id": "wiki-6460-table-16",
+      "title": "Junkrat",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "frag launcher"
+        ],
+        [
+          "Melee",
+          "Quick Melee"
+        ],
+        [
+          "Passive*",
+          "Total Mayhem"
+        ],
+        [
+          "Ability 1",
+          "concussion mine"
+        ],
+        [
+          "Ability 2",
+          "steel trap"
+        ],
+        [
+          "Ultimate",
+          "rip tire"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/junkrat.md"
+    },
+    {
+      "id": "wiki-6460-table-17",
+      "title": "Kiriko",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "healing ofuda"
+        ],
+        [
+          "Secondary",
+          "kunai"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "swift step"
+        ],
+        [
+          "Ability 2",
+          "protection suzu"
+        ],
+        [
+          "Ultimate",
+          "kitsune rush"
+        ],
+        [
+          "Jump",
+          "wall climb"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/kiriko.md"
+    },
+    {
+      "id": "wiki-6460-table-18",
+      "title": "Lifeweaver",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "healing blossom"
+        ],
+        [
+          "Secondary",
+          "thorn volley"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "petal platform"
+        ],
+        [
+          "Ability 2",
+          "life grip"
+        ],
+        [
+          "Ultimate",
+          "tree of life"
+        ],
+        [
+          "Jump",
+          "rejuvenating dash"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/lifeweaver.md"
+    },
+    {
+      "id": "wiki-6460-table-19",
+      "title": "Lucio",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "sonic amplifier"
+        ],
+        [
+          "Secondary",
+          "soundwave"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "crossfade"
+        ],
+        [
+          "Ability 2",
+          "amp it up"
+        ],
+        [
+          "Ultimate",
+          "sound barrier"
+        ],
+        [
+          "Jump",
+          "wall ride"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/lucio.md"
+    },
+    {
+      "id": "wiki-6460-table-20",
+      "title": "Mauga",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "Incendiary Chaingun"
+        ],
+        [
+          "Secondary",
+          "Volatile Chaingun"
+        ],
+        [
+          "Melee",
+          "Quick Melee"
+        ],
+        [
+          "Passive*",
+          "Berserker"
+        ],
+        [
+          "Ability 1",
+          "Overrun"
+        ],
+        [
+          "Ability 2",
+          "Cardiac Overdrive"
+        ],
+        [
+          "Ultimate",
+          "Cage Fight"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/mauga.md"
+    },
+    {
+      "id": "wiki-6460-table-21",
+      "title": "Mei",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary & Secondary",
+          "endothermic blaster"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "cryo freeze"
+        ],
+        [
+          "Ability 2",
+          "ice wall"
+        ],
+        [
+          "Ultimate",
+          "blizzard"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/mei.md"
+    },
+    {
+      "id": "wiki-6460-table-22",
+      "title": "Mercy",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary & Secondary",
+          "caduceus staff"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Passive*",
+          "sympathetic recovery"
+        ],
+        [
+          "Ability 1",
+          "guardian angel"
+        ],
+        [
+          "Ability 2",
+          "resurrect"
+        ],
+        [
+          "Ultimate",
+          "valkyrie"
+        ],
+        [
+          "Jump",
+          "angelic descent"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/mercy.md"
+    },
+    {
+      "id": "wiki-6460-table-23",
+      "title": "Moira",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "biotic grasp"
+        ],
+        [
+          "Secondary",
+          "biotic grasp alt fire"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "fade"
+        ],
+        [
+          "Ability 2",
+          "biotic orb"
+        ],
+        [
+          "Ultimate",
+          "coalescence"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/moira.md"
+    },
+    {
+      "id": "wiki-6460-table-24",
+      "title": "Orisa",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "augmented fusion driver"
+        ],
+        [
+          "Secondary",
+          "energy javelin"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "fortify"
+        ],
+        [
+          "Ability 2",
+          "javelin spin"
+        ],
+        [
+          "Ultimate",
+          "terra surge"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/orisa.md"
+    },
+    {
+      "id": "wiki-6460-table-25",
+      "title": "Pharah",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "rocket launcher"
+        ],
+        [
+          "Secondary",
+          "Jet Dash"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "jump jet"
+        ],
+        [
+          "Ability 2",
+          "concussive blast"
+        ],
+        [
+          "Ultimate",
+          "barrage"
+        ],
+        [
+          "Jump??",
+          "hover jets"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/pharah.md"
+    },
+    {
+      "id": "wiki-6460-table-26",
+      "title": "Reaper",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "hellfire shotguns"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Passive*",
+          "The Reaping"
+        ],
+        [
+          "Ability 1",
+          "wraith form"
+        ],
+        [
+          "Ability 2",
+          "shadow step"
+        ],
+        [
+          "Ultimate",
+          "death blossom"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/reaper.md"
+    },
+    {
+      "id": "wiki-6460-table-27",
+      "title": "Ramattra",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary (Omnic)",
+          "void accelerator omnic form"
+        ],
+        [
+          "Secondary (Omnic)",
+          "void barrier omnic form"
+        ],
+        [
+          "Primary (Nemesis)**",
+          "pummel nemesis form"
+        ],
+        [
+          "Secondary (Nemesis)**",
+          "block nemesis form"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "nemesis form"
+        ],
+        [
+          "Ability 2",
+          "ravenous vortex"
+        ],
+        [
+          "Ultimate",
+          "annihilation"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/ramattra.md"
+    },
+    {
+      "id": "wiki-6460-table-28",
+      "title": "Reinhardt",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "rocket hammer"
+        ],
+        [
+          "Secondary",
+          "barrier field"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "charge"
+        ],
+        [
+          "Ability 2",
+          "fire strike"
+        ],
+        [
+          "Ultimate",
+          "earthshatter"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/reinhardt.md"
+    },
+    {
+      "id": "wiki-6460-table-29",
+      "title": "Roadhog",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "scrap gun"
+        ],
+        [
+          "Secondary",
+          "take a breather"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "chain hook"
+        ],
+        [
+          "Ability 2",
+          "pig pen"
+        ],
+        [
+          "Ultimate",
+          "whole hog"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/roadhog.md"
+    },
+    {
+      "id": "wiki-6460-table-30",
+      "title": "Sigma",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "hyperspheres"
+        ],
+        [
+          "Secondary",
+          "experimental barrier"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "kinetic grasp"
+        ],
+        [
+          "Ability 2",
+          "accretion"
+        ],
+        [
+          "Ultimate",
+          "gravitic flux"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/sigma.md"
+    },
+    {
+      "id": "wiki-6460-table-31",
+      "title": "Sojourn",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "railgun"
+        ],
+        [
+          "Secondary",
+          "railgun alt fire"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "power slide"
+        ],
+        [
+          "Ability 2",
+          "disruptor shot"
+        ],
+        [
+          "Ultimate",
+          "overclock"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/sojourn.md"
+    },
+    {
+      "id": "wiki-6460-table-32",
+      "title": "Soldier: 76",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "heavy pulse rifle"
+        ],
+        [
+          "Secondary",
+          "helix rockets"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "sprint"
+        ],
+        [
+          "Ability 2",
+          "biotic field"
+        ],
+        [
+          "Ultimate",
+          "tactical visor"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/soldier-76.md"
+    },
+    {
+      "id": "wiki-6460-table-33",
+      "title": "Sombra",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "machine pistol"
+        ],
+        [
+          "Secondary",
+          "hack"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Passive*",
+          "stealth"
+        ],
+        [
+          "Ability 1",
+          "virus"
+        ],
+        [
+          "Ability 2",
+          "translocator"
+        ],
+        [
+          "Ultimate",
+          "emp"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/sombra.md"
+    },
+    {
+      "id": "wiki-6460-table-34",
+      "title": "Symmetra",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary & Secondary",
+          "photon projector"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "sentry turret"
+        ],
+        [
+          "Ability 2",
+          "teleporter"
+        ],
+        [
+          "Ultimate",
+          "photon barrier"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/symmetra.md"
+    },
+    {
+      "id": "wiki-6460-table-35",
+      "title": "Torbjorn",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary & Secondary",
+          "rivet gun"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "deploy turret"
+        ],
+        [
+          "Ability 2",
+          "overload"
+        ],
+        [
+          "Ultimate",
+          "molten core"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/torbjorn.md"
+    },
+    {
+      "id": "wiki-6460-table-36",
+      "title": "Tracer",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "pulse pistols"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "blink"
+        ],
+        [
+          "Ability 2",
+          "recall"
+        ],
+        [
+          "Ultimate",
+          "pulse bomb"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/tracer.md"
+    },
+    {
+      "id": "wiki-6460-table-37",
+      "title": "Venture",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "smart excavator"
+        ],
+        [
+          "Secondary",
+          "drill dash"
+        ],
+        [
+          "Melee",
+          "Clobber"
+        ],
+        [
+          "Passive*",
+          "Explorers Resolve"
+        ],
+        [
+          "Ability 1",
+          "burrow"
+        ],
+        [
+          "Ultimate",
+          "tectonic shock"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/venture.md"
+    },
+    {
+      "id": "wiki-6460-table-38",
+      "title": "Widowmaker",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "widows kiss"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "grappling hook"
+        ],
+        [
+          "Ability 2",
+          "venom mine"
+        ],
+        [
+          "Ultimate",
+          "infra sight"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/widowmaker.md"
+    },
+    {
+      "id": "wiki-6460-table-39",
+      "title": "Winston",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary & Secondary",
+          "tesla cannon"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "jump pack"
+        ],
+        [
+          "Ability 2",
+          "barrier projector"
+        ],
+        [
+          "Ultimate",
+          "primal rage"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/winston.md"
+    },
+    {
+      "id": "wiki-6460-table-40",
+      "title": "Wrecking Ball",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "quad cannons"
+        ],
+        [
+          "Secondary",
+          "grappling claw"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Ability 1",
+          "roll"
+        ],
+        [
+          "Ability 2",
+          "adaptive shield"
+        ],
+        [
+          "Ultimate",
+          "minefield"
+        ],
+        [
+          "Crouch",
+          "piledriver"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/wrecking-ball.md"
+    },
+    {
+      "id": "wiki-6460-table-41",
+      "title": "Zarya",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary & Secondary",
+          "particle cannon"
+        ],
+        [
+          "Melee",
+          "quick melee"
+        ],
+        [
+          "Passive*",
+          "energy"
+        ],
+        [
+          "Ability 1",
+          "particle barrier"
+        ],
+        [
+          "Ability 2",
+          "projected barrier"
+        ],
+        [
+          "Ultimate",
+          "graviton surge"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/zarya.md"
+    },
+    {
+      "id": "wiki-6460-table-42",
+      "title": "Zenyatta",
+      "columns": [
+        "Button/status markers",
+        "Icon ability"
+      ],
+      "rows": [
+        [
+          "Primary & Secondary",
+          "orb of destruction"
+        ],
+        [
+          "Melee??",
+          "quick melee"
+        ],
+        [
+          "Passive*??",
+          "snap kick"
+        ],
+        [
+          "Ability 1",
+          "orb of harmony"
+        ],
+        [
+          "Ability 2",
+          "orb of discord"
+        ],
+        [
+          "Ultimate",
+          "transcendence"
+        ]
+      ],
+      "destination": "skills/overwatch-workshop/references/wiki/tables/6460/zenyatta.md"
+    }
+  ],
+  "destination": "skills/overwatch-workshop/references/wiki/tables/6460.md"
+}

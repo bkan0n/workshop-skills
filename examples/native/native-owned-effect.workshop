@@ -1,0 +1,60 @@
+variables
+{
+    global:
+        0: EffectOwners
+        1: EffectIDs
+        2: EffectDeadlines
+        3: CleanupIndex
+        4: RegistryReady
+}
+
+rule("Initialize and maintain this example's effect registry")
+{
+    event
+    {
+        Ongoing - Global;
+    }
+    actions
+    {
+        Global.EffectOwners = Empty Array;
+        Global.EffectIDs = Empty Array;
+        Global.EffectDeadlines = Empty Array;
+        Global.RegistryReady = True;
+        While(True);
+            For Global Variable(CleanupIndex, Count Of(Global.EffectIDs) - 1, -1, -1);
+                If(!Entity Exists(Global.EffectOwners[Global.CleanupIndex]) || Total Time Elapsed >= Global.EffectDeadlines[Global.CleanupIndex]);
+                    Destroy Effect(Global.EffectIDs[Global.CleanupIndex]);
+                    Modify Global Variable(EffectOwners, Remove From Array By Index, Global.CleanupIndex);
+                    Modify Global Variable(EffectIDs, Remove From Array By Index, Global.CleanupIndex);
+                    Modify Global Variable(EffectDeadlines, Remove From Array By Index, Global.CleanupIndex);
+                End;
+            End;
+            Wait(0.100, Ignore Condition);
+        End;
+    }
+}
+
+rule("Create an owned two-second effect on Interact")
+{
+    event
+    {
+        Ongoing - Each Player;
+        All;
+        All;
+    }
+    conditions
+    {
+        Global.RegistryReady == True;
+        Is Alive(Event Player) == True;
+        Is Button Held(Event Player, Button(Interact)) == True;
+    }
+    actions
+    {
+        If(Count Of(Global.EffectIDs) < 32);
+            Create Effect(All Players(All Teams), Sphere, Color(White), Event Player, 1, Visible To Position And Radius);
+            Global.EffectIDs = Append To Array(Global.EffectIDs, Last Created Entity);
+            Global.EffectOwners = Append To Array(Global.EffectOwners, Event Player);
+            Global.EffectDeadlines = Append To Array(Global.EffectDeadlines, Total Time Elapsed + 2);
+        End;
+    }
+}

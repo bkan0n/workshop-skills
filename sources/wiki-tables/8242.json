@@ -1,0 +1,1095 @@
+{
+  "schema_version": 1,
+  "source_article_id": 8242,
+  "title": "Weapon and ability projectile radii",
+  "evidence_status": "archived-documentation",
+  "behavioral_test_date": null,
+  "context": [
+    "Values are radii in metres, not diameters. The cited upstream forum post uses diameter.",
+    "Includes hitscan/beam entries and differing ally/enemy and charged/unscoped cases. Names and balance values are patch-sensitive.",
+    "Source-reported verification code: 7QW6W; credited contributor: SchWiniX. No independent game verification."
+  ],
+  "tables": [
+    {
+      "title": "D.va D.Va",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Fusion Cannons",
+          "Primary Fire",
+          "0.04m"
+        ],
+        [
+          "Micro Missiles",
+          "Ability",
+          "0.175m"
+        ],
+        [
+          "Light Gun",
+          "Pilot",
+          "0.27m"
+        ]
+      ],
+      "id": "wiki-8242-table-1"
+    },
+    {
+      "title": "Domina Domina",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Photon Magnum",
+          "Primary Fire",
+          "0.15m"
+        ],
+        [
+          "Photon Magnum",
+          "Primary Fire (Charged)",
+          "0.15m"
+        ],
+        [
+          "Panopticon",
+          "Ultimate",
+          "0.2m"
+        ]
+      ],
+      "id": "wiki-8242-table-2"
+    },
+    {
+      "title": "Doomfist Doomfist",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Hand Cannon",
+          "Primary Fire",
+          "0.05m"
+        ]
+      ],
+      "id": "wiki-8242-table-3"
+    },
+    {
+      "title": "Hazard Hazard",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Bonespur",
+          "Primary Fire",
+          "0.05m"
+        ],
+        [
+          "Jagged Wall",
+          "Ability",
+          "0m"
+        ]
+      ],
+      "id": "wiki-8242-table-4"
+    },
+    {
+      "title": "Junkerqueen Junker Queen",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Scattergun",
+          "Primary Fire",
+          "0.04m"
+        ],
+        [
+          "Jagged Blade",
+          "Secondary Fire",
+          "0.32m"
+        ]
+      ],
+      "id": "wiki-8242-table-5"
+    },
+    {
+      "title": "Mauga Mauga",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Incendiary Chaingun",
+          "Primary Fire",
+          "0.04m"
+        ],
+        [
+          "Volatile Chaingun",
+          "Secondary Fire",
+          "0.04m"
+        ]
+      ],
+      "id": "wiki-8242-table-6"
+    },
+    {
+      "title": "Orisa Orisa",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Fusion Driver",
+          "Primary Fire",
+          "0.225m"
+        ],
+        [
+          "Energy Javelin",
+          "Ability",
+          "0.5m"
+        ]
+      ],
+      "id": "wiki-8242-table-7"
+    },
+    {
+      "title": "Ramattra Ramattra",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Void Accelerator",
+          "Primary Fire",
+          "0.15m"
+        ],
+        [
+          "Pummel",
+          "Ability",
+          "0.57m"
+        ],
+        [
+          "Ravenous Vortex",
+          "Ability",
+          "0m"
+        ]
+      ],
+      "id": "wiki-8242-table-8"
+    },
+    {
+      "title": "Reinhardt Reinhardt",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Fire Strike",
+          "Ability",
+          "0.85m"
+        ]
+      ],
+      "id": "wiki-8242-table-9"
+    },
+    {
+      "title": "Roadhog Roadhog",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Scrap Gun",
+          "Primary Fire",
+          "0.05m"
+        ],
+        [
+          "Chain Hook",
+          "Ability",
+          "0.65m"
+        ],
+        [
+          "Whole Hog",
+          "Ult",
+          "0.04m"
+        ]
+      ],
+      "id": "wiki-8242-table-10"
+    },
+    {
+      "title": "Sigma Sigma",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Hyperspheres",
+          "Primary Fire",
+          "0.32m"
+        ],
+        [
+          "Accretion",
+          "Ability",
+          "0.9m"
+        ]
+      ],
+      "id": "wiki-8242-table-11"
+    },
+    {
+      "title": "Winston Winston",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Tesla Cannon",
+          "Secondary Fire",
+          "0.32m"
+        ]
+      ],
+      "id": "wiki-8242-table-12"
+    },
+    {
+      "title": "Wrecking Ball Wrecking Ball",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Quad Cannons",
+          "Primary Fire",
+          "0.04m"
+        ]
+      ],
+      "id": "wiki-8242-table-13"
+    },
+    {
+      "title": "Zarya Zarya",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Particle Cannon",
+          "Primary Fire",
+          "0.2m"
+        ],
+        [
+          "Particle Cannon",
+          "Secondary Fire",
+          "0.32m"
+        ],
+        [
+          "Graviton Surge",
+          "Ultimate",
+          "0.32m"
+        ]
+      ],
+      "id": "wiki-8242-table-14"
+    },
+    {
+      "title": "Anran Anran",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Zhuque Fans",
+          "Primary Fire",
+          "0.225m"
+        ],
+        [
+          "Fan The Flames",
+          "Secondary Fire",
+          "0.4m"
+        ]
+      ],
+      "id": "wiki-8242-table-15"
+    },
+    {
+      "title": "Ashe Ashe",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "The Viper",
+          "Primary Fire",
+          "0.07m"
+        ],
+        [
+          "Dynamite",
+          "Ability",
+          "0.0m"
+        ]
+      ],
+      "id": "wiki-8242-table-16"
+    },
+    {
+      "title": "Bastion Bastion",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Configuration: Recon",
+          "Primary Fire",
+          "0.07m"
+        ],
+        [
+          "Configuration: Assault",
+          "Primary Fire",
+          "0.07m"
+        ],
+        [
+          "A-36 Tactical Grenade",
+          "Ability",
+          "0.37m"
+        ],
+        [
+          "Configuration: Tank",
+          "Ult",
+          "0.4m"
+        ]
+      ],
+      "id": "wiki-8242-table-17"
+    },
+    {
+      "title": "Cassidy Cassidy",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Peacekeeper",
+          "Primary Fire",
+          "0.07m"
+        ],
+        [
+          "Peacekeeper",
+          "Secondary Fire",
+          "0.07m"
+        ],
+        [
+          "Flashbang",
+          "Ability",
+          "0.2m"
+        ]
+      ],
+      "id": "wiki-8242-table-18"
+    },
+    {
+      "title": "Echo Echo",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Tri-Shot",
+          "Primary Fire",
+          "0.04m"
+        ],
+        [
+          "Sticky Bombs",
+          "Secondary Fire",
+          "0.27m"
+        ],
+        [
+          "Focusing Beam",
+          "Ability",
+          "0.25m"
+        ]
+      ],
+      "id": "wiki-8242-table-19"
+    },
+    {
+      "title": "Emre Emre",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Synthetic Burst Rifle",
+          "Primary Fire",
+          "0.08m"
+        ],
+        [
+          "Siphon Blaster",
+          "Ability",
+          "0.2m"
+        ],
+        [
+          "Override Protocol",
+          "Ultimate (Primary)",
+          "0.18m"
+        ],
+        [
+          "Override Protocol",
+          "Ultimate (Secondary)",
+          "0.3m"
+        ]
+      ],
+      "id": "wiki-8242-table-20"
+    },
+    {
+      "title": "Freja Freja",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Revdraw Crossbow",
+          "Primary Fire",
+          "0.175m"
+        ],
+        [
+          "Take Aim",
+          "Secondary Fire",
+          "0.175m"
+        ],
+        [
+          "Bola Shot",
+          "Ult",
+          "0.77m"
+        ]
+      ],
+      "id": "wiki-8242-table-21"
+    },
+    {
+      "title": "Genji Genji",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Shuriken",
+          "Primary Fire",
+          "0.175m"
+        ]
+      ],
+      "id": "wiki-8242-table-22"
+    },
+    {
+      "title": "Hanzo Hanzo",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Storm Bow",
+          "Primary Fire",
+          "0.125m"
+        ],
+        [
+          "Sonic Arrow",
+          "Ability",
+          "0.125m"
+        ],
+        [
+          "Storm Arrows",
+          "Ability",
+          "0.125m"
+        ]
+      ],
+      "id": "wiki-8242-table-23"
+    },
+    {
+      "title": "Junkrat Junkrat",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Frag Launcher",
+          "Primary Fire",
+          "0.32m"
+        ],
+        [
+          "Concussion Mine",
+          "Ability",
+          "0.2m"
+        ]
+      ],
+      "id": "wiki-8242-table-24"
+    },
+    {
+      "title": "Mei Mei",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Endothermic Blaster",
+          "Secondary Fire",
+          "0.195m"
+        ]
+      ],
+      "id": "wiki-8242-table-25"
+    },
+    {
+      "title": "Pharah Pharah",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Rocket Launcher",
+          "Primary Fire",
+          "0.32m"
+        ],
+        [
+          "Concussive Blast",
+          "Ability",
+          "0.225m"
+        ]
+      ],
+      "id": "wiki-8242-table-26"
+    },
+    {
+      "title": "Reaper Reaper",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Hellfire Shotguns",
+          "Primary Fire",
+          "0.04m"
+        ]
+      ],
+      "id": "wiki-8242-table-27"
+    },
+    {
+      "title": "Sojourn Sojourn",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Railgun",
+          "Primary Fire",
+          "0.175m"
+        ],
+        [
+          "Railgun",
+          "Secondary Fire",
+          "0.14m"
+        ],
+        [
+          "Disruptor Shot",
+          "Ability",
+          "0.2m"
+        ]
+      ],
+      "id": "wiki-8242-table-28"
+    },
+    {
+      "title": "Soldier: 76 Soldier: 76",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Heavy Pulse Rifle",
+          "Primary Fire",
+          "0.07m"
+        ],
+        [
+          "Helix Rockets",
+          "Ability",
+          "0.32m"
+        ]
+      ],
+      "id": "wiki-8242-table-29"
+    },
+    {
+      "title": "Sombra Sombra",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Machine Pistol",
+          "Primary Fire",
+          "0.04m"
+        ],
+        [
+          "Virus",
+          "Ability",
+          "0.5m"
+        ]
+      ],
+      "id": "wiki-8242-table-30"
+    },
+    {
+      "title": "Symmetra Symmetra",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Photon Projector",
+          "Primary Fire",
+          "0.25m"
+        ],
+        [
+          "Photon Projector",
+          "Secondary Fire",
+          "0.11m - 0.57m"
+        ]
+      ],
+      "id": "wiki-8242-table-31"
+    },
+    {
+      "title": "Torbjörn Torbjörn",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Rivet Gun",
+          "Primary Fire",
+          "0.175m"
+        ],
+        [
+          "Rivet Gun",
+          "Secondary Fire",
+          "0.05m"
+        ],
+        [
+          "Molten Core",
+          "Ult",
+          "0.2m"
+        ]
+      ],
+      "id": "wiki-8242-table-32"
+    },
+    {
+      "title": "Tracer Tracer",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Pulse Pistols",
+          "Primary Fire",
+          "0.00m"
+        ],
+        [
+          "Pulse Bomb",
+          "Ult",
+          "0.32m"
+        ]
+      ],
+      "id": "wiki-8242-table-33"
+    },
+    {
+      "title": "Vendetta Vendetta",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Projected Edge",
+          "Ability",
+          "1.23m"
+        ],
+        [
+          "Soaring Slice",
+          "Ability",
+          "0.92m"
+        ]
+      ],
+      "id": "wiki-8242-table-34"
+    },
+    {
+      "title": "Venture Venture",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Smart Excavator",
+          "Primary Fire",
+          "0.32m"
+        ]
+      ],
+      "id": "wiki-8242-table-35"
+    },
+    {
+      "title": "Widowmaker Widowmaker",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Widow's Kiss",
+          "Primary Fire",
+          "0.04m"
+        ],
+        [
+          "Widow's Kiss",
+          "Secondary Fire",
+          "0m"
+        ],
+        [
+          "Venom Mine",
+          "Ability",
+          "0.2m"
+        ]
+      ],
+      "id": "wiki-8242-table-36"
+    },
+    {
+      "title": "Ana Ana",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Biotic Rifle (Teammates)",
+          "Primary Fire (Unscoped)",
+          "0.3m"
+        ],
+        [
+          "Biotic Rifle (Teammates)",
+          "Primary Fire (Scoped)",
+          "0.3m"
+        ],
+        [
+          "Biotic Rifle (Enemies)",
+          "Primary Fire (Unscoped)",
+          "0.15m"
+        ],
+        [
+          "Biotic Rifle (Enemies)",
+          "Primary Fire (Scoped)",
+          "0.07m"
+        ],
+        [
+          "Sleep Dart",
+          "Ability",
+          "0.2m"
+        ],
+        [
+          "Biotic Grenade",
+          "Ability",
+          "0.3m"
+        ]
+      ],
+      "id": "wiki-8242-table-37"
+    },
+    {
+      "title": "Baptiste Baptiste",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Biotic Launcher",
+          "Primary Fire",
+          "0.07m"
+        ],
+        [
+          "Biotic Launcher",
+          "Secondary Fire",
+          "0.2m"
+        ]
+      ],
+      "id": "wiki-8242-table-38"
+    },
+    {
+      "title": "Brigitte Brigitte",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Whip Shot",
+          "Ability",
+          "0.645m"
+        ]
+      ],
+      "id": "wiki-8242-table-39"
+    },
+    {
+      "title": "Illari Illari",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Solar Rifle",
+          "Primary Fire (Damage)",
+          "0.12m"
+        ],
+        [
+          "Solar Rifle",
+          "Secondary Fire (Healing)",
+          "0.25m"
+        ],
+        [
+          "Healing Pylon",
+          "Ability",
+          "0.0m"
+        ],
+        [
+          "Captive Sun",
+          "Ult",
+          "0.75m"
+        ]
+      ],
+      "id": "wiki-8242-table-40"
+    },
+    {
+      "title": "Mizuki Mizuki",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Spirit Glaive",
+          "Primary Fire",
+          "0.42m"
+        ],
+        [
+          "Binding Chain",
+          "Ability",
+          "0m"
+        ]
+      ],
+      "id": "wiki-8242-table-41"
+    },
+    {
+      "title": "Jetpack Cat Jetpack Cat",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Biotic Pawjectiles",
+          "Primary Fire",
+          "0.37m"
+        ]
+      ],
+      "id": "wiki-8242-table-42"
+    },
+    {
+      "title": "Juno Juno",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Mediblaster",
+          "Primary Fire",
+          "0.04m"
+        ]
+      ],
+      "id": "wiki-8242-table-43"
+    },
+    {
+      "title": "Kiriko Kiriko",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Kunai",
+          "Secondary Fire",
+          "0.225m"
+        ],
+        [
+          "Protection Suzu",
+          "Ability",
+          "0.2m"
+        ]
+      ],
+      "id": "wiki-8242-table-44"
+    },
+    {
+      "title": "Lifeweaver Lifeweaver",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Thorn Volley",
+          "Secondary Fire",
+          "0.2m"
+        ],
+        [
+          "Petal Platform",
+          "Ability",
+          "0.15m"
+        ]
+      ],
+      "id": "wiki-8242-table-45"
+    },
+    {
+      "title": "Lucio Lucio",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Sonic Amplifier",
+          "Primary Fire",
+          "0.22m"
+        ]
+      ],
+      "id": "wiki-8242-table-46"
+    },
+    {
+      "title": "Mercy Mercy",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Caduceus Blaster",
+          "Primary Fire",
+          "0.27m"
+        ]
+      ],
+      "id": "wiki-8242-table-47"
+    },
+    {
+      "title": "Moira Moira",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Biotic Orb",
+          "Ability",
+          "0m"
+        ]
+      ],
+      "id": "wiki-8242-table-48"
+    },
+    {
+      "title": "Wuyang Wuyang",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Xuanwu Staff",
+          "Primary Fire",
+          "0.42m"
+        ]
+      ],
+      "id": "wiki-8242-table-49"
+    },
+    {
+      "title": "Zenyatta Zenyatta",
+      "columns": [
+        "Ability",
+        "Type",
+        "Radius"
+      ],
+      "rows": [
+        [
+          "Orb of Destruction",
+          "Primary Fire",
+          "0.225m"
+        ]
+      ],
+      "id": "wiki-8242-table-50"
+    }
+  ],
+  "destination": "skills/overwatch-workshop/references/wiki/tables/8242.md"
+}

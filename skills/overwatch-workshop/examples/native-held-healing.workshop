@@ -1,0 +1,20 @@
+rule("Heal periodically while alive and holding Interact")
+{
+    event
+    {
+        Ongoing - Each Player;
+        All;
+        All;
+    }
+    conditions
+    {
+        Is Alive(Event Player) == True;
+        Is Button Held(Event Player, Button(Interact)) == True;
+    }
+    actions
+    {
+        Heal(Event Player, Null, 5);
+        Wait(0.250, Abort When False);
+        Loop If Condition Is True;
+    }
+}

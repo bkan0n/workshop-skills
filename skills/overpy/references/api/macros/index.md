@@ -1,0 +1,26 @@
+# OverPy macros
+
+Optional defaults belong to OverPy. Check the Workshop topic guide when runtime semantics matter.
+
+- [buttonToString](button-to-string.md)
+- [getAllPlayers](get-all-players.md)
+- [getRealClosestPlayer](get-real-closest-player.md)
+- [getRealClosestPlayers](get-real-closest-players.md)
+- [getRealFarthestPlayer](get-real-farthest-player.md)
+- [getRealFarthestPlayers](get-real-farthest-players.md)
+- [getRealPlayersInRadius](get-real-players-in-radius.md)
+- [getSign](get-sign.md)
+- [hudHeader](hud-header.md)
+- [hudSubheader](hud-subheader.md)
+- [hudSubtext](hud-subtext.md)
+- [lerp](lerp.md)
+- [lineIntersectsSphere](line-intersects-sphere.md)
+- [print](print.md)
+- [receiver.getEffectiveHero](member-get-effective-hero.md)
+- [receiver.getOppositeTeam](member-get-opposite-team.md)
+- [receiver.getRealPlayerClosestToReticle](member-get-real-player-closest-to-reticle.md)
+- [receiver.getRealPlayersClosestToReticle](member-get-real-players-closest-to-reticle.md)
+- [receiver.getRealPlayersInViewAngle](member-get-real-players-in-view-angle.md)
+- [receiver.reverse](member-reverse.md)
+- [receiver.unique](member-unique.md)
+- [timeToString](time-to-string.md)

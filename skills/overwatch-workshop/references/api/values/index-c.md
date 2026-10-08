@@ -1,0 +1,18 @@
+# Native Workshop values: C
+
+- [Char In String](char-in-string.md)
+- [Closest Player To](closest-player-to.md)
+- [Color](color.md)
+- [Compare](compare.md)
+- [Control Mode Scoring Percentage](control-mode-scoring-percentage.md)
+- [Control Mode Scoring Team](control-mode-scoring-team.md)
+- [Cosine From Degrees](cosine-from-degrees.md)
+- [Cosine From Radians](cosine-from-radians.md)
+- [Count Of](count-of.md)
+- [Cross Product](cross-product.md)
+- [Current Array Element](current-array-element.md)
+- [Current Array Index](current-array-index.md)
+- [Current Game Mode](current-game-mode.md)
+- [Current Map](current-map.md)
+- [Custom Color](custom-color.md)
+- [Custom String](custom-string.md)

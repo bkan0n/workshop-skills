@@ -1,0 +1,41 @@
+name: Prepare draft release
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing version tag to build, such as v0.1.0
+        required: true
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: skills-release
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      RELEASE_TAG: ${{ inputs.tag }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: refs/tags/${{ inputs.tag }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.14.3'
+      - run: npm install --global npm@11.9.0 --ignore-scripts
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: python3 scripts/release.py check
+      - run: npm run check
+      - run: python3 scripts/package.py --release
+      - name: Create draft and attach reviewed artifacts
+        run: python3 scripts/release.py draft
+        env:
+          GITHUB_TOKEN: ${{ github.token }}

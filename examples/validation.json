@@ -1,0 +1,355 @@
+{
+  "compiler": {
+    "package": "overpy",
+    "version": "9.7.17",
+    "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+  },
+  "gameVerification": "No game tests are performed by this harness.",
+  "totals": {
+    "examples": 13,
+    "passed": 13,
+    "failed": 0
+  },
+  "results": [
+    {
+      "id": "opy-interact-counter",
+      "dialect": "overpy",
+      "fixture": "examples/overpy/interact-counter.opy",
+      "claims": [
+        "opy-rule-storage"
+      ],
+      "status": "passed",
+      "validation": "accepted-by-pinned-overpy",
+      "outcome": "accepted",
+      "sourceSha256": "e6d7c6ce8bbd056c988847690639e4bf4cee1778b0dcae2f8007c06064bd19e9",
+      "inputSha256": {
+        "examples/overpy/interact-counter.opy": "e6d7c6ce8bbd056c988847690639e4bf4cee1778b0dcae2f8007c06064bd19e9"
+      },
+      "outputSha256": "5ce503969ab75732be27b8d0e93d546ab76bd2c6f6cde043241c0ad7edf04131",
+      "elements": 16,
+      "warnings": [],
+      "hiddenWarnings": [
+        {
+          "code": "w_type_check",
+          "message": "Expected type 'CustomStringLiteral' for the 2nd argument of function '__customString__', but got player variable 'presses' of type 'Value' (w_type_check)\n    | line 8, col 52, at interact-counter.opy"
+        }
+      ],
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      }
+    },
+    {
+      "id": "opy-collections",
+      "dialect": "overpy",
+      "fixture": "examples/overpy/collections.opy",
+      "claims": [
+        "opy-array-transformations",
+        "opy-for-bound-contract",
+        "wiki-4565-n1"
+      ],
+      "status": "passed",
+      "validation": "accepted-by-pinned-overpy",
+      "outcome": "accepted",
+      "sourceSha256": "32a2189b73631bcc9850cf59b2c727d1ed7063fce9f0b679eac52af3f317bf35",
+      "inputSha256": {
+        "examples/overpy/collections.opy": "32a2189b73631bcc9850cf59b2c727d1ed7063fce9f0b679eac52af3f317bf35"
+      },
+      "outputSha256": "2292ec6827c5c9015640120ef877ae5aa8380d1f57ca1345c1e54d43a5ac93dc",
+      "elements": 39,
+      "warnings": [],
+      "hiddenWarnings": [],
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      }
+    },
+    {
+      "id": "opy-subroutine",
+      "dialect": "overpy",
+      "fixture": "examples/overpy/subroutine.opy",
+      "claims": [
+        "opy-subroutine-contract",
+        "opy-macro-inline"
+      ],
+      "status": "passed",
+      "validation": "accepted-by-pinned-overpy",
+      "outcome": "accepted",
+      "sourceSha256": "58c3058c3a969f0324147f10dc06f1500b50b37b10c72424493e2357642dd84a",
+      "inputSha256": {
+        "examples/overpy/subroutine.opy": "58c3058c3a969f0324147f10dc06f1500b50b37b10c72424493e2357642dd84a"
+      },
+      "outputSha256": "ff6fa0fb9661f58b1aec1cd6704a830eb23d0ee40b2f56a1ad8d0102c0ac2210",
+      "elements": 16,
+      "warnings": [],
+      "hiddenWarnings": [
+        {
+          "code": "w_type_check",
+          "message": "Expected type 'CustomStringLiteral' for the 2nd argument of function '__customString__', but got player variable 'uses' of type 'Value' (w_type_check)\n    | line 4, col 42, at subroutine.opy\n    | line 8, col 5, at subroutine.opy"
+        }
+      ],
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      }
+    },
+    {
+      "id": "opy-selection",
+      "dialect": "overpy",
+      "fixture": "examples/overpy/selection.opy",
+      "claims": [
+        "opy-selection"
+      ],
+      "status": "passed",
+      "validation": "accepted-by-pinned-overpy",
+      "outcome": "accepted",
+      "sourceSha256": "d331a2aa8c992ce37c7212a03404fac73b818bae96f565b8bf7b97d70ae410fa",
+      "inputSha256": {
+        "examples/overpy/selection.opy": "d331a2aa8c992ce37c7212a03404fac73b818bae96f565b8bf7b97d70ae410fa"
+      },
+      "outputSha256": "63c25bb09e116c6d3a553768fa64ef634f2e8865223b3995900a00797d2d7f07",
+      "elements": 56,
+      "warnings": [],
+      "hiddenWarnings": [],
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      }
+    },
+    {
+      "id": "opy-strings",
+      "dialect": "overpy",
+      "fixture": "examples/overpy/strings.opy",
+      "claims": [
+        "opy-string-format"
+      ],
+      "status": "passed",
+      "validation": "accepted-by-pinned-overpy",
+      "outcome": "accepted",
+      "sourceSha256": "d7471d4f9db9312f9a9f2f84fc66ef7bee3422b1051203f33e814fc7e19a47da",
+      "inputSha256": {
+        "examples/overpy/strings.opy": "d7471d4f9db9312f9a9f2f84fc66ef7bee3422b1051203f33e814fc7e19a47da"
+      },
+      "outputSha256": "a84599955f635a135851f1e112999e2e79df5086cf00fcc578cecf4b39bc2b1f",
+      "elements": 12,
+      "warnings": [],
+      "hiddenWarnings": [
+        {
+          "code": "w_type_check",
+          "message": "Expected type 'CustomStringLiteral' for the 2nd argument of function '__customString__', but got player variable 'points' of type 'Value' (w_type_check)\n    | line 6, col 28, at strings.opy"
+        }
+      ],
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      }
+    },
+    {
+      "id": "opy-captured-offset",
+      "dialect": "overpy",
+      "fixture": "examples/overpy/captured-offset.opy",
+      "claims": [
+        "opy-capture-mapping",
+        "wiki-4788-n1",
+        "wiki-4849-n1"
+      ],
+      "status": "passed",
+      "validation": "accepted-by-pinned-overpy",
+      "outcome": "accepted",
+      "sourceSha256": "2801ddc61d52a4da4b948bd59215958e7440582991bdf9fa2e0da2d0c9e34d03",
+      "inputSha256": {
+        "examples/overpy/captured-offset.opy": "2801ddc61d52a4da4b948bd59215958e7440582991bdf9fa2e0da2d0c9e34d03"
+      },
+      "outputSha256": "7fa80a6d54ded082fd974322fcb5066b77fa999c6d1caebcfa9406f8d235696b",
+      "elements": 38,
+      "warnings": [],
+      "hiddenWarnings": [],
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      }
+    },
+    {
+      "id": "opy-multifile-project",
+      "dialect": "overpy",
+      "fixture": "examples/overpy/project/main.opy",
+      "claims": [
+        "opy-project-inputs"
+      ],
+      "status": "passed",
+      "validation": "accepted-by-pinned-overpy",
+      "outcome": "accepted",
+      "sourceSha256": "967a37797fd29b91f2a3935dc1cd5517b2e7573ddc7705d77813cff76f095c2e",
+      "inputSha256": {
+        "examples/overpy/project/main.opy": "967a37797fd29b91f2a3935dc1cd5517b2e7573ddc7705d77813cff76f095c2e",
+        "examples/overpy/project/constants.opy": "e76c67f586f3235a6e26e6b8a97ed5e51c00cb167aabc06c28dd6e4c0272785a",
+        "examples/overpy/project/mode.opy.json": "93ad5c403c133eb14aae9df7c6e82c5f5628efaa8f8bb910700c89071ea90ddc"
+      },
+      "outputSha256": "7bf9d19ec142f2f55a08c6c40c154fab14bd7b96ec84c7b50c02a8c53e91d0de",
+      "elements": 6,
+      "warnings": [],
+      "hiddenWarnings": [],
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      }
+    },
+    {
+      "id": "opy-expected-warning",
+      "dialect": "overpy",
+      "fixture": "examples/overpy/expected-warning.opy",
+      "claims": [
+        "opy-wait-until-warning"
+      ],
+      "status": "passed",
+      "validation": "accepted-by-pinned-overpy",
+      "outcome": "accepted",
+      "sourceSha256": "2c6270491b4e29c2c409e6b601f0468faec79ffca1f7a4019b6a08b6d11bcf93",
+      "inputSha256": {
+        "examples/overpy/expected-warning.opy": "2c6270491b4e29c2c409e6b601f0468faec79ffca1f7a4019b6a08b6d11bcf93"
+      },
+      "outputSha256": "939b03fcfe688e3ec84d501acad3d201a8239d994613f5d1564e625f36f54011",
+      "elements": 4,
+      "warnings": [
+        {
+          "code": "w_wait_until",
+          "message": "Wait Until does not consider non-zero numbers as true, which might cause unwanted behavior. It is recommended to explicitly compare to true. (w_wait_until)\n    | line 5, col 15, at expected-warning.opy"
+        }
+      ],
+      "hiddenWarnings": [],
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      }
+    },
+    {
+      "id": "opy-reject-nonexistent-api",
+      "dialect": "overpy",
+      "fixture": "examples/invalid/nonexistent-api.opy",
+      "claims": [
+        "opy-reject-unknown-api"
+      ],
+      "status": "passed",
+      "validation": "expected-compiler-rejection",
+      "outcome": "rejected",
+      "stage": "compile",
+      "error": "OpyError: Unknown function 'thisApiDoesNotExist'\n    | line 3, col 5, at nonexistent-api.opy",
+      "sourceSha256": "b4bf14d9202e00fb5d93409004c596d6d85223264e9904d7bb2ba99bdddfc93f",
+      "inputSha256": {
+        "examples/invalid/nonexistent-api.opy": "b4bf14d9202e00fb5d93409004c596d6d85223264e9904d7bb2ba99bdddfc93f"
+      },
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      }
+    },
+    {
+      "id": "opy-reject-parameterized-subroutine",
+      "dialect": "overpy",
+      "fixture": "examples/invalid/parameterized-subroutine.opy",
+      "claims": [
+        "opy-subroutine-contract"
+      ],
+      "status": "passed",
+      "validation": "expected-compiler-rejection",
+      "outcome": "rejected",
+      "stage": "compile",
+      "error": "OpyError: Malformatted 'def' declaration\n    | line 1, col 1, at parameterized-subroutine.opy",
+      "sourceSha256": "adc01f883d7a4bf1c3995641cce177355f1f2126443665d4ce15594e012d0ba4",
+      "inputSha256": {
+        "examples/invalid/parameterized-subroutine.opy": "adc01f883d7a4bf1c3995641cce177355f1f2126443665d4ce15594e012d0ba4"
+      },
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      }
+    },
+    {
+      "id": "native-interact-counter",
+      "dialect": "workshop",
+      "fixture": "examples/native/native-interact-counter.workshop",
+      "claims": [
+        "opy-native-roundtrip-limit",
+        "opy-rule-storage"
+      ],
+      "status": "passed",
+      "validation": "accepted-by-pinned-overpy-roundtrip",
+      "outcome": "accepted",
+      "sourceSha256": "1b36984dfa3a51794bceec45081eef19980844496e185f34b93944d0b7db591f",
+      "inputSha256": {
+        "examples/native/native-interact-counter.workshop": "1b36984dfa3a51794bceec45081eef19980844496e185f34b93944d0b7db591f"
+      },
+      "outputSha256": "716c7f14b0cbf3b63d6f442ece02b9feaa5b74f68f7d56020117323832e88751",
+      "elements": 17,
+      "warnings": [],
+      "hiddenWarnings": [
+        {
+          "code": "w_type_check",
+          "message": "Expected type 'CustomStringLiteral' for the 2nd argument of function '__customString__', but got player variable 'PressCount' of type 'Value' (w_type_check)\n    | line 19, col 62, at native-interact-counter.opy"
+        }
+      ],
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      }
+    },
+    {
+      "id": "native-held-healing",
+      "dialect": "workshop",
+      "fixture": "examples/native/native-held-healing.workshop",
+      "claims": [
+        "opy-native-roundtrip-limit",
+        "wiki-4854-n1"
+      ],
+      "status": "passed",
+      "validation": "accepted-by-pinned-overpy-roundtrip",
+      "outcome": "accepted",
+      "sourceSha256": "6cbe92bf562c76b7ed6a63c8e5b01769143c81fdd968dbcf3d3ae641a2b3ed00",
+      "inputSha256": {
+        "examples/native/native-held-healing.workshop": "6cbe92bf562c76b7ed6a63c8e5b01769143c81fdd968dbcf3d3ae641a2b3ed00"
+      },
+      "outputSha256": "054ac0edc6be95663b5ededa41c756f1211f0443a305dcbb10315cd80a05d9fd",
+      "elements": 12,
+      "warnings": [],
+      "hiddenWarnings": [],
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      }
+    },
+    {
+      "id": "native-owned-effect",
+      "dialect": "workshop",
+      "fixture": "examples/native/native-owned-effect.workshop",
+      "claims": [
+        "opy-native-roundtrip-limit",
+        "wiki-4849-n1",
+        "wiki-4598-n1"
+      ],
+      "status": "passed",
+      "validation": "accepted-by-pinned-overpy-roundtrip",
+      "outcome": "accepted",
+      "sourceSha256": "e355d86db75c9373ec54b30b9b4ba7a2bb1de0e130ef5c876a5d204d988bc5b3",
+      "inputSha256": {
+        "examples/native/native-owned-effect.workshop": "e355d86db75c9373ec54b30b9b4ba7a2bb1de0e130ef5c876a5d204d988bc5b3"
+      },
+      "outputSha256": "90f1052eb8ca87bc2c283fb3351e880cea8a6fcdfda4bbecdf9f5ffb419026fe",
+      "elements": 73,
+      "warnings": [],
+      "hiddenWarnings": [
+        {
+          "code": "w_type_check",
+          "message": "Expected type 'unsigned int' for the 2nd operand of operator '-' or '-=', but got number '1' of type 'UnsignedIntLiteral' (w_type_check)\n    | line 18, col 35, at native-owned-effect.opy"
+        },
+        {
+          "code": "w_type_check",
+          "message": "Expected type 'unsigned float' for the 2nd operand of operator '+' or '+=', but got number '2' of type 'UnsignedIntLiteral' (w_type_check)\n    | line 37, col 50, at native-owned-effect.opy"
+        }
+      ],
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      }
+    }
+  ]
+}

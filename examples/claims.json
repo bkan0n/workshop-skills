@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "claims": [
+    {
+      "id": "opy-rule-storage",
+      "assertion": "Rule annotations and declared global/player storage compile to their native Workshop declarations and rule structures.",
+      "applicability": "OverPy 9.7.17; compiler evidence is not current-game verification.",
+      "sources": [
+        {
+          "url": "https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/README.md#general-syntax",
+          "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+        },
+        {
+          "url": "https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src/compiler/compiler.ts",
+          "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+        }
+      ],
+      "evidence_status": "upstream-implementation",
+      "game_test": {
+        "status": "not-run",
+        "date": null,
+        "patch": null
+      },
+      "conflicts": [],
+      "destinations": [
+        "skills/overpy/references/language.md#rules-and-annotations"
+      ]
+    },
+    {
+      "id": "opy-array-transformations",
+      "assertion": "concat/filter/map produce value expressions; append on a stored variable emits a variable modification.",
+      "applicability": "OverPy 9.7.17; compiler evidence is not current-game verification.",
+      "sources": [
+        {
+          "url": "https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/README.md#function-syntax-reference",
+          "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+        },
+        {
+          "url": "https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src/data/opy/memberFunctions.ts",
+          "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+        }
+      ],
+      "evidence_status": "upstream-implementation",
+      "game_test": {
+        "status": "not-run",
+        "date": null,
+        "patch": null
+      },
+      "conflicts": [],
+      "destinations": [
+        "skills/overpy/references/control-collections.md#array-values-versus-stored-mutations"
+      ]
+    },
+    {
+      "id": "opy-for-bound-contract",
+      "assertion": "OverPy range(1,5,2) emits native For bounds 1,5,2 unchanged; structured native metadata defines exclusive stop.",
+      "applicability": "OverPy 9.7.17; compiler evidence is not current-game verification.",
+      "sources": [
+        {
+          "url": "https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/README.md#for-loop",
+          "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+        },
+        {
+          "url": "https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src/data/actions.ts",
+          "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+        }
+      ],
+      "evidence_status": "unresolved-conflict",
+      "game_test": {
+        "status": "not-run",
+        "date": null,
+        "patch": null
+      },
+      "conflicts": [
+        "README example claims [1,3,5], contradicting the explicit structured For argument contract. The guide follows the latter; no game execution verified."
+      ],
+      "destinations": [
+        "skills/overpy/references/control-collections.md#branches-and-loops"
+      ]
+    },
+    {
+      "id": "opy-subroutine-contract",
+      "assertion": "def declares a Workshop subroutine with no runtime parameters or return value; calls lower to Call Subroutine.",
+      "applicability": "OverPy 9.7.17; compiler evidence is not current-game verification.",
+      "sources": [
+        {
+          "url": "https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/README.md#general-syntax",
+          "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+        },
+        {
+          "url": "https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src/data/opy/keywords.ts",
+          "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+        }
+      ],
+      "evidence_status": "upstream-implementation",
+      "game_test": {
+        "status": "not-run",
+        "date": null,
+        "patch": null
+      },
+      "conflicts": [],
+      "destinations": [
+        "skills/overpy/references/control-collections.md#subroutines-and-concurrency"
+      ]
+    },
+    {
+      "id": "opy-macro-inline",
+      "assertion": "AST macros expand at call sites; member macros substitute their receiver for self.",
+      "applicability": "OverPy 9.7.17; compiler evidence is not current-game verification.",
+      "sources": [
+        {
+          "url": "https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/README.md#macros",
+          "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+        }
+      ],
+      "evidence_status": "upstream-implementation",
+      "game_test": {
+        "status": "not-run",
+        "date": null,
+        "patch": null
+      },
+      "conflicts": [],
+      "destinations": [
+        "skills/overpy/references/preprocessing.md#prefer-ast-macros-for-inline-expressions-and-actions"
+      ]
+    },
+    {
+      "id": "opy-selection",
+      "assertion": "Switch supports fallthrough and explicit break; dictionary-style lookups lower to array/index operations with an optional default.",
+      "applicability": "OverPy 9.7.17; compiler evidence is not current-game verification.",
+      "sources": [
+        {
+          "url": "https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/README.md#advanced-constructs",
+          "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+        }
+      ],
+      "evidence_status": "upstream-implementation",
+      "game_test": {
+        "status": "not-run",
+        "date": null,
+        "patch": null
+      },
+      "conflicts": [],
+      "destinations": [
+        "skills/overpy/references/control-collections.md#switch-and-dictionary-lookup"
+      ]
+    },
+    {
+      "id": "opy-string-format",
+      "assertion": "f strings and format calls lower to native custom string construction; compiler-hidden type diagnostics may occur on dynamic arguments.",
+      "applicability": "OverPy 9.7.17; compiler evidence is not current-game verification.",
+      "sources": [
+        {
+          "url": "https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/README.md#strings",
+          "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+        },
+        {
+          "url": "https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src/compiler/compiler.ts",
+          "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+        }
+      ],
+      "evidence_status": "upstream-implementation",
+      "game_test": {
+        "status": "not-run",
+        "date": null,
+        "patch": null
+      },
+      "conflicts": [],
+      "destinations": [
+        "skills/overpy/references/strings-translations.md#formatting-is-compiler-syntax"
+      ]
+    },
+    {
+      "id": "opy-capture-mapping",
+      "assertion": "evalOnce maps to Evaluate Once inside an otherwise reevaluating expression.",
+      "applicability": "OverPy 9.7.17; compiler evidence is not current-game verification.",
+      "sources": [
+        {
+          "url": "https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src/data/values.ts",
+          "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+        }
+      ],
+      "evidence_status": "upstream-implementation",
+      "game_test": {
+        "status": "not-run",
+        "date": null,
+        "patch": null
+      },
+      "conflicts": [],
+      "destinations": [
+        "skills/overpy/references/foundation.md#decisions-that-change-behavior"
+      ]
+    },
+    {
+      "id": "opy-project-inputs",
+      "assertion": "Includes and settings files are resolved during compilation; complete settings require a game mode.",
+      "applicability": "OverPy 9.7.17; compiler evidence is not current-game verification.",
+      "sources": [
+        {
+          "url": "https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/README.md#custom-game-settings",
+          "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+        },
+        {
+          "url": "https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/README.md#include",
+          "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+        },
+        {
+          "url": "https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src/cli.ts",
+          "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+        }
+      ],
+      "evidence_status": "upstream-implementation",
+      "game_test": {
+        "status": "not-run",
+        "date": null,
+        "patch": null
+      },
+      "conflicts": [],
+      "destinations": [
+        "skills/overpy/references/project-workflow.md#keep-source-and-output-separate"
+      ]
+    },
+    {
+      "id": "opy-wait-until-warning",
+      "assertion": "Pinned compilation emits w_wait_until for a numeric variable predicate whose boolean type cannot be established.",
+      "applicability": "OverPy 9.7.17; compiler evidence is not current-game verification.",
+      "sources": [
+        {
+          "url": "https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/README.md#w_wait_until",
+          "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+        }
+      ],
+      "evidence_status": "upstream-implementation",
+      "game_test": {
+        "status": "not-run",
+        "date": null,
+        "patch": null
+      },
+      "conflicts": [],
+      "destinations": [
+        "skills/overpy/references/diagnostics.md#compiler-warnings-with-engine-implications"
+      ]
+    },
+    {
+      "id": "opy-reject-unknown-api",
+      "assertion": "The pinned compiler rejects the deliberately nonexistent thisApiDoesNotExist function.",
+      "applicability": "OverPy 9.7.17; compiler evidence is not current-game verification.",
+      "sources": [
+        {
+          "url": "https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src/compiler/compiler.ts",
+          "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+        }
+      ],
+      "evidence_status": "upstream-implementation",
+      "game_test": {
+        "status": "not-run",
+        "date": null,
+        "patch": null
+      },
+      "conflicts": [],
+      "destinations": [
+        "skills/overpy/references/diagnostics.md#separate-the-failure-layers"
+      ]
+    },
+    {
+      "id": "opy-native-roundtrip-limit",
+      "assertion": "Decompilation followed by compilation establishes pinned compiler acceptance, not native runtime equivalence or current-game acceptance.",
+      "applicability": "OverPy 9.7.17; compiler evidence is not current-game verification.",
+      "sources": [
+        {
+          "url": "https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src/decompiler/decompiler.ts",
+          "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+        },
+        {
+          "url": "https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src/compiler/compiler.ts",
+          "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+        }
+      ],
+      "evidence_status": "upstream-implementation",
+      "game_test": {
+        "status": "not-run",
+        "date": null,
+        "patch": null
+      },
+      "conflicts": [],
+      "destinations": [
+        "skills/overpy/references/decompilation.md#what-a-roundtrip-proves"
+      ]
+    }
+  ]
+}

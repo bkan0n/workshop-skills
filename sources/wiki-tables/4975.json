@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "source_article_id": 4975,
+  "title": "Named color RGBA values",
+  "evidence_status": "archived-documentation",
+  "behavioral_test_date": null,
+  "context": [
+    "Channels are red, green, blue, alpha; each is in 0–255. FG markup availability is a separate runtime question."
+  ],
+  "tables": [
+    {
+      "title": "Static colors",
+      "columns": [
+        "Color",
+        "RGBA",
+        "Foreground code payload"
+      ],
+      "rows": [
+        [
+          "White",
+          "255, 255, 255, 255",
+          "fgFFFFFFFF"
+        ],
+        [
+          "Yellow",
+          "255, 255, 0, 255",
+          "fgFFFF00FF"
+        ],
+        [
+          "Green",
+          "69, 255, 87, 255",
+          "fg45FF57FF"
+        ],
+        [
+          "Purple",
+          "161, 73, 197, 255",
+          "fgA149C5FF"
+        ],
+        [
+          "Red",
+          "200, 0, 19, 255",
+          "fgC80013FF"
+        ],
+        [
+          "Blue",
+          "39, 170, 255, 255",
+          "fg27AAFFFF"
+        ],
+        [
+          "Aqua",
+          "0, 234, 234, 255",
+          "fg00EAEAFF"
+        ],
+        [
+          "Orange",
+          "236, 153, 0, 255",
+          "fgEC9900FF"
+        ],
+        [
+          "SkyBlue",
+          "108, 190, 244, 255",
+          "fg6CBEF4FF"
+        ],
+        [
+          "Turquoise",
+          "0, 230, 151, 255",
+          "fg00E697FF"
+        ],
+        [
+          "LimeGreen",
+          "160, 232, 27, 255",
+          "fgA0E81BFF"
+        ],
+        [
+          "Gray",
+          "127, 127, 127, 255",
+          "fg7F7F7FFF"
+        ],
+        [
+          "Violet",
+          "100, 50, 255, 255",
+          "fg6432FFFF"
+        ],
+        [
+          "Rose",
+          "255, 50, 145, 255",
+          "fgFF3291FF"
+        ],
+        [
+          "Black",
+          "0, 0, 0, 255",
+          "fg000000FF"
+        ]
+      ],
+      "id": "wiki-4975-table-1"
+    }
+  ],
+  "destination": "skills/overwatch-workshop/references/wiki/tables/4975.md"
+}

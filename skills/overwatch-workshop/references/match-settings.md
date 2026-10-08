@@ -1,0 +1,56 @@
+# Match flow, custom settings and sharing
+
+A Workshop script runs inside a base game mode. Select that mode deliberately: objectives, team structure, score semantics, completion and respawn behavior still apply unless explicitly disabled or overridden.
+
+## Base-mode operations
+
+| Operation | Archived applicability |
+| --- | --- |
+| Declare Player Victory; Set/Modify Player Score | FFA; player score is kill count |
+| Declare Team Victory; Declare Match Draw | No effect in FFA |
+| Declare Round Draw | Elimination only |
+| Declare Round Victory | Control and elimination |
+| Set/Modify Team Score | No effect in FFA or modes without a team score |
+| Start Forcing Spawn Room | Assault, hybrid and payload maps; nonexistent room falls back to normal |
+| Start Game Mode | No effect if already in progress |
+| Go To Assemble Heroes | Only while game is in progress |
+| Restart Match | Only after match has existed for 30 seconds |
+
+An unspecified Player Victory target can produce only “WINS!”; an unspecified Team Victory target can show DRAW with victory sound. Supply an intentional winner. Spawn rooms are zero-indexed. Prefer documented no-op diagnosis over assuming a rule failed to fire.
+
+Disable Built-In Game Mode Completion leaves scripted completion available. Disable Scoring leaves scripted scoring available. Disable Respawning prevents automatic respawns for selected players while allowing script commands. Announcer/music suppression lasts until reenabled or match end. HUD/in-world UI suppression is another independent choice, with reported UI exceptions such as the Push robot icon.
+
+## Time and respawns
+
+Pause Match Time freezes the displayed match timer, **not players, objectives or progression logic**. It does not prevent the archived session-lifetime shutdown (4h30, 1h30 Practice Range; retest before relying on exact durations). Match Time and Total Time Elapsed answer different questions; use the latter for a session-relative expiry when appropriate.
+
+Set Match Time also affects assemble-heroes/setup phases. Set Slow Motion changes simulation for players, projectiles, effects and game-mode logic, with only up to 100% supported. Slowing the whole simulation as a load mitigation changes gameplay; it is not an invisible performance optimization.
+
+Set Respawn Max Time applied to an already dead player affects the **next death**, not the current respawn countdown. Respawn can affect a living player and moves to spawn; Resurrect uses death position. State reset policies remain the script's responsibility.
+
+## Workshop Settings
+
+Using a Workshop Setting value in rules materializes the settings submenu. Use unique setting names, and group by the case-sensitive Category. Read/reuse the setting value in a purposeful initialization or live-update policy; do not confuse a lobby option with an ordinary mutable player variable.
+
+| Setting type | Runtime value |
+| --- | --- |
+| Combo | Zero-based selected option index, not display text |
+| Hero | Hero value |
+| Integer / Real | Chosen number, inclusive minimum/maximum |
+| Toggle | Boolean |
+
+Within a category, the guide orders by ascending sort number then alphanumerically. **Category ordering is disputed:** the 2024 Settings guide says script order, while the OW2 registry says alphabetic. Do not promise one without checking the target version. The registry also reports a nonzero Combo default making the first choice unselectable. Use an explicit default and reproduce host-facing option behavior if the first choice matters.
+
+Duplicate-looking mode names can represent 5v5/6v6/LTM variants with different settings support. Numeric map suffixes can select time/variant; omitted suffix is reported to enable all variants. A settings-import error may therefore be a mode/schema mismatch rather than a rule syntax problem. The registry also reports export/import inconsistencies; consult [compatibility](compatibility.md) for the particular field instead of rewriting every settings token globally.
+
+## Preserve and share
+
+Keep native source text as the editable artifact. A share code snapshots the whole lobby settings configuration, excluding players/bots/AI. Before creating it, review base-mode settings, Workshop settings, debug features and datacenter preferences that would be included.
+
+Create New Code generates a separate code. Upload to Existing Code **overwrites** its old content; choose the correct code and retain your source history. The archived PC workflow is Custom Game → Settings → Share Code → select new/existing → Continue. Importing an alphanumeric code is distinct from pasting native source text. Old code-expiration and platform UI claims are not reliable retention guarantees; see [native authoring](native-authoring.md).
+
+Offline source details: [match/objectives](wiki/match-objectives.md) and [authoring/settings](wiki/authoring.md).
+
+## Evidence
+
+Archived snapshot **2026-09-29**: [player victory](https://workshop.codes/wiki/articles/4348), [team victory](https://workshop.codes/wiki/articles/4351), [match draw](https://workshop.codes/wiki/articles/4347), [round draw](https://workshop.codes/wiki/articles/4349), [round victory](https://workshop.codes/wiki/articles/4350), [team score](https://workshop.codes/wiki/articles/4437), [spawn room](https://workshop.codes/wiki/articles/4450), [start](https://workshop.codes/wiki/articles/4537), [assemble](https://workshop.codes/wiki/articles/4385), [restart](https://workshop.codes/wiki/articles/4539), [completion](https://workshop.codes/wiki/articles/4364), [scoring](https://workshop.codes/wiki/articles/4367), [respawning](https://workshop.codes/wiki/articles/4366), [pause time](https://workshop.codes/wiki/articles/4399), [Set Match Time](https://workshop.codes/wiki/articles/4421), [slow motion](https://workshop.codes/wiki/articles/4435), [respawn delay](https://workshop.codes/wiki/articles/4433), [settings](https://workshop.codes/wiki/articles/2168) (2024-06-09), [OW2 registry](https://workshop.codes/wiki/articles/9463) (2026-08-13, mixed-era), [sharing](https://workshop.codes/wiki/articles/1724) (2022-12-02), [update code](https://workshop.codes/wiki/articles/2004), [Basics](https://workshop.codes/wiki/articles/1840) (2023-04-11). No live UI/game verification is implied.

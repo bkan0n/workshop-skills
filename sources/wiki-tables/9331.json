@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "source_article_id": 9331,
+  "title": "First-person weapon attachment offsets",
+  "evidence_status": "source-reported-test",
+  "behavioral_test_date": null,
+  "context": [
+    "Measured idle at FOV 103 using A87YG; dual-wield rows describe the right gun unless noted. Animation and third-person offsets are not covered.",
+    "Use the source formula eye + facing + right*x + normalize(cross(facing,right))*y. These x/y measurements are not world coordinates.",
+    "Source table and JSON disagree for Mercy staff x: 0.12 versus 0.08. Table includes Illari; JSON includes Sojourn at (0.15,0.13). Neither variant is silently selected as current truth.",
+    "Footnotes: Hanzo arrow tip; Zenyatta behind interlaced fingers; Roadhog between barrels; Doomfist left hand; Lifeweaver Blossom middle-finger tip or Thorn Volley inner-palm centre; Juno muzzle.",
+    "Source JSON has missing commas and snippet has missing End; do not paste those examples without repair."
+  ],
+  "tables": [
+    {
+      "title": "Table",
+      "columns": [
+        "Hero",
+        "x",
+        "y"
+      ],
+      "rows": [
+        [
+          "REAPER",
+          "0.33",
+          "0.18"
+        ],
+        [
+          "TRACER",
+          "0.35",
+          "0.14"
+        ],
+        [
+          "MERCY (staff)",
+          "0.12",
+          "0.12"
+        ],
+        [
+          "MERCY (gun)",
+          "0.23",
+          "0.17"
+        ],
+        [
+          "HANZO ^1",
+          "0.03",
+          "0.41"
+        ],
+        [
+          "TORBJORN (gun)",
+          "0.1",
+          "0.06"
+        ],
+        [
+          "TORBJORN (hammer)",
+          "0.27",
+          "0.06"
+        ],
+        [
+          "REINHARDT",
+          "0.42",
+          "0.09"
+        ],
+        [
+          "PHARAH",
+          "0.11",
+          "0.16"
+        ],
+        [
+          "WINSTON",
+          "0.2",
+          "0.35"
+        ],
+        [
+          "WIDOWMAKER",
+          "0.13",
+          "0.16"
+        ],
+        [
+          "BASTION (recon)",
+          "0.21",
+          "0.15"
+        ],
+        [
+          "BASTION (sentry)",
+          "0",
+          "0.27"
+        ],
+        [
+          "SYMMETRA",
+          "0.28",
+          "0.19"
+        ],
+        [
+          "ZENYATTA ^2",
+          "0",
+          "0.4"
+        ],
+        [
+          "GENJI",
+          "-0.44",
+          "0.42"
+        ],
+        [
+          "ROADHOG ^3",
+          "0.26",
+          "0.15"
+        ],
+        [
+          "CASSIDY/MCCREE",
+          "0.15",
+          "0.07"
+        ],
+        [
+          "JUNKRAT",
+          "0.19",
+          "0.15"
+        ],
+        [
+          "ZARYA",
+          "0.24",
+          "0.22"
+        ],
+        [
+          "SOLDIER",
+          "0.15",
+          "0.14"
+        ],
+        [
+          "LUCIO",
+          "0.3",
+          "0.23"
+        ],
+        [
+          "MEI",
+          "0.24",
+          "0.13"
+        ],
+        [
+          "SOMBRA",
+          "0.29",
+          "0.13"
+        ],
+        [
+          "DOOMFIST ^4",
+          "-0.57",
+          "0.32"
+        ],
+        [
+          "ANA",
+          "0.12",
+          "0.09"
+        ],
+        [
+          "ORISA",
+          "0.33",
+          "0.19"
+        ],
+        [
+          "BRIGITTE",
+          "0.92",
+          "-0.11"
+        ],
+        [
+          "MOIRA",
+          "0.79",
+          "0.38"
+        ],
+        [
+          "WRECKING BALL/HAMMOND",
+          "0.65",
+          "0.33"
+        ],
+        [
+          "ASHE",
+          "0.15",
+          "0.07"
+        ],
+        [
+          "ECHO fingers",
+          "0.15",
+          "0.07"
+        ],
+        [
+          "ECHO palm",
+          "0.78",
+          "0.46"
+        ],
+        [
+          "BAPTISTE",
+          "0.19",
+          "0.11"
+        ],
+        [
+          "SIGMA",
+          "0.38",
+          "0.13"
+        ],
+        [
+          "KIRIKO talismans",
+          "-0.53",
+          "0.08"
+        ],
+        [
+          "KIRIKO kunai",
+          "0.4",
+          "0.48"
+        ],
+        [
+          "JUNKER QUEEN",
+          "0.22",
+          "0.13"
+        ],
+        [
+          "LIFEWEAVER ^5",
+          "0.27",
+          "0.18"
+        ],
+        [
+          "RAMMATRA staff",
+          "0.58",
+          "-0.32"
+        ],
+        [
+          "ILLARI",
+          "0.18",
+          "0.22"
+        ],
+        [
+          "JUNO ^6",
+          "0.07",
+          "0.03"
+        ],
+        [
+          "WUYANG/AQUA",
+          "0.22",
+          "0.12"
+        ],
+        [
+          "HAZARD",
+          "0.42",
+          "0.19"
+        ],
+        [
+          "FREJA",
+          "0.22",
+          "0.17"
+        ]
+      ],
+      "id": "wiki-9331-table-1"
+    }
+  ],
+  "destination": "skills/overwatch-workshop/references/wiki/tables/9331.md"
+}

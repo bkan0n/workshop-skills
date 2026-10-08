@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "source_article_id": 1855,
+  "title": "Post-match timing observations",
+  "evidence_status": "archived-documentation",
+  "behavioral_test_date": null,
+  "context": [
+    "Offsets begin when the match becomes complete. Archived 2023-04-12; mode/UI changes may alter timings. Use actual match state where possible instead of depending solely on these delays."
+  ],
+  "tables": [
+    {
+      "title": "Team modes",
+      "columns": [
+        "Screen",
+        "Start (seconds)",
+        "End (seconds)"
+      ],
+      "rows": [
+        [
+          "Match complete",
+          "0",
+          "3.25"
+        ],
+        [
+          "Victory pose",
+          "3.25",
+          "8.5"
+        ],
+        [
+          "Play of the Game",
+          "8.5",
+          "26"
+        ],
+        [
+          "Duel results (Elimination only)",
+          "26",
+          "33"
+        ]
+      ],
+      "id": "wiki-1855-table-1"
+    },
+    {
+      "title": "Free for all",
+      "columns": [
+        "Screen",
+        "Start (seconds)",
+        "End (seconds)"
+      ],
+      "rows": [
+        [
+          "Match complete",
+          "0",
+          "3.25"
+        ],
+        [
+          "Play of the Game",
+          "3.25",
+          "20.5"
+        ],
+        [
+          "Victory pose and scoreboard",
+          "20.5",
+          "30.5"
+        ]
+      ],
+      "id": "wiki-1855-table-2"
+    }
+  ],
+  "destination": "skills/overwatch-workshop/references/wiki/tables/1855.md"
+}

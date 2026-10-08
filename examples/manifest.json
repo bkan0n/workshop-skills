@@ -1,0 +1,423 @@
+{
+  "schemaVersion": 1,
+  "compiler": {
+    "package": "overpy",
+    "version": "9.7.17",
+    "sourceCommit": "5a7d0e294b8cad73b9701987bb584d0551d7fa4d"
+  },
+  "examples": [
+    {
+      "id": "opy-interact-counter",
+      "dialect": "overpy",
+      "complete": true,
+      "path": "examples/overpy/interact-counter.opy",
+      "language": "en-US",
+      "claims": [
+        "opy-rule-storage"
+      ],
+      "expected": {
+        "outcome": "accept",
+        "warningCodes": [],
+        "outputIncludes": [
+          "Modify Player Variable(Event Player, presses, Add, 1);",
+          "Is Button Held(Event Player, Button(Interact))"
+        ],
+        "hiddenWarnings": [
+          {
+            "code": "w_type_check",
+            "messageIncludes": "Expected type 'CustomStringLiteral' for the 2nd argument of function '__customString__', but got player variable 'presses' of type 'Value'"
+          }
+        ],
+        "hiddenWarningReason": "Pinned compiler records these type diagnostics internally for the inspected dynamic expression. Expected exactly; not suppressed in source or treated as game verification."
+      },
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      },
+      "copies": [
+        {
+          "destination": "skills/overpy/examples/interact-counter.opy"
+        }
+      ]
+    },
+    {
+      "id": "opy-collections",
+      "dialect": "overpy",
+      "complete": true,
+      "path": "examples/overpy/collections.opy",
+      "language": "en-US",
+      "claims": [
+        "opy-array-transformations",
+        "opy-for-bound-contract",
+        "wiki-4565-n1"
+      ],
+      "expected": {
+        "outcome": "accept",
+        "warningCodes": [],
+        "outputIncludes": [
+          "Filtered Array(",
+          "Mapped Array(",
+          "Append To Array(Global.sourceValues, 4)",
+          "Modify Global Variable(sourceValues, Append To Array, 5)",
+          "For Global Variable(i, 1, 5, 2);"
+        ],
+        "hiddenWarnings": []
+      },
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      },
+      "copies": [
+        {
+          "destination": "skills/overpy/examples/collections.opy"
+        }
+      ]
+    },
+    {
+      "id": "opy-subroutine",
+      "dialect": "overpy",
+      "complete": true,
+      "path": "examples/overpy/subroutine.opy",
+      "language": "en-US",
+      "claims": [
+        "opy-subroutine-contract",
+        "opy-macro-inline"
+      ],
+      "expected": {
+        "outcome": "accept",
+        "warningCodes": [],
+        "outputIncludes": [
+          "Call Subroutine(recordUse);",
+          "Subroutine;",
+          "Modify Player Variable(Event Player, uses, Add, 1);"
+        ],
+        "hiddenWarnings": [
+          {
+            "code": "w_type_check",
+            "messageIncludes": "Expected type 'CustomStringLiteral' for the 2nd argument of function '__customString__', but got player variable 'uses' of type 'Value'"
+          }
+        ],
+        "hiddenWarningReason": "Pinned compiler records these type diagnostics internally for the inspected dynamic expression. Expected exactly; not suppressed in source or treated as game verification."
+      },
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      },
+      "copies": [
+        {
+          "destination": "skills/overpy/examples/subroutine.opy"
+        }
+      ]
+    },
+    {
+      "id": "opy-selection",
+      "dialect": "overpy",
+      "complete": true,
+      "path": "examples/overpy/selection.opy",
+      "language": "en-US",
+      "claims": [
+        "opy-selection"
+      ],
+      "expected": {
+        "outcome": "accept",
+        "warningCodes": [],
+        "outputIncludes": [
+          "Index Of Array Value(Array(1, 2), Global.mode)",
+          "Set Global Variable(multiplier, 2);"
+        ],
+        "hiddenWarnings": []
+      },
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      },
+      "copies": [
+        {
+          "destination": "skills/overpy/examples/selection.opy"
+        }
+      ]
+    },
+    {
+      "id": "opy-strings",
+      "dialect": "overpy",
+      "complete": true,
+      "path": "examples/overpy/strings.opy",
+      "language": "en-US",
+      "claims": [
+        "opy-string-format"
+      ],
+      "expected": {
+        "outcome": "accept",
+        "warningCodes": [],
+        "outputIncludes": [
+          "Create HUD Text(Event Player",
+          "Custom String(\"Points: {0}\"",
+          "Visible To Sort Order String and Color"
+        ],
+        "hiddenWarnings": [
+          {
+            "code": "w_type_check",
+            "messageIncludes": "Expected type 'CustomStringLiteral' for the 2nd argument of function '__customString__', but got player variable 'points' of type 'Value'"
+          }
+        ],
+        "hiddenWarningReason": "Pinned compiler records these type diagnostics internally for the inspected dynamic expression. Expected exactly; not suppressed in source or treated as game verification."
+      },
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      },
+      "copies": [
+        {
+          "destination": "skills/overpy/examples/strings.opy"
+        }
+      ]
+    },
+    {
+      "id": "opy-captured-offset",
+      "dialect": "overpy",
+      "complete": true,
+      "path": "examples/overpy/captured-offset.opy",
+      "language": "en-US",
+      "claims": [
+        "opy-capture-mapping",
+        "wiki-4788-n1",
+        "wiki-4849-n1"
+      ],
+      "expected": {
+        "outcome": "accept",
+        "warningCodes": [],
+        "outputIncludes": [
+          "Evaluate Once((Event Player).offset)",
+          "Last Created Entity",
+          "Wait(1, Ignore Condition);",
+          "Destroy Effect((Event Player).effectId);"
+        ],
+        "hiddenWarnings": []
+      },
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      },
+      "copies": [
+        {
+          "destination": "skills/overpy/examples/captured-offset.opy"
+        }
+      ]
+    },
+    {
+      "id": "opy-multifile-project",
+      "dialect": "overpy",
+      "complete": true,
+      "path": "examples/overpy/project/main.opy",
+      "language": "en-US",
+      "claims": [
+        "opy-project-inputs"
+      ],
+      "expected": {
+        "outcome": "accept",
+        "warningCodes": [],
+        "outputIncludes": [
+          "Skirmish",
+          "Set Match Time(120);"
+        ],
+        "hiddenWarnings": []
+      },
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      },
+      "copies": [
+        {
+          "source": "examples/overpy/project/main.opy",
+          "destination": "skills/overpy/examples/project/main.opy"
+        },
+        {
+          "source": "examples/overpy/project/constants.opy",
+          "destination": "skills/overpy/examples/project/constants.opy"
+        },
+        {
+          "source": "examples/overpy/project/mode.opy.json",
+          "destination": "skills/overpy/examples/project/mode.opy.json"
+        }
+      ],
+      "inputs": [
+        "examples/overpy/project/constants.opy",
+        "examples/overpy/project/mode.opy.json"
+      ]
+    },
+    {
+      "id": "opy-expected-warning",
+      "dialect": "overpy",
+      "complete": true,
+      "path": "examples/overpy/expected-warning.opy",
+      "language": "en-US",
+      "claims": [
+        "opy-wait-until-warning"
+      ],
+      "expected": {
+        "outcome": "accept",
+        "warningCodes": [
+          "w_wait_until"
+        ],
+        "outputIncludes": [
+          "Wait Until(Global.flag, 1);"
+        ],
+        "hiddenWarnings": []
+      },
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      }
+    },
+    {
+      "id": "opy-reject-nonexistent-api",
+      "dialect": "overpy",
+      "complete": true,
+      "path": "examples/invalid/nonexistent-api.opy",
+      "language": "en-US",
+      "claims": [
+        "opy-reject-unknown-api"
+      ],
+      "expected": {
+        "outcome": "reject",
+        "warningCodes": [],
+        "errorIncludes": "Unknown function 'thisApiDoesNotExist'",
+        "hiddenWarnings": []
+      },
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      }
+    },
+    {
+      "id": "opy-reject-parameterized-subroutine",
+      "dialect": "overpy",
+      "complete": true,
+      "path": "examples/invalid/parameterized-subroutine.opy",
+      "language": "en-US",
+      "claims": [
+        "opy-subroutine-contract"
+      ],
+      "expected": {
+        "outcome": "reject",
+        "warningCodes": [],
+        "errorIncludes": "Malformatted 'def' declaration",
+        "hiddenWarnings": []
+      },
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      }
+    },
+    {
+      "id": "native-interact-counter",
+      "dialect": "workshop",
+      "complete": true,
+      "path": "examples/native/native-interact-counter.workshop",
+      "language": "en-US",
+      "claims": [
+        "opy-native-roundtrip-limit",
+        "opy-rule-storage"
+      ],
+      "expected": {
+        "outcome": "accept",
+        "warningCodes": [],
+        "outputIncludes": [
+          "Modify Player Variable(Event Player, PressCount, Add, 1);"
+        ],
+        "hiddenWarnings": [
+          {
+            "code": "w_type_check",
+            "messageIncludes": "Expected type 'CustomStringLiteral' for the 2nd argument of function '__customString__', but got player variable 'PressCount' of type 'Value'"
+          }
+        ],
+        "hiddenWarningReason": "Pinned compiler records these type diagnostics internally for the inspected dynamic expression. Expected exactly; not suppressed in source or treated as game verification."
+      },
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      },
+      "copies": [
+        {
+          "destination": "skills/overwatch-workshop/examples/native-interact-counter.workshop"
+        }
+      ]
+    },
+    {
+      "id": "native-held-healing",
+      "dialect": "workshop",
+      "complete": true,
+      "path": "examples/native/native-held-healing.workshop",
+      "language": "en-US",
+      "claims": [
+        "opy-native-roundtrip-limit",
+        "wiki-4854-n1"
+      ],
+      "expected": {
+        "outcome": "accept",
+        "warningCodes": [],
+        "outputIncludes": [
+          "Wait(0.25, Abort When False);",
+          "Loop If Condition Is True;"
+        ],
+        "hiddenWarnings": []
+      },
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      },
+      "copies": [
+        {
+          "destination": "skills/overwatch-workshop/examples/native-held-healing.workshop"
+        }
+      ]
+    },
+    {
+      "id": "native-owned-effect",
+      "dialect": "workshop",
+      "complete": true,
+      "path": "examples/native/native-owned-effect.workshop",
+      "language": "en-US",
+      "claims": [
+        "opy-native-roundtrip-limit",
+        "wiki-4849-n1",
+        "wiki-4598-n1"
+      ],
+      "expected": {
+        "outcome": "accept",
+        "warningCodes": [],
+        "outputIncludes": [
+          "Entity Exists(",
+          "Destroy Effect(",
+          "Total Time Elapsed",
+          "Remove From Array By Index"
+        ],
+        "hiddenWarnings": [
+          {
+            "code": "w_type_check",
+            "messageIncludes": "Expected type 'unsigned int' for the 2nd operand of operator '-' or '-=', but got number '1' of type 'UnsignedIntLiteral'"
+          },
+          {
+            "code": "w_type_check",
+            "messageIncludes": "Expected type 'unsigned float' for the 2nd operand of operator '+' or '+=', but got number '2' of type 'UnsignedIntLiteral'"
+          }
+        ],
+        "hiddenWarningReason": "Pinned compiler records these type diagnostics internally for the inspected dynamic expression. Expected exactly; not suppressed in source or treated as game verification."
+      },
+      "game": {
+        "status": "not-run",
+        "reason": "Compiler and source inspection only; no live Overwatch test."
+      },
+      "copies": [
+        {
+          "destination": "skills/overwatch-workshop/examples/native-owned-effect.workshop"
+        }
+      ]
+    }
+  ],
+  "fragment_policy": {
+    "guide_snippets": "Explicitly described as syntax fragments unless linked to a complete fixture.",
+    "compiler_check": "Fragments are excluded from counts of successful complete-program checks.",
+    "tooling_example": "Node/CLI procedures in project-workflow.md are tool guidance, not Workshop fixtures."
+  }
+}

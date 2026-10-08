@@ -1,0 +1,15 @@
+# Native Workshop values: P
+
+- [Payload Position](payload-position.md)
+- [Payload Progress Percentage](payload-progress-percentage.md)
+- [Player Carrying Flag](player-carrying-flag.md)
+- [Player Closest To Reticle](player-closest-to-reticle.md)
+- [Player Hero Stat](player-hero-stat.md)
+- [Player Stat](player-stat.md)
+- [Player Variable](player-variable.md)
+- [Players In Slot](players-in-slot.md)
+- [Players On Hero](players-on-hero.md)
+- [Players Within Radius](players-within-radius.md)
+- [Players in View Angle](players-in-view-angle.md)
+- [Point Capture Percentage](point-capture-percentage.md)
+- [Position Of](position-of.md)

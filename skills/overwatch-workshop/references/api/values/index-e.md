@@ -1,0 +1,15 @@
+# Native Workshop values: E
+
+- [Empty Array](empty-array.md)
+- [Entity Count](entity-count.md)
+- [Entity Exists](entity-exists.md)
+- [Evaluate Once](evaluate-once.md)
+- [Event Ability](event-ability.md)
+- [Event Damage](event-damage.md)
+- [Event Direction](event-direction.md)
+- [Event Healing](event-healing.md)
+- [Event Player](event-player.md)
+- [Event Was Critical Hit](event-was-critical-hit.md)
+- [Event Was Environment](event-was-environment.md)
+- [Event Was Health Pack](event-was-health-pack.md)
+- [Eye Position](eye-position.md)
