@@ -1,0 +1,5 @@
+# Generated references preserve original wiki whitespace, including mixed indentation.
+skills/overwatch-workshop/references/wiki/archive/*.md whitespace=-blank-at-eol,-space-before-tab
+skills/overwatch-workshop/references/wiki/articles/*.md whitespace=-blank-at-eol,-space-before-tab
+skills/overwatch-workshop/references/wiki/tables/**/*.md whitespace=-blank-at-eol,-space-before-tab
+skills/overwatch-workshop/references/wiki/tables/*.md whitespace=-blank-at-eol,-space-before-tab

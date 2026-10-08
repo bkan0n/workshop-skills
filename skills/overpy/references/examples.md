@@ -1,6 +1,6 @@
 # Complete examples and their limits
 
-These files are small, complete compiler inputs, not fragments to concatenate blindly. Each starts its own declarations and rules. The repository's example harness compiles them with **OverPy 9.7.17, en-US**, checks expected diagnostics and selected generated actions, and checks that packaged copies match canonical fixtures. No example has been tested in a live Overwatch match by this project.
+These files are small, complete compiler inputs, not fragments to concatenate blindly. Each starts its own declarations and rules. The repository's example harness compiles them with **OverPy 9.7.17, en-US**, checks expected diagnostics and selected generated actions, and checks that packaged copies match canonical fixtures.
 
 | Example | Demonstrates | Important boundary |
 | --- | --- | --- |
@@ -16,4 +16,4 @@ The counter, subroutine, and string examples produce expected **hidden** `w_type
 
 For departure-safe resource cleanup, adapt the matched Workshop skill's [native owned-effect example](../../overwatch-workshop/examples/native-owned-effect.workshop) using the [decompilation workflow](decompilation.md). Preserve its global owner/ID registry and cleanup logic; translating syntax should not weaken lifetime guarantees.
 
-The maintainer-only suite additionally checks an explicit `w_wait_until` warning and rejects a nonexistent function and a parameterized subroutine. Those failing inputs are not shipped here as recommended authoring examples. Successful compiler checks are separate from game verification and do not prove every illustrated behavior on the current patch.
+The maintainer-only suite additionally checks an explicit `w_wait_until` warning and rejects a nonexistent function and a parameterized subroutine. Those failing inputs are not shipped here as recommended authoring examples.

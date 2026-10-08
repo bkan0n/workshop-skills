@@ -1,5 +1,15 @@
 # Match flow, custom settings and sharing
 
+<!-- wiki-source-updates:start -->
+
+## Current wiki sources
+
+Before using facts or values covered by these sources, read the corresponding current article. Its text takes precedence over copied details below; use this guide for the overall pattern.
+
+- [OW2 Workshop Changes/Bugs](wiki/archive/9694.md)
+
+<!-- wiki-source-updates:end -->
+
 A Workshop script runs inside a base game mode. Select that mode deliberately: objectives, team structure, score semantics, completion and respawn behavior still apply unless explicitly disabled or overridden.
 
 ## Base-mode operations
@@ -22,7 +32,7 @@ Disable Built-In Game Mode Completion leaves scripted completion available. Disa
 
 ## Time and respawns
 
-Pause Match Time freezes the displayed match timer, **not players, objectives or progression logic**. It does not prevent the archived session-lifetime shutdown (4h30, 1h30 Practice Range; retest before relying on exact durations). Match Time and Total Time Elapsed answer different questions; use the latter for a session-relative expiry when appropriate.
+Pause Match Time freezes the displayed match timer, **not players, objectives or progression logic**. It does not prevent the archived session-lifetime shutdown (4h30, 1h30 Practice Range). Match Time and Total Time Elapsed answer different questions; use the latter for a session-relative expiry when appropriate.
 
 Set Match Time also affects assemble-heroes/setup phases. Set Slow Motion changes simulation for players, projectiles, effects and game-mode logic, with only up to 100% supported. Slowing the whole simulation as a load mitigation changes gameplay; it is not an invisible performance optimization.
 
@@ -39,7 +49,7 @@ Using a Workshop Setting value in rules materializes the settings submenu. Use u
 | Integer / Real | Chosen number, inclusive minimum/maximum |
 | Toggle | Boolean |
 
-Within a category, the guide orders by ascending sort number then alphanumerically. **Category ordering is disputed:** the 2024 Settings guide says script order, while the OW2 registry says alphabetic. Do not promise one without checking the target version. The registry also reports a nonzero Combo default making the first choice unselectable. Use an explicit default and reproduce host-facing option behavior if the first choice matters.
+Within a category, settings use ascending sort number then alphanumerical order. The [current registry](wiki/archive/9463.md) documents alphabetical category order and a nonzero Combo default making the first choice unselectable. Follow its settings section when it differs from the older guide; use a zero default when the first Combo choice must remain selectable.
 
 Duplicate-looking mode names can represent 5v5/6v6/LTM variants with different settings support. Numeric map suffixes can select time/variant; omitted suffix is reported to enable all variants. A settings-import error may therefore be a mode/schema mismatch rather than a rule syntax problem. The registry also reports export/import inconsistencies; consult [compatibility](compatibility.md) for the particular field instead of rewriting every settings token globally.
 
@@ -53,4 +63,4 @@ Offline source details: [match/objectives](wiki/match-objectives.md) and [author
 
 ## Evidence
 
-Archived snapshot **2026-09-29**: [player victory](https://workshop.codes/wiki/articles/4348), [team victory](https://workshop.codes/wiki/articles/4351), [match draw](https://workshop.codes/wiki/articles/4347), [round draw](https://workshop.codes/wiki/articles/4349), [round victory](https://workshop.codes/wiki/articles/4350), [team score](https://workshop.codes/wiki/articles/4437), [spawn room](https://workshop.codes/wiki/articles/4450), [start](https://workshop.codes/wiki/articles/4537), [assemble](https://workshop.codes/wiki/articles/4385), [restart](https://workshop.codes/wiki/articles/4539), [completion](https://workshop.codes/wiki/articles/4364), [scoring](https://workshop.codes/wiki/articles/4367), [respawning](https://workshop.codes/wiki/articles/4366), [pause time](https://workshop.codes/wiki/articles/4399), [Set Match Time](https://workshop.codes/wiki/articles/4421), [slow motion](https://workshop.codes/wiki/articles/4435), [respawn delay](https://workshop.codes/wiki/articles/4433), [settings](https://workshop.codes/wiki/articles/2168) (2024-06-09), [OW2 registry](https://workshop.codes/wiki/articles/9463) (2026-08-13, mixed-era), [sharing](https://workshop.codes/wiki/articles/1724) (2022-12-02), [update code](https://workshop.codes/wiki/articles/2004), [Basics](https://workshop.codes/wiki/articles/1840) (2023-04-11). No live UI/game verification is implied.
+Wiki sources: [player victory](wiki/articles/4348.md#wiki-4348), [team victory](wiki/articles/4351.md#wiki-4351), [match draw](wiki/articles/4347.md#wiki-4347), [round draw](wiki/articles/4349.md#wiki-4349), [round victory](wiki/articles/4350.md#wiki-4350), [team score](wiki/articles/4437.md#wiki-4437), [spawn room](wiki/articles/4450.md#wiki-4450), [start](wiki/articles/4537.md#wiki-4537), [assemble](wiki/articles/4385.md#wiki-4385), [restart](wiki/articles/4539.md#wiki-4539), [completion](wiki/articles/4364.md#wiki-4364), [scoring](wiki/articles/4367.md#wiki-4367), [respawning](wiki/articles/4366.md#wiki-4366), [pause time](wiki/articles/4399.md#wiki-4399), [Set Match Time](wiki/articles/4421.md#wiki-4421), [slow motion](wiki/articles/4435.md#wiki-4435), [respawn delay](wiki/articles/4433.md#wiki-4433), [settings](wiki/articles/2168.md#wiki-2168) (2024-06-09), [OW2 registry](wiki/articles/9463.md#wiki-9463), [sharing](wiki/articles/1724.md#wiki-1724) (2022-12-02), [update code](wiki/articles/2004.md#wiki-2004), [Basics](wiki/articles/1840.md#wiki-1840) (2023-04-11).

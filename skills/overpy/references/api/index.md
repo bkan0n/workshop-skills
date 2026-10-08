@@ -1,6 +1,6 @@
 # Exact OverPy reference
 
-Pinned to OverPy 9.7.17. Names and defaults follow the public completion surface; internal compiler identifiers are excluded. Read only the matching entry. Angle-bracket receivers and parameter names are explanatory placeholders.
+Pinned to OverPy 9.7.17. Names and defaults follow the public completion surface; internal compiler identifiers are excluded. Use [functions by task](usage/index.md) to find relevant operations, or the alphabetical indexes below for an already-known name. Read only the matching entry. Angle-bracket receivers and parameter names are explanatory placeholders.
 
 - [Actions / player methods](actions/index.md)
 - [Values / player methods](values/index.md)
@@ -18,4 +18,4 @@ Pinned to OverPy 9.7.17. Names and defaults follow the public completion surface
 
 Operators and syntax forms use the [language guide](../language.md), not internal names from compiler maps.
 
-Source: [OverPy 9.7.17](https://github.com/Zezombye/overpy/tree/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src). Generated from pinned initialized exports. Engine behavior is not independently game-tested.
+Source: [OverPy 9.7.17](https://github.com/Zezombye/overpy/tree/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src). Generated from pinned initialized exports.

@@ -9,4 +9,4 @@ Runtime meaning and argument semantics are documented in the native operation li
 Returns: `void`.
 Native operation: [Remove All Health Pools From Player](../../../../overwatch-workshop/references/api/actions/remove-all-health-pools-from-player.md).
 
-Source: [OverPy 9.7.17](https://github.com/Zezombye/overpy/tree/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src). Generated from pinned initialized exports. Engine behavior is not independently game-tested.
+Source: [OverPy 9.7.17](https://github.com/Zezombye/overpy/tree/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src). Generated from pinned initialized exports.

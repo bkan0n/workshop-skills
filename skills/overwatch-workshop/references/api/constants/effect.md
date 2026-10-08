@@ -79,4 +79,4 @@ Extension costs and activation: [settings schema](../settings/extensions.md).
 | `Zenyatta Orb of Discord Target Effect` | `Effect.ZENYATTA_ORB_OF_DISCORD_TARGET` | Requires extension `debuffStatusEffects`. |
 | `Zenyatta Orb of Discord Target Sound` | `Effect.ZENYATTA_ORB_OF_DISCORD_TARGET_SOUND` | Requires extension `buffAndDebuffSounds`. |
 
-Source: [OverPy 9.7.17](https://github.com/Zezombye/overpy/tree/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src). Generated from pinned initialized exports. Engine behavior is not independently game-tested.
+Source: [OverPy 9.7.17](https://github.com/Zezombye/overpy/tree/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src). Generated from pinned initialized exports.

@@ -8,4 +8,4 @@ Runtime meaning and argument semantics are documented in the native operation li
 Returns: `HealthPoolId`.
 Native operation: [Last Created Health Pool](../../../../overwatch-workshop/references/api/values/last-created-health-pool.md).
 
-Source: [OverPy 9.7.17](https://github.com/Zezombye/overpy/tree/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src). Generated from pinned initialized exports. Engine behavior is not independently game-tested.
+Source: [OverPy 9.7.17](https://github.com/Zezombye/overpy/tree/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src). Generated from pinned initialized exports.

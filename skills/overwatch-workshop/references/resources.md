@@ -1,5 +1,15 @@
 # Resources, handles and cleanup
 
+<!-- wiki-source-updates:start -->
+
+## Current wiki sources
+
+Before using facts or values covered by these sources, read the corresponding current article. Its text takes precedence over copied details below; use this guide for the overall pattern.
+
+- [OW2 Workshop Changes/Bugs](wiki/archive/9694.md)
+
+<!-- wiki-source-updates:end -->
+
 Creation is not a harmless statement that can be repeated forever. Persistent objects consume capacity, and many Create/Start actions silently fail when their budget is exhausted. Define an owner, cleanup trigger and storage location for each resource before introducing a loop.
 
 ## Handle families
@@ -17,9 +27,9 @@ Creation is not a harmless statement that can be repeated forever. Persistent ob
 
 The Last… values are scoped to creation by Event Player or global execution. A later creation in that context can overwrite them. Save the appropriate value directly after creation, before another creator or a Wait. Do not substitute Last Created Entity for a text ID.
 
-Keep only handles belonging to the feature. Destroy All Effects and similar broad cleanup can remove another subsystem's objects. An archived update says Destroy Effect accepts an array; a per-ID bounded loop remains useful when exact compatibility matters. Clear tracking storage after destruction. A failed creation must not cause a stale Last… handle to be registered as a new resource; the archive does not establish a universal success-result API, so budget conservatively and verify action-specific failure behavior.
+Keep only handles belonging to the feature. Destroy All Effects and similar broad cleanup can remove another subsystem's objects. Destroy Effect accepts an array; use a per-ID bounded loop when cleanup requires work specific to each object. Clear tracking storage after destruction. A failed creation must not cause a stale Last… handle to be registered as a new resource; the archive does not establish a universal success-result API, so budget conservatively and verify action-specific failure behavior.
 
-The [owned effect example](../examples/native-owned-effect.workshop) retains global owner/ID/deadline arrays so departure cleanup can run after player variables disappear. Its fixed 32-effect allocation is an example-local budget, not a general guarantee in an existing mode.
+The [owned effect example](../examples/native-owned-effect.workshop) retains global owner/ID/deadline arrays so departure cleanup can run after player variables disappear. Its fixed 32-effect allocation is an example-local budget; account for the rest of the mode’s effects separately.
 
 ## Controls without IDs
 
@@ -34,7 +44,7 @@ These are archived limits, not a claim about every future patch. Measure count b
 | Resource | Archived capacity | Source/date |
 | --- | --- | --- |
 | Effects family | 128; 256 with extension; older overview includes beams/icons/created projectiles | Create Effect 2024-11-26; Basics 2023-04-11 |
-| Text family | 128 shared HUD/IWT/progress-bar entries in older overview; newer text guide describes an IWT combination | Basics 2023-04-11; text tips 2025-04-15; scope needs retest |
+| Text family | 128 shared HUD/IWT/progress-bar entries in older overview; newer text guide describes an IWT combination | Basics 2023-04-11; text tips 2025-04-15; see the current linked text-family documentation |
 | Damage modifications | 64 active | 2024-11-26 |
 | Healing modifications | 64 active | 2024-11-26 |
 | Health pools | 16 per health type per player, including base/ability pools | 2025-06-14 |
@@ -46,10 +56,10 @@ Entity Count, Text Count and Assist Count are useful diagnostics, but do not ass
 
 ## Projectile leak report
 
-The OW2 registry reports that a non-null projectile owner leaving or being swapped before a Create Projectile/Homing Projectile expires can make the projectile disappear without releasing its entity slot. Visual disappearance is therefore not proof of cleanup. Source-suggested alternatives are null ownership or custom behavior around Create Projectile Effect; each changes attribution or implementation and needs testing. Keep finite lifetimes and inspect Entity Count across departure/hero-change reproductions. Do not promise that destroying a visual fixes this reported internal leak.
+The OW2 registry reports that a non-null projectile owner leaving or being swapped before a Create Projectile/Homing Projectile expires can make the projectile disappear without releasing its entity slot. Visual disappearance is therefore not proof of cleanup. Source-suggested alternatives are null ownership or custom behavior around Create Projectile Effect; each changes attribution or implementation. Keep finite lifetimes and inspect Entity Count across departure/hero-change reproductions. Do not promise that destroying a visual fixes this reported internal leak.
 
 Offline source details: [effects/resources](wiki/effects-resources.md) and [projectiles](wiki/projectiles.md).
 
 ## Evidence
 
-Snapshot **2026-09-29**: [effect lifecycle](https://workshop.codes/wiki/articles/4342), [cleanup guide](https://workshop.codes/wiki/articles/4849), [array destruction](https://workshop.codes/wiki/articles/8473) (2026-03-17), [Last Created Entity](https://workshop.codes/wiki/articles/4679), [Last Text ID](https://workshop.codes/wiki/articles/6960), [health pools](https://workshop.codes/wiki/articles/6164), [damage modifiers](https://workshop.codes/wiki/articles/4445), [healing modifiers](https://workshop.codes/wiki/articles/4453), [DoT](https://workshop.codes/wiki/articles/4446), [HoT](https://workshop.codes/wiki/articles/4452), [assists](https://workshop.codes/wiki/articles/4524), [bots](https://workshop.codes/wiki/articles/4341), [overview limits](https://workshop.codes/wiki/articles/1840), [text tips](https://workshop.codes/wiki/articles/5734), [subroutines](https://workshop.codes/wiki/articles/1292), [arrays](https://workshop.codes/wiki/articles/4572), [preload](https://workshop.codes/wiki/articles/4401), [Play Effect](https://workshop.codes/wiki/articles/9268). Projectile leak is a **source-reported bug, not locally reproduced**, in [9463](https://workshop.codes/wiki/articles/9463), edited 2026-08-13.
+Wiki sources: [effect lifecycle](wiki/articles/4342.md#wiki-4342), [cleanup guide](wiki/articles/4849.md#wiki-4849), [array destruction](wiki/articles/8473.md#wiki-8473) (2026-03-17), [Last Created Entity](wiki/articles/4679.md#wiki-4679), [Last Text ID](wiki/articles/6960.md#wiki-6960), [health pools](wiki/articles/6164.md#wiki-6164), [damage modifiers](wiki/articles/4445.md#wiki-4445), [healing modifiers](wiki/articles/4453.md#wiki-4453), [DoT](wiki/articles/4446.md#wiki-4446), [HoT](wiki/articles/4452.md#wiki-4452), [assists](wiki/articles/4524.md#wiki-4524), [bots](wiki/articles/4341.md#wiki-4341), [overview limits](wiki/articles/1840.md#wiki-1840), [text tips](wiki/articles/5734.md#wiki-5734), [subroutines](wiki/articles/1292.md#wiki-1292), [arrays](wiki/articles/4572.md#wiki-4572), [preload](wiki/articles/4401.md#wiki-4401), [Play Effect](wiki/articles/9268.md#wiki-9268). Projectile ownership behavior is documented in the [current registry](wiki/articles/9463.md#wiki-9463).

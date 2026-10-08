@@ -26,6 +26,8 @@ If the companion is missing or incompatible, identify the missing version/access
 
 For one named API, follow its entry and native-semantics link first. Open a broader guide only when needed; do not reread the shared foundation or collect unrelated references.
 
+For a feature whose functions are not yet known, use [functions by task](references/api/usage/index.md). Read one relevant group and only its needed entries. Source articles are installed in the companion's [full local archive](../overwatch-workshop/references/wiki/archive/index.md); use those files instead of fetching Workshop.codes. Quoted source URLs are attribution only. Do not load the whole function catalog or article archive into context.
+
 | Need | Read |
 | --- | --- |
 | Rules, declarations, expressions, or Python-looking code | [Language](references/language.md) |
@@ -36,8 +38,9 @@ For one named API, follow its entry and native-semantics link first. Open a broa
 | Warning, compile failure, optimization, or surprising output | [Diagnostics and transformations](references/diagnostics.md) |
 | Existing Workshop text to convert | [Decompilation](references/decompilation.md) |
 | Exact function, receiver, argument, enum, annotation, directive, or setting | [API index](references/api/index.md), then the relevant entry |
+| Find functions for a feature | [Functions by task](references/api/usage/index.md), then one group and the needed entries |
 | Small complete source to adapt | [Examples](references/examples.md) |
 
 Engine timing, event context, cleanup, geometry, and live values belong in Workshop's focused references. Read the relevant topic when the requested feature touches it; do not load both skills' entire reference trees.
 
-Deliver source in the requested dialect. State whether it was actually compiled, which version/language checked it, and any remaining runtime uncertainty. When a compiler exists, inspect diagnostics and generated code for the behavior at issue. Compilation alone does not verify a live match.
+Deliver source in the requested dialect. State whether it was compiled and which version/language checked it. When a compiler exists, inspect diagnostics and generated code for the behavior at issue. The companion’s current local wiki articles are the trusted source of runtime behavior and take precedence over derivative guides; this skill’s compiler metadata supplies language names and syntax. Do not routinely ask the user to retest wiki claims.

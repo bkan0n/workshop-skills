@@ -1,6 +1,6 @@
 # Maps
 
-Snapshot data from OverPy; inclusion is not a current-game compatibility guarantee.
+Pinned OverPy names; consult the bundled wiki for hero and map behavior.
 
 Choose the first letter; read only the matching entry.
 

@@ -2,7 +2,7 @@
 
 # Texture code lookup: Uncategorized
 
-Archived factual data from [9562](https://workshop.codes/wiki/articles/9562); page edited 2026-08-27. Not independently game-verified.
+Wiki data from [article 9562](../../archive/9562.md); page edited 2026-08-27.
 
 Read [units, scope and source limitations](../9562.md) before using these values.
 

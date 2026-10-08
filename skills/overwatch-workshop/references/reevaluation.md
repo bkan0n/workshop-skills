@@ -1,5 +1,15 @@
 # Reevaluation and observation
 
+<!-- wiki-source-updates:start -->
+
+## Current wiki sources
+
+Before using facts or values covered by these sources, read the corresponding current article. Its text takes precedence over copied details below; use this guide for the overall pattern.
+
+- [OW2 Workshop Changes/Bugs](wiki/archive/9694.md)
+
+<!-- wiki-source-updates:end -->
+
 A parameter expression can be sampled when an action starts, reevaluated later, or evaluated for each viewer. These are separate choices. Do not assume that changing a variable automatically updates every action that once used it.
 
 ## Decide what should remain live
@@ -25,15 +35,15 @@ For example, each effect in a creation loop may need a fixed per-iteration offse
 
 ## Value changes are not always notifications
 
-The rolling OW2 bug registry reports that a chased variable does not notify rule conditions or Wait Until until it reaches the destination. An endlessly moving destination may therefore prevent a threshold observer from firing even while the displayed number crosses it. This is an **archived bug report**, not a universal, independently verified scheduling law.
+The rolling OW2 bug registry reports that a chased variable does not notify rule conditions or Wait Until until it reaches the destination. An endlessly moving destination may therefore prevent a threshold observer from firing even while the displayed number crosses it.
 
-For a correctness-critical threshold, do not rely solely on a chased-variable condition. A separately paced rule that explicitly reads the value in an action-side If is a conservative workaround to test; define the maximum acceptable detection delay. Do not describe Wait Until as guaranteed polling or add Update Every Frame as an unverified cure. Reproduce the exact observer/chase combination in the intended game patch.
+For a correctness-critical threshold, do not rely solely on a chased-variable condition. Use a separately paced rule that explicitly reads the value in an action-side If, and define the maximum acceptable detection delay. Wait Until relies on notification; Update Every Frame changes update frequency rather than supplying a separate threshold observer.
 
 Separately, the performance tutorial reports that changing one array member invalidates conditions referring to other members of the same variable. Splitting unrelated high-frequency state can reduce unnecessary reconsideration; it also changes the state model, so retain coordinated updates where they are needed.
 
 ## Keep loop counters separate from chased state
 
-Pinned upstream documentation reports that using a chased variable as a For counter can make the loop fail, even if the rule containing the Chase is disabled. Use a dedicated counter that is never referenced by a Chase; snapshot the chased value into a separate variable when the loop needs a stable bound. Do not assume disabling runtime execution removes this interaction. The warning's precise game version is not established here and has not been locally reproduced.
+Pinned upstream documentation reports that using a chased variable as a For counter can make the loop fail, even if the rule containing the Chase is disabled. Use a dedicated counter that is never referenced by a Chase; snapshot the chased value into a separate variable when the loop needs a stable bound. Do not assume disabling runtime execution removes this interaction.
 
 Evidence: [upstream warning, lines 1138–1153](https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/README.md#L1138), revision **5a7d0e294b8cad73b9701987bb584d0551d7fa4d**, inspected 2026-10-07. For numeric Wait Until predicates, also see the [Wait Until caveat](waits.md#wait-until-predicates).
 
@@ -41,10 +51,10 @@ Evidence: [upstream warning, lines 1138–1153](https://github.com/Zezombye/over
 
 One global HUD using Local Player can render different values for each viewer and save text objects. Local Player and Input Binding String cannot be stored. Spectator/replay behavior has archived limitations. The bug registry reports Is Waiting For Players as false during visual/client evaluation and suggests mirroring it into a server-updated global variable. Such mirroring is an explicit snapshot/update process, not a different spelling of the original value.
 
-Update Every Frame is reported to move some logical updates from 12.5 Hz to 62.5 Hz and visual updates toward client frame rate. These exact frequencies are unverified and environment-sensitive. Use it where smoothness/precision matters, then measure server and client cost separately. See [visuals](visuals-strings.md) and [performance](performance-debugging.md).
+Update Every Frame is reported to move some logical updates from 12.5 Hz to 62.5 Hz and visual updates toward client frame rate. Use it where smoothness/precision matters, then measure server and client cost separately. See [visuals](visuals-strings.md) and [performance](performance-debugging.md).
 
 Offline source details: [execution](wiki/execution.md), [camera/UI](wiki/camera-ui.md), and [compatibility evidence](wiki/compatibility.md).
 
 ## Evidence
 
-Snapshot **2026-09-29**, archived documentation: [Evaluate Once](https://workshop.codes/wiki/articles/4788), [Update Every Frame](https://workshop.codes/wiki/articles/4789), [Local Player](https://workshop.codes/wiki/articles/4807), [Input Binding String](https://workshop.codes/wiki/articles/4775) (all edited 2024-11-26), [forced position](https://workshop.codes/wiki/articles/4449), [camera](https://workshop.codes/wiki/articles/7648) (2025-12-01), [throttle transform](https://workshop.codes/wiki/articles/4457), [rate chase](https://workshop.codes/wiki/articles/6027), [duration chase](https://workshop.codes/wiki/articles/4336), [health pools](https://workshop.codes/wiki/articles/6164) (2025-06-14). Notification/client-value exceptions: [OW2 changes/bugs](https://workshop.codes/wiki/articles/9463), edited 2026-08-13, mixed-era reports. Array invalidation: [stability guide](https://workshop.codes/wiki/articles/6064), edited 2025-05-25. These dates do not establish local game verification.
+Wiki sources: [Evaluate Once](wiki/articles/4788.md#wiki-4788), [Update Every Frame](wiki/articles/4789.md#wiki-4789), [Local Player](wiki/articles/4807.md#wiki-4807), [Input Binding String](wiki/articles/4775.md#wiki-4775) (all edited 2024-11-26), [forced position](wiki/articles/4449.md#wiki-4449), [camera](wiki/articles/7648.md#wiki-7648) (2025-12-01), [throttle transform](wiki/articles/4457.md#wiki-4457), [rate chase](wiki/articles/6027.md#wiki-6027), [duration chase](wiki/articles/4336.md#wiki-4336), [health pools](wiki/articles/6164.md#wiki-6164) (2025-06-14). Notification/client-value exceptions: [OW2 changes/bugs](wiki/articles/9463.md#wiki-9463). Array invalidation: [stability guide](wiki/articles/6064.md#wiki-6064), edited 2025-05-25.

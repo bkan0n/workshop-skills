@@ -46,4 +46,4 @@ Translation resolution depends on client/viewer evaluation. Evaluating language-
 
 `___()` retains an unresolved translation value even in display expressions; a later `_()` performs resolution. This can avoid repeated resolution when selecting among alternatives, but inherits opaque-container restrictions. Use only for a measured need, with tests for normal players and spectators.
 
-Evidence: [pinned string documentation](https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/README.md#strings), [translation documentation](https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/README.md#translations). These translation mechanisms are upstream implementation guidance, not a claim of current in-game verification.
+Evidence: [pinned string documentation](https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/README.md#strings), [translation documentation](https://github.com/Zezombye/overpy/blob/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/README.md#translations). These translation mechanisms describe the pinned compiler implementation.

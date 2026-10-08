@@ -3,14 +3,16 @@
   "release": "0.1.0",
   "workshop_reference_contract": "1",
   "wiki": {
-    "snapshot": "2026-09-29T03:33:06Z",
+    "snapshot": "2026-10-08T15:13:47Z",
     "article_count": 630,
     "information_note_count": 721,
     "api_url": "https://workshop.codes/wiki/articles/page/{page}.json",
     "snapshot_complete": true,
     "first_empty_page": 28,
-    "index_sha256": "26cfbce4d568467210e2c47b7dc73da672a4853d65ac05644eb8c2567a203015",
-    "permission": "Maintainer confirms written consent to rewrite for this public project; original archive is not distributed."
+    "index_sha256": "78f3671e206af47f2819a44b74be5aa251400b6d1b4a6be0e7dec58be7ce5b80",
+    "permission": "Maintainer confirms written consent to rewrite for this public project. Full article text is bundled for offline reference; raw API page caches are excluded.",
+    "articles_sha256": "669b6865736d7823081efb3d9dcca8d3491c52dfc355d60ce592785bb286d5ea",
+    "populated_pages": 27
   },
   "overpy": {
     "version": "9.7.17",

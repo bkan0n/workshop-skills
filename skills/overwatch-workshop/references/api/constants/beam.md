@@ -28,4 +28,4 @@ Extension costs and activation: [settings schema](../settings/extensions.md).
 | `Winston Tesla Cannon Beam` | `Beam.WINSTON_TESLA_CANNON` | Requires extension `beamEffects`. |
 | `Zarya Particle Beam` | `Beam.ZARYA_PARTICLE` | Requires extension `beamEffects`. |
 
-Source: [OverPy 9.7.17](https://github.com/Zezombye/overpy/tree/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src). Generated from pinned initialized exports. Engine behavior is not independently game-tested.
+Source: [OverPy 9.7.17](https://github.com/Zezombye/overpy/tree/5a7d0e294b8cad73b9701987bb584d0551d7fa4d/src). Generated from pinned initialized exports.

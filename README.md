@@ -5,7 +5,7 @@ Two portable Agent Skills for writing and debugging Overwatch Workshop programs,
 - [overwatch-workshop](skills/overwatch-workshop/SKILL.md) supports native Workshop independently and owns shared engine knowledge.
 - [overpy](skills/overpy/SKILL.md) adds the language, compiler, project workflow, and diagnostics. It requires the matched Workshop skill.
 
-Each starts with a small required foundation, then routes to focused guides, exact APIs, and rewritten evidence. Shared runtime explanations live in Workshop. Normal use requires readable Markdown, without a search script or network lookup.
+Each starts with a small required foundation, then routes to functions grouped by task, focused guides, exact APIs, and rewritten evidence. The Workshop skill also includes all 630 full archived article bodies as optional local references. Shared runtime explanations live in Workshop. Normal use requires readable Markdown, without a search script or network lookup; installing the archive does not load it all into context.
 
 ## Install
 
@@ -24,13 +24,13 @@ Alternatively, copy the complete skill folders or extract a matched release arch
 Skill release **0.1.0** requires matching versions of both skills for OverPy.
 <!-- x-release-please-end -->
 
-The references use **OverPy 9.7.17** and the **September 29, 2026** wiki snapshot. The host must expose reference and companion files.
+The references use **OverPy 9.7.17** and the bundled Workshop.codes wiki snapshot. The host must expose reference and companion files.
 
 ## Evidence and scope
 
 The rewrite accounts for all 630 archived articles and 721 extracted notes, including explicit exclusions, historical material, and deferred work. Source dates, conflicts, and practical exceptions accompany the generated signatures.
 
-Archived observations are not current-game guarantees. Examples are checked with the pinned compiler and expected diagnostics; no in-game testing is claimed. See [the survey](docs/research/2026-10-07-workshop-wiki-survey.md), [coverage](coverage/wiki-coverage.json), and [agent evaluations](evals/README.md).
+The installed wiki is the trusted source of truth for runtime behavior and takes precedence over derivative guides. Examples are checked with the pinned compiler and expected diagnostics. See [the survey](docs/research/2026-10-07-workshop-wiki-survey.md), [coverage](coverage/wiki-coverage.json), and [agent evaluations](evals/README.md).
 
 Workshop.codes web-editor authoring and complex-system companions remain in the [roadmap](docs/roadmap.md). Their underlying engine facts still belong in the foundations.
 
@@ -46,11 +46,13 @@ npm run check
 npm run build
 ```
 
-`dist/` receives Workshop-only and matched-pair ZIP archives, SHA-256 checksums, and a context report. Packaging never fetches the wiki. Reviewed Markdown and normalized source data are checked in.
+`dist/` receives Workshop-only and matched-pair ZIP archives, SHA-256 checksums, and a context report. Packaging never fetches the wiki. Generated Markdown and source data are checked in.
 
 [Maintenance instructions](docs/maintaining.md) explain source updates and GitHub releases. Release Please uses [Conventional Commits](CONTRIBUTING.md) to prepare a version PR and changelog. Merging that PR creates a **draft** release; GitHub Actions validates its tag, builds both packages, and verifies the uploaded assets. Publishing remains a maintainer action. No remote repository or release is created by a local build.
 
-The existing `archive/` is a local raw cache, excluded from tracking and packages. Retrieval uses the Workshop.codes JSON API with conservative pacing, never website scraping.
+When preparing a release, run `npm run release:update-wiki` (also available as `npm run refresh:wiki`). It downloads the complete Workshop.codes JSON API snapshot with conservative pacing, compares article hashes, validates structure and completeness, then automatically updates the tracked sources and bundled references. No factual approval gate is required. `npm run release:check-wiki` is an optional check-only command that reports upstream changes without applying them. Ordinary checks and builds remain offline.
+
+The original `archive/` and downloaded `.cache/wiki-candidate/` contain raw API page caches and are excluded from tracking and packages. The tracked full article snapshot is `sources/wiki-articles.json`; its generated per-article references are included in the installed Workshop skill. Retrieval uses the API, never website scraping.
 
 ## License
 

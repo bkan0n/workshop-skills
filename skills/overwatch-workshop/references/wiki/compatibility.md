@@ -4,7 +4,7 @@
 
 Read when diagnosing a reported engine/hero exception; reproduce on the target game build.
 
-Select the relevant entry. Each entry preserves its archived source, edit date and uncertainty; these are not independent current-game verification.
+Select the relevant entry. Each entry links to its trusted local wiki source.
 
 ## Entries
 
